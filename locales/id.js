@@ -63,6 +63,8 @@
     "events.searchPlaceholder": "Cari judul dan ringkasan acara…",
     "events.title": "Acara karakter",
     "fish.unknown": "Ikan tidak diketahui",
+    "footer.support": "Buy me a {icon} Cendol.",
+    "footer.supportLabel": "Buy me a Cendol.",
     "fishing.anyTime": "Kapan saja",
     "fishing.fish": "Ikan",
     "fishing.hourAvailable": "Dapat ditangkap pukul {hour}:00",

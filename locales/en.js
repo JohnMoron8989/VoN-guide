@@ -63,6 +63,8 @@
     "events.searchPlaceholder": "Search event titles and summaries…",
     "events.title": "Character events",
     "fish.unknown": "Unknown fish",
+    "footer.support": "Buy me a {icon} Cendol.",
+    "footer.supportLabel": "Buy me a Cendol.",
     "fishing.anyTime": "Any time",
     "fishing.fish": "Fish",
     "fishing.hourAvailable": "Catchable at {hour}:00",

@@ -70,7 +70,14 @@
     })));
     var header = ui.el('header', { className: 'site-header' }, [menuButton, brand, ui.el('div', { className: 'global-search' }, [searchInput, searchResults]), actions]);
     main = ui.el('main', { id: 'main-content', className: 'main-content', tabindex: '-1' });
-    var shell = ui.el('div', { className: 'app-shell' }, [header, nav, main]);
+    var footerTemplate = t('footer.support'); var footerMarker = '{icon}'; var footerMarkerIndex = footerTemplate.indexOf(footerMarker);
+    var footerContent = footerMarkerIndex === -1 ? footerTemplate : [
+      footerTemplate.slice(0, footerMarkerIndex).trimEnd(),
+      ui.el('img', { className: 'footer-cendol-icon', src: 'assets/icons/cendol_icon.svg', alt: '', 'aria-hidden': 'true' }),
+      footerTemplate.slice(footerMarkerIndex + footerMarker.length).trimStart()
+    ];
+    var footer = ui.el('footer', { className: 'site-footer' }, ui.el('a', { href: 'https://trakteer.id/demon_lord14', target: '_blank', rel: 'noopener noreferrer', 'aria-label': t('footer.supportLabel') }, footerContent));
+    var shell = ui.el('div', { className: 'app-shell' }, [header, nav, main, footer]);
     appRoot.replaceChildren(shell);
     applyTheme(themeFromStorage());
     searchController = GUIDE.search.init(searchInput, searchResults, store, ui, i18n);
