@@ -8,10 +8,10 @@
   'use strict';
   function buildIndex(store) {
     var entries = [];
+    var fishIds = new Set(store.lists.fish.map(function (value) { return Number(value.id); }));
     store.lists.characters.forEach(function (value) { entries.push({ id: value.id, name: value.name, type: 'character', icon: value.portrait, value: value }); });
-    store.lists.items.forEach(function (value) { entries.push({ id: value.id, name: value.name && value.name.raw ? value.name.raw : value.name, type: 'item', icon: value.icon, value: value }); });
+    store.lists.items.forEach(function (value) { if (!fishIds.has(Number(value.id))) entries.push({ id: value.id, name: value.name && value.name.raw ? value.name.raw : value.name, type: 'item', icon: value.icon, value: value }); });
     store.lists.fish.forEach(function (value) { entries.push({ id: value.id, name: value.name, type: 'fish', icon: value.icon, value: value }); });
-    store.lists.quests.forEach(function (value) { entries.push({ id: value.id, name: value.title, type: 'quest', icon: null, value: value }); });
     store.lists.recipes.forEach(function (value) { var item = store.getItem(value.resultItemId); entries.push({ id: value.id, name: value.name, type: 'recipe', icon: item && item.icon, value: value }); });
     entries.forEach(function (entry) { entry.normalized = util.normalizeSearch(entry.name); });
     return entries;
@@ -30,7 +30,6 @@
     function choose(entry, trigger) {
       close(); input.value = '';
       if (entry.type === 'character') location.hash = '#/characters/' + entry.id;
-      else if (entry.type === 'quest') location.hash = '#/quests/' + encodeURIComponent(entry.id);
       else if (entry.type === 'recipe') location.hash = '#/recipes/' + entry.id;
       else if (entry.type === 'fish') ui.showItem(entry.id, trigger);
       else ui.showItem(entry.id, trigger);
@@ -39,7 +38,6 @@
       if (type === 'character') return i18n.t('search.resultType.character');
       if (type === 'fish') return i18n.t('search.resultType.fish');
       if (type === 'item') return i18n.t('search.resultType.item');
-      if (type === 'quest') return i18n.t('search.resultType.quest');
       if (type === 'recipe') return i18n.t('search.resultType.recipe');
       return i18n.t('common.unknown');
     }
