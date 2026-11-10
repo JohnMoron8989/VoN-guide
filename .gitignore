@@ -1,0 +1,7 @@
+tools/
+tests/
+DATA_REPORT.md
+README.md
+BUILD_REPORT.md
+SCHEMA.md
+data/*.json

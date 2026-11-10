@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title data-i18n="app.title">Game Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to content</a>
+  <div id="app" aria-live="polite">
+    <main id="main-content" class="boot" tabindex="-1">
+      <h1 data-i18n="loading.title">Loading guide data</h1>
+      <progress id="boot-progress" max="11" value="0"></progress>
+      <p id="boot-status" data-i18n="loading.start">Preparing the guide…</p>
+    </main>
+  </div>
+
+  <script src="data/bundle.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="locales/en.js"></script>
+  <script src="locales/id.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/fishing-rate.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/characters.js"></script>
+  <script src="js/pages/fishing.js"></script>
+  <script src="js/pages/events.js"></script>
+  <script src="js/pages/quests.js"></script>
+  <script src="js/pages/recipes.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
