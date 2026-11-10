@@ -57,6 +57,12 @@
     return el('span', { className: 'badge badge-' + (kind || 'neutral') }, label);
   }
 
+  function seasonBadge(season, label) {
+    var value = String(season || '').toLocaleLowerCase();
+    var known = ['spring', 'summer', 'autumn', 'winter', 'moonspring'].indexOf(value) !== -1;
+    return badge(label === null || label === undefined ? String(season || t('common.unknown')) : label, known ? 'season season-' + value : 'season');
+  }
+
   function placeChips(names, options) {
     options = options || {};
     var split = util.splitPlaces(names, options.max === undefined ? 3 : options.max);
@@ -392,7 +398,7 @@
   function init(nextStore) { store = nextStore; }
 
   GUIDE.ui = {
-    init: init, el: el, append: append, button: button, heading: heading, link: link, rawValue: rawValue, badge: badge,
+    init: init, el: el, append: append, button: button, heading: heading, link: link, rawValue: rawValue, badge: badge, seasonBadge: seasonBadge,
     tooltip: tooltip, reactionLabel: reactionLabel, reactionBadge: reactionBadge, spriteImage: spriteImage, itemChip: itemChip, placeChips: placeChips,
     emptyState: emptyState, notice: notice, datasetNotice: datasetNotice, field: field, tabs: tabs, collapsible: collapsible,
     pager: pager, table: table, showDialog: showDialog, closeDialog: closeCurrentDialog, showItem: showItem, timeText: timeText,

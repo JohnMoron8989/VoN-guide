@@ -19,6 +19,12 @@
   --neutral: #b0bec5;
   --disliked: #ffcc80;
   --hated: #ef9a9a;
+  --season-spring: #8bd17c;
+  --season-summer: #ffc94a;
+  --season-autumn: #e8803a;
+  --season-winter: #8fd3f4;
+  --season-moonspring: #a58be0;
+  --season-ink: #17212b;
   --shadow: 0 12px 30px rgb(0 0 0 / 30%);
   --radius: 12px;
   --header-height: 64px;
@@ -179,6 +185,11 @@ p { max-width: 75ch; }
 .badge-reaction-neutral { color: var(--neutral); }
 .badge-reaction-disliked { color: var(--disliked); }
 .badge-reaction-hated { color: var(--hated); }
+.season-spring { border-color: var(--season-spring); background: var(--season-spring); color: var(--season-ink); }
+.season-summer { border-color: var(--season-summer); background: var(--season-summer); color: var(--season-ink); }
+.season-autumn { border-color: var(--season-autumn); background: var(--season-autumn); color: var(--season-ink); }
+.season-winter { border-color: var(--season-winter); background: var(--season-winter); color: var(--season-ink); }
+.season-moonspring { border-color: var(--season-moonspring); background: var(--season-moonspring); color: var(--season-ink); }
 .badge-free { color: var(--accent-strong); }
 .badge-required, .badge-warning { color: var(--warning); }
 .badge-day { min-width: 2rem; justify-content: center; }

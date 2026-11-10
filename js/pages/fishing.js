@@ -52,7 +52,7 @@
   function seasonsNode(seasons) {
     var ui = GUIDE.ui; var t = GUIDE.i18n.t;
     if (!seasons || !seasons.length) return ui.badge(t('common.any'), 'season');
-    return ui.el('div', { className: 'badge-list' }, seasons.map(function (season) { return ui.badge(season, 'season'); }));
+    return ui.el('div', { className: 'badge-list' }, seasons.map(function (season) { return ui.seasonBadge(season, season); }));
   }
 
   function schedule(store) {
@@ -298,7 +298,7 @@
 
   function seasonGroup(group, fishBest) {
     var ui = GUIDE.ui; var t = GUIDE.i18n.t;
-    var seasonChips = group.allSeasons ? [ui.badge(t('fishing.rates.allSeasons'), 'season')] : group.seasonNames.map(function (season) { return ui.badge(seasonLabel(season), 'season'); });
+    var seasonChips = group.allSeasons ? [ui.badge(t('fishing.rates.allSeasons'), 'season')] : group.seasonNames.map(function (season) { return ui.seasonBadge(season, seasonLabel(season)); });
     var rows = group.periods.length ? group.periods.map(function (period) { return periodRow(period, fishBest); }) : [ui.emptyState('noResults', t('fishing.rates.noPeriods'))];
     return ui.el('section', { className: 'fishing-season-group' + (group.notCatchable ? ' is-not-catchable' : '') }, [
       ui.el('div', { className: 'badge-list fishing-season-chips' }, seasonChips),
@@ -320,7 +320,7 @@
     else {
       var seasonNames = [];
       groups.forEach(function (group) { group.seasonNames.forEach(function (season) { if (seasonNames.indexOf(season) === -1) seasonNames.push(season); }); });
-      seasonNames.forEach(function (season) { chips.push(ui.badge(seasonLabel(season), 'season')); });
+      seasonNames.forEach(function (season) { chips.push(ui.seasonBadge(season, seasonLabel(season))); });
     }
     var seenTimes = new Set();
     groups.forEach(function (group) {
@@ -480,7 +480,6 @@
           if (GUIDE.util.normalizeSearch(view.name).indexOf(query) === -1 && id.indexOf(query) === -1 && ('#' + id).indexOf(query) === -1) return false;
         }
         if (view.placeCount === 0) return false;
-        if (view.notCatchable) return false;
         return true;
       });
       return GUIDE.fishingRate.sortFishViews(views, rateState.sort, rateState.sort === 'best' ? 'desc' : 'asc');
@@ -495,7 +494,7 @@
         return;
       }
       views.slice(0, rateState.limit).forEach(function (view) {
-        var visiblePlaces = view.places.filter(function (place) { return !place.notCatchable; });
+        var visiblePlaces = view.notCatchable ? view.places : view.places.filter(function (place) { return !place.notCatchable; });
         var card = rateFishCard(store, view, visiblePlaces);
         host.appendChild(card);
       });
