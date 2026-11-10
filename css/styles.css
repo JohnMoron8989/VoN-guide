@@ -146,6 +146,7 @@ p { max-width: 75ch; }
 .character-card p { color: var(--muted); }
 .pixel-icon { object-fit: contain; image-rendering: pixelated; }
 .portrait { border-radius: 10px; background: var(--surface-2); object-fit: contain; }
+.pixel-icon.portrait { image-rendering: auto; }
 .image-placeholder { width: var(--image-size); height: var(--image-size); display: inline-grid; flex: 0 0 auto; place-items: center; border: 1px dashed var(--border); border-radius: 8px; background: var(--surface-2); color: var(--muted); font-size: .68rem; text-align: center; }
 
 .filters, .calculator-controls { display: flex; flex-wrap: wrap; align-items: end; gap: .8rem; margin: 1rem 0; }
