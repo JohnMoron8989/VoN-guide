@@ -12,11 +12,15 @@
     return t('characters.birthdayValue', { season: String(character.birthday.season), day: n(character.birthday.day) });
   }
 
-  function preferenceGroup(label, ids) {
+  function preferenceGroup(label, ids, store) {
     var ui = GUIDE.ui;
+    var knownIds = (ids || []).filter(function (id) {
+      var item = store.getItem(id);
+      return item && typeof item.name === 'string' && item.name.trim();
+    });
     return ui.el('section', { className: 'preference-group' }, [
       ui.heading(4, label),
-      ids && ids.length ? ui.el('div', { className: 'chip-list' }, ids.map(function (id) { return ui.itemChip(id); })) : ui.emptyState('notYet')
+      knownIds.length ? ui.el('div', { className: 'chip-list' }, knownIds.map(function (id) { return ui.itemChip(id); })) : ui.emptyState('notYet')
     ]);
   }
 
@@ -24,11 +28,11 @@
     var ui = GUIDE.ui; var t = GUIDE.i18n.t; var gift = store.giftByCharacter.get(character.id);
     if (!gift) return ui.emptyState('notFound');
     return ui.el('div', { className: 'preference-groups' }, [
-      preferenceGroup(t('reaction.loved'), gift.loved),
-      preferenceGroup(t('reaction.liked'), gift.liked),
-      preferenceGroup(t('reaction.neutral'), gift.neutral),
-      preferenceGroup(t('reaction.disliked'), gift.disliked),
-      preferenceGroup(t('reaction.hated'), gift.hated)
+      preferenceGroup(t('reaction.loved'), gift.loved, store),
+      preferenceGroup(t('reaction.liked'), gift.liked, store),
+      preferenceGroup(t('reaction.neutral'), gift.neutral, store),
+      preferenceGroup(t('reaction.disliked'), gift.disliked, store),
+      preferenceGroup(t('reaction.hated'), gift.hated, store)
     ]);
   }
 
