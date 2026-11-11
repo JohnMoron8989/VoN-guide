@@ -36,6 +36,7 @@
     return [
       { page: 'home', href: '#/', label: t('nav.home') }, { page: 'characters', href: '#/characters', label: t('nav.characters') },
       { page: 'fishing', href: '#/fishing', label: t('nav.fishing') },
+      { page: 'maps', href: '#/maps', label: t('nav.maps') },
       { page: 'events', href: '#/events', label: t('nav.events') }, { page: 'quests', href: '#/quests', label: t('nav.quests') },
       { page: 'recipes', href: '#/recipes', label: t('nav.recipes') }
     ];

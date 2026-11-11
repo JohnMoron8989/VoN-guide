@@ -11,6 +11,7 @@
       var sections = [
         { href: '#/characters', title: t('nav.characters'), count: store.lists.characters.length, desc: t('home.characters') },
         { href: '#/fishing', title: t('nav.fishing'), count: store.lists.fishing.length, desc: t('home.fishing') },
+        { href: '#/maps', title: t('nav.maps'), count: store.lists.maps.length, desc: t('home.card.maps') },
         { href: '#/events', title: t('nav.events'), count: store.lists.events.length, desc: t('home.events') },
         { href: '#/quests', title: t('nav.quests'), count: store.lists.quests.length, desc: t('home.quests') },
         { href: '#/recipes', title: t('nav.recipes'), count: store.lists.recipes.length, desc: t('home.recipes') }

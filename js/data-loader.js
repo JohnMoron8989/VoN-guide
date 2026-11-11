@@ -8,7 +8,8 @@
 })(typeof window !== 'undefined' ? window : null, function () {
   'use strict';
 
-  var DATASETS = ['meta', 'items', 'characters', 'gifts', 'fish', 'places', 'fishing', 'fishingRate', 'quests', 'recipes', 'events', 'sprites'];
+  var DATASETS = ['meta', 'items', 'characters', 'gifts', 'fish', 'places', 'fishing', 'fishingRate', 'quests', 'recipes', 'events', 'sprites', 'monsters', 'gatherables'];
+  var OPTIONAL_DATASETS = ['gatherables'];
 
   function emptyEnvelope(name, input) {
     return {
@@ -69,7 +70,13 @@
       try {
         var completed = 0;
         var entries = await Promise.all(DATASETS.map(async function (name) {
-          var value = await fetchJson(fetchFn, name, controller ? controller.signal : undefined);
+          var value;
+          try {
+            value = await fetchJson(fetchFn, name, controller ? controller.signal : undefined);
+          } catch (error) {
+            if (OPTIONAL_DATASETS.indexOf(name) === -1) throw error;
+            value = null;
+          }
           completed += 1;
           onProgress(name, completed, DATASETS.length);
           return [name, value];

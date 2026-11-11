@@ -1,13 +1,15 @@
 (function (root, factory) {
   var util = root && root.GUIDE ? root.GUIDE.util : null;
+  var mapsLogic = root && root.GUIDE ? root.GUIDE.mapsLogic : null;
   if (!util && typeof require === 'function') util = require('./util.js');
-  var api = factory(util);
+  if (!mapsLogic && typeof require === 'function') mapsLogic = require('./maps-logic.js');
+  var api = factory(util, mapsLogic);
   if (root) {
     root.GUIDE = root.GUIDE || {};
     root.GUIDE.storeLogic = api;
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
-})(typeof window !== 'undefined' ? window : null, function (util) {
+})(typeof window !== 'undefined' ? window : null, function (util, mapsLogic) {
   'use strict';
 
   var REACTIONS = ['loved', 'liked', 'neutral', 'disliked', 'hated'];
@@ -203,7 +205,11 @@
       gifts: records(data, 'gifts'),
       fish: records(data, 'fish'),
       places: records(data, 'places'),
+      maps: records(data, 'places'),
       fishing: records(data, 'fishing'),
+      fishingRate: records(data, 'fishingRate'),
+      monsters: records(data, 'monsters'),
+      gatherables: records(data, 'gatherables'),
       quests: records(data, 'quests'),
       recipes: records(data, 'recipes'),
       events: records(data, 'events'),
@@ -213,6 +219,14 @@
     var recipeIndexes = buildRecipeIndexes(lists.recipes);
     var questIndexes = buildQuestIndexes(lists.quests);
     var fishingIndexes = buildFishingIndexes(lists.fishing);
+    var mapIndexes = mapsLogic.buildMapIndexes({
+      maps: lists.maps,
+      monsters: lists.monsters,
+      gatherables: lists.gatherables,
+      fishingRate: lists.fishingRate,
+      items: lists.items,
+      fish: lists.fish
+    });
     return {
       data: data,
       lists: lists,
@@ -220,6 +234,9 @@
       characters: byId(lists.characters),
       fish: byId(lists.fish),
       places: byId(lists.places),
+      maps: mapIndexes.mapById,
+      monsters: byId(lists.monsters),
+      mapIndexes: mapIndexes,
       quests: byId(lists.quests),
       recipes: byId(lists.recipes),
       sprites: byId(lists.sprites, 'name'),

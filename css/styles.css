@@ -126,7 +126,7 @@ p { max-width: 75ch; }
   box-shadow: var(--shadow);
   padding: .35rem;
 }
-.search-result { width: 100%; display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; gap: .65rem; border: 0; border-radius: 7px; background: transparent; padding: .55rem; text-align: left; cursor: pointer; }
+.search-result { width: 100%; display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; gap: .65rem; border: 0; border-radius: 7px; background: transparent; color: var(--text); padding: .55rem; text-align: left; text-decoration: none; cursor: pointer; }
 .search-result:hover, .search-result:focus, .search-result[aria-selected="true"] { background: var(--surface-3); }
 .search-result-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .header-actions { display: flex; align-items: center; justify-self: end; gap: .5rem; }
@@ -369,6 +369,51 @@ p { max-width: 75ch; }
 .badge-category { color: var(--accent-strong); overflow-wrap: anywhere; }
 .badge-item-tag { color: var(--info); overflow-wrap: anywhere; }
 
+.maps-list-header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
+.maps-list-header h1 { margin-bottom: 0; }
+.maps-count, .map-room-id, .map-image-caption, .map-gather-entry small { color: var(--muted); }
+.maps-count { margin: 0; font-weight: 700; }
+.maps-search { display: grid; width: min(100%, 32rem); gap: .35rem; margin: 1.25rem 0; color: var(--muted); font-size: .9rem; }
+.maps-search input { width: 100%; }
+.maps-name-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; margin: 1rem 0; padding: 0; list-style: none; }
+.maps-name-grid a { display: block; height: 100%; overflow-wrap: anywhere; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--text); padding: .8rem 1rem; text-decoration: none; }
+.maps-name-grid a:hover { border-color: var(--accent); background: var(--surface-2); }
+.map-detail-header { margin-bottom: 1rem; }
+.map-detail-header h1 { margin-bottom: .25rem; }
+.map-room-id { margin: 0; overflow-wrap: anywhere; font-size: .85rem; }
+.map-image-section { overflow: hidden; }
+.map-image-body, .map-image-figure { min-width: 0; margin: 0; }
+.map-image-trigger { display: block; width: max-content; max-width: 100%; margin: 0 auto; overflow: hidden; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); padding: 0; cursor: zoom-in; }
+.map-image { display: block; width: auto; max-width: 100%; height: auto; image-rendering: pixelated; }
+.map-image-caption { margin-top: .5rem; font-size: .84rem; text-align: center; }
+.map-image-actions { display: flex; justify-content: center; margin-top: .75rem; }
+.map-image-missing { display: grid; min-height: 180px; place-items: center; border: 1px dashed var(--border); border-radius: 9px; background: var(--surface-2); color: var(--muted); padding: 1.5rem; text-align: center; }
+.map-monster-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: .65rem; margin: 0; padding: 0; list-style: none; }
+.map-monster { display: flex; min-width: 0; align-items: center; gap: .65rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2); padding: .55rem; }
+.map-monster > span:not(.badge):not(.image-placeholder), .map-monster > a { min-width: 0; overflow-wrap: anywhere; }
+.map-monster .badge { margin-left: auto; }
+.map-gather-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); align-items: start; gap: .7rem; }
+.map-gather-entry { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; gap: .4rem .6rem; }
+.map-gather-entry .tooltip { max-width: 100%; }
+.map-fish-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr)); gap: .65rem; }
+.map-fish-tile { display: flex; min-width: 0; min-height: 64px; align-items: center; gap: .6rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2); color: var(--text); padding: .55rem; text-align: left; cursor: pointer; }
+.map-fish-tile:hover { border-color: var(--accent); background: var(--surface-3); }
+.map-fish-tile span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.map-fish-toggle { justify-content: center; color: var(--accent-strong); font-weight: 700; text-align: center; }
+.map-data-notes { margin-top: 1.25rem; }
+
+.map-viewer-overlay { position: fixed; z-index: 200; inset: 0; display: grid; place-items: center; background: rgb(0 0 0 / 82%); padding: 1rem; overscroll-behavior: contain; }
+.map-viewer-panel { display: grid; width: min(1500px, 100%); height: min(920px, calc(100vh - 2rem)); min-width: 0; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.map-viewer-header { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .65rem 1rem; border-bottom: 1px solid var(--border); padding: .7rem; }
+.map-viewer-header h2 { min-width: 0; margin: 0; overflow-wrap: anywhere; font-size: 1rem; }
+.map-viewer-controls { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .4rem; }
+.map-viewer-controls .button { min-width: 42px; }
+.map-viewer-zoom { min-width: 4.5rem; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+.map-viewer-viewport { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #20252c; cursor: grab; touch-action: none; user-select: none; overscroll-behavior: contain; }
+:root[data-theme="light"] .map-viewer-viewport { background: #d5dce1; }
+.map-viewer-viewport:active { cursor: grabbing; }
+.map-viewer-image { position: absolute; top: 0; left: 0; max-width: none; transform-origin: 0 0; image-rendering: pixelated; pointer-events: none; user-select: none; }
+
 @media (min-width: 851px) {
   .fishing-equipment-filters:not([open]) > .fishing-equipment-groups { display: grid; }
 }
@@ -410,6 +455,7 @@ p { max-width: 75ch; }
   .menu-open .fishing-rate-sticky-controls { top: calc(var(--header-height) + 54px); max-height: calc(100vh - var(--header-height) - 62px); }
   .fishing-equipment-filters > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .8rem; cursor: pointer; }
   .fishing-equipment-filters[open] > summary { margin-bottom: .65rem; }
+  .maps-name-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* Schedule table card breakpoint: change this single value to adjust the layout switch. */
@@ -466,6 +512,16 @@ p { max-width: 75ch; }
   .fishing-place-details > summary .fishing-details-arrow { grid-column: 2; grid-row: 1 / span 2; }
   .fishing-place-summary-rate { justify-content: space-between; text-align: left; }
   .fishing-period-row { grid-template-columns: minmax(90px, auto) minmax(50px, 1fr) minmax(64px, auto); gap: .4rem; }
+  .maps-name-grid { grid-template-columns: 1fr; }
+  .map-viewer-overlay { padding: .25rem; }
+  .map-viewer-panel { height: calc(100vh - .5rem); border-radius: 9px; }
+  .map-viewer-header { align-items: stretch; }
+  .map-viewer-controls { justify-content: flex-start; }
+  .map-viewer-close { margin-left: auto; }
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+  .maps-name-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (prefers-reduced-motion: reduce) {

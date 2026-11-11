@@ -2,7 +2,7 @@
 window.GUIDE_BUNDLE = {
   "meta": {
     "schema": "meta/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameName": "unknown",
     "gameVersion": "unknown",
     "languages": [
@@ -19,7 +19,7 @@ window.GUIDE_BUNDLE = {
   },
   "items": {
     "schema": "items/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 378,
     "status": "ok",
@@ -8081,7 +8081,7 @@ window.GUIDE_BUNDLE = {
   },
   "characters": {
     "schema": "characters/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "partial",
@@ -9167,7 +9167,7 @@ window.GUIDE_BUNDLE = {
           "day": 26
         },
         "home": null,
-        "romanceable": false,
+        "romanceable": true,
         "schedule": [
           {
             "time": 1,
@@ -9241,7 +9241,7 @@ window.GUIDE_BUNDLE = {
   },
   "gifts": {
     "schema": "gifts/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "ok",
@@ -37400,7 +37400,7 @@ window.GUIDE_BUNDLE = {
   },
   "fish": {
     "schema": "fish/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "partial",
@@ -38688,9 +38688,9 @@ window.GUIDE_BUNDLE = {
   },
   "places": {
     "schema": "places/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
-    "count": 64,
+    "count": 69,
     "status": "partial",
     "notes": [
       "Includes rooms with a resolved display name different from the internal room id.",
@@ -38715,6 +38715,56 @@ window.GUIDE_BUNDLE = {
           "id": "Kandang Ayam"
         },
         "room": "rmFarm_Coop1",
+        "kind": "other",
+        "source": "metadata/rooms.json"
+      },
+      {
+        "id": "rmForest1_1",
+        "name": {
+          "en": "Grimwood Forest - 1",
+          "id": "Hutan Grimwood - 1"
+        },
+        "room": "rmForest1_1",
+        "kind": "other",
+        "source": "metadata/rooms.json"
+      },
+      {
+        "id": "rmForest1_2",
+        "name": {
+          "en": "Grimwood Forest - 2",
+          "id": "Hutan Grimwood - 2"
+        },
+        "room": "rmForest1_2",
+        "kind": "other",
+        "source": "metadata/rooms.json"
+      },
+      {
+        "id": "rmForest1_3",
+        "name": {
+          "en": "Grimwood Forest - 3",
+          "id": "Hutan Grimwood - 3"
+        },
+        "room": "rmForest1_3",
+        "kind": "other",
+        "source": "metadata/rooms.json"
+      },
+      {
+        "id": "rmForest1_4",
+        "name": {
+          "en": "Grimwood Forest - 4",
+          "id": "Hutan Grimwood - 4"
+        },
+        "room": "rmForest1_4",
+        "kind": "other",
+        "source": "metadata/rooms.json"
+      },
+      {
+        "id": "rmForest1_5",
+        "name": {
+          "en": "Grimwood Forest - 5",
+          "id": "Hutan Grimwood - 5"
+        },
+        "room": "rmForest1_5",
         "kind": "other",
         "source": "metadata/rooms.json"
       },
@@ -39321,7 +39371,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishing": {
     "schema": "fishing/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 127,
     "status": "partial",
@@ -43463,7 +43513,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishingRate": {
     "schema": "fishingRate/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "ok",
@@ -183392,7 +183442,7 @@ window.GUIDE_BUNDLE = {
   },
   "quests": {
     "schema": "quests/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 35,
     "status": "partial",
@@ -185626,7 +185676,7 @@ window.GUIDE_BUNDLE = {
   },
   "recipes": {
     "schema": "recipes/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 50,
     "status": "partial",
@@ -187656,7 +187706,7 @@ window.GUIDE_BUNDLE = {
   },
   "events": {
     "schema": "events/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
     "count": 0,
     "status": "ok",
@@ -187665,16 +187715,1198 @@ window.GUIDE_BUNDLE = {
     ],
     "records": []
   },
+  "monsters": {
+    "schema": "monsters/1",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
+    "gameVersion": "unknown",
+    "count": 7,
+    "status": "partial",
+    "notes": [
+      "Concrete records are descendants of obj_enemies_parent; wild animals use a separate hierarchy.",
+      "Display names, descriptions, defense, EXP, money, levels, elements, weaknesses, resistances, and flying flags were not found.",
+      "Hunting-spawned monsters replace HP with 7 + irandom(8), or 7 through 15 inclusive."
+    ],
+    "records": [
+      {
+        "id": "obj_boar",
+        "numericId": null,
+        "name": "obj_boar",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_boar_idleD",
+        "icon": "assets/icons/spr_boar_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 25,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 96,
+            "escapeRange": 600,
+            "respawnDays": 3
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 607,
+            "rawItemId": 607,
+            "itemName": {
+              "en": "Raw Meat",
+              "id": "Daging Mentah"
+            },
+            "chancePct": 100,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_boar_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 239,
+            "rawItemId": 239,
+            "itemName": {
+              "en": "Boar Tusk",
+              "id": "Gading Babi Hutan"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_boar_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_1",
+            "placeName": {
+              "en": "Grimwood Forest - 1",
+              "id": "Hutan Grimwood - 1"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 4,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          },
+          {
+            "placeId": "rmMap9",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_boar_Create_0",
+        "warnings": [
+          "obj_boar: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_cobra",
+        "numericId": null,
+        "name": "obj_cobra",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_cobra_idleD",
+        "icon": "assets/icons/spr_cobra_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 45,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 48,
+            "escapeRange": 600,
+            "respawnDays": 3,
+            "chaseSpeed": 2
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 253,
+            "rawItemId": 253,
+            "itemName": {
+              "en": "Cobra Head",
+              "id": "Kepala Kobra"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_cobra_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_cobra_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_3",
+            "placeName": {
+              "en": "Grimwood Forest - 3",
+              "id": "Hutan Grimwood - 3"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.safeDistance": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_cobra_Create_0",
+        "warnings": [
+          "obj_cobra: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_electric_bee",
+        "numericId": null,
+        "name": "obj_electric_bee",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_bee_idleD",
+        "icon": "assets/icons/spr_bee_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 35,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 96,
+            "escapeRange": 600,
+            "respawnDays": 3
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 238,
+            "rawItemId": 238,
+            "itemName": {
+              "en": "Electric Wings",
+              "id": "Sayap Listrik"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_electric_bee_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_electric_bee_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          },
+          {
+            "placeId": "rmMap17",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmMap17_backup",
+            "placeName": "rmMap17_backup",
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_electric_bee_Create_0",
+        "warnings": [
+          "obj_electric_bee: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_fire_bee",
+        "numericId": null,
+        "name": "obj_fire_bee",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_bee2_idleD",
+        "icon": "assets/icons/spr_bee2_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 75,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 128,
+            "escapeRange": 600,
+            "respawnDays": 3
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 252,
+            "rawItemId": 252,
+            "itemName": {
+              "en": "Fire Wings",
+              "id": "Sayap Api"
+            },
+            "chancePct": 60,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_fire_bee_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_fire_bee_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 1,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 1,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_fire_bee_Create_0",
+        "warnings": [
+          "obj_fire_bee: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_goblin1",
+        "numericId": null,
+        "name": "obj_goblin1",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_goblin1_idleD",
+        "icon": "assets/icons/spr_goblin1_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 45,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 48,
+            "escapeRange": 600,
+            "respawnDays": 3,
+            "chaseSpeed": 2
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 251,
+            "rawItemId": 251,
+            "itemName": {
+              "en": "Goblin Fingers",
+              "id": "Jari Goblin"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_goblin1_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_goblin1_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 1,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.safeDistance": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_goblin1_Create_0",
+        "warnings": [
+          "obj_goblin1: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_goblin2",
+        "numericId": null,
+        "name": "obj_goblin2",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_goblin2_idleD",
+        "icon": "assets/icons/spr_goblin2_idleD.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 100,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 48,
+            "escapeRange": 600,
+            "respawnDays": 3,
+            "chaseSpeed": 2
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 607,
+            "rawItemId": 607,
+            "itemName": {
+              "en": "Raw Meat",
+              "id": "Daging Mentah"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_goblin2_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_goblin2_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 3,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.safeDistance": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_goblin2_Create_0",
+        "warnings": [
+          "obj_goblin2: unknown place rmHunting1"
+        ]
+      },
+      {
+        "id": "obj_slime",
+        "numericId": null,
+        "name": "obj_slime",
+        "textKey": null,
+        "desc": null,
+        "sprite": "spr_slime_idle",
+        "icon": "assets/icons/spr_slime_idle.png",
+        "kind": "normal",
+        "family": null,
+        "parent": "obj_enemies_parent",
+        "stats": {
+          "hp": 10,
+          "attack": 5,
+          "defense": null,
+          "speed": 1,
+          "exp": null,
+          "money": null,
+          "level": null,
+          "extra": {
+            "maxShield": 0,
+            "maxInterrupt": 0,
+            "walkSpeed": 1,
+            "runSpeed": 2,
+            "safeDistance": 48,
+            "escapeRange": 600,
+            "respawnDays": 3
+          }
+        },
+        "scaling": {
+          "byFloor": null,
+          "byPlayerLevel": null,
+          "byDifficulty": null,
+          "notes": [
+            "Hunting spawner overrides maxHp, hp, and hpBack with 7 + irandom(8), an integer from 7 through 15."
+          ]
+        },
+        "traits": {
+          "element": null,
+          "weaknesses": [],
+          "resistances": [],
+          "flying": null,
+          "aggroRange": 200
+        },
+        "drops": [
+          {
+            "itemId": 244,
+            "rawItemId": 244,
+            "itemName": {
+              "en": "Slime's Mucus",
+              "id": "Lendir Slime"
+            },
+            "chancePct": 70,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_slime_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          },
+          {
+            "itemId": 250,
+            "rawItemId": 250,
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
+            "chancePct": 5,
+            "chanceRaw": null,
+            "min": 1,
+            "max": 1,
+            "rarity": 0,
+            "condition": null,
+            "source": "gml_Object_obj_slime_Create_0; gml_GlobalScript_scr_npc_dead_state",
+            "inheritedFrom": null
+          }
+        ],
+        "locations": [
+          {
+            "placeId": "rmForest1_1",
+            "placeName": {
+              "en": "Grimwood Forest - 1",
+              "id": "Hutan Grimwood - 1"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 5,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_3",
+            "placeName": {
+              "en": "Grimwood Forest - 3",
+              "id": "Hutan Grimwood - 3"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmForest1_4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmHunting1",
+            "placeName": "rmHunting1",
+            "floors": null,
+            "how": "spawner",
+            "layer": "Ins_Events",
+            "placedCount": null,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": 14.285714285714286,
+            "source": "gml_Object_obj_hunting_spawner_Alarm_0; metadata/rooms.json (18 obj_hunting_spawner instances)"
+          },
+          {
+            "placeId": "rmMap8",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 2,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          },
+          {
+            "placeId": "rmMap9",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
+            "floors": null,
+            "how": "placed",
+            "layer": "Instances",
+            "placedCount": 1,
+            "seasons": null,
+            "timeStart": null,
+            "timeEnd": null,
+            "weather": null,
+            "spawnChancePct": null,
+            "source": "metadata/rooms.json"
+          }
+        ],
+        "variants": [],
+        "inheritedFrom": {
+          "stats.attack": "obj_enemies_parent",
+          "stats.speed": "obj_creatures_parent",
+          "stats.extra.maxShield": "obj_enemies_parent",
+          "stats.extra.maxInterrupt": "obj_enemies_parent",
+          "stats.extra.walkSpeed": "obj_creatures_parent",
+          "stats.extra.runSpeed": "obj_creatures_parent",
+          "stats.extra.safeDistance": "obj_creatures_parent",
+          "stats.extra.escapeRange": "obj_enemies_parent",
+          "stats.extra.respawnDays": "obj_enemies_parent",
+          "traits.aggroRange": "obj_enemies_parent"
+        },
+        "source": "gml_Object_obj_slime_Create_0",
+        "warnings": [
+          "obj_slime: unknown place rmHunting1"
+        ]
+      }
+    ]
+  },
   "sprites": {
     "schema": "sprites/1",
-    "generatedAt": "2026-11-10T09:20:24.058Z",
+    "generatedAt": "2026-11-11T07:25:48.777Z",
     "gameVersion": "unknown",
-    "count": 39,
+    "count": 46,
     "status": "ok",
     "notes": [
       "Only referenced frame_0 sprite files are copied; sprite-sheet frame indices remain on data records."
     ],
     "records": [
+      {
+        "name": "spr_bee2_idleD",
+        "path": "assets/icons/spr_bee2_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_bee_idleD",
+        "path": "assets/icons/spr_bee_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_boar_idleD",
+        "path": "assets/icons/spr_boar_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_cobra_idleD",
+        "path": "assets/icons/spr_cobra_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_goblin1_idleD",
+        "path": "assets/icons/spr_goblin1_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_goblin2_idleD",
+        "path": "assets/icons/spr_goblin2_idleD.png",
+        "source": "metadata/sprites.json"
+      },
       {
         "name": "spr_icon_animal",
         "path": "assets/icons/spr_icon_animal.png",
@@ -187868,6 +189100,11 @@ window.GUIDE_BUNDLE = {
       {
         "name": "spr_picture_zerick",
         "path": "assets/icons/spr_picture_zerick.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_slime_idle",
+        "path": "assets/icons/spr_slime_idle.png",
         "source": "metadata/sprites.json"
       }
     ]
