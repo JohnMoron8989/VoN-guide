@@ -415,8 +415,6 @@ p { max-width: 75ch; }
 .map-fish-toggle { justify-content: center; color: var(--accent-strong); font-weight: 700; text-align: center; }
 .map-area-chips { display: inline-flex; max-width: 100%; flex-wrap: wrap; align-items: center; gap: .25rem; margin-left: auto; color: var(--muted); }
 .map-area-chip { display: inline-flex; min-width: 1.5rem; justify-content: center; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); padding: .05rem .38rem; font-size: .72rem; line-height: 1.4; }
-.map-data-notes { margin-top: 1.25rem; }
-
 .map-viewer-overlay { position: fixed; z-index: 200; inset: 0; display: grid; place-items: center; background: rgb(0 0 0 / 82%); padding: 1rem; overscroll-behavior: contain; }
 .map-viewer-panel { display: grid; width: min(1500px, 80vw); height: min(920px, 80vh); min-width: 0; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
 .map-viewer-header { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .65rem 1rem; border-bottom: 1px solid var(--border); padding: .7rem; }

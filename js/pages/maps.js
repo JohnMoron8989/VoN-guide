@@ -428,33 +428,6 @@
     return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.fish'), entries.length), content]);
   }
 
-  function dataNotes(map, store) {
-    var ui = GUIDE.ui;
-    var notes = [];
-    (Array.isArray(map.warnings) ? map.warnings : []).forEach(function (warning) { if (warning) notes.push(String(warning)); });
-    if (map.group) {
-      var indexed = [];
-      ['monstersByMap', 'fishByMap', 'gatherablesByMap'].forEach(function (key) {
-        indexed.push.apply(indexed, store.mapIndexes[key].get(String(map.id)) || []);
-      });
-      var missingAreas = visibleAreas(map).filter(function (area) {
-        return !area.isParent && !indexed.some(function (entry) { return (entry.areas || []).indexOf(area.id) !== -1; });
-      }).map(areaName);
-      if (missingAreas.length) notes.push(t('maps.notes.areaMissingData', { areas: missingAreas.join(t('common.listSeparator')) }));
-    }
-    if (store.mapIndexes.unmatchedPlaces.length) notes.push(t('maps.notes.unmatched', { places: store.mapIndexes.unmatchedPlaces.join(t('common.listSeparator')) }));
-    if (store.data.places && store.data.places.status === 'partial') notes.push(t('maps.notes.mapsPartial'));
-    if (store.data.monsters && store.data.monsters.status === 'partial') notes.push(t('maps.notes.monstersPartial'));
-    if (store.data.fishingRate && store.data.fishingRate.status === 'partial') notes.push(t('maps.notes.fishingPartial'));
-    if (store.data.fish && store.data.fish.status === 'partial') notes.push(t('maps.notes.fishPartial'));
-    if (!store.data.gatherables || store.data.gatherables.status === 'not_found' || store.data.gatherables.malformed) notes.push(t('maps.notes.gatherUnavailable'));
-    if (!notes.length) return null;
-    return ui.el('details', { className: 'collapsible map-data-notes' }, [
-      ui.el('summary', {}, t('maps.dataNotes')),
-      ui.el('div', { className: 'collapsible-body' }, ui.el('ul', { className: 'compact-list' }, notes.map(function (note) { return ui.el('li', {}, note); })))
-    ]);
-  }
-
   function detail(map, context, areaId) {
     var ui = GUIDE.ui; var store = context.store;
     var selectedArea = map && map.group && areaId !== null && areaId !== undefined ? findArea(map, areaId) : null;
@@ -472,8 +445,7 @@
       map.group ? groupImageSection(map, selectedArea) : imageSection(map),
       monstersSection(map, store, selectedArea && selectedArea.id),
       gatherSection(map, store, selectedArea && selectedArea.id),
-      fishSection(map, store, selectedArea && selectedArea.id),
-      dataNotes(map, store)
+      fishSection(map, store, selectedArea && selectedArea.id)
     ]);
     return { node: node, title: mapName(map) };
   }

@@ -2,7 +2,7 @@
 window.GUIDE_BUNDLE = {
   "meta": {
     "schema": "meta/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameName": "unknown",
     "gameVersion": "unknown",
     "languages": [
@@ -19,7 +19,7 @@ window.GUIDE_BUNDLE = {
   },
   "items": {
     "schema": "items/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 378,
     "status": "ok",
@@ -8081,7 +8081,7 @@ window.GUIDE_BUNDLE = {
   },
   "characters": {
     "schema": "characters/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "partial",
@@ -9241,7 +9241,7 @@ window.GUIDE_BUNDLE = {
   },
   "gifts": {
     "schema": "gifts/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "ok",
@@ -37400,7 +37400,7 @@ window.GUIDE_BUNDLE = {
   },
   "fish": {
     "schema": "fish/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "partial",
@@ -38688,7 +38688,7 @@ window.GUIDE_BUNDLE = {
   },
   "places": {
     "schema": "places/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 69,
     "status": "partial",
@@ -39496,7 +39496,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishing": {
     "schema": "fishing/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 127,
     "status": "partial",
@@ -43638,7 +43638,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishingRate": {
     "schema": "fishingRate/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "ok",
@@ -183567,7 +183567,7 @@ window.GUIDE_BUNDLE = {
   },
   "quests": {
     "schema": "quests/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 35,
     "status": "partial",
@@ -185801,7 +185801,7 @@ window.GUIDE_BUNDLE = {
   },
   "recipes": {
     "schema": "recipes/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 50,
     "status": "partial",
@@ -187831,7 +187831,7 @@ window.GUIDE_BUNDLE = {
   },
   "events": {
     "schema": "events/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 0,
     "status": "ok",
@@ -187842,7 +187842,7 @@ window.GUIDE_BUNDLE = {
   },
   "monsters": {
     "schema": "monsters/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 8,
     "status": "partial",
@@ -189074,7 +189074,7 @@ window.GUIDE_BUNDLE = {
   },
   "sprites": {
     "schema": "sprites/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 47,
     "status": "ok",
@@ -189321,7 +189321,7 @@ window.GUIDE_BUNDLE = {
   },
   "maps": {
     "schema": "maps/1",
-    "generatedAt": "2026-11-11T10:30:04.396Z",
+    "generatedAt": "2026-11-11T10:50:46.065Z",
     "gameVersion": "unknown",
     "count": 21,
     "status": "partial",
