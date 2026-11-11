@@ -371,15 +371,18 @@ p { max-width: 75ch; }
 
 .maps-list-header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
 .maps-list-header h1 { margin-bottom: 0; }
-.maps-count, .map-room-id, .map-image-caption, .map-gather-entry small { color: var(--muted); }
+.maps-count, .map-image-caption, .map-gather-entry small { color: var(--muted); }
 .maps-count { margin: 0; font-weight: 700; }
+.maps-controls { display: flex; max-width: 42rem; flex-wrap: wrap; align-items: end; gap: .75rem; margin: 1.25rem 0; }
+.maps-controls label { display: grid; min-width: min(100%, 150px); gap: .35rem; color: var(--muted); font-size: .9rem; }
+.maps-controls label:first-child { flex: 1 1 260px; }
+.maps-controls input, .maps-controls select { width: 100%; }
 .maps-name-grid { column-width: 260px; column-gap: .7rem; margin: 1rem 0; padding: 0; list-style: none; }
 .maps-name-grid li { break-inside: avoid; margin: 0 0 .7rem; }
 .maps-name-grid a { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .65rem; overflow-wrap: anywhere; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--text); padding: .8rem 1rem; text-decoration: none; }
 .maps-name-grid a:hover { border-color: var(--accent); background: var(--surface-2); }
 .map-detail-header { margin-bottom: 1rem; }
 .map-detail-header h1 { margin-bottom: .25rem; }
-.map-room-id { margin: 0; overflow-wrap: anywhere; font-size: .85rem; }
 .map-area-tabs { display: flex; max-width: 100%; gap: .4rem; overflow-x: auto; padding: .25rem .2rem .45rem; }
 .map-area-tab { min-width: 44px; min-height: 40px; flex: 0 0 auto; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2); color: var(--text); padding: .45rem .75rem; cursor: pointer; }
 .map-area-tab[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 750; }
@@ -415,7 +418,7 @@ p { max-width: 75ch; }
 .map-data-notes { margin-top: 1.25rem; }
 
 .map-viewer-overlay { position: fixed; z-index: 200; inset: 0; display: grid; place-items: center; background: rgb(0 0 0 / 82%); padding: 1rem; overscroll-behavior: contain; }
-.map-viewer-panel { display: grid; width: min(1500px, 100%); height: min(920px, calc(100vh - 2rem)); min-width: 0; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.map-viewer-panel { display: grid; width: min(1500px, 80vw); height: min(920px, 80vh); min-width: 0; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
 .map-viewer-header { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .65rem 1rem; border-bottom: 1px solid var(--border); padding: .7rem; }
 .map-viewer-header h2 { min-width: 0; margin: 0; overflow-wrap: anywhere; font-size: 1rem; }
 .map-viewer-controls { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .4rem; }
@@ -516,6 +519,7 @@ p { max-width: 75ch; }
   .dialog-overlay { padding: .35rem; }
   .fishing-rate-control-fields > label { width: 100%; }
   .fishing-rate-control-fields input, .fishing-rate-control-fields select { width: 100%; }
+  .maps-controls label { width: 100%; }
   .fishing-equipment-groups { grid-template-columns: 1fr; }
   .fishing-fish-places-section > summary { grid-template-columns: minmax(0, 1fr) auto; }
   .fishing-place-details > summary { grid-template-columns: minmax(0, 1fr) auto; }
@@ -524,7 +528,7 @@ p { max-width: 75ch; }
   .fishing-place-summary-rate { justify-content: space-between; text-align: left; }
   .fishing-period-row { grid-template-columns: minmax(90px, auto) minmax(50px, 1fr) minmax(64px, auto); gap: .4rem; }
   .map-viewer-overlay { padding: .25rem; }
-  .map-viewer-panel { height: calc(100vh - .5rem); border-radius: 9px; }
+  .map-viewer-panel { width: 80vw; height: 80vh; border-radius: 9px; }
   .map-viewer-header { align-items: stretch; }
   .map-viewer-controls { justify-content: flex-start; }
   .map-viewer-close { margin-left: auto; }

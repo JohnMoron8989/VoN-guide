@@ -27,6 +27,10 @@
     return text(a).localeCompare(text(b), undefined, { numeric: true, sensitivity: 'base' });
   }
 
+  function normalize(value) {
+    return text(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase().trim();
+  }
+
   function idText(value) {
     if (value === null || value === undefined) return null;
     var result = String(value);
@@ -66,6 +70,25 @@
     }).sort(function (a, b) {
       return naturalCompareIds(a.map && (a.map.sortId || a.map.id), b.map && (b.map.sortId || b.map.id)) || a.index - b.index;
     }).map(function (entry) { return entry.map; });
+  }
+
+  function sortMaps(list, key) {
+    if (key !== 'name') return sortMapsById(list);
+    return records(list).map(function (map, index) {
+      return { map: map, index: index };
+    }).sort(function (a, b) {
+      return compare(a.map && a.map.name, b.map && b.map.name) ||
+        naturalCompareIds(a.map && (a.map.sortId || a.map.id), b.map && (b.map.sortId || b.map.id)) ||
+        a.index - b.index;
+    }).map(function (entry) { return entry.map; });
+  }
+
+  function filterMaps(list, query) {
+    var needle = normalize(query);
+    if (!needle) return records(list).slice();
+    return records(list).filter(function (map) {
+      return normalize(map && map.name).indexOf(needle) !== -1 || normalize(map && map.id).indexOf(needle) !== -1;
+    });
   }
 
   function childValue(entry) {
@@ -411,10 +434,12 @@
   return {
     buildMapIndexes: buildMapIndexes,
     buildRoomToMapIndex: buildRoomToMapIndex,
+    filterMaps: filterMaps,
     filterByArea: filterByArea,
     mapRouteForRoom: mapRouteForRoom,
     resolveItem: resolveItem,
     naturalCompareIds: naturalCompareIds,
+    sortMaps: sortMaps,
     sortMapsById: sortMapsById
   };
 });

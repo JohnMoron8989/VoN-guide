@@ -2,14 +2,14 @@
 window.GUIDE_BUNDLE = {
   "meta": {
     "schema": "meta/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameName": "unknown",
     "gameVersion": "unknown",
     "languages": [
       "en",
       "id"
     ],
-    "selectedLanguage": "en",
+    "selectedLanguage": "id",
     "sources": {
       "code": "../extracted/code/*.gml",
       "metadata": "../extracted/metadata/*.json",
@@ -19,7 +19,7 @@ window.GUIDE_BUNDLE = {
   },
   "items": {
     "schema": "items/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 378,
     "status": "ok",
@@ -29,8 +29,14 @@ window.GUIDE_BUNDLE = {
     "records": [
       {
         "id": 0,
-        "name": "Rusty Watering Can",
-        "desc": "An old watering can covered in rust, but it still holds a bit of water.",
+        "name": {
+          "en": "Rusty Watering Can",
+          "id": "Penyiram Berkarat"
+        },
+        "desc": {
+          "en": "An old watering can covered in rust, but it still holds a bit of water.",
+          "id": "Penyiram tua yang berkarat, tapi masih bisa menampung sedikit air."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -42,8 +48,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1,
-        "name": "Rusty Hoe",
-        "desc": "A rusty hoe that's hard to use, but still works on soft soil.",
+        "name": {
+          "en": "Rusty Hoe",
+          "id": "Cangkul Berkarat"
+        },
+        "desc": {
+          "en": "A rusty hoe that's hard to use, but still works on soft soil.",
+          "id": "Cangkul berkarat yang sulit digunakan, tapi masih berguna untuk tanah lunak."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -55,8 +67,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2,
-        "name": "Rusty Sickle",
-        "desc": "An old sickle with a dull, rusty blade.",
+        "name": {
+          "en": "Rusty Sickle",
+          "id": "Sabit Berkarat"
+        },
+        "desc": {
+          "en": "An old sickle with a dull, rusty blade.",
+          "id": "Sabit tua dengan bilah tumpul dan berkarat."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -68,8 +86,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3,
-        "name": "Rusty Axe",
-        "desc": "A dull, heavy axe that can still chop small branches.",
+        "name": {
+          "en": "Rusty Axe",
+          "id": "Kapak Berkarat"
+        },
+        "desc": {
+          "en": "A dull, heavy axe that can still chop small branches.",
+          "id": "Kapak tua yang tumpul dan berat, tapi masih bisa menebang ranting kecil."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -81,8 +105,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 4,
-        "name": "Rusty Hammer",
-        "desc": "An old, worn-out hammer that still breaks small stones.",
+        "name": {
+          "en": "Rusty Hammer",
+          "id": "Palu Berkarat"
+        },
+        "desc": {
+          "en": "An old, worn-out hammer that still breaks small stones.",
+          "id": "Palu tua yang sudah usang, tapi masih bisa menghancurkan batu kecil."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -94,8 +124,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 5,
-        "name": "Refined Watering Can",
-        "desc": "A standard watering can, commonly used by beginner farmers.",
+        "name": {
+          "en": "Refined Watering Can",
+          "id": "Penyiram"
+        },
+        "desc": {
+          "en": "A standard watering can, commonly used by beginner farmers.",
+          "id": "Ember penyiram standar yang sering digunakan oleh petani pemula."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -107,8 +143,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 6,
-        "name": "Refined Hoe",
-        "desc": "A standard hoe used to till the soil in small gardens.",
+        "name": {
+          "en": "Refined Hoe",
+          "id": "Cangkul"
+        },
+        "desc": {
+          "en": "A standard hoe used to till the soil in small gardens.",
+          "id": "Cangkul umum untuk menggemburkan tanah di kebun kecil."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -120,8 +162,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 7,
-        "name": "Refined Sickle",
-        "desc": "A standard sickle used for cutting grass and wild plants.",
+        "name": {
+          "en": "Refined Sickle",
+          "id": "Sabit"
+        },
+        "desc": {
+          "en": "A standard sickle used for cutting grass and wild plants.",
+          "id": "Sabit biasa untuk memanen rumput dan tanaman liar."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -133,8 +181,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 8,
-        "name": "Refined Axe",
-        "desc": "A standard axe used for cutting medium-sized trees.",
+        "name": {
+          "en": "Refined Axe",
+          "id": "Kapak"
+        },
+        "desc": {
+          "en": "A standard axe used for cutting medium-sized trees.",
+          "id": "Kapak umum untuk menebang pohon berukuran sedang."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -146,8 +200,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 9,
-        "name": "Refined Hammer",
-        "desc": "A standard hammer used for basic farm work.",
+        "name": {
+          "en": "Refined Hammer",
+          "id": "Palu"
+        },
+        "desc": {
+          "en": "A standard hammer used for basic farm work.",
+          "id": "Palu standar untuk pekerjaan ringan di sekitar ladang."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -159,8 +219,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 10,
-        "name": "Quality Watering Can",
-        "desc": "A high-quality watering can that can hold more water.",
+        "name": {
+          "en": "Quality Watering Can",
+          "id": "Penyiram Berkualitas"
+        },
+        "desc": {
+          "en": "A high-quality watering can that can hold more water.",
+          "id": "Ember penyiram berkualitas tinggi yang mampu menampung lebih banyak air."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -172,8 +238,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 11,
-        "name": "Quality Hoe",
-        "desc": "A sharp and sturdy hoe, perfect for larger fields.",
+        "name": {
+          "en": "Quality Hoe",
+          "id": "Cangkul Berkualitas"
+        },
+        "desc": {
+          "en": "A sharp and sturdy hoe, perfect for larger fields.",
+          "id": "Cangkul yang tajam dan kokoh, cocok untuk ladang besar."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -185,8 +257,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 12,
-        "name": "Quality Sickle",
-        "desc": "A sharp sickle that makes harvesting easier and faster.",
+        "name": {
+          "en": "Quality Sickle",
+          "id": "Sabit Berkualitas"
+        },
+        "desc": {
+          "en": "A sharp sickle that makes harvesting easier and faster.",
+          "id": "Sabit tajam yang memudahkan panen dalam jumlah besar."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -198,8 +276,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 13,
-        "name": "Quality Axe",
-        "desc": "A sharp axe with a firm grip, perfect for efficient chopping.",
+        "name": {
+          "en": "Quality Axe",
+          "id": "Kapak Berkualitas"
+        },
+        "desc": {
+          "en": "A sharp axe with a firm grip, perfect for efficient chopping.",
+          "id": "Kapak tajam dengan pegangan kuat, memudahkan pekerjaan menebang."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -211,8 +295,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 14,
-        "name": "Quality Hammer",
-        "desc": "A high quality hammer with strong striking power.",
+        "name": {
+          "en": "Quality Hammer",
+          "id": "Palu Berkualitas"
+        },
+        "desc": {
+          "en": "A high quality hammer with strong striking power.",
+          "id": "Palu berkualitas tinggi dengan daya pukul kuat."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -224,8 +314,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 15,
-        "name": "Diamond Watering Can",
-        "desc": "A watering can made from rare materials, light and incredibly durable.",
+        "name": {
+          "en": "Diamond Watering Can",
+          "id": "Penyiram Berlian"
+        },
+        "desc": {
+          "en": "A watering can made from rare materials, light and incredibly durable.",
+          "id": "Ember penyiram yang dibuat dari bahan langka, sangat ringan dan tahan lama."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -237,8 +333,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 16,
-        "name": "Diamond Hoe",
-        "desc": "A hoe with a diamond edge that never dulls.",
+        "name": {
+          "en": "Diamond Hoe",
+          "id": "Cangkul Berlian"
+        },
+        "desc": {
+          "en": "A hoe with a diamond edge that never dulls.",
+          "id": "Cangkul dengan mata berlian yang tidak mudah tumpul."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -250,8 +352,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 17,
-        "name": "Diamond Sickle",
-        "desc": "A diamond sickle that cuts with unmatched precision.",
+        "name": {
+          "en": "Diamond Sickle",
+          "id": "Sabit Berlian"
+        },
+        "desc": {
+          "en": "A diamond sickle that cuts with unmatched precision.",
+          "id": "Sabit berlian yang mampu memotong dengan presisi luar biasa."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -263,8 +371,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 18,
-        "name": "Diamond Axe",
-        "desc": "A diamond axe that fells large trees in just a few swings.",
+        "name": {
+          "en": "Diamond Axe",
+          "id": "Kapak Berlian"
+        },
+        "desc": {
+          "en": "A diamond axe that fells large trees in just a few swings.",
+          "id": "Kapak berlian yang bisa memotong pohon besar hanya dengan beberapa ayunan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -276,8 +390,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 19,
-        "name": "Diamond Hammer",
-        "desc": "A diamond hammer that can smash even the toughest rocks.",
+        "name": {
+          "en": "Diamond Hammer",
+          "id": "Palu Berlian"
+        },
+        "desc": {
+          "en": "A diamond hammer that can smash even the toughest rocks.",
+          "id": "Palu berlian yang mampu menghancurkan batu terkeras sekalipun."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -289,8 +409,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 20,
-        "name": "Magic Watering Can",
-        "desc": "A magical watering can that waters crops with just a wave of the hand.",
+        "name": {
+          "en": "Magic Watering Can",
+          "id": "Penyiram Sihir"
+        },
+        "desc": {
+          "en": "A magical watering can that waters crops with just a wave of the hand.",
+          "id": "Ember penyiram ajaib yang bisa menyiram tanaman hanya dengan ayunan tangan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -302,8 +428,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 21,
-        "name": "Magic Hoe",
-        "desc": "A magical hoe that tills multiple tiles at once.",
+        "name": {
+          "en": "Magic Hoe",
+          "id": "Cangkul Sihir"
+        },
+        "desc": {
+          "en": "A magical hoe that tills multiple tiles at once.",
+          "id": "Cangkul ajaib yang mampu menggemburkan beberapa petak tanah sekaligus."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -315,8 +447,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 22,
-        "name": "Magic Sickle",
-        "desc": "A magical sickle that harvests crops from a distance.",
+        "name": {
+          "en": "Magic Sickle",
+          "id": "Sabit Sihir"
+        },
+        "desc": {
+          "en": "A magical sickle that harvests crops from a distance.",
+          "id": "Sabit ajaib yang dapat memanen tanaman dari kejauhan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -328,8 +466,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 23,
-        "name": "Magic Axe",
-        "desc": "A magical axe that can chop down trees with a single strike.",
+        "name": {
+          "en": "Magic Axe",
+          "id": "Kapak Sihir"
+        },
+        "desc": {
+          "en": "A magical axe that can chop down trees with a single strike.",
+          "id": "Kapak ajaib yang bisa menebang pohon hanya dengan satu serangan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -341,8 +485,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 24,
-        "name": "Magic Hammer",
-        "desc": "A magical hammer that shatters huge boulders with a single swing.",
+        "name": {
+          "en": "Magic Hammer",
+          "id": "Palu Sihir"
+        },
+        "desc": {
+          "en": "A magical hammer that shatters huge boulders with a single swing.",
+          "id": "Palu ajaib yang bisa menghancurkan batu besar hanya dengan satu ayunan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -354,8 +504,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 25,
-        "name": "Fishing Rod",
-        "desc": "Can be used for fishing in rivers, lakes or oceans.",
+        "name": {
+          "en": "Fishing Rod",
+          "id": "Joran Biasa"
+        },
+        "desc": {
+          "en": "Can be used for fishing in rivers, lakes or oceans.",
+          "id": "Dapat digunakan untuk memancing ikan di sungai, danau atau lautan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -367,8 +523,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 26,
-        "name": "Quality Fishing Rod",
-        "desc": "Improve fishing skills and be able to catch larger fish.",
+        "name": {
+          "en": "Quality Fishing Rod",
+          "id": "Joran Berkualitas"
+        },
+        "desc": {
+          "en": "Improve fishing skills and be able to catch larger fish.",
+          "id": "Meningkatkan kemampuan memancing dan dapat menangkap ikan yang lebih besar."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -380,8 +542,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 27,
-        "name": "Super Fishing Rod",
-        "desc": "A fishing rod that can attract the attention of mutated fish to come to the surface.",
+        "name": {
+          "en": "Super Fishing Rod",
+          "id": "Joran Super"
+        },
+        "desc": {
+          "en": "A fishing rod that can attract the attention of mutated fish to come to the surface.",
+          "id": "Pancingan yang dapat menarik perhatian ikan mutasi agar muncul ke permukaan."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -393,8 +561,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 28,
-        "name": "Diamond Fishing Rod",
-        "desc": "The shimmer emitted by this fishing rod is able to draw the attention of mutated fish dwelling at the bottom of calm waters.",
+        "name": {
+          "en": "Diamond Fishing Rod",
+          "id": "Joran Berlian"
+        },
+        "desc": {
+          "en": "The shimmer emitted by this fishing rod is able to draw the attention of mutated fish dwelling at the bottom of calm waters.",
+          "id": "Kilauan dari Joran ini mampu menarik perhatian ikan-ikan mutasi di dasar perairan yang tenang."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -406,8 +580,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 29,
-        "name": "Magic Fishing Rod",
-        "desc": "The magical and arcane aura of this fishing rod is capable of drawing the attention of apocryphal fish.",
+        "name": {
+          "en": "Magic Fishing Rod",
+          "id": "Joran Magis"
+        },
+        "desc": {
+          "en": "The magical and arcane aura of this fishing rod is capable of drawing the attention of apocryphal fish.",
+          "id": "Aura sihir dan magis dari Joran ini yang mampu menarik perhatian ikan jenis Purba."
+        },
         "type": "tool",
         "category": "tool",
         "categoryId": 4,
@@ -419,8 +599,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 30,
-        "name": "Wooden Sword",
-        "desc": "A sword that is used for training purposes.",
+        "name": {
+          "en": "Wooden Sword",
+          "id": "Pedang Kayu"
+        },
+        "desc": {
+          "en": "A sword that is used for training purposes.",
+          "id": "Pedang yang digunakan untuk latihan."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -432,8 +618,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 31,
-        "name": "Short Sword",
-        "desc": "A sword that is used for training purposes.",
+        "name": {
+          "en": "Short Sword",
+          "id": "Pedang Pendek"
+        },
+        "desc": {
+          "en": "A sword that is used for training purposes.",
+          "id": "Pedang yang digunakan untuk latihan."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -445,8 +637,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 32,
-        "name": "Knight Sword",
-        "desc": "A sword that is used for training purposes.",
+        "name": {
+          "en": "Knight Sword",
+          "id": "Pedang Kesatria"
+        },
+        "desc": {
+          "en": "A sword that is used for training purposes.",
+          "id": "Pedang yang digunakan untuk latihan."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -458,8 +656,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 33,
-        "name": "Iron Sword",
-        "desc": "A sword that is used for training purposes.",
+        "name": {
+          "en": "Iron Sword",
+          "id": "Pedang Besi"
+        },
+        "desc": {
+          "en": "A sword that is used for training purposes.",
+          "id": "Pedang yang digunakan untuk latihan."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -471,8 +675,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 40,
-        "name": "Fire Sword",
-        "desc": "A sword forged with magical stone, allowing it to unleash blazing flames.",
+        "name": {
+          "en": "Fire Sword",
+          "id": "Pedang Api"
+        },
+        "desc": {
+          "en": "A sword forged with magical stone, allowing it to unleash blazing flames.",
+          "id": "Pedang yang ditempa dengan batu sihir sehingga bisa mengeluarkan api yang membara."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -484,8 +694,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 41,
-        "name": "Dark Flame Sword",
-        "desc": "A sword forged with magical stone, allowing it to unleash blazing flames.",
+        "name": {
+          "en": "Dark Flame Sword",
+          "id": "Pedang Api Kegelapan"
+        },
+        "desc": {
+          "en": "A sword forged with magical stone, allowing it to unleash blazing flames.",
+          "id": "Pedang yang ditempa dengan batu sihir sehingga bisa mengeluarkan api yang membara."
+        },
         "type": "sword",
         "category": "weapon",
         "categoryId": 7,
@@ -497,8 +713,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 42,
-        "name": "Small Box",
-        "desc": "Can hold up to 8 items.",
+        "name": {
+          "en": "Small Box",
+          "id": "Kotak Kecil"
+        },
+        "desc": {
+          "en": "Can hold up to 8 items.",
+          "id": "Dapat menampung hingga 8 item."
+        },
         "type": "crate",
         "category": "crate",
         "categoryId": 8,
@@ -510,8 +732,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 43,
-        "name": "Medium Box",
-        "desc": "Can hold up to 20 items.",
+        "name": {
+          "en": "Medium Box",
+          "id": "Kotak Sedang"
+        },
+        "desc": {
+          "en": "Can hold up to 20 items.",
+          "id": "Dapat menampung hingga 20 item."
+        },
         "type": "crate",
         "category": "crate",
         "categoryId": 8,
@@ -523,8 +751,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 101,
-        "name": "Fireball Stone",
-        "desc": "A magical stone that can launch a fireball attack at the nearest target.",
+        "name": {
+          "en": "Fireball Stone",
+          "id": "Batu Sihir: Bola Api"
+        },
+        "desc": {
+          "en": "A magical stone that can launch a fireball attack at the nearest target.",
+          "id": "Batu sihir yang dapat melancarkan serangan bola api kepada target terdekat."
+        },
         "type": "magic_stone",
         "category": "tool",
         "categoryId": 4,
@@ -536,8 +770,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 102,
-        "name": "Fire Spirit Stone",
-        "desc": "Summon 6 fire spirits and attack nearby enemies.",
+        "name": {
+          "en": "Fire Spirit Stone",
+          "id": "Batu Sihir: Roh Api"
+        },
+        "desc": {
+          "en": "Summon 6 fire spirits and attack nearby enemies.",
+          "id": "Memanggil 6 roh api untuk menyerang target terdekat."
+        },
         "type": "magic_stone",
         "category": "tool",
         "categoryId": 4,
@@ -549,8 +789,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 103,
-        "name": "Water Tornado Stone",
-        "desc": "Create water vortex to crush all enemies in the path.",
+        "name": {
+          "en": "Water Tornado Stone",
+          "id": "Batu Sihir: Tornado Air"
+        },
+        "desc": {
+          "en": "Create water vortex to crush all enemies in the path.",
+          "id": "Memanggil tornado air yang menyapu bersih musuh-musuh dalam jalurnya."
+        },
         "type": "magic_stone",
         "category": "tool",
         "categoryId": 4,
@@ -562,8 +808,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 201,
-        "name": "Branches",
-        "desc": "Light twigs that can be used to craft simple tools or as fuel.",
+        "name": {
+          "en": "Branches",
+          "id": "Ranting"
+        },
+        "desc": {
+          "en": "Light twigs that can be used to craft simple tools or as fuel.",
+          "id": "Ranting-ranting ringan yang bisa digunakan untuk membuat alat sederhana atau bahan bakar."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -578,8 +830,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 202,
-        "name": "Wood",
-        "desc": "A versatile piece of raw wood. An essential base material for building or crafting various tools.",
+        "name": {
+          "en": "Wood",
+          "id": "Kayu"
+        },
+        "desc": {
+          "en": "A versatile piece of raw wood. An essential base material for building or crafting various tools.",
+          "id": "Kayu mentah yang serbaguna. Bahan dasar penting untuk membangun atau membuat berbagai peralatan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -594,8 +852,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 203,
-        "name": "Stone",
-        "desc": "A sturdy piece of natural stone, often used for building or crafting basic weapons.",
+        "name": {
+          "en": "Stone",
+          "id": "Batu"
+        },
+        "desc": {
+          "en": "A sturdy piece of natural stone, often used for building or crafting basic weapons.",
+          "id": "Batu alam yang kokoh, sering digunakan untuk membangun atau membuat senjata dasar."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -610,8 +874,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 204,
-        "name": "Iron Ore",
-        "desc": "Raw iron ore that can be smelted into useful metal for various equipment.",
+        "name": {
+          "en": "Iron Ore",
+          "id": "Bijih Besi"
+        },
+        "desc": {
+          "en": "Raw iron ore that can be smelted into useful metal for various equipment.",
+          "id": "Bijih besi mentah yang bisa dilebur menjadi logam berguna untuk berbagai perlengkapan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -627,8 +897,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 205,
-        "name": "Iron",
-        "desc": "A strong smelted iron bar. Ideal for crafting durable weapons, tools, and equipment.",
+        "name": {
+          "en": "Iron",
+          "id": "Besi"
+        },
+        "desc": {
+          "en": "A strong smelted iron bar. Ideal for crafting durable weapons, tools, and equipment.",
+          "id": "Besi kuat hasil peleburan. Ideal untuk membuat senjata, alat, dan perlengkapan tahan lama."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -644,8 +920,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 206,
-        "name": "Refined Iron",
-        "desc": "Iron refined for greater quality and strength.",
+        "name": {
+          "en": "Refined Iron",
+          "id": "Besi Murni"
+        },
+        "desc": {
+          "en": "Iron refined for greater quality and strength.",
+          "id": "Besi yang telah dimurnikan untuk kualitas dan kekuatan yang lebih tinggi."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -661,8 +943,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 207,
-        "name": "Copper Ore",
-        "desc": "Raw copper ore, a basic material for crafting lightweight metal and electrical conductors.",
+        "name": {
+          "en": "Copper Ore",
+          "id": "Bijih Tembaga"
+        },
+        "desc": {
+          "en": "Raw copper ore, a basic material for crafting lightweight metal and electrical conductors.",
+          "id": "Bijih tembaga mentah, bahan dasar untuk membuat logam ringan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -678,8 +966,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 208,
-        "name": "Copper",
-        "desc": "Copper bar, light and flexible. Suitable for tools and mechanical components.",
+        "name": {
+          "en": "Copper",
+          "id": "Tembaga"
+        },
+        "desc": {
+          "en": "Copper bar, light and flexible. Suitable for tools and mechanical components.",
+          "id": "Tembaga olahan, ringan dan fleksibel. Cocok untuk peralatan dan komponen mekanik."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -694,8 +988,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 209,
-        "name": "Refined Copper",
-        "desc": "Cooper refined for greater quality, improves efficiency and durability.",
+        "name": {
+          "en": "Refined Copper",
+          "id": "Tembaga Murni"
+        },
+        "desc": {
+          "en": "Cooper refined for greater quality, improves efficiency and durability.",
+          "id": "Tembaga dengan tingkat kemurnian tinggi, meningkatkan efisiensi dan daya tahan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -711,8 +1011,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 210,
-        "name": "Mythril Ore",
-        "desc": "Raw silver ore containing a precious metal with magical value.",
+        "name": {
+          "en": "Mythril Ore",
+          "id": "Bijih Mithril"
+        },
+        "desc": {
+          "en": "Raw silver ore containing a precious metal with magical value.",
+          "id": "Bijih perak mentah yang mengandung logam berharga dengan nilai magis."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -727,8 +1033,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 211,
-        "name": "Mythril",
-        "desc": "Pure silver often used in jewelry, magical tools, or high-class equipment.",
+        "name": {
+          "en": "Mythril",
+          "id": "Mithril"
+        },
+        "desc": {
+          "en": "Pure silver often used in jewelry, magical tools, or high-class equipment.",
+          "id": "Perak murni yang sering digunakan dalam perhiasan, alat sihir, atau alat berkelas tinggi."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -743,8 +1055,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 212,
-        "name": "Refined Mythril",
-        "desc": "High quality iron, used in magical tools or decorative",
+        "name": {
+          "en": "Refined Mythril",
+          "id": "Mithril Murni"
+        },
+        "desc": {
+          "en": "High quality iron, used in magical tools or decorative",
+          "id": "Perak berkualitas tinggi, digunakan dalam peralatan magis atau dekoratif."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -759,8 +1077,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 213,
-        "name": "Emerald Ore",
-        "desc": "A mineral stone with a captivating green shimmer. Rare and highly valuable.",
+        "name": {
+          "en": "Emerald Ore",
+          "id": "Bijih Emerald"
+        },
+        "desc": {
+          "en": "A mineral stone with a captivating green shimmer. Rare and highly valuable.",
+          "id": "Batu mineral dengan kilau hijau yang memikat. Bernilai tinggi dan langka."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -776,8 +1100,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 214,
-        "name": "Emerald",
-        "desc": "Pure emerald, often used for jewelry or enhancing magical attributes.",
+        "name": {
+          "en": "Emerald",
+          "id": "Emerald"
+        },
+        "desc": {
+          "en": "Pure emerald, often used for jewelry or enhancing magical attributes.",
+          "id": "Emerald murni, sering digunakan untuk perhiasan atau peningkatan atribut magis."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -792,8 +1122,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 215,
-        "name": "Refined Emerald",
-        "desc": "A perfectly cut emerald. Enhances magical effects or character stats.",
+        "name": {
+          "en": "Refined Emerald",
+          "id": "Emerald Murni"
+        },
+        "desc": {
+          "en": "A perfectly cut emerald. Enhances magical effects or character stats.",
+          "id": "Emerald yang telah diasah sempurna. Meningkatkan efek magis atau status karakter."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -809,8 +1145,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 216,
-        "name": "Magic Crystal",
-        "desc": "Recover +5 magic stone's MP.",
+        "name": {
+          "en": "Magic Crystal",
+          "id": "Kristal Sihir"
+        },
+        "desc": {
+          "en": "Recover +5 magic stone's MP.",
+          "id": "Memulihkan +5 MP jika dileburkan ke batu sihir."
+        },
         "type": "magic_crystal",
         "category": "material",
         "categoryId": 6,
@@ -826,8 +1168,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 217,
-        "name": "Magic Ore",
-        "desc": "Recover +1 magic stone's MP.",
+        "name": {
+          "en": "Magic Ore",
+          "id": "Bijih Sihir"
+        },
+        "desc": {
+          "en": "Recover +1 magic stone's MP.",
+          "id": "Dapat memulihkan +1 MP jika dileburkan ke batu sihir."
+        },
         "type": "magic_crystal",
         "category": "material",
         "categoryId": 6,
@@ -843,8 +1191,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 218,
-        "name": "Diamond",
-        "desc": "The hardest and most expensive gem. Used in elite crafting and luxurious equipment.",
+        "name": {
+          "en": "Diamond",
+          "id": "Berlian"
+        },
+        "desc": {
+          "en": "The hardest and most expensive gem. Used in elite crafting and luxurious equipment.",
+          "id": "Permata terkeras dan termahal. Digunakan dalam crafting elit dan perlengkapan mewah."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -860,8 +1214,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 219,
-        "name": "Ruby",
-        "desc": "Melt it into fire type element magic stone to increase its maximum capacity.",
+        "name": {
+          "en": "Ruby",
+          "id": "Ruby"
+        },
+        "desc": {
+          "en": "Melt it into fire type element magic stone to increase its maximum capacity.",
+          "id": "Digunakan untuk meningkatkan batas penggunaan batu sihir element api."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -877,8 +1237,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 220,
-        "name": "Aquamarine",
-        "desc": "Melt it into water type element magic stone to increase its maximum capacity.",
+        "name": {
+          "en": "Aquamarine",
+          "id": "Aquamarine"
+        },
+        "desc": {
+          "en": "Melt it into water type element magic stone to increase its maximum capacity.",
+          "id": "Digunakan untuk meningkatkan batas penggunaan batu sihir element air."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -893,8 +1259,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 221,
-        "name": "Peridot",
-        "desc": "Melt it into wind type element magic stone to increase its maximum capacity.",
+        "name": {
+          "en": "Peridot",
+          "id": "Peridot"
+        },
+        "desc": {
+          "en": "Melt it into wind type element magic stone to increase its maximum capacity.",
+          "id": "Digunakan untuk meningkatkan batas penggunaan batu sihir element angin."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -909,8 +1281,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 222,
-        "name": "Clam",
-        "desc": "An ordinary ocean clam. Sometimes contains rare pearls that can be sold or crafted.",
+        "name": {
+          "en": "Clam",
+          "id": "Kerang"
+        },
+        "desc": {
+          "en": "An ordinary ocean clam. Sometimes contains rare pearls that can be sold or crafted.",
+          "id": "Kerang laut biasa. Terkadang berisi mutiara langka dan bisa dijual atau diolah."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -926,8 +1304,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 223,
-        "name": "Coral",
-        "desc": "Colorful sea coral. Useful for decoration, crafting, or ocean-based potions.",
+        "name": {
+          "en": "Coral",
+          "id": "Koral"
+        },
+        "desc": {
+          "en": "Colorful sea coral. Useful for decoration, crafting, or ocean-based potions.",
+          "id": "Karang laut warna-warni. Berguna untuk dekorasi, crafting, atau ramuan laut."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -943,8 +1327,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 224,
-        "name": "Ropes",
-        "desc": "A versatile rope that can be used to craft traps, bridges, or various tools.",
+        "name": {
+          "en": "Ropes",
+          "id": "Tali"
+        },
+        "desc": {
+          "en": "A versatile rope that can be used to craft traps, bridges, or various tools.",
+          "id": "Tali serbaguna yang bisa digunakan untuk membuat perangkap, jembatan, atau alat lainnya."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -959,8 +1349,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 225,
-        "name": "Lantern",
-        "desc": "A portable lantern used to light up dark areas or underground spaces.",
+        "name": {
+          "en": "Lantern",
+          "id": "Lentera"
+        },
+        "desc": {
+          "en": "A portable lantern used to light up dark areas or underground spaces.",
+          "id": "Lentera portabel yang bisa digunakan untuk menerangi area gelap atau ruang bawah tanah."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -976,8 +1372,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 226,
-        "name": "Key",
-        "desc": "A simple key that can open certain chests or doors.",
+        "name": {
+          "en": "Key",
+          "id": "Kunci"
+        },
+        "desc": {
+          "en": "A simple key that can open certain chests or doors.",
+          "id": "Kunci sederhana yang dapat membuka peti atau pintu tertentu."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -993,8 +1395,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 227,
-        "name": "Silver Key",
-        "desc": "A special key with an elegant design, used to unlock valuable chests or rooms.",
+        "name": {
+          "en": "Silver Key",
+          "id": "Kunci Perak"
+        },
+        "desc": {
+          "en": "A special key with an elegant design, used to unlock valuable chests or rooms.",
+          "id": "Kunci khusus dengan desain elegan, digunakan untuk membuka peti atau ruangan bernilai."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1010,8 +1418,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 228,
-        "name": "Golden Key",
-        "desc": "A rare golden key used to unlock treasure chest.",
+        "name": {
+          "en": "Golden Key",
+          "id": "Kunci Emas"
+        },
+        "desc": {
+          "en": "A rare golden key used to unlock treasure chest.",
+          "id": "Kunci emas langka yang hanya cocok untuk membuka harta karun tersembunyi."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1028,8 +1442,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 229,
-        "name": "Wool",
-        "desc": "Ordinary wool from a sheep. Can be spun into yarn or used in crafting.",
+        "name": {
+          "en": "Wool",
+          "id": "Wol"
+        },
+        "desc": {
+          "en": "Ordinary wool from a sheep. Can be spun into yarn or used in crafting.",
+          "id": "Wol biasa dari domba. Bisa dipintal menjadi benang atau digunakan dalam kerajinan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1044,8 +1464,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 230,
-        "name": "Quality Wool",
-        "desc": "High quality wool, fluffy and expensive. Used for premium cloth.",
+        "name": {
+          "en": "Quality Wool",
+          "id": "Wol Berkualitas"
+        },
+        "desc": {
+          "en": "High quality wool, fluffy and expensive. Used for premium cloth.",
+          "id": "Wol berkualitas tinggi, lebih halus dan lebih bernilai. Cocok untuk pakaian premium."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1061,8 +1487,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 231,
-        "name": "Golden Wool",
-        "desc": "Rare golden wool. Used for exclusive crafting or unique jewelry.",
+        "name": {
+          "en": "Golden Wool",
+          "id": "Wol Emas"
+        },
+        "desc": {
+          "en": "Rare golden wool. Used for exclusive crafting or unique jewelry.",
+          "id": "Wol langka berwarna keemasan. Digunakan untuk crafting eksklusif atau perhiasan unik."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1076,8 +1508,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 234,
-        "name": "Munaly's Rolling Pin",
-        "desc": "a new rolling pin made by Harly. Bring this item to Munaly to get the reward.",
+        "name": {
+          "en": "Munaly's Rolling Pin",
+          "id": "Rolling Pin Munaly"
+        },
+        "desc": {
+          "en": "a new rolling pin made by Harly. Bring this item to Munaly to get the reward.",
+          "id": "Sebuah Rolling pin baru yang dibuat oleh Harly. Berikan item ini kepada Munaly untuk mendapatkan hadiah."
+        },
         "type": "item",
         "category": "quest_item",
         "categoryId": 5,
@@ -1091,8 +1529,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 235,
-        "name": "Shylvia's Hair Clip",
-        "desc": "Shylvia's hair clip lost in the forest. Return it to her.",
+        "name": {
+          "en": "Shylvia's Hair Clip",
+          "id": "Jepitan Rambut Shylvia"
+        },
+        "desc": {
+          "en": "Shylvia's hair clip lost in the forest. Return it to her.",
+          "id": "Sebuah jepitan rambut milik Shylvia yang kamu temukan di hutan. Berikan item ini kepada Shylvia."
+        },
         "type": "item",
         "category": "quest_item",
         "categoryId": 5,
@@ -1106,8 +1550,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 236,
-        "name": "Magic Book",
-        "desc": "An old, wornout book you found. Try asking people in the village, maybe someone knows something about it.",
+        "name": {
+          "en": "Magic Book",
+          "id": "Buku Sihir"
+        },
+        "desc": {
+          "en": "An old, wornout book you found. Try asking people in the village, maybe someone knows something about it.",
+          "id": "Sebuah buku usang yang kamu temukan. Coba tanyakan ke orang-orang, mungkin mereka tau sesuatu tentang buku ini."
+        },
         "type": "item",
         "category": "quest_item",
         "categoryId": 5,
@@ -1121,8 +1571,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 237,
-        "name": "Lost Chicken",
-        "desc": "Someone lost their chicken. Find the owner and give it to them.",
+        "name": {
+          "en": "Lost Chicken",
+          "id": "Ayam Hilang"
+        },
+        "desc": {
+          "en": "Someone lost their chicken. Find the owner and give it to them.",
+          "id": "Seorang warga kehilangan ayamnya. Temukanlah pemilik ayam ini."
+        },
         "type": "item",
         "category": "quest_item",
         "categoryId": 5,
@@ -1136,8 +1592,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 238,
-        "name": "Electric Wings",
-        "desc": "Fragments of hornet wings that contains a bit of electricity.",
+        "name": {
+          "en": "Electric Wings",
+          "id": "Sayap Listrik"
+        },
+        "desc": {
+          "en": "Fragments of hornet wings that contains a bit of electricity.",
+          "id": "Potongan sayap lebah yang mengandung listrik."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1151,8 +1613,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 239,
-        "name": "Boar Tusk",
-        "desc": "Popular item for adventurers. They always hunt boars for their tusks.",
+        "name": {
+          "en": "Boar Tusk",
+          "id": "Gading Babi Hutan"
+        },
+        "desc": {
+          "en": "Popular item for adventurers. They always hunt boars for their tusks.",
+          "id": "Tanduk babi hutan yang sering diburu oleh para petualang."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1166,8 +1634,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 240,
-        "name": "Bat Wings",
-        "desc": "A light, thin piece of bat wing, commonly used as a component for potions or crafting.",
+        "name": {
+          "en": "Bat Wings",
+          "id": "Sayap Kelelawar"
+        },
+        "desc": {
+          "en": "A light, thin piece of bat wing, commonly used as a component for potions or crafting.",
+          "id": "Potongan sayap kelelawar yang ringan dan tipis, sering digunakan sebagai bahan ramuan atau crafting."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1181,8 +1655,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 241,
-        "name": "Frog Leg",
-        "desc": "A fresh frog leg that can be cooked or used as an ingredient in alchemical experiments.",
+        "name": {
+          "en": "Frog Leg",
+          "id": "Kaki Katak"
+        },
+        "desc": {
+          "en": "A fresh frog leg that can be cooked or used as an ingredient in alchemical experiments.",
+          "id": "Kaki katak segar yang bisa dimasak atau dipakai sebagai bahan eksperimen alkimia."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1194,8 +1674,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 242,
-        "name": "Rabbit Meat",
-        "desc": "Tender and nutritious rabbit meat, suitable for various hearty dishes.",
+        "name": {
+          "en": "Rabbit Meat",
+          "id": "Daging Kelinci"
+        },
+        "desc": {
+          "en": "Tender and nutritious rabbit meat, suitable for various hearty dishes.",
+          "id": "Daging kelinci yang lembut dan bergizi, cocok untuk berbagai hidangan hangat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1209,8 +1695,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 243,
-        "name": "Turtle Shell",
-        "desc": "A sturdy turtle shell, often used to craft equipment or protective items.",
+        "name": {
+          "en": "Turtle Shell",
+          "id": "Tempurung Kura-Kura"
+        },
+        "desc": {
+          "en": "A sturdy turtle shell, often used to craft equipment or protective items.",
+          "id": "Cangkang keras milik kura-kura, biasanya digunakan untuk pembuatan perlengkapan atau item pelindung."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1222,8 +1714,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 244,
-        "name": "Slime's Mucus",
-        "desc": "The remaining liquid from slime that always hunted by newbie adventurers.",
+        "name": {
+          "en": "Slime's Mucus",
+          "id": "Lendir Slime"
+        },
+        "desc": {
+          "en": "The remaining liquid from slime that always hunted by newbie adventurers.",
+          "id": "Cairan yang tersisa dari slime yang sering diburu para petualang pemula."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1237,8 +1735,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 245,
-        "name": "Honey",
-        "desc": "A natural sweet liquid produced by bees from flower nectar functions as a natural sweetener and herbal medicine.",
+        "name": {
+          "en": "Honey",
+          "id": "Madu"
+        },
+        "desc": {
+          "en": "A natural sweet liquid produced by bees from flower nectar functions as a natural sweetener and herbal medicine.",
+          "id": "Cairan manis alami yang dihasilkan lebah dari nektar bunga berfungsi sebagai pemanis alami dan obat herbal."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1253,8 +1757,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 246,
-        "name": "Earthworm",
-        "desc": "Fishermen's best friend and loved by fish",
+        "name": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
+        "desc": {
+          "en": "Fishermen's best friend and loved by fish",
+          "id": "Sahabat terbaik para pemancing dan sangat disukai oleh ikan."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1268,8 +1778,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 247,
-        "name": "Maggot",
-        "desc": "The best bait to catch large fish!",
+        "name": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
+        "desc": {
+          "en": "The best bait to catch large fish!",
+          "id": "Umpan terbaik untuk memancing ikan-ikan besar."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1281,8 +1797,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 248,
-        "name": "Bipalium",
-        "desc": "Rarely used by fishermen because difficult to find. Bipalium may attract the mutant fish or apocryphal fish",
+        "name": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
+        "desc": {
+          "en": "Rarely used by fishermen because difficult to find. Bipalium may attract the mutant fish or apocryphal fish",
+          "id": "Umpan yang jarang digunakan oleh pemancing karena sangat sulit ditemukan. Umpan ini bisa menarik perhatian ikan mutasi dan ikan purba."
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1294,8 +1816,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 249,
-        "name": "Super Crystal",
-        "desc": "Recover +50 magic stone's MP.",
+        "name": {
+          "en": "Super Crystal",
+          "id": "Kristal Super"
+        },
+        "desc": {
+          "en": "Recover +50 magic stone's MP.",
+          "id": "Memulihkan +50 MP jika dileburkan ke batu sihir."
+        },
         "type": "magic_crystal",
         "category": "material",
         "categoryId": 6,
@@ -1311,8 +1839,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 250,
-        "name": "Monster Core",
-        "desc": "Recover +2 magic stone's MP.",
+        "name": {
+          "en": "Monster Core",
+          "id": "Inti Monster"
+        },
+        "desc": {
+          "en": "Recover +2 magic stone's MP.",
+          "id": "Dapat memulihkan +2 MP jika dileburkan ke batu sihir."
+        },
         "type": "magic_crystal",
         "category": "material",
         "categoryId": 6,
@@ -1328,8 +1862,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 251,
-        "name": "Goblin Fingers",
-        "desc": "Goblin's hand cutted by adventurer as a proof that they defeated the goblins.",
+        "name": {
+          "en": "Goblin Fingers",
+          "id": "Jari Goblin"
+        },
+        "desc": {
+          "en": "Goblin's hand cutted by adventurer as a proof that they defeated the goblins.",
+          "id": "Tangan goblin biasanya dipotong oleh para petualang sebagai bukti bahwa dia telah berhasil mengalahkannya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1343,8 +1883,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 252,
-        "name": "Fire Wings",
-        "desc": "Fragments of hornet wings that contains fire element.",
+        "name": {
+          "en": "Fire Wings",
+          "id": "Sayap Api"
+        },
+        "desc": {
+          "en": "Fragments of hornet wings that contains fire element.",
+          "id": "Potongan sayap lebah yang mengandung elemental api."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1358,8 +1904,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 253,
-        "name": "Cobra Head",
-        "desc": "A plant with cobra shaped head.",
+        "name": {
+          "en": "Cobra Head",
+          "id": "Kepala Kobra"
+        },
+        "desc": {
+          "en": "A plant with cobra shaped head.",
+          "id": "Potongan tanaman yang berkepala Kobra."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1373,8 +1925,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 254,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1386,8 +1944,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 255,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1399,8 +1963,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 256,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1412,8 +1982,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 257,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1425,8 +2001,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 258,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1438,8 +2020,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 259,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1451,8 +2039,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 260,
-        "name": "",
-        "desc": "",
+        "name": {
+          "en": "",
+          "id": ""
+        },
+        "desc": {
+          "en": "",
+          "id": ""
+        },
         "type": "item",
         "category": "material",
         "categoryId": 6,
@@ -1464,8 +2058,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 501,
-        "name": "HP Potion 2",
-        "desc": "Potion made to restore health condition.",
+        "name": {
+          "en": "HP Potion 2",
+          "id": "HP Potion 2"
+        },
+        "desc": {
+          "en": "Potion made to restore health condition.",
+          "id": "Ramuan yang digunakan untuk memulihkan kondisi kesehatan."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1480,8 +2080,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 502,
-        "name": "STA Potion 2",
-        "desc": "Potion made to restore stamina.",
+        "name": {
+          "en": "STA Potion 2",
+          "id": "STA Potion 2"
+        },
+        "desc": {
+          "en": "Potion made to restore stamina.",
+          "id": "Ramuan yang digunakan untuk memulihkan stamina."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1496,8 +2102,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 503,
-        "name": "Antidote",
-        "desc": "A medicine that can cure poison status.",
+        "name": {
+          "en": "Antidote",
+          "id": "Penawar Racun"
+        },
+        "desc": {
+          "en": "A medicine that can cure poison status.",
+          "id": "Obat yang dapat menghilangkan efek keracunan."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1512,8 +2124,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 504,
-        "name": "Animal Pil",
-        "desc": "A pil to cure illness in animal",
+        "name": {
+          "en": "Animal Pil",
+          "id": "Obat Hewan"
+        },
+        "desc": {
+          "en": "A pil to cure illness in animal",
+          "id": "Pil untuk menyembuhkan hewan yang sakit."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1527,8 +2145,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 505,
-        "name": "HP Potion 1",
-        "desc": "Potion made to restore health condition.",
+        "name": {
+          "en": "HP Potion 1",
+          "id": "HP Potion 1"
+        },
+        "desc": {
+          "en": "Potion made to restore health condition.",
+          "id": "Ramuan yang digunakan untuk memulihkan kondisi kesehatan."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1543,8 +2167,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 506,
-        "name": "STA Potion 1",
-        "desc": "Potion  made to restore stamina.",
+        "name": {
+          "en": "STA Potion 1",
+          "id": "STA Potion 1"
+        },
+        "desc": {
+          "en": "Potion  made to restore stamina.",
+          "id": "Ramuan yang digunakan untuk memulihkan stamina."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1559,8 +2189,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 507,
-        "name": "HP Potion 3",
-        "desc": "Potion made to restore health condition.",
+        "name": {
+          "en": "HP Potion 3",
+          "id": "HP Potion 3"
+        },
+        "desc": {
+          "en": "Potion made to restore health condition.",
+          "id": "Ramuan yang digunakan untuk memulihkan kondisi kesehatan."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1575,8 +2211,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 508,
-        "name": "STA Potion 3",
-        "desc": "Potion made to restore stamina.",
+        "name": {
+          "en": "STA Potion 3",
+          "id": "STA Potion 3"
+        },
+        "desc": {
+          "en": "Potion made to restore stamina.",
+          "id": "Ramuan yang digunakan untuk memulihkan stamina."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1591,8 +2233,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 601,
-        "name": "Oil",
-        "desc": "A versatile oil used for frying or sauteing a variety of ingredients.",
+        "name": {
+          "en": "Oil",
+          "id": "Minyak"
+        },
+        "desc": {
+          "en": "A versatile oil used for frying or sauteing a variety of ingredients.",
+          "id": "Minyak serbaguna yang digunakan untuk menggoreng atau menumis berbagai bahan masakan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1606,8 +2254,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 602,
-        "name": "Ketchup",
-        "desc": "A magical seasoning that makes cuisine tastier.",
+        "name": {
+          "en": "Ketchup",
+          "id": "Saus tomat"
+        },
+        "desc": {
+          "en": "A magical seasoning that makes cuisine tastier.",
+          "id": "Sebuah bumbu ajaib yang dapat melezatkan masakan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1621,8 +2275,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 603,
-        "name": "Soy Sauce",
-        "desc": "A sweet spice blend, perfect for homemade dish.",
+        "name": {
+          "en": "Soy Sauce",
+          "id": "Kecap"
+        },
+        "desc": {
+          "en": "A sweet spice blend, perfect for homemade dish.",
+          "id": "Bumbu manis yang cocok untuk segala jenis masakan rumah."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1636,8 +2296,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 604,
-        "name": "Vinegar",
-        "desc": "A sour liquid used to add a fresh taste or as a natural preservative.",
+        "name": {
+          "en": "Vinegar",
+          "id": "Cuka"
+        },
+        "desc": {
+          "en": "A sour liquid used to add a fresh taste or as a natural preservative.",
+          "id": "Cairan asam yang digunakan untuk memberi rasa segar atau sebagai bahan pengawet alami."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1651,8 +2317,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 605,
-        "name": "Salt",
-        "desc": "A basic seasoning that enhances the flavour of dishes. Commonly used in all type of cuisine.",
+        "name": {
+          "en": "Salt",
+          "id": "Garam"
+        },
+        "desc": {
+          "en": "A basic seasoning that enhances the flavour of dishes. Commonly used in all type of cuisine.",
+          "id": "Bumbu dasar yang meningkatkan cita rasa makanan. Selalu digunakan hampir disemua masakan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1666,8 +2338,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 606,
-        "name": "Sausage",
-        "desc": "Made from ground meat, it makes anyone who sees it feel hungry.",
+        "name": {
+          "en": "Sausage",
+          "id": "Sosis"
+        },
+        "desc": {
+          "en": "Made from ground meat, it makes anyone who sees it feel hungry.",
+          "id": "Terbuat dari daging cincang, membuat siapapun yang melihatnya akan merasa lapar."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1683,8 +2361,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 607,
-        "name": "Raw Meat",
-        "desc": "A slice of high-quality fresh meat.",
+        "name": {
+          "en": "Raw Meat",
+          "id": "Daging Mentah"
+        },
+        "desc": {
+          "en": "A slice of high-quality fresh meat.",
+          "id": "Sepotong daging segar berkualitas."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1698,8 +2382,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 608,
-        "name": "Chicken Meat",
-        "desc": "A slice of stunning chicken meat.",
+        "name": {
+          "en": "Chicken Meat",
+          "id": "Daging Ayam"
+        },
+        "desc": {
+          "en": "A slice of stunning chicken meat.",
+          "id": "Sepotong daging ayam yang terlihat memukau."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1713,8 +2403,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 609,
-        "name": "Egg",
-        "desc": "A regular chicken egg. Cannot be hatched but can be used as a cooking ingredients.",
+        "name": {
+          "en": "Egg",
+          "id": "Telur"
+        },
+        "desc": {
+          "en": "A regular chicken egg. Cannot be hatched but can be used as a cooking ingredients.",
+          "id": "Sebuah telur ayam biasa. Tidak dapat ditetaskan tapi dapat dijadikan bahan masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1730,8 +2426,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 610,
-        "name": "Golden Egg",
-        "desc": "A rare chicken egg. Can be hatched or used as a cooking ingredients.",
+        "name": {
+          "en": "Golden Egg",
+          "id": "Telur Emas"
+        },
+        "desc": {
+          "en": "A rare chicken egg. Can be hatched or used as a cooking ingredients.",
+          "id": "Sebuah telur ayam langka. Dapat ditetaskan atau dijadikan bahan masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1748,8 +2450,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 611,
-        "name": "Duck Egg",
-        "desc": "A regular duck egg. Can be hatched or used as a cooking ingredients.",
+        "name": {
+          "en": "Duck Egg",
+          "id": "Telur Bebek"
+        },
+        "desc": {
+          "en": "A regular duck egg. Can be hatched or used as a cooking ingredients.",
+          "id": "Sebuah telur bebek biasa. Dapat ditetaskan atau dijadikan bahan masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1765,8 +2473,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 612,
-        "name": "Golden Duck Egg",
-        "desc": "A rare duck egg. Can be hatched or used as a cooking ingredients.",
+        "name": {
+          "en": "Golden Duck Egg",
+          "id": "Telur Bebek Emas"
+        },
+        "desc": {
+          "en": "A rare duck egg. Can be hatched or used as a cooking ingredients.",
+          "id": "Sebuah telur bebek langka. Dapat ditetaskan atau dijadikan bahan masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1783,8 +2497,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 613,
-        "name": "Monster Egg",
-        "desc": "A monster egg. Used as a cooking ingredients",
+        "name": {
+          "en": "Monster Egg",
+          "id": "Telur Monster"
+        },
+        "desc": {
+          "en": "A monster egg. Used as a cooking ingredients",
+          "id": "Sebuah telur monster. Dapat dijadikan bahan masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1800,8 +2520,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 614,
-        "name": "Cheese",
-        "desc": "An ingredient made from high-quality cow milk.",
+        "name": {
+          "en": "Cheese",
+          "id": "Keju"
+        },
+        "desc": {
+          "en": "An ingredient made from high-quality cow milk.",
+          "id": "Bahan makanan yang terbuat dari susu sapi berkualitas."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -1816,8 +2542,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 615,
-        "name": "Butter",
-        "desc": "A food ingredient made from cow's milk fat. Commonly used as a spread for bread.",
+        "name": {
+          "en": "Butter",
+          "id": "Mentega"
+        },
+        "desc": {
+          "en": "A food ingredient made from cow's milk fat. Commonly used as a spread for bread.",
+          "id": "Bahan makanan yang terbuat dari lemak susu sapi. Sering digunakan untuk pelengkap roti."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1832,8 +2564,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 616,
-        "name": "Milk S",
-        "desc": "Milk produced by livestock cows.",
+        "name": {
+          "en": "Milk S",
+          "id": "Susu S"
+        },
+        "desc": {
+          "en": "Milk produced by livestock cows.",
+          "id": "Susu yang dihasilkan oleh sapi ternak."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1849,8 +2587,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 617,
-        "name": "Milk L",
-        "desc": "Milk produced by well-cared livestock cows.",
+        "name": {
+          "en": "Milk L",
+          "id": "Susu L"
+        },
+        "desc": {
+          "en": "Milk produced by well-cared livestock cows.",
+          "id": "Susu yang dihasilkan oleh sapi yang dirawat dengan baik."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1866,8 +2610,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 618,
-        "name": "Golden Milk S",
-        "desc": "Milk produced by an extremely happy cow, well cared for by its owner.",
+        "name": {
+          "en": "Golden Milk S",
+          "id": "Susu Emas S"
+        },
+        "desc": {
+          "en": "Milk produced by an extremely happy cow, well cared for by its owner.",
+          "id": "Susu yang dihasilkan oleh sapi yang sangat bahagia karena dirawat dengan baik oleh majikannya."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1884,8 +2634,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 619,
-        "name": "Golden Milk L",
-        "desc": "Milk produced by a cow that has been well cared for over a long time and has never gotten sick.",
+        "name": {
+          "en": "Golden Milk L",
+          "id": "Susu Emas L"
+        },
+        "desc": {
+          "en": "Milk produced by a cow that has been well cared for over a long time and has never gotten sick.",
+          "id": "Susu yang dihasilkan oleh sapi yang telah dirawat sangat lama dan tidak pernah sakit sekalipun."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1902,8 +2658,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 620,
-        "name": "Goat Milk S",
-        "desc": "Milk produced by dairy goats.",
+        "name": {
+          "en": "Goat Milk S",
+          "id": "Susu Kambing S"
+        },
+        "desc": {
+          "en": "Milk produced by dairy goats.",
+          "id": "Susu yang dihasilkan oleh kambing ternak."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1919,8 +2681,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 621,
-        "name": "Goat Milk L",
-        "desc": "Milk produced by well-cared dairy goats.",
+        "name": {
+          "en": "Goat Milk L",
+          "id": "Susu Kambing L"
+        },
+        "desc": {
+          "en": "Milk produced by well-cared dairy goats.",
+          "id": "Susu yang dihasilkan oleh kambing yang dirawat dengan baik."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1936,8 +2704,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 622,
-        "name": "Golden Goat Milk S",
-        "desc": "Milk produced by an extremely happy goat, well cared for by its owner.",
+        "name": {
+          "en": "Golden Goat Milk S",
+          "id": "Susu Kambing Emas S"
+        },
+        "desc": {
+          "en": "Milk produced by an extremely happy goat, well cared for by its owner.",
+          "id": "Susu yang dihasilkan oleh kambing yang sangat bahagia karena dirawat dengan baik oleh majikannya."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1954,8 +2728,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 623,
-        "name": "Golden Goat Milk L",
-        "desc": "Milk produced by a goat that has been well cared for over a long time and has never gotten sick.",
+        "name": {
+          "en": "Golden Goat Milk L",
+          "id": "Susu Kambing Emas L"
+        },
+        "desc": {
+          "en": "Milk produced by a goat that has been well cared for over a long time and has never gotten sick.",
+          "id": "Susu yang dihasilkan oleh kambing yang telah dirawat sangat lama dan tidak pernah sakit sekalipun."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -1972,8 +2752,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 624,
-        "name": "Curry Sauce",
-        "desc": "A versatile sauce commonly used in various cuisines.",
+        "name": {
+          "en": "Curry Sauce",
+          "id": "Saus Kari"
+        },
+        "desc": {
+          "en": "A versatile sauce commonly used in various cuisines.",
+          "id": "Bumbu serba guna yang sering digunakan di berbagai masakan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -1989,8 +2775,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 625,
-        "name": "Jam",
-        "desc": "A fruity sweet paste, perfect for spreading on bread or filling pastries.",
+        "name": {
+          "en": "Jam",
+          "id": "Selai"
+        },
+        "desc": {
+          "en": "A fruity sweet paste, perfect for spreading on bread or filling pastries.",
+          "id": "Pasta manis yang terbuat dari sari buah-buahan. Sering digunakan untuk roti atau isian kue."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2006,8 +2798,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 626,
-        "name": "Chocolate Bar",
-        "desc": "Chocolate formed into bars. Used as an ingredient in cakes and other sweets.",
+        "name": {
+          "en": "Chocolate Bar",
+          "id": "Cokelat Batang"
+        },
+        "desc": {
+          "en": "Chocolate formed into bars. Used as an ingredient in cakes and other sweets.",
+          "id": "Cokelat yang dihasilkan dalam bentuk batang. Digunakan sebagai bahan membuat kue dan manisan lainnya."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2023,8 +2821,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 627,
-        "name": "Fertilized Egg",
-        "desc": "An egg that has been fertilized by a rooster and is ready for incubation to hatch.",
+        "name": {
+          "en": "Fertilized Egg",
+          "id": "Telur Fertil"
+        },
+        "desc": {
+          "en": "An egg that has been fertilized by a rooster and is ready for incubation to hatch.",
+          "id": "Telur yang telah dibuahi oleh ayam jantan, dan siap dilakukan inkubasi agar telurnya dapat menetas."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2040,8 +2844,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 628,
-        "name": "Fertilized Duck Egg",
-        "desc": "An egg that has been fertilized by a drake and is ready for incubation to hatch.",
+        "name": {
+          "en": "Fertilized Duck Egg",
+          "id": "Telur Bebek Fertil"
+        },
+        "desc": {
+          "en": "An egg that has been fertilized by a drake and is ready for incubation to hatch.",
+          "id": "Telur yang telah dibuahi oleh bebek jantan, dan siap dilakukan inkubasi agar telurnya dapat menetas."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2057,8 +2867,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 629,
-        "name": "Choco Milk S",
-        "desc": "Chocolate Milk produced by livestock cows.",
+        "name": {
+          "en": "Choco Milk S",
+          "id": "Susu Cokelat S"
+        },
+        "desc": {
+          "en": "Chocolate Milk produced by livestock cows.",
+          "id": "Susu Cokelat yang dihasilkan oleh sapi ternak."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -2074,8 +2890,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 630,
-        "name": "Choco Milk L",
-        "desc": "Chocolate Milk produced by well-cared livestock cows.",
+        "name": {
+          "en": "Choco Milk L",
+          "id": "Susu Cokelat L"
+        },
+        "desc": {
+          "en": "Chocolate Milk produced by well-cared livestock cows.",
+          "id": "Susu Cokelat yang dihasilkan oleh sapi yang dirawat dengan baik."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -2091,8 +2913,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 631,
-        "name": "Goat Choco Milk S",
-        "desc": "Chocolate Milk produced by dairy goats.",
+        "name": {
+          "en": "Goat Choco Milk S",
+          "id": "Susu Kambing Cokelat S"
+        },
+        "desc": {
+          "en": "Chocolate Milk produced by dairy goats.",
+          "id": "Susu Cokelat yang dihasilkan oleh kambing ternak."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -2108,8 +2936,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 632,
-        "name": "Goat Choco Milk  L",
-        "desc": "Chocolate Milk produced by well-cared dairy goats.",
+        "name": {
+          "en": "Goat Choco Milk  L",
+          "id": "Susu Kambing Cokelat L"
+        },
+        "desc": {
+          "en": "Chocolate Milk produced by well-cared dairy goats.",
+          "id": "Susu Cokelat yang dihasilkan oleh kambing yang dirawat dengan baik."
+        },
         "type": "drink",
         "category": "consumable",
         "categoryId": 1,
@@ -2125,8 +2959,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 901,
-        "name": "Tomato Seed",
-        "desc": "Sow in Summer and will takes 12 days to fully grow. Can be harvested up to 3 times.",
+        "name": {
+          "en": "Tomato Seed",
+          "id": "Benih Tomat"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 12 days to fully grow. Can be harvested up to 3 times.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 12 hari untuk tumbuh. Dapat dipanen berulang kali."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2140,8 +2980,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 902,
-        "name": "Strawberry Seed",
-        "desc": "Sow in Spring and will takes 13 days to fully grow. Can be harvested up to 3 times.",
+        "name": {
+          "en": "Strawberry Seed",
+          "id": "Benih Stroberi"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 13 days to fully grow. Can be harvested up to 3 times.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 13 hari untuk tumbuh. Dapat dipanen berulang sebanyak 3 kali."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2155,8 +3001,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 903,
-        "name": "Watermelon Seed",
-        "desc": "Sow in Summer and will takes 11 days to fully grow.",
+        "name": {
+          "en": "Watermelon Seed",
+          "id": "Benih Semangka"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 11 days to fully grow.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 11 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2170,8 +3022,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 904,
-        "name": "Melon Seed",
-        "desc": "Sow in Spring and will takes 12 days to fully grow.",
+        "name": {
+          "en": "Melon Seed",
+          "id": "Benih Melon"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 12 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 12 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2185,8 +3043,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 905,
-        "name": "Broccoli Seed",
-        "desc": "Sow in Autumn and will takes 8 days to fully grow.",
+        "name": {
+          "en": "Broccoli Seed",
+          "id": "Benih Brokoli"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 8 days to fully grow.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 8 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2200,8 +3064,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 906,
-        "name": "Corn Seed",
-        "desc": "Sow in Autumn and will takes 15 days to fully grow. Can be harvested up to 3 times.",
+        "name": {
+          "en": "Corn Seed",
+          "id": "Benih Jagung"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 15 days to fully grow. Can be harvested up to 3 times.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 15 hari untuk tumbuh. Dipanen berulang kali."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2215,8 +3085,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 907,
-        "name": "Turnip Seed",
-        "desc": "Sow in Spring and will takes 3 days to fully grow.",
+        "name": {
+          "en": "Turnip Seed",
+          "id": "Benih Lobak"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 3 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 3 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2230,8 +3106,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 908,
-        "name": "Carrot Seed",
-        "desc": "Sow in Spring and will takes 6 days to fully grow.",
+        "name": {
+          "en": "Carrot Seed",
+          "id": "Benih Wortel"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 6 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 6 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2245,8 +3127,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 909,
-        "name": "Potato Seed",
-        "desc": "Sow in Autumn and will takes 7 days to fully grow.",
+        "name": {
+          "en": "Potato Seed",
+          "id": "Benih Kentang"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 7 days to fully grow.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 7 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2260,8 +3148,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 910,
-        "name": "Eggplant Seed",
-        "desc": "Sow in Summer and will takes 14 days to fully grow. Can be harvested up to 3 times.",
+        "name": {
+          "en": "Eggplant Seed",
+          "id": "Benih Terong"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 14 days to fully grow. Can be harvested up to 3 times.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 14 hari untuk tumbuh. Dipanen berulang kali."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2275,8 +3169,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 911,
-        "name": "Paprika Seed",
-        "desc": "Sow in Autumn and will takes 9 days to fully grow.",
+        "name": {
+          "en": "Paprika Seed",
+          "id": "Benih Paprika"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 9 days to fully grow.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 9 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2290,8 +3190,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 912,
-        "name": "Peanut Seed",
-        "desc": "Sow in Summer and will takes 7 days to fully grow.",
+        "name": {
+          "en": "Peanut Seed",
+          "id": "Benih Kacang"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 7 days to fully grow.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 7 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2305,8 +3211,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 913,
-        "name": "Wheat Seed",
-        "desc": "Sow in Spring and Autumn and will takes 10 days to fully grow.",
+        "name": {
+          "en": "Wheat Seed",
+          "id": "Benih Gandum"
+        },
+        "desc": {
+          "en": "Sow in Spring and Autumn and will takes 10 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan Gugur dan membutuhkan waktu 10 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2320,8 +3232,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 914,
-        "name": "Celery Seed",
-        "desc": "Sow in Spring and will takes 7 days to fully grow.",
+        "name": {
+          "en": "Celery Seed",
+          "id": "Benih Seledri"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 7 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 7 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2335,8 +3253,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 915,
-        "name": "Dandelion Seed",
-        "desc": "Sow in Spring and will takes 10 days to fully grow.",
+        "name": {
+          "en": "Dandelion Seed",
+          "id": "Benih Dandelion"
+        },
+        "desc": {
+          "en": "Sow in Spring and will takes 10 days to fully grow.",
+          "id": "Tumbuh di Musim Semi dan membutuhkan waktu 10 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2350,8 +3274,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 916,
-        "name": "Rose Seed",
-        "desc": "Sow in Summer and will takes 10 days to fully grow.",
+        "name": {
+          "en": "Rose Seed",
+          "id": "Benih Mawar"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 10 days to fully grow.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 10 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2365,8 +3295,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 917,
-        "name": "Moon Flower Seed",
-        "desc": "Sow in Autumn and will takes 9 days to fully grow.",
+        "name": {
+          "en": "Moon Flower Seed",
+          "id": "Benih Bunga Bulan"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 9 days to fully grow.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 9 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2380,8 +3316,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 918,
-        "name": "Azure Seed",
-        "desc": "Sow in Autumn and will takes 10 days to fully grow.",
+        "name": {
+          "en": "Azure Seed",
+          "id": "Benih Azure"
+        },
+        "desc": {
+          "en": "Sow in Autumn and will takes 10 days to fully grow.",
+          "id": "Tumbuh di Musim Gugur dan membutuhkan waktu 10 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2395,8 +3337,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 919,
-        "name": "Daisy Seed",
-        "desc": "Sow in Summer and will takes 11 days to fully grow.",
+        "name": {
+          "en": "Daisy Seed",
+          "id": "Benih Daisy"
+        },
+        "desc": {
+          "en": "Sow in Summer and will takes 11 days to fully grow.",
+          "id": "Tumbuh di Musim Panas dan membutuhkan waktu 11 hari."
+        },
         "type": "seed",
         "category": "seed",
         "categoryId": 2,
@@ -2410,8 +3358,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1501,
-        "name": "Orange",
-        "desc": "A popular fruit among the people for its sweet, sometimes tangy flavor.",
+        "name": {
+          "en": "Orange",
+          "id": "Jeruk"
+        },
+        "desc": {
+          "en": "A popular fruit among the people for its sweet, sometimes tangy flavor.",
+          "id": "Buah yang cukup populer di kalangan masyarakat berkat rasa manis terkadang asam yang dimilikinya."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2426,8 +3380,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1502,
-        "name": "Grape",
-        "desc": "Its charming color and tiny size make this fruit truly captivating.",
+        "name": {
+          "en": "Grape",
+          "id": "Anggur"
+        },
+        "desc": {
+          "en": "Its charming color and tiny size make this fruit truly captivating.",
+          "id": "Warnanya yang menawan dengan ukurannya yang mungil membuat orang-orang terpesona dengan buah ini."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2442,8 +3402,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1503,
-        "name": "Apple",
-        "desc": "Its crisp and refreshing taste is what makes this fruit so special.",
+        "name": {
+          "en": "Apple",
+          "id": "Apel"
+        },
+        "desc": {
+          "en": "Its crisp and refreshing taste is what makes this fruit so special.",
+          "id": "Buah yang memiliki rasa renyah dan segar menjadikan alasan mengapa buah ini begitu istimewa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2458,8 +3424,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1504,
-        "name": "Blueberry",
-        "desc": "A small fruit that's easy to pick.",
+        "name": {
+          "en": "Blueberry",
+          "id": "Blueberry"
+        },
+        "desc": {
+          "en": "A small fruit that's easy to pick.",
+          "id": "Buah dengan ukuran yang mungil dan mudah untuk dipetik."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2474,8 +3446,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1505,
-        "name": "Cherry",
-        "desc": "A fruit often served as a sweet treat or used as a garnish for other dishes.",
+        "name": {
+          "en": "Cherry",
+          "id": "Ceri"
+        },
+        "desc": {
+          "en": "A fruit often served as a sweet treat or used as a garnish for other dishes.",
+          "id": "Buah yang sering disajikan sebagai manisan atau hiasan untuk menu makanan lain."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2490,8 +3468,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1506,
-        "name": "Corn",
-        "desc": "Golden yellow sweet corn with a naturally sweet flavor. Can be eaten directly after boiling or grilling, or used in dishes like soups and salads.",
+        "name": {
+          "en": "Corn",
+          "id": "Jagung"
+        },
+        "desc": {
+          "en": "Golden yellow sweet corn with a naturally sweet flavor. Can be eaten directly after boiling or grilling, or used in dishes like soups and salads.",
+          "id": "Jagung manis berwarna kuning keemasan dengan rasa manis alami. Dapat dikonsumsi langsung setelah direbus, dibakar, atau dijadikan bahan olahan seperti sup dan salad."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2507,8 +3491,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1507,
-        "name": "Strawberry",
-        "desc": "A bright red fruit with a sweet and tangy flavor. Commonly used in desserts, as a topping, or made into juice.",
+        "name": {
+          "en": "Strawberry",
+          "id": "Stroberi"
+        },
+        "desc": {
+          "en": "A bright red fruit with a sweet and tangy flavor. Commonly used in desserts, as a topping, or made into juice.",
+          "id": "Buah merah cerah dengan rasa manis dan sedikit asam. Cocok untuk camilan, topping dessert, atau dibuat jus segar."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2524,8 +3514,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1508,
-        "name": "Watermelon",
-        "desc": "A fresh watermelon with red flesh and high water content. Refreshing and perfect for hot days, whether served sliced or as a cold drink.",
+        "name": {
+          "en": "Watermelon",
+          "id": "Semangka"
+        },
+        "desc": {
+          "en": "A fresh watermelon with red flesh and high water content. Refreshing and perfect for hot days, whether served sliced or as a cold drink.",
+          "id": "Semangka segar dengan daging buah merah dan kadar air tinggi. Menyegarkan dan ideal untuk dinikmati di hari panas sebagai buah potong atau minuman dingin."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2541,8 +3537,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1509,
-        "name": "Melon",
-        "desc": "A fruit with a mild sweetness and fragrant aroma. Its flesh ranges from green to orange, perfect as a dessert or made into juice.",
+        "name": {
+          "en": "Melon",
+          "id": "Melon"
+        },
+        "desc": {
+          "en": "A fruit with a mild sweetness and fragrant aroma. Its flesh ranges from green to orange, perfect as a dessert or made into juice.",
+          "id": "Buah dengan rasa manis lembut dan aroma harum. Daging buah berwarna hijau atau oranye, sangat pas untuk pencuci mulut atau dijadikan jus."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2558,8 +3560,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1510,
-        "name": "Avocado",
-        "desc": "A fruit with a fluffy texture and rich in healthy fats. Highly versatile for smoothies, salads, or as a nutritious spread on bread.",
+        "name": {
+          "en": "Avocado",
+          "id": "Alpukat"
+        },
+        "desc": {
+          "en": "A fruit with a fluffy texture and rich in healthy fats. Highly versatile for smoothies, salads, or as a nutritious spread on bread.",
+          "id": "Buah dengan tekstur lembut dan kaya lemak sehat. Sangat fleksibel untuk dibuat smoothie, salad, atau olesan roti yang bergizi."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2574,8 +3582,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1511,
-        "name": "Coconut",
-        "desc": "A versatile tropical fruit that yields fresh coconut water and delicious flesh. Can be consumed directly or processed into various foods and drinks.",
+        "name": {
+          "en": "Coconut",
+          "id": "Kelapa"
+        },
+        "desc": {
+          "en": "A versatile tropical fruit that yields fresh coconut water and delicious flesh. Can be consumed directly or processed into various foods and drinks.",
+          "id": "Buah tropis serbaguna yang menghasilkan air kelapa segar dan daging buah lezat. Bisa dikonsumsi langsung atau diolah menjadi berbagai makanan dan minuman."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2590,8 +3604,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1512,
-        "name": "Beet",
-        "desc": "A red tuber with a mildly sweet taste, rich in iron and antioxidants. Great for juices, salads, or roasted as a healthy side dish.",
+        "name": {
+          "en": "Beet",
+          "id": "Bit Merah"
+        },
+        "desc": {
+          "en": "A red tuber with a mildly sweet taste, rich in iron and antioxidants. Great for juices, salads, or roasted as a healthy side dish.",
+          "id": "Umbi merah dengan rasa sedikit manis dan kaya akan zat besi serta antioksidan. Cocok untuk jus, salad, atau dipanggang sebagai pelengkap sehat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2607,8 +3627,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1513,
-        "name": "Turnip",
-        "desc": "A white tuber with a light and slightly spicy flavor. Can be used in soups, steamed, or pickled as a fresh and nutritious dish.",
+        "name": {
+          "en": "Turnip",
+          "id": "Lobak"
+        },
+        "desc": {
+          "en": "A white tuber with a light and slightly spicy flavor. Can be used in soups, steamed, or pickled as a fresh and nutritious dish.",
+          "id": "Lobak putih dengan rasa ringan dan sedikit pedas. Bisa dimasak dalam sup, dikukus, atau dijadikan acar yang segar dan bergizi."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2624,8 +3650,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1514,
-        "name": "Eggplant",
-        "desc": "A fresh vegetable that can be turned into a variety of flavorful dishes.",
+        "name": {
+          "en": "Eggplant",
+          "id": "Terong"
+        },
+        "desc": {
+          "en": "A fresh vegetable that can be turned into a variety of flavorful dishes.",
+          "id": "Sayuran segar yang dapat dijadikan berbagai jenis masakan yang menggugah selera."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2641,8 +3673,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1515,
-        "name": "Paprika",
-        "desc": "Besides being used as a cooking ingredient, paprika is often used to add color to dishes.",
+        "name": {
+          "en": "Paprika",
+          "id": "Paprika"
+        },
+        "desc": {
+          "en": "Besides being used as a cooking ingredient, paprika is often used to add color to dishes.",
+          "id": "Selain digunakan sebagai bahan pelengkap masakan, paprika sering dijadikan bahan untuk menghasilkan warna."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2658,8 +3696,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1516,
-        "name": "Tomato",
-        "desc": "One most commonly used veggie in cooking.",
+        "name": {
+          "en": "Tomato",
+          "id": "Tomat"
+        },
+        "desc": {
+          "en": "One most commonly used veggie in cooking.",
+          "id": "Salah satu sayuran yang paling sering dibutuhkan dalam membuat masakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2675,8 +3719,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1517,
-        "name": "Carrot",
-        "desc": "A tuber well known for its great benefits to eye health.",
+        "name": {
+          "en": "Carrot",
+          "id": "Wortel"
+        },
+        "desc": {
+          "en": "A tuber well known for its great benefits to eye health.",
+          "id": "Sayuran yang memiliki khasiat yang luar biasa untuk kesehatan Mata."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2692,8 +3742,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1518,
-        "name": "Potato",
-        "desc": "A very popular tuber, often enjoyed as a snack",
+        "name": {
+          "en": "Potato",
+          "id": "Kentang"
+        },
+        "desc": {
+          "en": "A very popular tuber, often enjoyed as a snack",
+          "id": "Umbi yang sangat populer dan kerap dijadikan sebagai cemilan masyarakat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2709,8 +3765,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1519,
-        "name": "Peanut",
-        "desc": "Because its high protein, it is often considered an important food source.",
+        "name": {
+          "en": "Peanut",
+          "id": "Kacang"
+        },
+        "desc": {
+          "en": "Because its high protein, it is often considered an important food source.",
+          "id": "Karena mengandung protein cukup tinggi, sering dianggap sebagai bahan pangan yang penting."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2726,8 +3788,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1520,
-        "name": "Chilli",
-        "desc": "Commonly used as a spice thanks to its fiery taste.",
+        "name": {
+          "en": "Chilli",
+          "id": "Cabai"
+        },
+        "desc": {
+          "en": "Commonly used as a spice thanks to its fiery taste.",
+          "id": "Sering digunakan sebagai bumbu masakan dikarenakan rasanya yang pedas."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2742,8 +3810,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1521,
-        "name": "Salad Leaves",
-        "desc": "A mix of fresh leaves perfect for salads. Offers a combination of light flavors and crunchy textures, ideal for healthy and refreshing meals.",
+        "name": {
+          "en": "Salad Leaves",
+          "id": "Daun Salad"
+        },
+        "desc": {
+          "en": "A mix of fresh leaves perfect for salads. Offers a combination of light flavors and crunchy textures, ideal for healthy and refreshing meals.",
+          "id": "Campuran berbagai daun segar yang cocok untuk salad. Menghadirkan kombinasi rasa ringan dan tekstur renyah, ideal sebagai dasar hidangan sehat dan menyegarkan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2759,8 +3833,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1522,
-        "name": "Lettuce Leaf",
-        "desc": "Fresh veggie with mild taste and crisp texture. Often used in salad, sandwich, and as a granish for main dishes.",
+        "name": {
+          "en": "Lettuce Leaf",
+          "id": "Daun Selada"
+        },
+        "desc": {
+          "en": "Fresh veggie with mild taste and crisp texture. Often used in salad, sandwich, and as a granish for main dishes.",
+          "id": "Sayur dengan daun segar yang memiliki rasa ringan, tekstur renyah. Sering digunakan dalam salad, sandwich, dan sebagai pelengkap hidangan utama."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2776,8 +3856,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1523,
-        "name": "Leek",
-        "desc": "A veggie with a mild onion-like taste. Ideal for soups, stir-fries, or as a flavorful base in brothy dishes.",
+        "name": {
+          "en": "Leek",
+          "id": "Daun Bawang"
+        },
+        "desc": {
+          "en": "A veggie with a mild onion-like taste. Ideal for soups, stir-fries, or as a flavorful base in brothy dishes.",
+          "id": "Sayuran dengan rasa lembut menyerupai bawang. Cocok untuk sup, tumisan, atau sebagai bahan pelengkap masakan berkuah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2793,8 +3879,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1524,
-        "name": "Spinach",
-        "desc": "Fresh, nutrient-rich veggie that's versatile in the kitchen. Can be eaten raw in salads or cooked in a variety of healthy meals.",
+        "name": {
+          "en": "Spinach",
+          "id": "Bayam"
+        },
+        "desc": {
+          "en": "Fresh, nutrient-rich veggie that's versatile in the kitchen. Can be eaten raw in salads or cooked in a variety of healthy meals.",
+          "id": "Sayuran segar yang kaya nutrisi dan serbaguna. Bisa dikonsumsi mentah dalam salad atau dimasak untuk berbagai hidangan sehat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2810,8 +3902,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1525,
-        "name": "Broccoli",
-        "desc": "A green veggie resembling tiny trees. Crunchy and nutritious, perfect for boiling, steaming, or stir-frying.",
+        "name": {
+          "en": "Broccoli",
+          "id": "Brokoli"
+        },
+        "desc": {
+          "en": "A green veggie resembling tiny trees. Crunchy and nutritious, perfect for boiling, steaming, or stir-frying.",
+          "id": "Sayuran hijau dengan bentuk menyerupai pohon mini. Renyah dan penuh gizi, cocok untuk direbus, dikukus, atau ditumis."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2827,8 +3925,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1526,
-        "name": "Celery",
-        "desc": "Crisp celery stalks with a refreshing taste. Commonly used in soups, salads, or enjoyed as a healthy snack.",
+        "name": {
+          "en": "Celery",
+          "id": "Seledri"
+        },
+        "desc": {
+          "en": "Crisp celery stalks with a refreshing taste. Commonly used in soups, salads, or enjoyed as a healthy snack.",
+          "id": "Seledri batang dengan rasa segar dan tekstur renyah. Sering digunakan dalam sup, salad, atau sebagai camilan sehat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2844,8 +3948,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1527,
-        "name": "Green Beans",
-        "desc": "Crisp and fresh green beans, rich in fiber and vitamins. Great when boiled, steamed, or stir-fried as a side dish.",
+        "name": {
+          "en": "Green Beans",
+          "id": "Kacang Hijau"
+        },
+        "desc": {
+          "en": "Crisp and fresh green beans, rich in fiber and vitamins. Great when boiled, steamed, or stir-fried as a side dish.",
+          "id": "Buncis hijau yang renyah dan segar, kaya serat dan vitamin. Cocok direbus, dikukus, atau ditumis sebagai lauk atau pelengkap."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2860,8 +3970,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1528,
-        "name": "Mushroom",
-        "desc": "A Common mushroom that can be find in the forest and safe to eat.",
+        "name": {
+          "en": "Mushroom",
+          "id": "Jamur"
+        },
+        "desc": {
+          "en": "A Common mushroom that can be find in the forest and safe to eat.",
+          "id": "Jamur yang cukup sering ditemukan di hutan dan aman untuk dikonsumsi."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2876,8 +3992,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1529,
-        "name": "Poison Mushroom",
-        "desc": "A wild mushroom that looks edible, but it's actually poisonous.",
+        "name": {
+          "en": "Poison Mushroom",
+          "id": "Jamur Beracun"
+        },
+        "desc": {
+          "en": "A wild mushroom that looks edible, but it's actually poisonous.",
+          "id": "Jamur liar yang kelihatannya aman dikonsumsi, tapi sebenarnya beracun."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -2893,8 +4015,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1530,
-        "name": "Dandelion",
-        "desc": "A flower with bright yellow petals, known for its seeds that float in the wind.",
+        "name": {
+          "en": "Dandelion",
+          "id": "Dandelion"
+        },
+        "desc": {
+          "en": "A flower with bright yellow petals, known for its seeds that float in the wind.",
+          "id": "Bunga dengan kelopak kuning cerah yang dikenal karena bijinya dapat terbang ditiup angin"
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2908,8 +4036,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1531,
-        "name": "Crocus",
-        "desc": "A small, brightly colored flower that blooms in late winter, signaling the arrival of spring. Its delicate petals and vivid hues symbolize hope and new beginnings.",
+        "name": {
+          "en": "Crocus",
+          "id": "Krokus"
+        },
+        "desc": {
+          "en": "A small, brightly colored flower that blooms in late winter, signaling the arrival of spring. Its delicate petals and vivid hues symbolize hope and new beginnings.",
+          "id": "Bunga mungil berwarna cerah yang mekar di akhir musim dingin, menjadi pertanda datangnya musim semi. Kelopaknya lembut dan mencolok, sering dianggap sebagai simbol harapan dan awal baru."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2923,8 +4057,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1532,
-        "name": "Pink Crocus",
-        "desc": "A rare crocus flower, because its hue unlike most other.",
+        "name": {
+          "en": "Pink Crocus",
+          "id": "Krokus Pink"
+        },
+        "desc": {
+          "en": "A rare crocus flower, because its hue unlike most other.",
+          "id": "Bunga crocus yang langka dikarenakan warnanya yang sangat berbeda dari biasanya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2938,8 +4078,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1533,
-        "name": "Rose",
-        "desc": "Widely known as a symbol of love and timeless beauty, roses come in many colors and carry enchanting scents.",
+        "name": {
+          "en": "Rose",
+          "id": "Mawar"
+        },
+        "desc": {
+          "en": "Widely known as a symbol of love and timeless beauty, roses come in many colors and carry enchanting scents.",
+          "id": "Dikenal luas sebagai simbol cinta dan keindahan abadi, mawar hadir dalam berbagai warna dan aroma yang memikat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2953,8 +4099,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1534,
-        "name": "White Rose",
-        "desc": "A white rose symbolizing purity, innocence, and peace. Perfect for formal occasions, weddings, or heartfelt expressions.",
+        "name": {
+          "en": "White Rose",
+          "id": "Mawar Putih"
+        },
+        "desc": {
+          "en": "A white rose symbolizing purity, innocence, and peace. Perfect for formal occasions, weddings, or heartfelt expressions.",
+          "id": "Mawar putih yang melambangkan kemurnian, kesucian, dan kedamaian. Cocok untuk acara formal, pernikahan, atau sebagai ungkapan tulus."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2968,8 +4120,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1535,
-        "name": "Fodder",
-        "desc": "Nutritious animal feed that supports livestock growth and health.",
+        "name": {
+          "en": "Fodder",
+          "id": "Pakan"
+        },
+        "desc": {
+          "en": "Nutritious animal feed that supports livestock growth and health.",
+          "id": "Pakan ternak yang mengandung nutrisi penting untuk mendukung pertumbuhan dan kesehatan hewan ternak."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2983,8 +4141,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1536,
-        "name": "Fireweed",
-        "desc": "A wild plant with vibrant purple color that often thrives after forest fires.",
+        "name": {
+          "en": "Fireweed",
+          "id": "Fireweed"
+        },
+        "desc": {
+          "en": "A wild plant with vibrant purple color that often thrives after forest fires.",
+          "id": "Tanaman liar berwarna ungu menyala yang biasanya tumbuh subur setelah kebakaran hutan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -2998,8 +4162,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1537,
-        "name": "Mint",
-        "desc": "Green leaves with a refreshing, cooling aroma. Often used to make herbal tea and known to revive the body and soothe the mind.",
+        "name": {
+          "en": "Mint",
+          "id": "Mint"
+        },
+        "desc": {
+          "en": "Green leaves with a refreshing, cooling aroma. Often used to make herbal tea and known to revive the body and soothe the mind.",
+          "id": "Daun hijau dengan aroma segar dan menyejukkan. Dapat digunakan untuk membuat teh herbal dan dikenal mampu menyegarkan tubuh serta menenangkan pikiran."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3013,8 +4183,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1538,
-        "name": "Lily",
-        "desc": "A romantic tale is tied to this flower. A story of a knight who carried it wherever he went, as a symbol of his unwavering devotion to his late wife.",
+        "name": {
+          "en": "Lily",
+          "id": "Lily"
+        },
+        "desc": {
+          "en": "A romantic tale is tied to this flower. A story of a knight who carried it wherever he went, as a symbol of his unwavering devotion to his late wife.",
+          "id": "Terdapat sebuah kisah romantis yang melekat pada bunga ini. Kisah tersebut adalah tentang seorang kesatria yang selalu membawa bunga ini kemana saja dia pergi, untuk membuktikan kesetiaannya kepada mendiang istrinya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3028,8 +4204,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1539,
-        "name": "Lotus",
-        "desc": "A sacred flower that floats peacefully on water. It blooms only in calm weather, symbolizing serenity and spiritual awakening.",
+        "name": {
+          "en": "Lotus",
+          "id": "Teratai"
+        },
+        "desc": {
+          "en": "A sacred flower that floats peacefully on water. It blooms only in calm weather, symbolizing serenity and spiritual awakening.",
+          "id": "Bunga suci yang tumbuh tenang di atas permukaan air. Melambangkan ketenangan dan kebangkitan, mekar hanya saat air tenang dan cuaca bersahabat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3043,8 +4225,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1540,
-        "name": "Moon Flower",
-        "desc": "A mysterious flower that reveal its majestic when night falls.",
+        "name": {
+          "en": "Moon Flower",
+          "id": "Bunga Bulan"
+        },
+        "desc": {
+          "en": "A mysterious flower that reveal its majestic when night falls.",
+          "id": "Bunga misterius yang hanya menujukkan keindahannya saat malam tiba."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3058,8 +4246,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1541,
-        "name": "Azure Flower",
-        "desc": "A delicate blue blossom, as bright as the sky. Believed to bring blessings to those who possess it.",
+        "name": {
+          "en": "Azure Flower",
+          "id": "Bunga Azure"
+        },
+        "desc": {
+          "en": "A delicate blue blossom, as bright as the sky. Believed to bring blessings to those who possess it.",
+          "id": "Bunga unik dengan warna sebiru langit. Dipercaya jika bunga ini membawa berkah kepada pemiliknya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3073,8 +4267,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1542,
-        "name": "Daisy Flower",
-        "desc": "A flower with bright petals and a yellow center, giving a fresh and natural impression.",
+        "name": {
+          "en": "Daisy Flower",
+          "id": "Bunga Daisy"
+        },
+        "desc": {
+          "en": "A flower with bright petals and a yellow center, giving a fresh and natural impression.",
+          "id": "Bunga dengan kelopak cerah dan pusat berawna kuning, memberikan kesan segar dan alami."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3088,8 +4288,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1543,
-        "name": "Wheat",
-        "desc": "Main ingredient for making flour.",
+        "name": {
+          "en": "Wheat",
+          "id": "Gandum"
+        },
+        "desc": {
+          "en": "Main ingredient for making flour.",
+          "id": "Bahan utama pembuatan tepung."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3101,8 +4307,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1544,
-        "name": "Pinecone",
-        "desc": "A hard, scaly seed cone from pine trees. Often collected in autumn and used for crafts, fuel, or as winter decorations.",
+        "name": {
+          "en": "Pinecone",
+          "id": "Kerucut Pinus"
+        },
+        "desc": {
+          "en": "A hard, scaly seed cone from pine trees. Often collected in autumn and used for crafts, fuel, or as winter decorations.",
+          "id": "Kerucut biji dari pohon pinus, keras dan bersisik. Sering dikumpulkan saat musim gugur, digunakan sebagai bahan kerajinan, bahan bakar, atau hiasan musim dingin."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -3116,8 +4328,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1545,
-        "name": "Chicken Feed",
-        "desc": "A type of livestock feed that contains essential nutrients to support the growth and health of farm animals.",
+        "name": {
+          "en": "Chicken Feed",
+          "id": "Pakan Ayam"
+        },
+        "desc": {
+          "en": "A type of livestock feed that contains essential nutrients to support the growth and health of farm animals.",
+          "id": "Pakan ternak yang mengandung nutrisi penting untuk mendukung pertumbuhan dan kesehatan hewan ternak."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3131,8 +4349,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1546,
-        "name": "Wild Dandelion",
-        "desc": "A wild dandelion which usually grows on mountain peaks.",
+        "name": {
+          "en": "Wild Dandelion",
+          "id": "Dandelion Liar"
+        },
+        "desc": {
+          "en": "A wild dandelion which usually grows on mountain peaks.",
+          "id": "Dandelion liar yang sering ditemukan di puncak gunung."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3146,8 +4370,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1547,
-        "name": "Sunflower",
-        "desc": "A bright flower that always turns toward the sun. Its large petals are often used as gifts or decorative materials.",
+        "name": {
+          "en": "Sunflower",
+          "id": "Bunga Matahari"
+        },
+        "desc": {
+          "en": "A bright flower that always turns toward the sun. Its large petals are often used as gifts or decorative materials.",
+          "id": "Bunga cerah yang selalu menghadap matahari. Kelopaknya yang besar sering digunakan sebagai hadiah atau bahan dekorasi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3161,8 +4391,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1548,
-        "name": "Golden Ginger",
-        "desc": "A rare golden-colored ginger root with a strong aroma and warm flavor. Commonly used in potions or nourishing dishes.",
+        "name": {
+          "en": "Golden Ginger",
+          "id": "Jahe Emas"
+        },
+        "desc": {
+          "en": "A rare golden-colored ginger root with a strong aroma and warm flavor. Commonly used in potions or nourishing dishes.",
+          "id": "Akar jahe langka berwarna keemasan dengan aroma kuat dan rasa hangat. Sering dipakai dalam ramuan atau masakan bergizi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3176,8 +4412,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2001,
-        "name": "Perch",
-        "desc": "A freshwater fish commonly found in small river.",
+        "name": {
+          "en": "Perch",
+          "id": "Perch"
+        },
+        "desc": {
+          "en": "A freshwater fish commonly found in small river.",
+          "id": "Ikan air tawar yang sering ditemukan di sungai kecil."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3191,8 +4433,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2002,
-        "name": "Giant Perch",
-        "desc": "A large-sized Perch with firm, thick meat.",
+        "name": {
+          "en": "Giant Perch",
+          "id": "Perch Raksasa"
+        },
+        "desc": {
+          "en": "A large-sized Perch with firm, thick meat.",
+          "id": "Perch dengan ukuran lebih Raksasa dan daging lebih padat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3206,8 +4454,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2003,
-        "name": "Mutant Perch",
-        "desc": "A Perch with a unique color body and shimmmering fins.",
+        "name": {
+          "en": "Mutant Perch",
+          "id": "Perch Mutant"
+        },
+        "desc": {
+          "en": "A Perch with a unique color body and shimmmering fins.",
+          "id": "Perch dengan warna tubuh aneh dan sirip bercahaya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3221,8 +4475,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2004,
-        "name": "Apocryphal Perch",
-        "desc": "A legendary Perch said to appear only when the full moon rises.",
+        "name": {
+          "en": "Apocryphal Perch",
+          "id": "Perch Purba"
+        },
+        "desc": {
+          "en": "A legendary Perch said to appear only when the full moon rises.",
+          "id": "Perch legendaris yang katanya muncul saat bulan purnama."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3236,8 +4496,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2005,
-        "name": "Sardine",
-        "desc": "A small fish that school together in shallow seas.",
+        "name": {
+          "en": "Sardine",
+          "id": "Sarden"
+        },
+        "desc": {
+          "en": "A small fish that school together in shallow seas.",
+          "id": "Ikan kecil yang bergerombol di laut dangkal."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3251,8 +4517,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2006,
-        "name": "Giant Sarden",
-        "desc": "A large Sardine rarely seen in the ocean.",
+        "name": {
+          "en": "Giant Sarden",
+          "id": "Sarden Raksasa"
+        },
+        "desc": {
+          "en": "A large Sardine rarely seen in the ocean.",
+          "id": "Sarden Raksasa yang langka di lautan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3266,8 +4538,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2007,
-        "name": "Mutant Sarden",
-        "desc": "A bizare Sardine mutation with shimmering purple fins.",
+        "name": {
+          "en": "Mutant Sarden",
+          "id": "Sarden Mutant"
+        },
+        "desc": {
+          "en": "A bizare Sardine mutation with shimmering purple fins.",
+          "id": "Hasil Mutant aneh Sarden dengan sisik berkilau ungu."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3281,8 +4559,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2008,
-        "name": "Apocryphal Sarden",
-        "desc": "A legendary Sardine rumored to summon strom.",
+        "name": {
+          "en": "Apocryphal Sarden",
+          "id": "Sarden Purba"
+        },
+        "desc": {
+          "en": "A legendary Sardine rumored to summon strom.",
+          "id": "Sarden legendaris yang dikabarkan bisa memanggil badai."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3296,8 +4580,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2009,
-        "name": "Anabas",
-        "desc": "A fish that can survive on land for a short time.",
+        "name": {
+          "en": "Anabas",
+          "id": "Betok"
+        },
+        "desc": {
+          "en": "A fish that can survive on land for a short time.",
+          "id": "Ikan yang bisa bertahan hidup di daratan untuk waktu singkat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3311,8 +4601,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2010,
-        "name": "Giant Anabas",
-        "desc": "A strong Anabas with firm, thick flesh.",
+        "name": {
+          "en": "Giant Anabas",
+          "id": "Betok Raksasa"
+        },
+        "desc": {
+          "en": "A strong Anabas with firm, thick flesh.",
+          "id": "Betok kuat dengan tubuh lebih tebal dan kokoh."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3326,8 +4622,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2011,
-        "name": "Mutant Anabas",
-        "desc": "Because of a rare mutation, this Anabas can climb trees!",
+        "name": {
+          "en": "Mutant Anabas",
+          "id": "Betok Mutant"
+        },
+        "desc": {
+          "en": "Because of a rare mutation, this Anabas can climb trees!",
+          "id": "Karena mutasi langka, membuat Betok ini bisa memanjat pohon!"
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3341,8 +4643,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2012,
-        "name": "Apocryphal Anabas",
-        "desc": "The legendary Anabas's fins can heal wounds.",
+        "name": {
+          "en": "Apocryphal Anabas",
+          "id": "Betok Purba"
+        },
+        "desc": {
+          "en": "The legendary Anabas's fins can heal wounds.",
+          "id": "Betok legendaris yang bisa menyembuhkan luka dengan sisiknya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3356,8 +4664,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2013,
-        "name": "Trout",
-        "desc": "A coldwater fish popular anglers.",
+        "name": {
+          "en": "Trout",
+          "id": "Trout"
+        },
+        "desc": {
+          "en": "A coldwater fish popular anglers.",
+          "id": "Ikan air dingin yang populer di kalangan pemancing."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3371,8 +4685,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2014,
-        "name": "Giant Trout",
-        "desc": "A large Trout makes it difficult for new anglers.",
+        "name": {
+          "en": "Giant Trout",
+          "id": "Trout Raksasa"
+        },
+        "desc": {
+          "en": "A large Trout makes it difficult for new anglers.",
+          "id": "Trout Raksasa yang menyulitkan para pemancing pemula."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3386,8 +4706,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2015,
-        "name": "Mutant Trout",
-        "desc": "A Trout with two caudal fins can swim really fast!",
+        "name": {
+          "en": "Mutant Trout",
+          "id": "Trout Mutant"
+        },
+        "desc": {
+          "en": "A Trout with two caudal fins can swim really fast!",
+          "id": "Trout dengan dua ekor dan kecepatan luar biasa!"
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3401,8 +4727,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2016,
-        "name": "Apocryphal Trout",
-        "desc": "A legendary Trout said to bring good luck.",
+        "name": {
+          "en": "Apocryphal Trout",
+          "id": "Trout Purba"
+        },
+        "desc": {
+          "en": "A legendary Trout said to bring good luck.",
+          "id": "Trout legendaris yang dipercaya membawa keberuntungan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3416,8 +4748,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2017,
-        "name": "Arowana",
-        "desc": "A beautiful fish with coloful fins.",
+        "name": {
+          "en": "Arowana",
+          "id": "Arwana"
+        },
+        "desc": {
+          "en": "A beautiful fish with coloful fins.",
+          "id": "Ikan cantik dengan sirip berwarna-warni."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3431,8 +4769,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2018,
-        "name": "Giant Arowana",
-        "desc": "A fully grown Arowana that is hard to catch.",
+        "name": {
+          "en": "Giant Arowana",
+          "id": "Arwana Raksasa"
+        },
+        "desc": {
+          "en": "A fully grown Arowana that is hard to catch.",
+          "id": "Arwana yang tumbuh Raksasa dan sulit ditangkap."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3446,8 +4790,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2019,
-        "name": "Mutant Arowana",
-        "desc": "Three-eyed Arowana that only appears during a strom.",
+        "name": {
+          "en": "Mutant Arowana",
+          "id": "Arwana Mutant"
+        },
+        "desc": {
+          "en": "Three-eyed Arowana that only appears during a strom.",
+          "id": "Arwana bermata tiga yang hanya muncul saat badai."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3461,8 +4811,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2020,
-        "name": "Apocryphal Arowana",
-        "desc": "A legendary Arowana said to be guardian of the ancient river.",
+        "name": {
+          "en": "Apocryphal Arowana",
+          "id": "Arwana Purba"
+        },
+        "desc": {
+          "en": "A legendary Arowana said to be guardian of the ancient river.",
+          "id": "Arwana legendaris yang dipercaya sebagai penjaga sungai kuno."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3476,8 +4832,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2021,
-        "name": "Bream",
-        "desc": "A flat fish that is easy to catch and delicious when fried.",
+        "name": {
+          "en": "Bream",
+          "id": "Bream"
+        },
+        "desc": {
+          "en": "A flat fish that is easy to catch and delicious when fried.",
+          "id": "Ikan pipih yang mudah ditangkap dan lezat jika digoreng."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3491,8 +4853,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2022,
-        "name": "Giant Bream",
-        "desc": "A Bream with a perfectly symmetrical body.",
+        "name": {
+          "en": "Giant Bream",
+          "id": "Bream Raksasa"
+        },
+        "desc": {
+          "en": "A Bream with a perfectly symmetrical body.",
+          "id": "Bream dengan bentuk tubuh simetris sempurna."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3506,8 +4874,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2023,
-        "name": "Mutant Bream",
-        "desc": "A Bream with metallic scales and high durability.",
+        "name": {
+          "en": "Mutant Bream",
+          "id": "Bream Mutant"
+        },
+        "desc": {
+          "en": "A Bream with metallic scales and high durability.",
+          "id": "Bream dengan sisik seperti logam dan daya tahan tinggi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3521,8 +4895,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2024,
-        "name": "Apocryphal Bream",
-        "desc": "A legendary bream that is said to reflect the moonlight.",
+        "name": {
+          "en": "Apocryphal Bream",
+          "id": "Bream Purba"
+        },
+        "desc": {
+          "en": "A legendary bream that is said to reflect the moonlight.",
+          "id": "Bream legendaris yang konon bisa memantulkan cahaya bulan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3536,8 +4916,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2025,
-        "name": "Tarpon",
-        "desc": "A strong and agile big fish, commonly seen leaping out of the water.",
+        "name": {
+          "en": "Tarpon",
+          "id": "Tarpon"
+        },
+        "desc": {
+          "en": "A strong and agile big fish, commonly seen leaping out of the water.",
+          "id": "Ikan Raksasa yang kuat dan lincah, sering melompat keluar air."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3551,8 +4937,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2026,
-        "name": "Giant Tarpon",
-        "desc": "A long-sized Tarpon with sharp fins.",
+        "name": {
+          "en": "Giant Tarpon",
+          "id": "Tarpon Raksasa"
+        },
+        "desc": {
+          "en": "A long-sized Tarpon with sharp fins.",
+          "id": "Tarpon dengan tubuh panjang dan sirip tajam."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3566,8 +4958,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2027,
-        "name": "Mutant Tarpon",
-        "desc": "A hard scale Tarpon, tough as metal.",
+        "name": {
+          "en": "Mutant Tarpon",
+          "id": "Tarpon Mutant"
+        },
+        "desc": {
+          "en": "A hard scale Tarpon, tough as metal.",
+          "id": "Tarpon dengan sisik keras seperti baja."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3581,8 +4979,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2028,
-        "name": "Apocryphal Tarpon",
-        "desc": "A Legendary Tarpon said to be an ocean pioneer, nearly impossible to defeat.",
+        "name": {
+          "en": "Apocryphal Tarpon",
+          "id": "Tarpon Purba"
+        },
+        "desc": {
+          "en": "A Legendary Tarpon said to be an ocean pioneer, nearly impossible to defeat.",
+          "id": "Tarpon legendaris, penjelajah samudra yang tak bisa ditaklukkan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3596,8 +5000,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2029,
-        "name": "Bonito",
-        "desc": "An agile ocean fish, rich in nutrients.",
+        "name": {
+          "en": "Bonito",
+          "id": "Bonito"
+        },
+        "desc": {
+          "en": "An agile ocean fish, rich in nutrients.",
+          "id": "Ikan laut yang gesit dan sangat bergizi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3611,8 +5021,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2030,
-        "name": "Giant Bonito",
-        "desc": "A Bonito with strikingly bright body colors.",
+        "name": {
+          "en": "Giant Bonito",
+          "id": "Bonito Raksasa"
+        },
+        "desc": {
+          "en": "A Bonito with strikingly bright body colors.",
+          "id": "Bonito dengan warna tubuh terang yang mencolok."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3626,8 +5042,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2031,
-        "name": "Mutant Bonito",
-        "desc": "The winged Bonito that appears only during lightning storms.",
+        "name": {
+          "en": "Mutant Bonito",
+          "id": "Bonito Mutant"
+        },
+        "desc": {
+          "en": "The winged Bonito that appears only during lightning storms.",
+          "id": "Bonito bersayap yang muncul hanya saat badai petir."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3641,8 +5063,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2032,
-        "name": "Apocryphal Bonito",
-        "desc": "A legendary Bonito said to have power to calm the storms.",
+        "name": {
+          "en": "Apocryphal Bonito",
+          "id": "Bonito Purba"
+        },
+        "desc": {
+          "en": "A legendary Bonito said to have power to calm the storms.",
+          "id": "Bonito legendaris yang dipercaya bisa menenangkan badai."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3656,8 +5084,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2033,
-        "name": "Catfish",
-        "desc": "A freshwater fish with a smooth body and two whisker-like barbels around its mouth. These barbels resemble a cat's whiskers, which is why it is called a \"Catfish.\"",
+        "name": {
+          "en": "Catfish",
+          "id": "Lele"
+        },
+        "desc": {
+          "en": "A freshwater fish with a smooth body and two whisker-like barbels around its mouth. These barbels resemble a cat's whiskers, which is why it is called a \"Catfish.\"",
+          "id": "Ikan air tawar dengan tubuh licin dan memiliki dua kumis di sekitar mulutnya. Ada juga yang menyebut ikan ini sebagai ikan kucing karena kumisnya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3671,8 +5105,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2034,
-        "name": "Giant Catfish",
-        "desc": "A catfish that turns into a predator of smaller fish once its body grows to an enormous size.",
+        "name": {
+          "en": "Giant Catfish",
+          "id": "Lele Raksasa"
+        },
+        "desc": {
+          "en": "A catfish that turns into a predator of smaller fish once its body grows to an enormous size.",
+          "id": "Lele yang berubah menjadi predator ikan kecil lainnya saat ukuran tubuhnya sudah sangat besar."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3686,8 +5126,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2035,
-        "name": "Mutant Catfish",
-        "desc": "A catfish mutated by magical energy. Its whiskers can unleash electric shocks, and its body has become even more slippery.",
+        "name": {
+          "en": "Mutant Catfish",
+          "id": "Lele Mutant"
+        },
+        "desc": {
+          "en": "A catfish mutated by magical energy. Its whiskers can unleash electric shocks, and its body has become even more slippery.",
+          "id": "Lele yang bermutasi akibat energi sihir. Kumisnya dapat mengeluarkan sengatan listrik, dan tubuhnya semakin licin."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3701,8 +5147,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2036,
-        "name": "Apocryphal Catfish",
-        "desc": "Long ago, this catfish was believed to rule the freshwater realms and was worshipped as an embodiment of a deity.",
+        "name": {
+          "en": "Apocryphal Catfish",
+          "id": "Lele Purba"
+        },
+        "desc": {
+          "en": "Long ago, this catfish was believed to rule the freshwater realms and was worshipped as an embodiment of a deity.",
+          "id": "Dahulu kala, lele ini dipercaya menguasai perairan tawar dan disembah sebagai perwujudan dewata."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3716,8 +5168,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2037,
-        "name": "Sworfish",
-        "desc": "A strange fish with a head shaped like a sword blade. It cuts through the water at high speed to strike it's prey.",
+        "name": {
+          "en": "Sworfish",
+          "id": "Sworfish"
+        },
+        "desc": {
+          "en": "A strange fish with a head shaped like a sword blade. It cuts through the water at high speed to strike it's prey.",
+          "id": "Ikan aneh dengan kepala yang menyerupai bilah pedang. Sering memotong arus air dengan cepat untuk menyerang mangsanya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3731,8 +5189,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2038,
-        "name": "Giant Sworfish",
-        "desc": "A massive fish often mistaken for a giant sword falling into the water. When threatened, it strikes and slashes its foes using its razor-sharp head.",
+        "name": {
+          "en": "Giant Sworfish",
+          "id": "Sworfish Raksasa"
+        },
+        "desc": {
+          "en": "A massive fish often mistaken for a giant sword falling into the water. When threatened, it strikes and slashes its foes using its razor-sharp head.",
+          "id": "Ikan yang sering disalahpahami sebagai pedang besar yang jatuh di air. Ketika merasa terancam, ikan ini akan menebas lawannya dengan kepalanya yang tajam."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3746,8 +5210,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2039,
-        "name": "Mutant Sworfish",
-        "desc": "A fish believed to have transformed into a living sword after consuming iron buried beneath the waters.",
+        "name": {
+          "en": "Mutant Sworfish",
+          "id": "Sworfish Mutant"
+        },
+        "desc": {
+          "en": "A fish believed to have transformed into a living sword after consuming iron buried beneath the waters.",
+          "id": "Ikan yang dipercayai telah berubah menjadi pedang hidup karena memakan besi yang tertimbun di dasar perairan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3761,8 +5231,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2040,
-        "name": "Apocryphal Sworfish",
-        "desc": "The Fragment of Light known as Astarte once wielded this ancient fish as a sword to battle the Demon King Ariel.",
+        "name": {
+          "en": "Apocryphal Sworfish",
+          "id": "Sworfish Purba"
+        },
+        "desc": {
+          "en": "The Fragment of Light known as Astarte once wielded this ancient fish as a sword to battle the Demon King Ariel.",
+          "id": "Fragment of Light bernama Astarte pernah menggunakan ikan ini sebagai pedang untuk melawan Raja Iblis Ariel."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3776,8 +5252,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2041,
-        "name": "Crylobster",
-        "desc": "A lobster that appears only during the winter season. Its entire body is covered in thick layers of frozen ice.",
+        "name": {
+          "en": "Crylobster",
+          "id": "Crylobster"
+        },
+        "desc": {
+          "en": "A lobster that appears only during the winter season. Its entire body is covered in thick layers of frozen ice.",
+          "id": "Lobster yang muncul saat musim salju. Tubuhnya dipenuhi oleh es yang membeku."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3791,8 +5273,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2042,
-        "name": "Giant Crylobster",
-        "desc": "What sets this one apart is not just the ice covering its body, but the fact that its claws have completely turned into solid blocks of ice.",
+        "name": {
+          "en": "Giant Crylobster",
+          "id": "Crylobster Raksasa"
+        },
+        "desc": {
+          "en": "What sets this one apart is not just the ice covering its body, but the fact that its claws have completely turned into solid blocks of ice.",
+          "id": "Yang membuatnya berbeda bukan tubuhnya yang penuh oleh es, tetapi capitnya sudah menjadi bongkahan es."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3806,8 +5294,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2043,
-        "name": "Mutant Crylobster",
-        "desc": "A lobster that has fused with the frigid waters of the sea. It is believed that when threatened, it can freeze the surrounding water in an instant.",
+        "name": {
+          "en": "Mutant Crylobster",
+          "id": "Crylobster Mutant"
+        },
+        "desc": {
+          "en": "A lobster that has fused with the frigid waters of the sea. It is believed that when threatened, it can freeze the surrounding water in an instant.",
+          "id": "Lobster yang sudah menyatu dengan dinginnya air laut. Dipercayai bahwa lobster ini akan mengubah air disekitarnya menjadi es ketika merasa terancam."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3821,8 +5315,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2044,
-        "name": "Apocryphal Crylobster",
-        "desc": "Legend says this lobster is the result of a failed divine experiment. Its claws can slice and freeze anything that dares anger it.",
+        "name": {
+          "en": "Apocryphal Crylobster",
+          "id": "Crylobster Purba"
+        },
+        "desc": {
+          "en": "Legend says this lobster is the result of a failed divine experiment. Its claws can slice and freeze anything that dares anger it.",
+          "id": "Konon, lobster ini adalah hasil eksperimen gagal yang dilakukan oleh seorang dewa. Capitnya dapat memotong dan membekukan apapun yang membuatnya kesal."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3836,8 +5336,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2045,
-        "name": "Mola-Mola",
-        "desc": "A fish that often surfaces in the open sea, disliked by fishermen. Its body is prone to parasites, making it extremely fragile.",
+        "name": {
+          "en": "Mola-Mola",
+          "id": "Mola-Mola"
+        },
+        "desc": {
+          "en": "A fish that often surfaces in the open sea, disliked by fishermen. Its body is prone to parasites, making it extremely fragile.",
+          "id": "Ikan yang sering muncul dipermukaan air laut dan tidak disukai oleh para nelayan. Tubuhnya sering dihinggapi parasit sehingga membuatnya mudah mati."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3851,8 +5357,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2046,
-        "name": "Giant Mola-Mola",
-        "desc": "A massive fish that frequently gets trapped in fishing nets. In several kingdoms, this giant fish is considered a luxury delicacy.",
+        "name": {
+          "en": "Giant Mola-Mola",
+          "id": "Mola-Mola Raksasa"
+        },
+        "desc": {
+          "en": "A massive fish that frequently gets trapped in fishing nets. In several kingdoms, this giant fish is considered a luxury delicacy.",
+          "id": "Ikan besar yang selalu terjerat jaring nelayan. Di beberapa kerajaan, ikan besar ini sering dikonsumi sebagai makanan mahal."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3866,8 +5378,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2047,
-        "name": "Mutant Mola-Mola",
-        "desc": "Parasites have fused with its body, making it far more aggressive. Some fishermen claim to have witnessed it devour a shark.",
+        "name": {
+          "en": "Mutant Mola-Mola",
+          "id": "Mola-Mola Mutant"
+        },
+        "desc": {
+          "en": "Parasites have fused with its body, making it far more aggressive. Some fishermen claim to have witnessed it devour a shark.",
+          "id": "Parasit yang hinggap ditubuhnya menyatu dan membuat sifatnya lebih agresif. Beberapa nelayan pernah melihat ikan ini memakan seekor hiu."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3881,8 +5399,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2048,
-        "name": "Apocryphal Mola-Mola",
-        "desc": "An ancient Mola-Mola said to have protected the seas from calamities. It is believed to have once calmed the wrath of the Ancient Sardine that brought storms to the ocean.",
+        "name": {
+          "en": "Apocryphal Mola-Mola",
+          "id": "Mola-Mola Purba"
+        },
+        "desc": {
+          "en": "An ancient Mola-Mola said to have protected the seas from calamities. It is believed to have once calmed the wrath of the Ancient Sardine that brought storms to the ocean.",
+          "id": "Mola-Mola kuno yang sudah menjaga lautan dari marabahaya. Dipercaya, Mola-Mola ini pernah menenangkan amarah Sarden Purba yang mendatangkan badai di tengah lautan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3896,8 +5420,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2049,
-        "name": "Eel",
-        "desc": "A fish shaped like a snake, valued for its rich nutritional content.",
+        "name": {
+          "en": "Eel",
+          "id": "Belut"
+        },
+        "desc": {
+          "en": "A fish shaped like a snake, valued for its rich nutritional content.",
+          "id": "Ikan yang berbentuk seperti ular. Digemari banyak orang karena kaya akan nutrisi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3911,8 +5441,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2050,
-        "name": "Giant Eel",
-        "desc": "An enormous eel, similar in size to an anaconda, more than five years old. Many fishermen often mistake it for a serpent.",
+        "name": {
+          "en": "Giant Eel",
+          "id": "Belut Raksasa"
+        },
+        "desc": {
+          "en": "An enormous eel, similar in size to an anaconda, more than five years old. Many fishermen often mistake it for a serpent.",
+          "id": "Belut besar seperti Anaconda yang berusia lebih dari 5 tahun. Banyak nelayan yang salah mengira belut ini adalah seekor ular."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3926,8 +5462,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2051,
-        "name": "Mutant Eel",
-        "desc": "An eel mutated after being struck by lightning. Its body crackles with electricity, and it releases lightning magic when threatened.",
+        "name": {
+          "en": "Mutant Eel",
+          "id": "Belut Mutant"
+        },
+        "desc": {
+          "en": "An eel mutated after being struck by lightning. Its body crackles with electricity, and it releases lightning magic when threatened.",
+          "id": "Belut yang bermutasi akibat disambar oleh halilintar. Tubuhnya dikelilingi aliran listrik dan akan mengeluarkan sihir petir saat terancam."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3941,8 +5483,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2052,
-        "name": "Apocryphal Eel",
-        "desc": "A legendary eel feared even by demons of the sea. It is believed to be the companion of a Fragment of Light known as Kalkys.",
+        "name": {
+          "en": "Apocryphal Eel",
+          "id": "Belut Purba"
+        },
+        "desc": {
+          "en": "A legendary eel feared even by demons of the sea. It is believed to be the companion of a Fragment of Light known as Kalkys.",
+          "id": "Belut legendaris yang pernah membuat para iblis ketakutan saat berada di lautan. Dipercaya, belut ini adalah peliharaan Fragment of Light bernama Kalkys."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3956,8 +5504,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2053,
-        "name": "Damsel",
-        "desc": "A saltwater fish commonly kept as an aquarium ornamental fish.",
+        "name": {
+          "en": "Damsel",
+          "id": "Damsel"
+        },
+        "desc": {
+          "en": "A saltwater fish commonly kept as an aquarium ornamental fish.",
+          "id": "Ikan air asin yang sering dijadikan hiasan aquarium."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3971,8 +5525,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2054,
-        "name": "Giant Damsel",
-        "desc": "A rare Damsel with an unusually large body. Fishermen believe it to be the king of all Damsels.",
+        "name": {
+          "en": "Giant Damsel",
+          "id": "Damsel Raksasa"
+        },
+        "desc": {
+          "en": "A rare Damsel with an unusually large body. Fishermen believe it to be the king of all Damsels.",
+          "id": "Jenis Damsel yang unik karena ukurannya yang tidak normal. Nelayan percaya jika Damsel ini adalah rajanya para Damsel."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -3986,8 +5546,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2055,
-        "name": "Mutant Damsel",
-        "desc": "An extremely aggressive Damsel after consuming a magic stone. Some fishermen claim this one can speak.",
+        "name": {
+          "en": "Mutant Damsel",
+          "id": "Damsel Mutant"
+        },
+        "desc": {
+          "en": "An extremely aggressive Damsel after consuming a magic stone. Some fishermen claim this one can speak.",
+          "id": "Damsel yang bersikap sangat agresif setelah memakan batu sihir. Nelayan pernah melihat Damsel jenis ini berbicara."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4001,8 +5567,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2056,
-        "name": "Apocryphal Damsel",
-        "desc": "Its wide fins have the power to protect marine creatures. Coastal tribes worship this ancient Damsel as their guardian deity.",
+        "name": {
+          "en": "Apocryphal Damsel",
+          "id": "Damsel Purba"
+        },
+        "desc": {
+          "en": "Its wide fins have the power to protect marine creatures. Coastal tribes worship this ancient Damsel as their guardian deity.",
+          "id": "Sirip lebar Damsel ini memiliki kemampuan untuk melindungi hewan laut. Beberapa suku yang tinggal area perairan memuja Damsel ini sebagai dewa mereka."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4016,8 +5588,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2057,
-        "name": "Sunscale",
-        "desc": "A unique fish that often surfaces during the summer. Fishermen consider it a pest due to its overwhelming numbers during the season.",
+        "name": {
+          "en": "Sunscale",
+          "id": "Sunscale"
+        },
+        "desc": {
+          "en": "A unique fish that often surfaces during the summer. Fishermen consider it a pest due to its overwhelming numbers during the season.",
+          "id": "Ikan unik yang suka muncul dipermukaan air saat musim panas. Nelayan menganggapnya sebagai hama karena jumlah mereka yang sangat banyak pada musim itu."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4031,8 +5609,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2058,
-        "name": "Giant Sunscale",
-        "desc": "Boss, the perfect word to describe this creature. A rare variant of Sunscale that leads thousands of its kind throughout the river.",
+        "name": {
+          "en": "Giant Sunscale",
+          "id": "Sunscale Raksasa"
+        },
+        "desc": {
+          "en": "Boss, the perfect word to describe this creature. A rare variant of Sunscale that leads thousands of its kind throughout the river.",
+          "id": "Bos, adalah kata yang tepat untuk menggambarkan ikan ini. Jenis langka di Sunscale yang bertugas memimpin ribuan kawanannya di sungai."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4046,8 +5630,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2059,
-        "name": "Mutant Sunscale",
-        "desc": "A solitary Sunscale that is never seen among its kind. It is believed to have been exposed to magical radiation, shortening its lifespan.",
+        "name": {
+          "en": "Mutant Sunscale",
+          "id": "Sunscale Mutant"
+        },
+        "desc": {
+          "en": "A solitary Sunscale that is never seen among its kind. It is believed to have been exposed to magical radiation, shortening its lifespan.",
+          "id": "Jenis Sunscale yang individual dan tidak pernah terlihat di kelompok Sunscale. Dipercayai terpapar radiasi sihir yang membuat berumur pendek."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4061,8 +5651,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2060,
-        "name": "Apocryphal Sunscale",
-        "desc": "Legend says this fish originated from a solar storm that crashed onto Earth and landed in the river. No one has ever dared to catch it.",
+        "name": {
+          "en": "Apocryphal Sunscale",
+          "id": "Sunscale Purba"
+        },
+        "desc": {
+          "en": "Legend says this fish originated from a solar storm that crashed onto Earth and landed in the river. No one has ever dared to catch it.",
+          "id": "Konon, ikan ini berasal dari badai matahari yang sampai di bumi dan mendarat di sungai. Tiada siapapun yang berani yang menangkap ikan ini."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4076,8 +5672,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2061,
-        "name": "Salmon",
-        "desc": "A fish known as a true warrior for swimming against the river's current to return to the ocean, symbolizing resilience and perseverance.",
+        "name": {
+          "en": "Salmon",
+          "id": "Salmon"
+        },
+        "desc": {
+          "en": "A fish known as a true warrior for swimming against the river's current to return to the ocean, symbolizing resilience and perseverance.",
+          "id": "Ikan yang dikenal sebagai seorang pejuang karena melawan aliran sungai untuk kembali ke lautan. Simbol perjuangan dan pantang menyerah."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4091,8 +5693,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2062,
-        "name": "Giant Salmon",
-        "desc": "A gigantic salmon capable of cutting through river currents like a storm. Its massive body signifies that it is ready to return to the sea.",
+        "name": {
+          "en": "Giant Salmon",
+          "id": "Salmon Raksasa"
+        },
+        "desc": {
+          "en": "A gigantic salmon capable of cutting through river currents like a storm. Its massive body signifies that it is ready to return to the sea.",
+          "id": "Salmon rakasa yang mampu membelah aliran sungai seperti badai. Tubuhnya yang besar adalah tanda bahwa dia siap kembali ke lautan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4106,8 +5714,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2063,
-        "name": "Mutant Salmon",
-        "desc": "A salmon that has become inedible due to toxins accumulating in its body from staying too long in the river. When threatened, it releases poisonous fluids.",
+        "name": {
+          "en": "Mutant Salmon",
+          "id": "Salmon Mutant"
+        },
+        "desc": {
+          "en": "A salmon that has become inedible due to toxins accumulating in its body from staying too long in the river. When threatened, it releases poisonous fluids.",
+          "id": "Salmon yang tidak bisa dikonsumi karena tubuhnya dipenuhi oleh racun, akibat terlalu lama berada di sungai. Salmon ini akan mengeluarakan cairan racun saat merasa terancam."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4121,8 +5735,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2064,
-        "name": "Apocryphal Salmon",
-        "desc": "Legend says Salmon and Sardine were once the same species. When separated, they summoned storms and clashed to drive each other out of the ocean.",
+        "name": {
+          "en": "Apocryphal Salmon",
+          "id": "Salmon Purba"
+        },
+        "desc": {
+          "en": "Legend says Salmon and Sardine were once the same species. When separated, they summoned storms and clashed to drive each other out of the ocean.",
+          "id": "Konon, Salmon dan Sarden adalah ikan yang sama. Saat berpisah, keduanya memanggil badai dan bertarung satu sama lain untuk mengusir satu sama lain dari lautan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4136,8 +5756,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2065,
-        "name": "Tilapia",
-        "desc": "A freshwater fish that reproduces quickly and survives in many environments. Often farmed for its important medical uses.",
+        "name": {
+          "en": "Tilapia",
+          "id": "Tilapia"
+        },
+        "desc": {
+          "en": "A freshwater fish that reproduces quickly and survives in many environments. Often farmed for its important medical uses.",
+          "id": "Ikan air tawar yang mudah berkembang biak dan mampu bertahan di berbagai kondisi lingkungan. Sering dibudidayakan karena memiliki manfaat penting untuk kebutuhan medis."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4151,8 +5777,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2066,
-        "name": "Giant Tilapia",
-        "desc": "A long-lived Tilapia with a massive body. Its flesh is tough, but its skin remains valuable for medical purposes.",
+        "name": {
+          "en": "Giant Tilapia",
+          "id": "Tilapia Raksasa"
+        },
+        "desc": {
+          "en": "A long-lived Tilapia with a massive body. Its flesh is tough, but its skin remains valuable for medical purposes.",
+          "id": "Tilapia yang besar karena berumur panjang. Dagingnya keras tetapi kulitnya tetap dapat digunakan untuk kebutuhan medis."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4166,8 +5798,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2067,
-        "name": "Mutant Tilapia",
-        "desc": "A Tilapia considered a pest due to its lack of benefits. Its body is full of parasites, and it attacks other fish unprovoked.",
+        "name": {
+          "en": "Mutant Tilapia",
+          "id": "Tilapia Mutant"
+        },
+        "desc": {
+          "en": "A Tilapia considered a pest due to its lack of benefits. Its body is full of parasites, and it attacks other fish unprovoked.",
+          "id": "Jenis Tilapia yang dianggap hama karena tidak memiliki manfaat sama sekali. Tubuhnya penuh parasit dan suka menyerang ikan lain tanpa alasan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4181,8 +5819,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2068,
-        "name": "Apocryphal Tilapia",
-        "desc": "Its thick, hardened skin was once used to craft shields, making this ancient Tilapia extremely rare today.",
+        "name": {
+          "en": "Apocryphal Tilapia",
+          "id": "Tilapia Purba"
+        },
+        "desc": {
+          "en": "Its thick, hardened skin was once used to craft shields, making this ancient Tilapia extremely rare today.",
+          "id": "Kulitnya yang keras dan tebal, membuatnya sering dijadikan bahan utama pembuatan tameng. Karena itu, jenis Tilapia ini hampir tidak bisa ditemukan lagi."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4196,8 +5840,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2069,
-        "name": "Pyroflake",
-        "desc": "Its body resembles charcoal, making it hard to believe that Pyroflake is actually a fish.",
+        "name": {
+          "en": "Pyroflake",
+          "id": "Pyroflake"
+        },
+        "desc": {
+          "en": "Its body resembles charcoal, making it hard to believe that Pyroflake is actually a fish.",
+          "id": "Tubuhnya seperti arang, membuat semua orang tidak menyangka bahwa Pyroflake adalah seekor ikan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4211,8 +5861,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2070,
-        "name": "Giant Pyroflake",
-        "desc": "A Pyroflake that has lived for hundreds of years. Its sheer weight makes it nearly impossible to catch.",
+        "name": {
+          "en": "Giant Pyroflake",
+          "id": "Pyroflake Raksasa"
+        },
+        "desc": {
+          "en": "A Pyroflake that has lived for hundreds of years. Its sheer weight makes it nearly impossible to catch.",
+          "id": "Pyroflake yang berumur ratusan tahun. Susah untuk menangkapnya karena terlalu berat."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4226,8 +5882,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2071,
-        "name": "Mutant Pyroflake",
-        "desc": "A Pyroflake that consumed a magic stone. When threatened, it spits molten lava to melt its enemies.",
+        "name": {
+          "en": "Mutant Pyroflake",
+          "id": "Pyroflake Mutant"
+        },
+        "desc": {
+          "en": "A Pyroflake that consumed a magic stone. When threatened, it spits molten lava to melt its enemies.",
+          "id": "Jenis Pyroflake yang memakan batu sihir. Jika terancam, ikan ini akan menyeburkan lava yang melelehakan musuhnya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4241,8 +5903,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2072,
-        "name": "Apocryphal Pyroflake",
-        "desc": "Rumored to be the embodiment of a volcano's fury toward humanity's destruction of nature.",
+        "name": {
+          "en": "Apocryphal Pyroflake",
+          "id": "Pyroflake Purba"
+        },
+        "desc": {
+          "en": "Rumored to be the embodiment of a volcano's fury toward humanity's destruction of nature.",
+          "id": "Konon, ikan ini adalah perwujudan dari amarah gunung berapi terhadap kerusakan alam yang dibuat manusia."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4256,8 +5924,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2073,
-        "name": "Prismatic Fish",
-        "desc": "It's scales are multicolored and reflect rainbow light when touched by sunlight. It is often regarded as a symbol of good fortune.",
+        "name": {
+          "en": "Prismatic Fish",
+          "id": "Ikan Prisma"
+        },
+        "desc": {
+          "en": "It's scales are multicolored and reflect rainbow light when touched by sunlight. It is often regarded as a symbol of good fortune.",
+          "id": "Sisik berwarna-warni dan memantulkan cahaya pelangi saat tersentuh sinar matahari. Sering dianggap sebagai simbol keberuntungan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4271,8 +5945,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2074,
-        "name": "Siamese Fighting Fish",
-        "desc": "A territorial fish with a beautiful appearance. Often kept as an ornamental fish and used for fighting by some people.",
+        "name": {
+          "en": "Siamese Fighting Fish",
+          "id": "Ikan Cupang"
+        },
+        "desc": {
+          "en": "A territorial fish with a beautiful appearance. Often kept as an ornamental fish and used for fighting by some people.",
+          "id": "Ikan teritorial dengan fisik yang indah. Sering dijadikan ikan hias dan aduan oleh sebagian orang."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4286,8 +5966,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2075,
-        "name": "Octopus",
-        "desc": "An eight-legged sea creature often remembered as that annoying underwater “neighbor” from our childhood. Hmm...",
+        "name": {
+          "en": "Octopus",
+          "id": "Gurita"
+        },
+        "desc": {
+          "en": "An eight-legged sea creature often remembered as that annoying underwater “neighbor” from our childhood. Hmm...",
+          "id": "Hewan laut berkaki delapan yang sering dianggap sebagai tetangga menyebalkan saat kita kecil. Hmm..."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4301,8 +5987,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2076,
-        "name": "Lobster",
-        "desc": "A wise saying from a lobster goes, \"Livin like Larry.\"",
+        "name": {
+          "en": "Lobster",
+          "id": "Lobster"
+        },
+        "desc": {
+          "en": "A wise saying from a lobster goes, \"Livin like Larry.\"",
+          "id": "Ada pepatah bijak dari seekor Lobster, \"Hiduplah seperti Larry\"."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4316,8 +6008,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2077,
-        "name": "Silver Lobster",
-        "desc": "A rare lobster covered entirely in silver. It cannot be eaten, but is often crafted into jewelry.",
+        "name": {
+          "en": "Silver Lobster",
+          "id": "Lobster Perak"
+        },
+        "desc": {
+          "en": "A rare lobster covered entirely in silver. It cannot be eaten, but is often crafted into jewelry.",
+          "id": "Lobster langka yang seluruh tubuhnya dilapisi perak. Lobster ini tidak bisa dikonsumsi, tapi sering dijadikan perhiasan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4331,8 +6029,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2078,
-        "name": "Sea Horse",
-        "desc": "A unique marine creature with a muscular body and curled tail. Though slow-moving, it is considered a symbol of good fortune among fishermen.",
+        "name": {
+          "en": "Sea Horse",
+          "id": "Kuda Laut"
+        },
+        "desc": {
+          "en": "A unique marine creature with a muscular body and curled tail. Though slow-moving, it is considered a symbol of good fortune among fishermen.",
+          "id": "Hewan laut yang unik dengan tubuh berotot dan ekor melingkar. Meskipun bergerak lambat, hewan ini sering dianggap simbol keberuntungan di kalangan nelayan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4346,8 +6050,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2079,
-        "name": "Silver Sea Horse",
-        "desc": "A rare sea horse with shimmering silver scales. Despite its slow movements, its presence is seen as a sign of prosperity and good luck.",
+        "name": {
+          "en": "Silver Sea Horse",
+          "id": "Kuda Laut Perak"
+        },
+        "desc": {
+          "en": "A rare sea horse with shimmering silver scales. Despite its slow movements, its presence is seen as a sign of prosperity and good luck.",
+          "id": "Kuda laut langka dengan sisik berkilau perak. Meski bergerak lambat, kehadirannya dianggap sebagai pertanda kemakmuran dan keberuntungan di lautan."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4361,8 +6071,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2080,
-        "name": "Shrimp",
-        "desc": "A fast and agile aquatic creature. Commonly used as delicious food and as bait for larger predator fish.",
+        "name": {
+          "en": "Shrimp",
+          "id": "Udang"
+        },
+        "desc": {
+          "en": "A fast and agile aquatic creature. Commonly used as delicious food and as bait for larger predator fish.",
+          "id": "Hewan air yang cepat dan lincah. Banyak digunakan sebagai makanan lezat dan umpan bagi ikan predator yang lebih besar."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4376,8 +6092,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2081,
-        "name": "Golden Shrimp",
-        "desc": "A rare seawater shrimp with a shell that gleams like gold. Highly sought after for its beauty and believed to bring good fortune to its owner.",
+        "name": {
+          "en": "Golden Shrimp",
+          "id": "Udang Emas"
+        },
+        "desc": {
+          "en": "A rare seawater shrimp with a shell that gleams like gold. Highly sought after for its beauty and believed to bring good fortune to its owner.",
+          "id": "Udang air laut langka dengan cangkang berkilau seperti emas. Banyak diburu karena keindahannya dan dipercaya membawa keberuntungan bagi pemiliknya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4391,8 +6113,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2082,
-        "name": "Crab",
-        "desc": "A crab widely known among children as the stingy boss of the sea sponge.",
+        "name": {
+          "en": "Crab",
+          "id": "Kepiting"
+        },
+        "desc": {
+          "en": "A crab widely known among children as the stingy boss of the sea sponge.",
+          "id": "Kepiting yang dikenal oleh anak kecil sebagai bos kikir dari sponge laut."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4406,8 +6134,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2083,
-        "name": "Golden Crab",
-        "desc": "Despite being called a Golden Crab, not a single part of its body is actually made of gold.",
+        "name": {
+          "en": "Golden Crab",
+          "id": "Kepiting Emas"
+        },
+        "desc": {
+          "en": "Despite being called a Golden Crab, not a single part of its body is actually made of gold.",
+          "id": "Meskipun disebut kepiting emas, tetapi tidak ada satupun emas di tubuhnya."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4421,8 +6155,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2084,
-        "name": "Starfish",
-        "desc": "The loyal best friend of the sea sponge~",
+        "name": {
+          "en": "Starfish",
+          "id": "Bintang Laut"
+        },
+        "desc": {
+          "en": "The loyal best friend of the sea sponge~",
+          "id": "Dia adalah sahabat baik dari sponge laut~"
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4436,8 +6176,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2085,
-        "name": "Mutant Starfish",
-        "desc": "A starfish mutated by a strange energy stone. No, its legs did not grow long like that starfish monster in the Pikomon game.",
+        "name": {
+          "en": "Mutant Starfish",
+          "id": "Bintang Laut Mutant"
+        },
+        "desc": {
+          "en": "A starfish mutated by a strange energy stone. No, its legs did not grow long like that starfish monster in the Pikomon game.",
+          "id": "Bintang laut yang mengalami mutasi akibat batu energi yang aneh. Tidak, kakinya tidak memanjang seperti bintang laut di game Pikomon."
+        },
         "type": "item",
         "category": "item",
         "categoryId": 0,
@@ -4451,8 +6197,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3001,
-        "name": "Failed Dish",
-        "desc": "Failed dish that made by your skill issues.",
+        "name": {
+          "en": "Failed Dish",
+          "id": "Masakan Gagal"
+        },
+        "desc": {
+          "en": "Failed dish that made by your skill issues.",
+          "id": "Masakan gagal yang dihasilkan dari keterampilanmu yang masih biasa saja."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4464,8 +6216,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3002,
-        "name": "Spicy Spring Bowl",
-        "desc": "Stir-fried fresh lettuce with tomato and chili, simple yet appetizing.",
+        "name": {
+          "en": "Spicy Spring Bowl",
+          "id": "Spicy Spring Bowl"
+        },
+        "desc": {
+          "en": "Stir-fried fresh lettuce with tomato and chili, simple yet appetizing.",
+          "id": "Tumisan selada segar dengan tomat dan cabai, sederhana tapi menggugah selera."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4481,8 +6239,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3003,
-        "name": "Apple Pie",
-        "desc": "A pie with a crispy outer layer and fresh apple slices, often mentioned by a red-haired girl holding a Vector~",
+        "name": {
+          "en": "Apple Pie",
+          "id": "Pie Apel"
+        },
+        "desc": {
+          "en": "A pie with a crispy outer layer and fresh apple slices, often mentioned by a red-haired girl holding a Vector~",
+          "id": "Pai dengan lapisan luar yang renyah serta rasa potongan apel segar, sering diucapkan oleh perempuan berambut merah sambil memegang Vector~"
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4497,8 +6261,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3004,
-        "name": "Bacon",
-        "desc": "Savory smoked meat slices, crispy when cooked.",
+        "name": {
+          "en": "Bacon",
+          "id": "Bacon"
+        },
+        "desc": {
+          "en": "Savory smoked meat slices, crispy when cooked.",
+          "id": "Irisan daging asap yang gurih dan renyah saat dimakan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4513,8 +6283,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3005,
-        "name": "Burger",
-        "desc": "Juicy patty with fresh veggies in a soft bun.",
+        "name": {
+          "en": "Burger",
+          "id": "Burger"
+        },
+        "desc": {
+          "en": "Juicy patty with fresh veggies in a soft bun.",
+          "id": "Patty berair dengan sayuran segar dalam roti lembut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4530,8 +6306,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3006,
-        "name": "Burrito",
-        "desc": "Spicy meat and beans wrapped in a tortilla.",
+        "name": {
+          "en": "Burrito",
+          "id": "Burrito"
+        },
+        "desc": {
+          "en": "Spicy meat and beans wrapped in a tortilla.",
+          "id": "Daging pedas dan kacang dibungkus tortilla."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4545,8 +6327,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3007,
-        "name": "Bagel",
-        "desc": "Chewy ring-shaped bread, perfect for toppings.",
+        "name": {
+          "en": "Bagel",
+          "id": "Bagel"
+        },
+        "desc": {
+          "en": "Chewy ring-shaped bread, perfect for toppings.",
+          "id": "Roti berbentuk cincin kenyal, cocok untuk topping."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4561,8 +6349,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3008,
-        "name": "Cheese Cake",
-        "desc": "Creamy dessert with a crumbly biscuit base.",
+        "name": {
+          "en": "Cheese Cake",
+          "id": "Kue Keju"
+        },
+        "desc": {
+          "en": "Creamy dessert with a crumbly biscuit base.",
+          "id": "Makanan penutup lembut dengan dasar biskuit remah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4577,8 +6371,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3009,
-        "name": "Cheese Puffs",
-        "desc": "Airy cheese-flavored snacks that melt in your mouth.",
+        "name": {
+          "en": "Cheese Puffs",
+          "id": "Snack Keju"
+        },
+        "desc": {
+          "en": "Airy cheese-flavored snacks that melt in your mouth.",
+          "id": "Snack rasa keju ringan yang lumer di mulut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4593,8 +6393,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3010,
-        "name": "Cookies",
-        "desc": "Sweet baked treats with various mix-ins.",
+        "name": {
+          "en": "Cookies",
+          "id": "Kukis"
+        },
+        "desc": {
+          "en": "Sweet baked treats with various mix-ins.",
+          "id": "Kue kering manis dengan berbagai isian."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4609,8 +6415,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3011,
-        "name": "Chocolate Cake",
-        "desc": "Rich layered cake with chocolate ganache.",
+        "name": {
+          "en": "Chocolate Cake",
+          "id": "Kue Cokelat"
+        },
+        "desc": {
+          "en": "Rich layered cake with chocolate ganache.",
+          "id": "Kue lapis cokelat pekat dengan ganache."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4625,8 +6437,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3012,
-        "name": "Curry",
-        "desc": "Aromatic spiced stew with tender meat.",
+        "name": {
+          "en": "Curry",
+          "id": "Kari"
+        },
+        "desc": {
+          "en": "Aromatic spiced stew with tender meat.",
+          "id": "Rebusan rempah dengan daging empuk."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4640,8 +6458,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3013,
-        "name": "Mini Donuts",
-        "desc": "Bite-sized donuts with sugar coatings.",
+        "name": {
+          "en": "Mini Donuts",
+          "id": "Donat Mini"
+        },
+        "desc": {
+          "en": "Bite-sized donuts with sugar coatings.",
+          "id": "Donat kecil-kecil dengan taburan gula."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4657,8 +6481,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3014,
-        "name": "Dumplings",
-        "desc": "Steamed buns with savory meat fillings.",
+        "name": {
+          "en": "Dumplings",
+          "id": "Bakpao"
+        },
+        "desc": {
+          "en": "Steamed buns with savory meat fillings.",
+          "id": "Roti kukus dengan isian daging gurih."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4673,8 +6503,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3015,
-        "name": "Fried Egg",
-        "desc": "Sunny-side-up egg with runny yolk.",
+        "name": {
+          "en": "Fried Egg",
+          "id": "Telur Goreng"
+        },
+        "desc": {
+          "en": "Sunny-side-up egg with runny yolk.",
+          "id": "Telur mata sapi dengan kuning yang lumer."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4689,8 +6525,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3016,
-        "name": "Egg Salad",
-        "desc": "Chopped boiled eggs with creamy dressing.",
+        "name": {
+          "en": "Egg Salad",
+          "id": "Salad Telur"
+        },
+        "desc": {
+          "en": "Chopped boiled eggs with creamy dressing.",
+          "id": "Potongan telur rebus dengan saus krim."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4706,8 +6548,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3017,
-        "name": "Egg Tart",
-        "desc": "Buttery crust filled with egg custard.",
+        "name": {
+          "en": "Egg Tart",
+          "id": "Tart Telur"
+        },
+        "desc": {
+          "en": "Buttery crust filled with egg custard.",
+          "id": "Kulit pie mentah diisi custard telur."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4721,8 +6569,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3018,
-        "name": "French Fries",
-        "desc": "Crispy golden potato sticks with salt.",
+        "name": {
+          "en": "French Fries",
+          "id": "Kentang Goreng"
+        },
+        "desc": {
+          "en": "Crispy golden potato sticks with salt.",
+          "id": "Potong kentang goreng renyah dengan garam."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4736,8 +6590,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3019,
-        "name": "Fruit Cake",
-        "desc": "Dense cake with dried fruits and nuts.",
+        "name": {
+          "en": "Fruit Cake",
+          "id": "Kue Buah"
+        },
+        "desc": {
+          "en": "Dense cake with dried fruits and nuts.",
+          "id": "Kue padat berisi buah kering dan kacang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4752,8 +6612,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3020,
-        "name": "Garlic Bread",
-        "desc": "Toasted bread with garlic butter glaze.",
+        "name": {
+          "en": "Garlic Bread",
+          "id": "Roti Bawang"
+        },
+        "desc": {
+          "en": "Toasted bread with garlic butter glaze.",
+          "id": "Roti panggang dengan mentega bawang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4768,8 +6634,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3021,
-        "name": "Gingerbread Man",
-        "desc": "Spiced cookie shaped like a little person.",
+        "name": {
+          "en": "Gingerbread Man",
+          "id": "Kue Jahe"
+        },
+        "desc": {
+          "en": "Spiced cookie shaped like a little person.",
+          "id": "Kue jahe berbentuk orang kecil."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4783,8 +6655,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3022,
-        "name": "Pizza",
-        "desc": "A warm pizza topped with melted cheese and delicious toppings.",
+        "name": {
+          "en": "Pizza",
+          "id": "Pizza"
+        },
+        "desc": {
+          "en": "A warm pizza topped with melted cheese and delicious toppings.",
+          "id": "Pizza hangat dengan lapisan keju meleleh dan topping yang menggugah selera."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4798,8 +6676,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3023,
-        "name": "Hot Dog",
-        "desc": "Premium sausage with gourmet toppings.",
+        "name": {
+          "en": "Hot Dog",
+          "id": "Hot Dog"
+        },
+        "desc": {
+          "en": "Premium sausage with gourmet toppings.",
+          "id": "Sosis premium dengan topping mewah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4813,8 +6697,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3024,
-        "name": "Ice Cream",
-        "desc": "Creamy frozen dessert in various flavors.",
+        "name": {
+          "en": "Ice Cream",
+          "id": "Es Krim"
+        },
+        "desc": {
+          "en": "Creamy frozen dessert in various flavors.",
+          "id": "Makanan penutup beku lembut berbagai rasa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4828,8 +6718,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3025,
-        "name": "Jelly",
-        "desc": "Wobbly fruit-flavored dessert.",
+        "name": {
+          "en": "Jelly",
+          "id": "Jeli"
+        },
+        "desc": {
+          "en": "Wobbly fruit-flavored dessert.",
+          "id": "Makanan penutup rasa buah yang kenyal."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4843,8 +6739,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3026,
-        "name": "Bread Jam",
-        "desc": "Sliced bread with sweet fruit spread.",
+        "name": {
+          "en": "Bread Jam",
+          "id": "Roti Selai"
+        },
+        "desc": {
+          "en": "Sliced bread with sweet fruit spread.",
+          "id": "Roti tawar dengan olesan selai buah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4858,8 +6760,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3027,
-        "name": "Orange Pie",
-        "desc": "Tangy orange filling in flaky crust.",
+        "name": {
+          "en": "Orange Pie",
+          "id": "Pie Jeruk"
+        },
+        "desc": {
+          "en": "Tangy orange filling in flaky crust.",
+          "id": "Isian jeruk dalam kulit pie renyah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4873,8 +6781,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3028,
-        "name": "Loaf Bread",
-        "desc": "Soft rectangular bread for sandwiches.",
+        "name": {
+          "en": "Loaf Bread",
+          "id": "Roti Tawar"
+        },
+        "desc": {
+          "en": "Soft rectangular bread for sandwiches.",
+          "id": "Roti lembut persegi untuk sandwich."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4888,8 +6802,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3029,
-        "name": "Mac Cheese",
-        "desc": "Macaroni pasta in cheesy sauce.",
+        "name": {
+          "en": "Mac Cheese",
+          "id": "Mac Cheese"
+        },
+        "desc": {
+          "en": "Macaroni pasta in cheesy sauce.",
+          "id": "Makroni dengan saus keju kental."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4903,8 +6823,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3030,
-        "name": "Meat Balls",
-        "desc": "Savory ground meat in tomato sauce.",
+        "name": {
+          "en": "Meat Balls",
+          "id": "Bakso"
+        },
+        "desc": {
+          "en": "Savory ground meat in tomato sauce.",
+          "id": "Bola daging gurih dalam saus tomat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4918,8 +6844,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3031,
-        "name": "Nacho",
-        "desc": "Corn chips with melted cheese topping.",
+        "name": {
+          "en": "Nacho",
+          "id": "Nacho"
+        },
+        "desc": {
+          "en": "Corn chips with melted cheese topping.",
+          "id": "Keripik jagung dengan lelehan keju."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4933,8 +6865,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3032,
-        "name": "Omelet",
-        "desc": "Fluffy folded eggs with veggie fillings.",
+        "name": {
+          "en": "Omelet",
+          "id": "Omelet"
+        },
+        "desc": {
+          "en": "Fluffy folded eggs with veggie fillings.",
+          "id": "Telur dadar lembut berisi sayuran."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4949,8 +6887,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3033,
-        "name": "Pudding",
-        "desc": "Silky milk dessert with caramel sauce.",
+        "name": {
+          "en": "Pudding",
+          "id": "Puding"
+        },
+        "desc": {
+          "en": "Silky milk dessert with caramel sauce.",
+          "id": "Makanan penutup susu lembut dengan karamel."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4964,8 +6908,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3034,
-        "name": "Potato Chips",
-        "desc": "Thin crispy salted potato slices.",
+        "name": {
+          "en": "Potato Chips",
+          "id": "Keripik Kentang"
+        },
+        "desc": {
+          "en": "Thin crispy salted potato slices.",
+          "id": "Irisan tipis kentang goreng asin."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4979,8 +6929,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3035,
-        "name": "Pancake",
-        "desc": "Fluffy round cakes with syrup.",
+        "name": {
+          "en": "Pancake",
+          "id": "Panekuk"
+        },
+        "desc": {
+          "en": "Fluffy round cakes with syrup.",
+          "id": "Kue bundar lembut dengan sirup."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -4994,8 +6950,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3036,
-        "name": "Popcorn",
-        "desc": "Buttery popped corn kernels.",
+        "name": {
+          "en": "Popcorn",
+          "id": "Popcorn"
+        },
+        "desc": {
+          "en": "Buttery popped corn kernels.",
+          "id": "Biji jagung meletup bermentega."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5009,8 +6971,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3037,
-        "name": "Roast Chicken",
-        "desc": "Whole oven-roasted chicken with herbs.",
+        "name": {
+          "en": "Roast Chicken",
+          "id": "Ayam Panggang"
+        },
+        "desc": {
+          "en": "Whole oven-roasted chicken with herbs.",
+          "id": "Ayam utuh dipanggang dengan rempah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5024,8 +6992,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3038,
-        "name": "Ramen",
-        "desc": "Wheat noodles in savory broth with toppings.",
+        "name": {
+          "en": "Ramen",
+          "id": "Ramen"
+        },
+        "desc": {
+          "en": "Wheat noodles in savory broth with toppings.",
+          "id": "Mie gandum dalam kuah gurih dengan topping."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5039,8 +7013,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3039,
-        "name": "Fish Steak",
-        "desc": "Pink fish fillet rich in omega-3.",
+        "name": {
+          "en": "Fish Steak",
+          "id": "Steak Ikan"
+        },
+        "desc": {
+          "en": "Pink fish fillet rich in omega-3.",
+          "id": "Fillet ikan merah kaya akan omega-3."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5054,8 +7034,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3040,
-        "name": "Sandwich",
-        "desc": "Layered bread with meats and veggies.",
+        "name": {
+          "en": "Sandwich",
+          "id": "Sandwich"
+        },
+        "desc": {
+          "en": "Layered bread with meats and veggies.",
+          "id": "Roti berlapis daging dan sayuran."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5069,8 +7055,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3041,
-        "name": "Strawberry Cake",
-        "desc": "Pink layered cake with fresh berries.",
+        "name": {
+          "en": "Strawberry Cake",
+          "id": "Kue Stroberi"
+        },
+        "desc": {
+          "en": "Pink layered cake with fresh berries.",
+          "id": "Kue lapis merah muda dengan buah segar."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5084,8 +7076,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3042,
-        "name": "Spaghetti",
-        "desc": "Long pasta with meaty tomato sauce.",
+        "name": {
+          "en": "Spaghetti",
+          "id": "Spaghetti"
+        },
+        "desc": {
+          "en": "Long pasta with meaty tomato sauce.",
+          "id": "Pasta panjang dengan saus tomat berdaging."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5099,8 +7097,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3043,
-        "name": "Steak",
-        "desc": "Juicy grilled beef cut with sear marks.",
+        "name": {
+          "en": "Steak",
+          "id": "Steak"
+        },
+        "desc": {
+          "en": "Juicy grilled beef cut with sear marks.",
+          "id": "Potongan daging sapi panggang berair."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5114,8 +7118,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3044,
-        "name": "Sushi",
-        "desc": "Vinegared rice with raw fish or any seafood.",
+        "name": {
+          "en": "Sushi",
+          "id": "Sushi"
+        },
+        "desc": {
+          "en": "Vinegared rice with raw fish or any seafood.",
+          "id": "Nasi cuka dengan ikan atau makanan laut mentah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5129,8 +7139,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3045,
-        "name": "Taco",
-        "desc": "Crispy corn shell with spicy fillings.",
+        "name": {
+          "en": "Taco",
+          "id": "Taco"
+        },
+        "desc": {
+          "en": "Crispy corn shell with spicy fillings.",
+          "id": "Kulit jagung renyah berisi pedas."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5144,8 +7160,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3046,
-        "name": "Waffle Stack",
-        "desc": "A stack of waffles drizzled with sweet syrup. Perfect for a bright morning or a calm afternoon.",
+        "name": {
+          "en": "Waffle Stack",
+          "id": "Wafel Lapis"
+        },
+        "desc": {
+          "en": "A stack of waffles drizzled with sweet syrup. Perfect for a bright morning or a calm afternoon.",
+          "id": "Tumpukan waffle hangat dengan sirup manis yang mengalir di atasnya. Cocok disantap saat pagi cerah atau sore santai."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5160,8 +7182,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3047,
-        "name": "Macaron",
-        "desc": "Sweet, soft, and crispy outside. A fancy treat with a captivating flavor in every bite.",
+        "name": {
+          "en": "Macaron",
+          "id": "Makaron"
+        },
+        "desc": {
+          "en": "Sweet, soft, and crispy outside. A fancy treat with a captivating flavor in every bite.",
+          "id": "Manis, lembut, dan renyah di luar. Camilan elegan dengan rasa yang memikat di setiap gigitan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5175,8 +7203,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3048,
-        "name": "Bundt Cake",
-        "desc": "A classic round cookie with a unique pattern and an irresistible vanilla aroma.",
+        "name": {
+          "en": "Bundt Cake",
+          "id": "Kue Bundt"
+        },
+        "desc": {
+          "en": "A classic round cookie with a unique pattern and an irresistible vanilla aroma.",
+          "id": "Kue bundar klasik dengan pola unik dan aroma vanila yang menggoda."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5190,8 +7224,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3049,
-        "name": "Chocolate Donut",
-        "desc": "A soft donut coated with rich chocolate. A favorite among donut lovers.",
+        "name": {
+          "en": "Chocolate Donut",
+          "id": "Donat Cokelat"
+        },
+        "desc": {
+          "en": "A soft donut coated with rich chocolate. A favorite among donut lovers.",
+          "id": "Donat lembut berbalut cokelat pekat. Sangat populer dikalangan pencinta donat."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5207,8 +7247,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3050,
-        "name": "Strawberry Donut",
-        "desc": "A sweet donut topped with colorful sugar sprinkles and a burst of fresh strawberry flavor.",
+        "name": {
+          "en": "Strawberry Donut",
+          "id": "Donat Strawberry"
+        },
+        "desc": {
+          "en": "A sweet donut topped with colorful sugar sprinkles and a burst of fresh strawberry flavor.",
+          "id": "Donat manis dengan taburan gula warna-warni dan rasa stroberi segar."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5224,8 +7270,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3051,
-        "name": "Crepe",
-        "desc": "Thin and soft crepes. A well-loved treat thanks to its delicious flavor.",
+        "name": {
+          "en": "Crepe",
+          "id": "Krepes"
+        },
+        "desc": {
+          "en": "Thin and soft crepes. A well-loved treat thanks to its delicious flavor.",
+          "id": "Krepes yang tipis dan lembut. Camilan yang disukai orang-orang karena rasanya yang enak."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5239,8 +7291,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3052,
-        "name": "Waffle",
-        "desc": "A classic waffle with crispy outside and fluffy inside.",
+        "name": {
+          "en": "Waffle",
+          "id": "Wafel"
+        },
+        "desc": {
+          "en": "A classic waffle with crispy outside and fluffy inside.",
+          "id": "Waffle klasik yang garing di luar dan lembut di dalam."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5254,8 +7312,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3053,
-        "name": "Pumpkin Pie",
-        "desc": "Pumpkin pie with a rich, warm spice flavour",
+        "name": {
+          "en": "Pumpkin Pie",
+          "id": "Pai Labu"
+        },
+        "desc": {
+          "en": "Pumpkin pie with a rich, warm spice flavour",
+          "id": "Pai labu dengan aroma rempah hangat yang kaya rasa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5271,8 +7335,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3054,
-        "name": "Pineapple Pie",
-        "desc": "A tropical pie with a sweet and juicy pineapple filling. Refreshing in every bite.",
+        "name": {
+          "en": "Pineapple Pie",
+          "id": "Pai Nanas"
+        },
+        "desc": {
+          "en": "A tropical pie with a sweet and juicy pineapple filling. Refreshing in every bite.",
+          "id": "Pai tropis dengan isian nanas manis yang juicy. Memberi sensasi segar di setiap gigitan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5288,8 +7358,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3055,
-        "name": "Cake",
-        "desc": "An ordinary yet delicious cake. Fluffy and sweet, perfect for any occasion",
+        "name": {
+          "en": "Cake",
+          "id": "Kue"
+        },
+        "desc": {
+          "en": "An ordinary yet delicious cake. Fluffy and sweet, perfect for any occasion",
+          "id": "Kue sederhana tapi lezat. Lembut dan manis, selalu pas untuk semua suasana."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5304,8 +7380,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3056,
-        "name": "Chocolate Truffle Cake",
-        "desc": "A classic chocolate cake with rich flavour layer.",
+        "name": {
+          "en": "Chocolate Truffle Cake",
+          "id": "Kue Truffle Cokelat"
+        },
+        "desc": {
+          "en": "A classic chocolate cake with rich flavour layer.",
+          "id": "Kue cokelat klasik dengan lapisan yang kaya rasa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5320,8 +7402,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3057,
-        "name": "Blueberry Cake",
-        "desc": "An elegant cake topped with a mix of fresh berries. Its sweetness is balanced by a hint of tartness.",
+        "name": {
+          "en": "Blueberry Cake",
+          "id": "Kue Blueberry"
+        },
+        "desc": {
+          "en": "An elegant cake topped with a mix of fresh berries. Its sweetness is balanced by a hint of tartness.",
+          "id": "Kue cantik dengan campuran beri segar di atasnya. Rasanya manis dan sedikit asam yang seimbang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5336,8 +7424,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3058,
-        "name": "Pancake",
-        "desc": "A stack of warm pancakes, drizzled with syrup and butter. Everyone's favorite breakfast.",
+        "name": {
+          "en": "Pancake",
+          "id": "Panekuk"
+        },
+        "desc": {
+          "en": "A stack of warm pancakes, drizzled with syrup and butter. Everyone's favorite breakfast.",
+          "id": "Tumpukan panekuk hangat, yang disiram sirup dan mentega. Sarapan favorit semua orang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5352,8 +7446,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3059,
-        "name": "Apple Candy",
-        "desc": "Sparkling candy with a unique shape, coated in sweet sugar with a fresh apple flavour",
+        "name": {
+          "en": "Apple Candy",
+          "id": "Permen Apel"
+        },
+        "desc": {
+          "en": "Sparkling candy with a unique shape, coated in sweet sugar with a fresh apple flavour",
+          "id": "Permen berkilau dengan bentuk unik yang dilapisi gula manis dan aroma apel segar."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5368,8 +7468,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3060,
-        "name": "Mint Candy",
-        "desc": "A small candy with a sharp yet refreshing flavour.",
+        "name": {
+          "en": "Mint Candy",
+          "id": "Permen Mint"
+        },
+        "desc": {
+          "en": "A small candy with a sharp yet refreshing flavour.",
+          "id": "Permen kecil dengan rasa pedas yang menyegarkan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5384,8 +7490,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3061,
-        "name": "Strawberry Ice Cream",
-        "desc": "A fluffy ice cream topped with real strawberry slice. Very sweet yet refreshing flavour.",
+        "name": {
+          "en": "Strawberry Ice Cream",
+          "id": "Es Krim Stroberi"
+        },
+        "desc": {
+          "en": "A fluffy ice cream topped with real strawberry slice. Very sweet yet refreshing flavour.",
+          "id": "Es krim lembut dengan potongan strawberry asli. Rasanya manis dan segar."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5400,8 +7512,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3062,
-        "name": "Orange Ice Cream",
-        "desc": "Creamy ice cream with a bright and zesty citrus flavor.",
+        "name": {
+          "en": "Orange Ice Cream",
+          "id": "Es Krim Jeruk"
+        },
+        "desc": {
+          "en": "Creamy ice cream with a bright and zesty citrus flavor.",
+          "id": "Es krim jeruk yang lembut dan lumer, dengan rasa citrus yang menyegarkan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5416,8 +7534,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3063,
-        "name": "Watermelon Ice Cream",
-        "desc": "Light and refreshing watermelon flavor, frozen into a uniquely delightful ice cream.",
+        "name": {
+          "en": "Watermelon Ice Cream",
+          "id": "Es Krim Semangka"
+        },
+        "desc": {
+          "en": "Light and refreshing watermelon flavor, frozen into a uniquely delightful ice cream.",
+          "id": "Rasa semangka yang ringan dan menyegarkan, dibekukan jadi kenikmatan es krim yang unik."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5432,8 +7556,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3064,
-        "name": "Choco Matcha Ice Cream",
-        "desc": "An elegant blend of sweet chocolate and bitter matcha.",
+        "name": {
+          "en": "Choco Matcha Ice Cream",
+          "id": "Es Krim Choco Matcha"
+        },
+        "desc": {
+          "en": "An elegant blend of sweet chocolate and bitter matcha.",
+          "id": "Perpaduan elegan antara cokelat manis dan teh hijau yang pahit."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5448,8 +7578,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3065,
-        "name": "Chocolate Ice Cream",
-        "desc": "A rich and thick chocolate ice cream yet melts in mouth.",
+        "name": {
+          "en": "Chocolate Ice Cream",
+          "id": "Es Krim Cokelat"
+        },
+        "desc": {
+          "en": "A rich and thick chocolate ice cream yet melts in mouth.",
+          "id": "Es krim cokelat pekat yang meleleh di mulut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5464,8 +7600,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3066,
-        "name": "Choco Vanilla Ice Cream",
-        "desc": "Two favorite flavour in one scoop, fluffy chocolate and creamy vanilla.",
+        "name": {
+          "en": "Choco Vanilla Ice Cream",
+          "id": "Es Krim Choco Vanilla"
+        },
+        "desc": {
+          "en": "Two favorite flavour in one scoop, fluffy chocolate and creamy vanilla.",
+          "id": "Dua rasa favorit dalam satu sendok; cokelat lembut dan vanila yang lumer."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5480,8 +7622,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3067,
-        "name": "Bread",
-        "desc": "Plain, fluffy bread that's easy to enjoy. Perfect for breakfast or as a base for sandwiches.",
+        "name": {
+          "en": "Bread",
+          "id": "Roti"
+        },
+        "desc": {
+          "en": "Plain, fluffy bread that's easy to enjoy. Perfect for breakfast or as a base for sandwiches.",
+          "id": "Roti dasar yang empuk dan mudah dimakan. Cocok untuk sarapan atau dikombinasikan dengan berbagai isian."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5495,8 +7643,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3068,
-        "name": "Choco Baguette",
-        "desc": "A long bread filled with chocolate. Sweetness meets the signature crisp of a classic baguette.",
+        "name": {
+          "en": "Choco Baguette",
+          "id": "Roti Baguette Cokelat"
+        },
+        "desc": {
+          "en": "A long bread filled with chocolate. Sweetness meets the signature crisp of a classic baguette.",
+          "id": "Roti panjang dengan isian cokelat. Rasa manis berpadu dengan kerenyahan khas baguette."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5510,8 +7664,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3069,
-        "name": "Croissant",
-        "desc": "A soft, multi-layered pastry with rich buttery flavor. A popular choice for a morning treat.",
+        "name": {
+          "en": "Croissant",
+          "id": "Croissant"
+        },
+        "desc": {
+          "en": "A soft, multi-layered pastry with rich buttery flavor. A popular choice for a morning treat.",
+          "id": "Pastry lembut berlapis-lapis dengan rasa mentega yang kaya. Populer sebagai camilan pagi hari."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5525,8 +7685,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3070,
-        "name": "Kingpin Bread",
-        "desc": "A special bread with a large shape and soft texture. Perfect for feasts or special occasions.",
+        "name": {
+          "en": "Kingpin Bread",
+          "id": "Roti Kingpin"
+        },
+        "desc": {
+          "en": "A special bread with a large shape and soft texture. Perfect for feasts or special occasions.",
+          "id": "Roti istimewa dengan bentuk besar dan tekstur lembut. Cocok untuk perjamuan atau suguhan istimewa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5540,8 +7706,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3071,
-        "name": "Butter Cream Baguette",
-        "desc": "A crispy baguette with sweet cream filling at its center. A balanced blended of savory and sweet.",
+        "name": {
+          "en": "Butter Cream Baguette",
+          "id": "Baguette Krim Mentega"
+        },
+        "desc": {
+          "en": "A crispy baguette with sweet cream filling at its center. A balanced blended of savory and sweet.",
+          "id": "Baguette renyah dengan isian krim manis di tengahnya. Perpaduan gurih dan manis yang seimbang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5555,8 +7727,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3072,
-        "name": "Potato Bread",
-        "desc": "Fluffy beard blend with potato. Dense yet soft in texture, and satisfying to eat.",
+        "name": {
+          "en": "Potato Bread",
+          "id": "Roti Kentang"
+        },
+        "desc": {
+          "en": "Fluffy beard blend with potato. Dense yet soft in texture, and satisfying to eat.",
+          "id": "Roti lembut yang dibuat dengan tambahan kentang. Teksturnya padat tapi empuk dan mengenyangkan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5570,8 +7748,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3073,
-        "name": "Elephant Cookie",
-        "desc": "Munaly initially planned to make elephant-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an elephant-shaped cookie with a gentle sweetness.",
+        "name": {
+          "en": "Elephant Cookie",
+          "id": "Kue Gajah"
+        },
+        "desc": {
+          "en": "Munaly initially planned to make elephant-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an elephant-shaped cookie with a gentle sweetness.",
+          "id": "Munaly awalnya berencana membuat roti berbentuk gajah. Namun, karena ketiduran saat proses pemangangan, hasilnya justru menjadi kue kering berbentuk gajah dengan rasa manis yang lembut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5585,8 +7769,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3074,
-        "name": "Giraffe Cookie",
-        "desc": "Munaly initially planned to make girrafe-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an girrafe-shaped cookie with a gentle sweetness.",
+        "name": {
+          "en": "Giraffe Cookie",
+          "id": "Kue Jerapah"
+        },
+        "desc": {
+          "en": "Munaly initially planned to make girrafe-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an girrafe-shaped cookie with a gentle sweetness.",
+          "id": "Munaly awalnya berencana membuat roti berbentuk jerapah. Namun, karena ketiduran saat proses pemangangan, hasilnya justru menjadi kue kering berbentuk jerapah dengan rasa manis yang lembut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5600,8 +7790,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3075,
-        "name": "Rhino Cookie",
-        "desc": "Munaly initially planned to make rhino-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an rhino-shaped cookie with a gentle sweetness.",
+        "name": {
+          "en": "Rhino Cookie",
+          "id": "Kue Badak"
+        },
+        "desc": {
+          "en": "Munaly initially planned to make rhino-shaped bread. However, after falling asleep during the baking process, it unexpectedly turned into an rhino-shaped cookie with a gentle sweetness.",
+          "id": "Munaly awalnya berencana membuat roti berbentuk badak. Namun, karena ketiduran saat proses pemangangan, hasilnya justru menjadi kue kering berbentuk badak dengan rasa manis yang lembut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5615,8 +7811,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3076,
-        "name": "Plain Donut",
-        "desc": "A classic donut without flavour. Light and suitable for everyone.",
+        "name": {
+          "en": "Plain Donut",
+          "id": "Donat"
+        },
+        "desc": {
+          "en": "A classic donut without flavour. Light and suitable for everyone.",
+          "id": "Donat klasik tanpa tambahan rasa. Ringan dan pas untuk semua kalangan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5632,8 +7834,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3077,
-        "name": "Cream Donut",
-        "desc": "Fluffy donut with sweet cream inside.",
+        "name": {
+          "en": "Cream Donut",
+          "id": "Donat Krim"
+        },
+        "desc": {
+          "en": "Fluffy donut with sweet cream inside.",
+          "id": "Donat lembut dengan isian krim manis di dalamnya."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5649,8 +7857,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3080,
-        "name": "Cappucino Donut",
-        "desc": "A donut with a hint of coffee flavor.",
+        "name": {
+          "en": "Cappucino Donut",
+          "id": "Donat Cappuchino"
+        },
+        "desc": {
+          "en": "A donut with a hint of coffee flavor.",
+          "id": "Donat dengan cita rasa kopi ringan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5666,8 +7880,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3081,
-        "name": "Teddybear Donut",
-        "desc": "A cute bear-shaped donut. Loved by kids and eye-catching on display.",
+        "name": {
+          "en": "Teddybear Donut",
+          "id": "Donat Teddybear"
+        },
+        "desc": {
+          "en": "A cute bear-shaped donut. Loved by kids and eye-catching on display.",
+          "id": "Donat imut berbentuk beruang. Disukai anak-anak dan terlihat menarik di etalase."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5683,8 +7903,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3082,
-        "name": "Vanilla Cupcake",
-        "desc": "A petite vanilla-flavored cake with soft topping.",
+        "name": {
+          "en": "Vanilla Cupcake",
+          "id": "Cupcake Vanilla"
+        },
+        "desc": {
+          "en": "A petite vanilla-flavored cake with soft topping.",
+          "id": "Kue mungil dengan rasa vanila dan topping lembut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5700,8 +7926,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3083,
-        "name": "Sourdough",
-        "desc": "Bread with a natural tangy flavor and chewy texture. Made through a slow fermentation process.",
+        "name": {
+          "en": "Sourdough",
+          "id": "Sourdough"
+        },
+        "desc": {
+          "en": "Bread with a natural tangy flavor and chewy texture. Made through a slow fermentation process.",
+          "id": "Roti dengan rasa asam alami dan tekstur yang kenyal. Dibuat melalui proses fermentasi alami."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5715,8 +7947,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3084,
-        "name": "Custard Bread",
-        "desc": "Soft bread filled with sweet custard in the center. Sweet and satisfying.",
+        "name": {
+          "en": "Custard Bread",
+          "id": "Roti Custard"
+        },
+        "desc": {
+          "en": "Soft bread filled with sweet custard in the center. Sweet and satisfying.",
+          "id": "Roti lembut berisi custard manis di bagian tengah. Manis dan mengenyangkan."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5731,8 +7969,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3085,
-        "name": "Vanilla Mochi",
-        "desc": "A traditional delicacy from the Eastern continent that is sweet and delightfully sticky in the mouth.",
+        "name": {
+          "en": "Vanilla Mochi",
+          "id": "Vanilla Mochi"
+        },
+        "desc": {
+          "en": "A traditional delicacy from the Eastern continent that is sweet and delightfully sticky in the mouth.",
+          "id": "Makanan khas dari benua timur yang manis dan lengket di mulut."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5747,8 +7991,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3086,
-        "name": "Sakura Mochi",
-        "desc": "A mochi variant with a charming pink color that captures everyone's attention.",
+        "name": {
+          "en": "Sakura Mochi",
+          "id": "Sakura Mochi"
+        },
+        "desc": {
+          "en": "A mochi variant with a charming pink color that captures everyone's attention.",
+          "id": "Varian Mochi dengan warna merah muda yang memikat perhatian semua orang."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5763,8 +8013,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3087,
-        "name": "Gambang Bread",
-        "desc": "A sweet, elongated chocolate bread rich in aromatic spices.",
+        "name": {
+          "en": "Gambang Bread",
+          "id": "Roti Gambang"
+        },
+        "desc": {
+          "en": "A sweet, elongated chocolate bread rich in aromatic spices.",
+          "id": "Roti cokelat berbentuk pergi panjang yang manis dan kaya akan bumbu rempah."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5779,8 +8035,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3088,
-        "name": "Breadstick",
-        "desc": "A crunchy breadstick with a variety of flavorful variations.",
+        "name": {
+          "en": "Breadstick",
+          "id": "Grissini"
+        },
+        "desc": {
+          "en": "A crunchy breadstick with a variety of flavorful variations.",
+          "id": "Roti stik kering yang renyah dan memiliki berbagai macam varian rasa."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5795,8 +8057,14 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3089,
-        "name": "Lacy Pancake",
-        "desc": "A unique bread with a net-like shape and a soft, melt-in-the-mouth texture.",
+        "name": {
+          "en": "Lacy Pancake",
+          "id": "Roti Jala Mak Limah Biadab"
+        },
+        "desc": {
+          "en": "A unique bread with a net-like shape and a soft, melt-in-the-mouth texture.",
+          "id": "Roti legenda yang membuat siapapun tertawa mendengar namanya."
+        },
         "type": "food",
         "category": "consumable",
         "categoryId": 1,
@@ -5813,7 +8081,7 @@ window.GUIDE_BUNDLE = {
   },
   "characters": {
     "schema": "characters/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "partial",
@@ -5825,7 +8093,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 0,
         "name": "Ellie",
-        "desc": "Bakery Manager",
+        "desc": {
+          "en": "Bakery Manager",
+          "id": "Manajer Toko"
+        },
         "portrait": "spr_picture_ellie",
         "portraitIndex": 10,
         "villagerIconIndex": 0,
@@ -5847,7 +8118,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 1,
         "name": "Munaly",
-        "desc": "Pâtissier",
+        "desc": {
+          "en": "Pâtissier",
+          "id": "Koki"
+        },
         "portrait": "spr_picture_munaly",
         "portraitIndex": 1,
         "villagerIconIndex": 1,
@@ -5869,7 +8143,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2,
         "name": "Mulany",
-        "desc": "Waiters",
+        "desc": {
+          "en": "Waiters",
+          "id": "Pelayan"
+        },
         "portrait": "spr_picture_mulany",
         "portraitIndex": 2,
         "villagerIconIndex": 2,
@@ -5895,7 +8172,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 3,
         "name": "Rose",
-        "desc": "Flower Shop Owner",
+        "desc": {
+          "en": "Flower Shop Owner",
+          "id": "Pemilik Toko Bunga"
+        },
         "portrait": "spr_picture_rose",
         "portraitIndex": 12,
         "villagerIconIndex": 3,
@@ -5933,7 +8213,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 4,
         "name": "Mary",
-        "desc": "Sweet Cafe Waiter",
+        "desc": {
+          "en": "Sweet Cafe Waiter",
+          "id": "Pelayan Sweet Cafe"
+        },
         "portrait": "spr_picture_mary",
         "portraitIndex": 0,
         "villagerIconIndex": 4,
@@ -5967,7 +8250,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 5,
         "name": "Harly",
-        "desc": "Carpenter",
+        "desc": {
+          "en": "Carpenter",
+          "id": "Tukang Kayu"
+        },
         "portrait": "spr_picture_harly",
         "portraitIndex": 4,
         "villagerIconIndex": 5,
@@ -6005,7 +8291,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 6,
         "name": "Lucy",
-        "desc": "-",
+        "desc": {
+          "en": "-",
+          "id": "-"
+        },
         "portrait": "spr_picture_lucy",
         "portraitIndex": 14,
         "villagerIconIndex": 6,
@@ -6063,7 +8352,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 7,
         "name": "Jack",
-        "desc": "Animal Shop Owner",
+        "desc": {
+          "en": "Animal Shop Owner",
+          "id": "Pemilik Toko Hewan"
+        },
         "portrait": "spr_picture_jack",
         "portraitIndex": 6,
         "villagerIconIndex": 7,
@@ -6105,7 +8397,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 8,
         "name": "Janne",
-        "desc": "-",
+        "desc": {
+          "en": "-",
+          "id": "-"
+        },
         "portrait": "spr_picture_janne",
         "portraitIndex": 13,
         "villagerIconIndex": 8,
@@ -6155,7 +8450,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 9,
         "name": "Rumie",
-        "desc": "Item Shop Owner",
+        "desc": {
+          "en": "Item Shop Owner",
+          "id": "Penjaga Toko"
+        },
         "portrait": "spr_picture_rumie",
         "portraitIndex": 5,
         "villagerIconIndex": 9,
@@ -6177,7 +8475,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 10,
         "name": "Shylvia",
-        "desc": "Doctor Assistant",
+        "desc": {
+          "en": "Doctor Assistant",
+          "id": "Perawat"
+        },
         "portrait": "spr_picture_shylvia",
         "portraitIndex": 24,
         "villagerIconIndex": 10,
@@ -6207,7 +8508,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 11,
         "name": "Rei",
-        "desc": "Doctor",
+        "desc": {
+          "en": "Doctor",
+          "id": "Dokter"
+        },
         "portrait": "spr_picture_rei",
         "portraitIndex": 15,
         "villagerIconIndex": 11,
@@ -6237,7 +8541,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 12,
         "name": "Joseph",
-        "desc": "Guild Master",
+        "desc": {
+          "en": "Guild Master",
+          "id": "Kepala Guild"
+        },
         "portrait": "spr_picture_joseph",
         "portraitIndex": 21,
         "villagerIconIndex": 12,
@@ -6267,7 +8574,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 13,
         "name": "Lilia",
-        "desc": "Guild Receptionist",
+        "desc": {
+          "en": "Guild Receptionist",
+          "id": "Resepsionis"
+        },
         "portrait": "spr_picture_lilia",
         "portraitIndex": 16,
         "villagerIconIndex": 13,
@@ -6293,7 +8603,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 14,
         "name": "Emilie",
-        "desc": "Farmer",
+        "desc": {
+          "en": "Farmer",
+          "id": "Petani"
+        },
         "portrait": "spr_picture_emilie",
         "portraitIndex": 25,
         "villagerIconIndex": 14,
@@ -6347,7 +8660,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 15,
         "name": "Eddie",
-        "desc": "-",
+        "desc": {
+          "en": "-",
+          "id": "-"
+        },
         "portrait": "spr_picture_eddie",
         "portraitIndex": 26,
         "villagerIconIndex": 15,
@@ -6393,7 +8709,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 16,
         "name": "Freed",
-        "desc": "Farmer",
+        "desc": {
+          "en": "Farmer",
+          "id": "Petani"
+        },
         "portrait": "spr_picture_freed",
         "portraitIndex": 27,
         "villagerIconIndex": 16,
@@ -6447,7 +8766,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 17,
         "name": "Ajax",
-        "desc": "Adventurer",
+        "desc": {
+          "en": "Adventurer",
+          "id": "Petualang"
+        },
         "portrait": "spr_picture_ajax",
         "portraitIndex": 19,
         "villagerIconIndex": 17,
@@ -6489,7 +8811,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 18,
         "name": "Franz",
-        "desc": "Adventurer",
+        "desc": {
+          "en": "Adventurer",
+          "id": "Petualang"
+        },
         "portrait": "spr_picture_franz",
         "portraitIndex": 23,
         "villagerIconIndex": 18,
@@ -6523,7 +8848,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 19,
         "name": "Zerick",
-        "desc": "Carpenter",
+        "desc": {
+          "en": "Carpenter",
+          "id": "Tukang Kayu"
+        },
         "portrait": "spr_picture_zerick",
         "portraitIndex": 9,
         "villagerIconIndex": 19,
@@ -6565,7 +8893,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 20,
         "name": "Billy",
-        "desc": "-",
+        "desc": {
+          "en": "-",
+          "id": "-"
+        },
         "portrait": "spr_picture_billy",
         "portraitIndex": 28,
         "villagerIconIndex": 20,
@@ -6623,7 +8954,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 21,
         "name": "Rana",
-        "desc": "Landlord Inn",
+        "desc": {
+          "en": "Landlord Inn",
+          "id": "Pemilik Penginapan"
+        },
         "portrait": "spr_picture_rana",
         "portraitIndex": 17,
         "villagerIconIndex": 21,
@@ -6665,7 +8999,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 22,
         "name": "Ren",
-        "desc": "Adventurer",
+        "desc": {
+          "en": "Adventurer",
+          "id": "Petualang"
+        },
         "portrait": "spr_picture_ren",
         "portraitIndex": 8,
         "villagerIconIndex": 22,
@@ -6723,7 +9060,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 23,
         "name": "Mirella",
-        "desc": "Adventurer",
+        "desc": {
+          "en": "Adventurer",
+          "id": "Petualang"
+        },
         "portrait": "spr_picture_mirella",
         "portraitIndex": 3,
         "villagerIconIndex": 23,
@@ -6761,7 +9101,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 24,
         "name": "Victoria",
-        "desc": "Adventurer",
+        "desc": {
+          "en": "Adventurer",
+          "id": "Petualang"
+        },
         "portrait": "spr_picture_victoria",
         "portraitIndex": 11,
         "villagerIconIndex": 24,
@@ -6811,7 +9154,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 25,
         "name": "Vivian",
-        "desc": "Librarian",
+        "desc": {
+          "en": "Librarian",
+          "id": "Pustakawan"
+        },
         "portrait": "spr_picture_vivian",
         "portraitIndex": 20,
         "villagerIconIndex": 25,
@@ -6841,7 +9187,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 26,
         "name": "Garion",
-        "desc": "Bartender",
+        "desc": {
+          "en": "Bartender",
+          "id": "Pelayan bar"
+        },
         "portrait": "spr_picture_garion",
         "portraitIndex": 18,
         "villagerIconIndex": 26,
@@ -6892,7 +9241,7 @@ window.GUIDE_BUNDLE = {
   },
   "gifts": {
     "schema": "gifts/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "ok",
@@ -35051,7 +37400,7 @@ window.GUIDE_BUNDLE = {
   },
   "fish": {
     "schema": "fish/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "partial",
@@ -35063,7 +37412,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2001,
         "itemId": 2001,
-        "name": "Perch",
+        "name": {
+          "en": "Perch",
+          "id": "Perch"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 0,
         "rarity": null,
@@ -35075,7 +37427,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2002,
         "itemId": 2002,
-        "name": "Giant Perch",
+        "name": {
+          "en": "Giant Perch",
+          "id": "Perch Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 1,
         "rarity": "giant",
@@ -35087,7 +37442,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2003,
         "itemId": 2003,
-        "name": "Mutant Perch",
+        "name": {
+          "en": "Mutant Perch",
+          "id": "Perch Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 2,
         "rarity": "mutant",
@@ -35099,7 +37457,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2004,
         "itemId": 2004,
-        "name": "Apocryphal Perch",
+        "name": {
+          "en": "Apocryphal Perch",
+          "id": "Perch Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 3,
         "rarity": "apocryphal",
@@ -35111,7 +37472,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2005,
         "itemId": 2005,
-        "name": "Sardine",
+        "name": {
+          "en": "Sardine",
+          "id": "Sarden"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 4,
         "rarity": null,
@@ -35123,7 +37487,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2006,
         "itemId": 2006,
-        "name": "Giant Sarden",
+        "name": {
+          "en": "Giant Sarden",
+          "id": "Sarden Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 5,
         "rarity": "giant",
@@ -35135,7 +37502,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2007,
         "itemId": 2007,
-        "name": "Mutant Sarden",
+        "name": {
+          "en": "Mutant Sarden",
+          "id": "Sarden Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 6,
         "rarity": "mutant",
@@ -35147,7 +37517,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2008,
         "itemId": 2008,
-        "name": "Apocryphal Sarden",
+        "name": {
+          "en": "Apocryphal Sarden",
+          "id": "Sarden Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 7,
         "rarity": "apocryphal",
@@ -35159,7 +37532,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2009,
         "itemId": 2009,
-        "name": "Anabas",
+        "name": {
+          "en": "Anabas",
+          "id": "Betok"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 8,
         "rarity": null,
@@ -35171,7 +37547,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2010,
         "itemId": 2010,
-        "name": "Giant Anabas",
+        "name": {
+          "en": "Giant Anabas",
+          "id": "Betok Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 9,
         "rarity": "giant",
@@ -35183,7 +37562,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2011,
         "itemId": 2011,
-        "name": "Mutant Anabas",
+        "name": {
+          "en": "Mutant Anabas",
+          "id": "Betok Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 10,
         "rarity": "mutant",
@@ -35195,7 +37577,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2012,
         "itemId": 2012,
-        "name": "Apocryphal Anabas",
+        "name": {
+          "en": "Apocryphal Anabas",
+          "id": "Betok Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 11,
         "rarity": "apocryphal",
@@ -35207,7 +37592,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2013,
         "itemId": 2013,
-        "name": "Trout",
+        "name": {
+          "en": "Trout",
+          "id": "Trout"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 12,
         "rarity": null,
@@ -35219,7 +37607,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2014,
         "itemId": 2014,
-        "name": "Giant Trout",
+        "name": {
+          "en": "Giant Trout",
+          "id": "Trout Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 13,
         "rarity": "giant",
@@ -35231,7 +37622,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2015,
         "itemId": 2015,
-        "name": "Mutant Trout",
+        "name": {
+          "en": "Mutant Trout",
+          "id": "Trout Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 14,
         "rarity": "mutant",
@@ -35243,7 +37637,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2016,
         "itemId": 2016,
-        "name": "Apocryphal Trout",
+        "name": {
+          "en": "Apocryphal Trout",
+          "id": "Trout Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 15,
         "rarity": "apocryphal",
@@ -35255,7 +37652,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2017,
         "itemId": 2017,
-        "name": "Arowana",
+        "name": {
+          "en": "Arowana",
+          "id": "Arwana"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 16,
         "rarity": null,
@@ -35267,7 +37667,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2018,
         "itemId": 2018,
-        "name": "Giant Arowana",
+        "name": {
+          "en": "Giant Arowana",
+          "id": "Arwana Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 17,
         "rarity": "giant",
@@ -35279,7 +37682,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2019,
         "itemId": 2019,
-        "name": "Mutant Arowana",
+        "name": {
+          "en": "Mutant Arowana",
+          "id": "Arwana Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 18,
         "rarity": "mutant",
@@ -35291,7 +37697,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2020,
         "itemId": 2020,
-        "name": "Apocryphal Arowana",
+        "name": {
+          "en": "Apocryphal Arowana",
+          "id": "Arwana Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 19,
         "rarity": "apocryphal",
@@ -35303,7 +37712,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2021,
         "itemId": 2021,
-        "name": "Bream",
+        "name": {
+          "en": "Bream",
+          "id": "Bream"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 20,
         "rarity": null,
@@ -35315,7 +37727,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2022,
         "itemId": 2022,
-        "name": "Giant Bream",
+        "name": {
+          "en": "Giant Bream",
+          "id": "Bream Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 21,
         "rarity": "giant",
@@ -35327,7 +37742,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2023,
         "itemId": 2023,
-        "name": "Mutant Bream",
+        "name": {
+          "en": "Mutant Bream",
+          "id": "Bream Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 22,
         "rarity": "mutant",
@@ -35339,7 +37757,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2024,
         "itemId": 2024,
-        "name": "Apocryphal Bream",
+        "name": {
+          "en": "Apocryphal Bream",
+          "id": "Bream Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 23,
         "rarity": "apocryphal",
@@ -35351,7 +37772,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2025,
         "itemId": 2025,
-        "name": "Tarpon",
+        "name": {
+          "en": "Tarpon",
+          "id": "Tarpon"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 24,
         "rarity": null,
@@ -35363,7 +37787,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2026,
         "itemId": 2026,
-        "name": "Giant Tarpon",
+        "name": {
+          "en": "Giant Tarpon",
+          "id": "Tarpon Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 25,
         "rarity": "giant",
@@ -35375,7 +37802,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2027,
         "itemId": 2027,
-        "name": "Mutant Tarpon",
+        "name": {
+          "en": "Mutant Tarpon",
+          "id": "Tarpon Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 26,
         "rarity": "mutant",
@@ -35387,7 +37817,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2028,
         "itemId": 2028,
-        "name": "Apocryphal Tarpon",
+        "name": {
+          "en": "Apocryphal Tarpon",
+          "id": "Tarpon Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 27,
         "rarity": "apocryphal",
@@ -35399,7 +37832,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2029,
         "itemId": 2029,
-        "name": "Bonito",
+        "name": {
+          "en": "Bonito",
+          "id": "Bonito"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 28,
         "rarity": null,
@@ -35411,7 +37847,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2030,
         "itemId": 2030,
-        "name": "Giant Bonito",
+        "name": {
+          "en": "Giant Bonito",
+          "id": "Bonito Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 29,
         "rarity": "giant",
@@ -35423,7 +37862,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2031,
         "itemId": 2031,
-        "name": "Mutant Bonito",
+        "name": {
+          "en": "Mutant Bonito",
+          "id": "Bonito Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 30,
         "rarity": "mutant",
@@ -35435,7 +37877,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2032,
         "itemId": 2032,
-        "name": "Apocryphal Bonito",
+        "name": {
+          "en": "Apocryphal Bonito",
+          "id": "Bonito Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 31,
         "rarity": "apocryphal",
@@ -35447,7 +37892,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2033,
         "itemId": 2033,
-        "name": "Catfish",
+        "name": {
+          "en": "Catfish",
+          "id": "Lele"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 32,
         "rarity": null,
@@ -35459,7 +37907,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2034,
         "itemId": 2034,
-        "name": "Giant Catfish",
+        "name": {
+          "en": "Giant Catfish",
+          "id": "Lele Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 33,
         "rarity": "giant",
@@ -35471,7 +37922,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2035,
         "itemId": 2035,
-        "name": "Mutant Catfish",
+        "name": {
+          "en": "Mutant Catfish",
+          "id": "Lele Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 34,
         "rarity": "mutant",
@@ -35483,7 +37937,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2036,
         "itemId": 2036,
-        "name": "Apocryphal Catfish",
+        "name": {
+          "en": "Apocryphal Catfish",
+          "id": "Lele Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 35,
         "rarity": "apocryphal",
@@ -35495,7 +37952,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2037,
         "itemId": 2037,
-        "name": "Sworfish",
+        "name": {
+          "en": "Sworfish",
+          "id": "Sworfish"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 36,
         "rarity": null,
@@ -35507,7 +37967,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2038,
         "itemId": 2038,
-        "name": "Giant Sworfish",
+        "name": {
+          "en": "Giant Sworfish",
+          "id": "Sworfish Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 37,
         "rarity": "giant",
@@ -35519,7 +37982,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2039,
         "itemId": 2039,
-        "name": "Mutant Sworfish",
+        "name": {
+          "en": "Mutant Sworfish",
+          "id": "Sworfish Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 38,
         "rarity": "mutant",
@@ -35531,7 +37997,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2040,
         "itemId": 2040,
-        "name": "Apocryphal Sworfish",
+        "name": {
+          "en": "Apocryphal Sworfish",
+          "id": "Sworfish Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 39,
         "rarity": "apocryphal",
@@ -35543,7 +38012,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2041,
         "itemId": 2041,
-        "name": "Crylobster",
+        "name": {
+          "en": "Crylobster",
+          "id": "Crylobster"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 40,
         "rarity": null,
@@ -35555,7 +38027,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2042,
         "itemId": 2042,
-        "name": "Giant Crylobster",
+        "name": {
+          "en": "Giant Crylobster",
+          "id": "Crylobster Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 41,
         "rarity": "giant",
@@ -35567,7 +38042,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2043,
         "itemId": 2043,
-        "name": "Mutant Crylobster",
+        "name": {
+          "en": "Mutant Crylobster",
+          "id": "Crylobster Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 42,
         "rarity": "mutant",
@@ -35579,7 +38057,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2044,
         "itemId": 2044,
-        "name": "Apocryphal Crylobster",
+        "name": {
+          "en": "Apocryphal Crylobster",
+          "id": "Crylobster Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 43,
         "rarity": "apocryphal",
@@ -35591,7 +38072,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2045,
         "itemId": 2045,
-        "name": "Mola-Mola",
+        "name": {
+          "en": "Mola-Mola",
+          "id": "Mola-Mola"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 44,
         "rarity": null,
@@ -35603,7 +38087,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2046,
         "itemId": 2046,
-        "name": "Giant Mola-Mola",
+        "name": {
+          "en": "Giant Mola-Mola",
+          "id": "Mola-Mola Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 45,
         "rarity": "giant",
@@ -35615,7 +38102,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2047,
         "itemId": 2047,
-        "name": "Mutant Mola-Mola",
+        "name": {
+          "en": "Mutant Mola-Mola",
+          "id": "Mola-Mola Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 46,
         "rarity": "mutant",
@@ -35627,7 +38117,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2048,
         "itemId": 2048,
-        "name": "Apocryphal Mola-Mola",
+        "name": {
+          "en": "Apocryphal Mola-Mola",
+          "id": "Mola-Mola Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 47,
         "rarity": "apocryphal",
@@ -35639,7 +38132,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2049,
         "itemId": 2049,
-        "name": "Eel",
+        "name": {
+          "en": "Eel",
+          "id": "Belut"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 48,
         "rarity": null,
@@ -35651,7 +38147,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2050,
         "itemId": 2050,
-        "name": "Giant Eel",
+        "name": {
+          "en": "Giant Eel",
+          "id": "Belut Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 49,
         "rarity": "giant",
@@ -35663,7 +38162,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2051,
         "itemId": 2051,
-        "name": "Mutant Eel",
+        "name": {
+          "en": "Mutant Eel",
+          "id": "Belut Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 50,
         "rarity": "mutant",
@@ -35675,7 +38177,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2052,
         "itemId": 2052,
-        "name": "Apocryphal Eel",
+        "name": {
+          "en": "Apocryphal Eel",
+          "id": "Belut Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 51,
         "rarity": "apocryphal",
@@ -35687,7 +38192,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2053,
         "itemId": 2053,
-        "name": "Damsel",
+        "name": {
+          "en": "Damsel",
+          "id": "Damsel"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 52,
         "rarity": null,
@@ -35699,7 +38207,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2054,
         "itemId": 2054,
-        "name": "Giant Damsel",
+        "name": {
+          "en": "Giant Damsel",
+          "id": "Damsel Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 53,
         "rarity": "giant",
@@ -35711,7 +38222,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2055,
         "itemId": 2055,
-        "name": "Mutant Damsel",
+        "name": {
+          "en": "Mutant Damsel",
+          "id": "Damsel Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 54,
         "rarity": "mutant",
@@ -35723,7 +38237,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2056,
         "itemId": 2056,
-        "name": "Apocryphal Damsel",
+        "name": {
+          "en": "Apocryphal Damsel",
+          "id": "Damsel Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 55,
         "rarity": "apocryphal",
@@ -35735,7 +38252,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2057,
         "itemId": 2057,
-        "name": "Sunscale",
+        "name": {
+          "en": "Sunscale",
+          "id": "Sunscale"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 56,
         "rarity": null,
@@ -35747,7 +38267,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2058,
         "itemId": 2058,
-        "name": "Giant Sunscale",
+        "name": {
+          "en": "Giant Sunscale",
+          "id": "Sunscale Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 57,
         "rarity": "giant",
@@ -35759,7 +38282,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2059,
         "itemId": 2059,
-        "name": "Mutant Sunscale",
+        "name": {
+          "en": "Mutant Sunscale",
+          "id": "Sunscale Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 58,
         "rarity": "mutant",
@@ -35771,7 +38297,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2060,
         "itemId": 2060,
-        "name": "Apocryphal Sunscale",
+        "name": {
+          "en": "Apocryphal Sunscale",
+          "id": "Sunscale Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 59,
         "rarity": "apocryphal",
@@ -35783,7 +38312,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2061,
         "itemId": 2061,
-        "name": "Salmon",
+        "name": {
+          "en": "Salmon",
+          "id": "Salmon"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 60,
         "rarity": null,
@@ -35795,7 +38327,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2062,
         "itemId": 2062,
-        "name": "Giant Salmon",
+        "name": {
+          "en": "Giant Salmon",
+          "id": "Salmon Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 61,
         "rarity": "giant",
@@ -35807,7 +38342,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2063,
         "itemId": 2063,
-        "name": "Mutant Salmon",
+        "name": {
+          "en": "Mutant Salmon",
+          "id": "Salmon Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 62,
         "rarity": "mutant",
@@ -35819,7 +38357,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2064,
         "itemId": 2064,
-        "name": "Apocryphal Salmon",
+        "name": {
+          "en": "Apocryphal Salmon",
+          "id": "Salmon Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 63,
         "rarity": "apocryphal",
@@ -35831,7 +38372,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2065,
         "itemId": 2065,
-        "name": "Tilapia",
+        "name": {
+          "en": "Tilapia",
+          "id": "Tilapia"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 64,
         "rarity": null,
@@ -35843,7 +38387,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2066,
         "itemId": 2066,
-        "name": "Giant Tilapia",
+        "name": {
+          "en": "Giant Tilapia",
+          "id": "Tilapia Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 65,
         "rarity": "giant",
@@ -35855,7 +38402,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2067,
         "itemId": 2067,
-        "name": "Mutant Tilapia",
+        "name": {
+          "en": "Mutant Tilapia",
+          "id": "Tilapia Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 66,
         "rarity": "mutant",
@@ -35867,7 +38417,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2068,
         "itemId": 2068,
-        "name": "Apocryphal Tilapia",
+        "name": {
+          "en": "Apocryphal Tilapia",
+          "id": "Tilapia Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 67,
         "rarity": "apocryphal",
@@ -35879,7 +38432,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2069,
         "itemId": 2069,
-        "name": "Pyroflake",
+        "name": {
+          "en": "Pyroflake",
+          "id": "Pyroflake"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 68,
         "rarity": null,
@@ -35891,7 +38447,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2070,
         "itemId": 2070,
-        "name": "Giant Pyroflake",
+        "name": {
+          "en": "Giant Pyroflake",
+          "id": "Pyroflake Raksasa"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 69,
         "rarity": "giant",
@@ -35903,7 +38462,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2071,
         "itemId": 2071,
-        "name": "Mutant Pyroflake",
+        "name": {
+          "en": "Mutant Pyroflake",
+          "id": "Pyroflake Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 70,
         "rarity": "mutant",
@@ -35915,7 +38477,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2072,
         "itemId": 2072,
-        "name": "Apocryphal Pyroflake",
+        "name": {
+          "en": "Apocryphal Pyroflake",
+          "id": "Pyroflake Purba"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 71,
         "rarity": "apocryphal",
@@ -35927,7 +38492,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2073,
         "itemId": 2073,
-        "name": "Prismatic Fish",
+        "name": {
+          "en": "Prismatic Fish",
+          "id": "Ikan Prisma"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 72,
         "rarity": null,
@@ -35939,7 +38507,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2074,
         "itemId": 2074,
-        "name": "Siamese Fighting Fish",
+        "name": {
+          "en": "Siamese Fighting Fish",
+          "id": "Ikan Cupang"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 73,
         "rarity": null,
@@ -35951,7 +38522,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2075,
         "itemId": 2075,
-        "name": "Octopus",
+        "name": {
+          "en": "Octopus",
+          "id": "Gurita"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 74,
         "rarity": null,
@@ -35963,7 +38537,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2076,
         "itemId": 2076,
-        "name": "Lobster",
+        "name": {
+          "en": "Lobster",
+          "id": "Lobster"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 75,
         "rarity": null,
@@ -35975,7 +38552,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2077,
         "itemId": 2077,
-        "name": "Silver Lobster",
+        "name": {
+          "en": "Silver Lobster",
+          "id": "Lobster Perak"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 76,
         "rarity": "silver",
@@ -35987,7 +38567,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2078,
         "itemId": 2078,
-        "name": "Sea Horse",
+        "name": {
+          "en": "Sea Horse",
+          "id": "Kuda Laut"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 77,
         "rarity": null,
@@ -35999,7 +38582,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2079,
         "itemId": 2079,
-        "name": "Silver Sea Horse",
+        "name": {
+          "en": "Silver Sea Horse",
+          "id": "Kuda Laut Perak"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 78,
         "rarity": "silver",
@@ -36011,7 +38597,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2080,
         "itemId": 2080,
-        "name": "Shrimp",
+        "name": {
+          "en": "Shrimp",
+          "id": "Udang"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 79,
         "rarity": null,
@@ -36023,7 +38612,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2081,
         "itemId": 2081,
-        "name": "Golden Shrimp",
+        "name": {
+          "en": "Golden Shrimp",
+          "id": "Udang Emas"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 80,
         "rarity": "golden",
@@ -36035,7 +38627,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2082,
         "itemId": 2082,
-        "name": "Crab",
+        "name": {
+          "en": "Crab",
+          "id": "Kepiting"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 81,
         "rarity": null,
@@ -36047,7 +38642,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2083,
         "itemId": 2083,
-        "name": "Golden Crab",
+        "name": {
+          "en": "Golden Crab",
+          "id": "Kepiting Emas"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 82,
         "rarity": "golden",
@@ -36059,7 +38657,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2084,
         "itemId": 2084,
-        "name": "Starfish",
+        "name": {
+          "en": "Starfish",
+          "id": "Bintang Laut"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 83,
         "rarity": null,
@@ -36071,7 +38672,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2085,
         "itemId": 2085,
-        "name": "Mutant Starfish",
+        "name": {
+          "en": "Mutant Starfish",
+          "id": "Bintang Laut Mutant"
+        },
         "icon": "spr_icon_fish",
         "iconIndex": 84,
         "rarity": "mutant",
@@ -36084,7 +38688,7 @@ window.GUIDE_BUNDLE = {
   },
   "places": {
     "schema": "places/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 69,
     "status": "partial",
@@ -36096,7 +38700,10 @@ window.GUIDE_BUNDLE = {
     "records": [
       {
         "id": "rmFarm_Barn1",
-        "name": "Livestock",
+        "name": {
+          "en": "Livestock",
+          "id": "Kandang Hewan"
+        },
         "room": "rmFarm_Barn1",
         "kind": "other",
         "children": [],
@@ -36104,7 +38711,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmFarm_Coop1",
-        "name": "Livestock",
+        "name": {
+          "en": "Livestock",
+          "id": "Kandang Ayam"
+        },
         "room": "rmFarm_Coop1",
         "kind": "other",
         "children": [],
@@ -36112,7 +38722,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmForest1_1",
-        "name": "Grimwood Forest - 1",
+        "name": {
+          "en": "Grimwood Forest - 1",
+          "id": "Hutan Grimwood - 1"
+        },
         "room": "rmForest1_1",
         "kind": "other",
         "children": [],
@@ -36120,7 +38733,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmForest1_2",
-        "name": "Grimwood Forest - 2",
+        "name": {
+          "en": "Grimwood Forest - 2",
+          "id": "Hutan Grimwood - 2"
+        },
         "room": "rmForest1_2",
         "kind": "other",
         "children": [],
@@ -36128,7 +38744,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmForest1_3",
-        "name": "Grimwood Forest - 3",
+        "name": {
+          "en": "Grimwood Forest - 3",
+          "id": "Hutan Grimwood - 3"
+        },
         "room": "rmForest1_3",
         "kind": "other",
         "children": [],
@@ -36136,7 +38755,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmForest1_4",
-        "name": "Grimwood Forest - 4",
+        "name": {
+          "en": "Grimwood Forest - 4",
+          "id": "Hutan Grimwood - 4"
+        },
         "room": "rmForest1_4",
         "kind": "other",
         "children": [],
@@ -36144,7 +38766,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmForest1_5",
-        "name": "Grimwood Forest - 5",
+        "name": {
+          "en": "Grimwood Forest - 5",
+          "id": "Hutan Grimwood - 5"
+        },
         "room": "rmForest1_5",
         "kind": "other",
         "children": [],
@@ -36160,7 +38785,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Gate",
-        "name": "Moonspring Vale's Gate",
+        "name": {
+          "en": "Moonspring Vale's Gate",
+          "id": "Gerbang Moonspring Vale"
+        },
         "room": "rmMap_Gate",
         "kind": "fishing",
         "children": [],
@@ -36168,7 +38796,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines1",
-        "name": "Mines floor 1",
+        "name": {
+          "en": "Mines floor 1",
+          "id": "Tambang lantai 1"
+        },
         "room": "rmMap_Mines1",
         "kind": "other",
         "children": [],
@@ -36176,7 +38807,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines2",
-        "name": "Mines floor 2",
+        "name": {
+          "en": "Mines floor 2",
+          "id": "Tambang lantai 2"
+        },
         "room": "rmMap_Mines2",
         "kind": "other",
         "children": [],
@@ -36184,7 +38818,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines3",
-        "name": "Mines floor 3",
+        "name": {
+          "en": "Mines floor 3",
+          "id": "Tambang lantai 3"
+        },
         "room": "rmMap_Mines3",
         "kind": "other",
         "children": [],
@@ -36192,7 +38829,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines4",
-        "name": "Mines floor 4",
+        "name": {
+          "en": "Mines floor 4",
+          "id": "Tambang lantai 4"
+        },
         "room": "rmMap_Mines4",
         "kind": "other",
         "children": [],
@@ -36200,7 +38840,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines5",
-        "name": "Mines floor 5",
+        "name": {
+          "en": "Mines floor 5",
+          "id": "Tambang lantai 5"
+        },
         "room": "rmMap_Mines5",
         "kind": "other",
         "children": [],
@@ -36208,7 +38851,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines6",
-        "name": "Mines floor 6",
+        "name": {
+          "en": "Mines floor 6",
+          "id": "Tambang lantai 6"
+        },
         "room": "rmMap_Mines6",
         "kind": "fishing",
         "children": [],
@@ -36216,7 +38862,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines7",
-        "name": "Mines floor 7",
+        "name": {
+          "en": "Mines floor 7",
+          "id": "Tambang lantai 7"
+        },
         "room": "rmMap_Mines7",
         "kind": "fishing",
         "children": [],
@@ -36224,7 +38873,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines8",
-        "name": "Mines floor 8",
+        "name": {
+          "en": "Mines floor 8",
+          "id": "Tambang lantai 8"
+        },
         "room": "rmMap_Mines8",
         "kind": "other",
         "children": [],
@@ -36232,7 +38884,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines9",
-        "name": "Mines floor 9",
+        "name": {
+          "en": "Mines floor 9",
+          "id": "Tambang lantai 9"
+        },
         "room": "rmMap_Mines9",
         "kind": "other",
         "children": [],
@@ -36240,7 +38895,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines10",
-        "name": "Mines floor 10",
+        "name": {
+          "en": "Mines floor 10",
+          "id": "Tambang lantai 10"
+        },
         "room": "rmMap_Mines10",
         "kind": "fishing",
         "children": [],
@@ -36248,7 +38906,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Mines11",
-        "name": "Mines floor 11",
+        "name": {
+          "en": "Mines floor 11",
+          "id": "Tambang lantai 11"
+        },
         "room": "rmMap_Mines11",
         "kind": "other",
         "children": [],
@@ -36256,7 +38917,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap_Sakura",
-        "name": "Sakura Garden",
+        "name": {
+          "en": "Sakura Garden",
+          "id": "Taman Sakura"
+        },
         "room": "rmMap_Sakura",
         "kind": "other",
         "children": [],
@@ -36264,7 +38928,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap1",
-        "name": "North West Town",
+        "name": {
+          "en": "North West Town",
+          "id": "Barat Laut Desa"
+        },
         "room": "rmMap1",
         "kind": "fishing",
         "children": [
@@ -36275,7 +38942,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap1_1",
-        "name": "Zerick's House",
+        "name": {
+          "en": "Zerick's House",
+          "id": "Kediaman Zerick"
+        },
         "room": "rmMap1_1",
         "kind": "other",
         "children": [],
@@ -36283,7 +38953,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap1_2",
-        "name": "Franz's House",
+        "name": {
+          "en": "Franz's House",
+          "id": "Kediaman Franz"
+        },
         "room": "rmMap1_2",
         "kind": "other",
         "children": [],
@@ -36291,7 +38964,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2",
-        "name": "Town Square",
+        "name": {
+          "en": "Town Square",
+          "id": "Alun-Alun"
+        },
         "room": "rmMap2",
         "kind": "fishing",
         "children": [
@@ -36309,7 +38985,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2_1",
-        "name": "Mirella's House",
+        "name": {
+          "en": "Mirella's House",
+          "id": "Kediaman Mirella"
+        },
         "room": "rmMap2_1",
         "kind": "other",
         "children": [],
@@ -36317,7 +38996,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2_2",
-        "name": "Emilie's House",
+        "name": {
+          "en": "Emilie's House",
+          "id": "Kediaman Emilie"
+        },
         "room": "rmMap2_2",
         "kind": "other",
         "children": [],
@@ -36325,7 +39007,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2_2_2Floor",
-        "name": "Emilie's House",
+        "name": {
+          "en": "Emilie's House",
+          "id": "Kediaman Emilie"
+        },
         "room": "rmMap2_2_2Floor",
         "kind": "other",
         "children": [],
@@ -36333,7 +39018,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2_3",
-        "name": "Clinic",
+        "name": {
+          "en": "Clinic",
+          "id": "Klinik"
+        },
         "room": "rmMap2_3",
         "kind": "other",
         "children": [],
@@ -36341,7 +39029,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap2_4",
-        "name": "Bakery Shop",
+        "name": {
+          "en": "Bakery Shop",
+          "id": "Toko Roti"
+        },
         "room": "rmMap2_4",
         "kind": "other",
         "children": [],
@@ -36381,7 +39072,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3",
-        "name": "Town Hall",
+        "name": {
+          "en": "Town Hall",
+          "id": "Balai Kota"
+        },
         "room": "rmMap3",
         "kind": "fishing",
         "children": [
@@ -36407,7 +39101,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_1",
-        "name": "Flower Shop",
+        "name": {
+          "en": "Flower Shop",
+          "id": "Toko Bunga"
+        },
         "room": "rmMap3_1",
         "kind": "other",
         "children": [],
@@ -36415,7 +39112,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_1_2Floor",
-        "name": "Flower Shop - 2nd Floor",
+        "name": {
+          "en": "Flower Shop - 2nd Floor",
+          "id": "Toko Bunga - Lantai 2"
+        },
         "room": "rmMap3_1_2Floor",
         "kind": "other",
         "children": [],
@@ -36423,7 +39123,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_2",
-        "name": "Genreal Store",
+        "name": {
+          "en": "Genreal Store",
+          "id": "Toko Kelontong"
+        },
         "room": "rmMap3_2",
         "kind": "other",
         "children": [],
@@ -36431,7 +39134,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_3",
-        "name": "Adventure Guild",
+        "name": {
+          "en": "Adventure Guild",
+          "id": "Serikat Petualang"
+        },
         "room": "rmMap3_3",
         "kind": "other",
         "children": [],
@@ -36439,7 +39145,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_4",
-        "name": "Ellie's House",
+        "name": {
+          "en": "Ellie's House",
+          "id": "Kediaman Ellie"
+        },
         "room": "rmMap3_4",
         "kind": "other",
         "children": [],
@@ -36447,7 +39156,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_5",
-        "name": "Sweet Cafe",
+        "name": {
+          "en": "Sweet Cafe",
+          "id": "Sweet Cafe"
+        },
         "room": "rmMap3_5",
         "kind": "other",
         "children": [],
@@ -36455,7 +39167,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_6",
-        "name": "Library",
+        "name": {
+          "en": "Library",
+          "id": "Perpustakaan"
+        },
         "room": "rmMap3_6",
         "kind": "other",
         "children": [],
@@ -36463,7 +39178,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_8",
-        "name": "Lilia's House",
+        "name": {
+          "en": "Lilia's House",
+          "id": "Kediaman Lilia"
+        },
         "room": "rmMap3_8",
         "kind": "other",
         "children": [],
@@ -36471,7 +39189,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_9",
-        "name": "Vivian's House",
+        "name": {
+          "en": "Vivian's House",
+          "id": "Kediaman Vivian"
+        },
         "room": "rmMap3_9",
         "kind": "other",
         "children": [],
@@ -36479,7 +39200,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10",
-        "name": "Lindara Inn",
+        "name": {
+          "en": "Lindara Inn",
+          "id": "Penginapan"
+        },
         "room": "rmMap3_10",
         "kind": "other",
         "children": [],
@@ -36487,7 +39211,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_floor2",
-        "name": "Inn - 2nd Floor",
+        "name": {
+          "en": "Inn - 2nd Floor",
+          "id": "Penginapan - Lantai 2"
+        },
         "room": "rmMap3_10_floor2",
         "kind": "other",
         "children": [],
@@ -36495,7 +39222,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_floor2_1",
-        "name": "Inn - 2nd Floor",
+        "name": {
+          "en": "Inn - 2nd Floor",
+          "id": "Penginapan - Lantai 2"
+        },
         "room": "rmMap3_10_floor2_1",
         "kind": "other",
         "children": [],
@@ -36503,7 +39233,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_floor2_2",
-        "name": "Inn - 2nd Floor",
+        "name": {
+          "en": "Inn - 2nd Floor",
+          "id": "Penginapan - Lantai 2"
+        },
         "room": "rmMap3_10_floor2_2",
         "kind": "other",
         "children": [],
@@ -36511,7 +39244,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_floor2_3",
-        "name": "Inn - 2nd Floor",
+        "name": {
+          "en": "Inn - 2nd Floor",
+          "id": "Penginapan - Lantai 2"
+        },
         "room": "rmMap3_10_floor2_3",
         "kind": "other",
         "children": [],
@@ -36519,7 +39255,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_floor2_4",
-        "name": "Inn - 2nd Floor",
+        "name": {
+          "en": "Inn - 2nd Floor",
+          "id": "Penginapan - Lantai 2"
+        },
         "room": "rmMap3_10_floor2_4",
         "kind": "other",
         "children": [],
@@ -36527,7 +39266,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap3_10_kitchen",
-        "name": "Inn - Kitchen",
+        "name": {
+          "en": "Inn - Kitchen",
+          "id": "Penginapan - Dapur"
+        },
         "room": "rmMap3_10_kitchen",
         "kind": "other",
         "children": [],
@@ -36543,7 +39285,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap4",
-        "name": "Silver Lake",
+        "name": {
+          "en": "Silver Lake",
+          "id": "Danau Perak"
+        },
         "room": "rmMap4",
         "kind": "fishing",
         "children": [],
@@ -36551,7 +39296,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap6",
-        "name": "Jack's Farm",
+        "name": {
+          "en": "Jack's Farm",
+          "id": "Peternakan Jack"
+        },
         "room": "rmMap6",
         "kind": "other",
         "children": [
@@ -36561,7 +39309,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap6_1",
-        "name": "Jack's House",
+        "name": {
+          "en": "Jack's House",
+          "id": "Kediaman Jack"
+        },
         "room": "rmMap6_1",
         "kind": "other",
         "children": [],
@@ -36569,7 +39320,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap7",
-        "name": "Carpenter",
+        "name": {
+          "en": "Carpenter",
+          "id": "Tukang Kayu"
+        },
         "room": "rmMap7",
         "kind": "fishing",
         "children": [
@@ -36579,7 +39333,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap7_1",
-        "name": "Harly's House",
+        "name": {
+          "en": "Harly's House",
+          "id": "Kediaman Harly"
+        },
         "room": "rmMap7_1",
         "kind": "other",
         "children": [],
@@ -36587,7 +39344,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap8",
-        "name": "Grimwood Forest",
+        "name": {
+          "en": "Grimwood Forest",
+          "id": "Hutan Grimwood"
+        },
         "room": "rmMap8",
         "kind": "fishing",
         "children": [
@@ -36601,7 +39361,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap9",
-        "name": "Grimwood Forest - North",
+        "name": {
+          "en": "Grimwood Forest - North",
+          "id": "Hutan Grimwood - Bagian Utara"
+        },
         "room": "rmMap9",
         "kind": "fishing",
         "children": [],
@@ -36609,7 +39372,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap10",
-        "name": "Eyra Myrr",
+        "name": {
+          "en": "Eyra Myrr",
+          "id": "Eyra Myrr"
+        },
         "room": "rmMap10",
         "kind": "fishing",
         "children": [],
@@ -36617,7 +39383,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap11",
-        "name": "Sakura Garden",
+        "name": {
+          "en": "Sakura Garden",
+          "id": "Taman Sakura"
+        },
         "room": "rmMap11",
         "kind": "other",
         "children": [],
@@ -36625,7 +39394,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap12",
-        "name": "Hot Spring",
+        "name": {
+          "en": "Hot Spring",
+          "id": "Permandian Air Panas"
+        },
         "room": "rmMap12",
         "kind": "other",
         "children": [],
@@ -36633,7 +39405,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap13",
-        "name": "Mountain Slope",
+        "name": {
+          "en": "Mountain Slope",
+          "id": "Jalan Menuju Gunung"
+        },
         "room": "rmMap13",
         "kind": "fishing",
         "children": [],
@@ -36641,7 +39416,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap14",
-        "name": "Mountain Peak",
+        "name": {
+          "en": "Mountain Peak",
+          "id": "Puncak Gunung"
+        },
         "room": "rmMap14",
         "kind": "other",
         "children": [],
@@ -36649,7 +39427,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap15",
-        "name": "North East Town",
+        "name": {
+          "en": "North East Town",
+          "id": "Timur Laut Desa"
+        },
         "room": "rmMap15",
         "kind": "other",
         "children": [
@@ -36659,7 +39440,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap15_1",
-        "name": "Freed's House",
+        "name": {
+          "en": "Freed's House",
+          "id": "Kediaman Freed"
+        },
         "room": "rmMap15_1",
         "kind": "other",
         "children": [],
@@ -36667,7 +39451,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap16",
-        "name": "East Town",
+        "name": {
+          "en": "East Town",
+          "id": "Bagian Timur Desa"
+        },
         "room": "rmMap16",
         "kind": "fishing",
         "children": [],
@@ -36675,7 +39462,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rmMap17",
-        "name": "Silent Fairy",
+        "name": {
+          "en": "Silent Fairy",
+          "id": "Silent Fairy"
+        },
         "room": "rmMap17",
         "kind": "fishing",
         "children": [
@@ -36706,7 +39496,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishing": {
     "schema": "fishing/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 127,
     "status": "partial",
@@ -40674,7 +43464,10 @@ window.GUIDE_BUNDLE = {
     "rateUps": [
       {
         "id": "bait-246",
-        "name": "Earthworm",
+        "name": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "description": "Adds 1 percentage points to each eligible rod variant roll.",
         "appliesTo": {
           "fishIds": null,
@@ -40693,7 +43486,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "bait-247",
-        "name": "Maggot",
+        "name": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "description": "Adds 1.8 percentage points to each eligible rod variant roll.",
         "appliesTo": {
           "fishIds": null,
@@ -40712,7 +43508,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "bait-248",
-        "name": "Bipalium",
+        "name": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "description": "Adds 2.5 percentage points to each eligible rod variant roll.",
         "appliesTo": {
           "fishIds": null,
@@ -40731,7 +43530,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rod-26",
-        "name": "Quality Fishing Rod",
+        "name": {
+          "en": "Quality Fishing Rod",
+          "id": "Joran Berkualitas"
+        },
         "description": "Sets sequential Giant/Mutant/Apocryphal roll thresholds before bait additions.",
         "appliesTo": {
           "fishIds": null,
@@ -40753,7 +43555,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rod-27",
-        "name": "Super Fishing Rod",
+        "name": {
+          "en": "Super Fishing Rod",
+          "id": "Joran Super"
+        },
         "description": "Sets sequential Giant/Mutant/Apocryphal roll thresholds before bait additions.",
         "appliesTo": {
           "fishIds": null,
@@ -40777,7 +43582,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rod-28",
-        "name": "Diamond Fishing Rod",
+        "name": {
+          "en": "Diamond Fishing Rod",
+          "id": "Joran Berlian"
+        },
         "description": "Sets sequential Giant/Mutant/Apocryphal roll thresholds before bait additions.",
         "appliesTo": {
           "fishIds": null,
@@ -40801,7 +43609,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": "rod-29",
-        "name": "Magic Fishing Rod",
+        "name": {
+          "en": "Magic Fishing Rod",
+          "id": "Joran Magis"
+        },
         "description": "Sets sequential Giant/Mutant/Apocryphal roll thresholds before bait additions.",
         "appliesTo": {
           "fishIds": null,
@@ -40827,7 +43638,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishingRate": {
     "schema": "fishingRate/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "ok",
@@ -40841,7 +43652,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2001,
         "itemId": 2001,
-        "name": "Perch",
+        "name": {
+          "en": "Perch",
+          "id": "Perch"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -41341,7 +44155,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -41492,7 +44309,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -41643,7 +44463,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -42398,7 +45221,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -42700,7 +45526,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -42851,7 +45680,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43002,7 +45834,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43153,7 +45988,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43304,7 +46142,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43455,7 +46296,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43606,7 +46450,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -43757,7 +46604,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -44063,7 +46913,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2002,
         "itemId": 2002,
-        "name": "Giant Perch",
+        "name": {
+          "en": "Giant Perch",
+          "id": "Perch Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -44563,7 +47416,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -44714,7 +47570,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -44865,7 +47724,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -45620,7 +48482,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -45922,7 +48787,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46073,7 +48941,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46224,7 +49095,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46375,7 +49249,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46526,7 +49403,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46677,7 +49557,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46828,7 +49711,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -46979,7 +49865,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -47285,7 +50174,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2003,
         "itemId": 2003,
-        "name": "Mutant Perch",
+        "name": {
+          "en": "Mutant Perch",
+          "id": "Perch Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -47785,7 +50677,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -47936,7 +50831,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -48087,7 +50985,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -48842,7 +51743,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49144,7 +52048,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49295,7 +52202,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49446,7 +52356,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49597,7 +52510,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49748,7 +52664,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -49899,7 +52818,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -50050,7 +52972,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -50201,7 +53126,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -50507,7 +53435,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2004,
         "itemId": 2004,
-        "name": "Apocryphal Perch",
+        "name": {
+          "en": "Apocryphal Perch",
+          "id": "Perch Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -51007,7 +53938,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -51158,7 +54092,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -51309,7 +54246,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52064,7 +55004,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52366,7 +55309,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52517,7 +55463,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52668,7 +55617,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52819,7 +55771,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -52970,7 +55925,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -53121,7 +56079,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -53272,7 +56233,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -53423,7 +56387,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -53729,7 +56696,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2005,
         "itemId": 2005,
-        "name": "Sardine",
+        "name": {
+          "en": "Sardine",
+          "id": "Sarden"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -54118,7 +57088,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2006,
         "itemId": 2006,
-        "name": "Giant Sarden",
+        "name": {
+          "en": "Giant Sarden",
+          "id": "Sarden Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -54507,7 +57480,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2007,
         "itemId": 2007,
-        "name": "Mutant Sarden",
+        "name": {
+          "en": "Mutant Sarden",
+          "id": "Sarden Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -54896,7 +57872,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2008,
         "itemId": 2008,
-        "name": "Apocryphal Sarden",
+        "name": {
+          "en": "Apocryphal Sarden",
+          "id": "Sarden Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -55285,11 +58264,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2009,
         "itemId": 2009,
-        "name": "Anabas",
+        "name": {
+          "en": "Anabas",
+          "id": "Betok"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -55440,7 +58425,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -55591,7 +58579,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -56346,7 +59337,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -56648,7 +59642,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -56799,7 +59796,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -56950,7 +59950,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -57101,7 +60104,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -57252,7 +60258,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -57403,7 +60412,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -57554,7 +60566,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -57705,7 +60720,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -58011,11 +61029,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2010,
         "itemId": 2010,
-        "name": "Giant Anabas",
+        "name": {
+          "en": "Giant Anabas",
+          "id": "Betok Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -58166,7 +61190,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -58317,7 +61344,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59072,7 +62102,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59374,7 +62407,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59525,7 +62561,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59676,7 +62715,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59827,7 +62869,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -59978,7 +63023,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -60129,7 +63177,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -60280,7 +63331,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -60431,7 +63485,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -60737,11 +63794,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2011,
         "itemId": 2011,
-        "name": "Mutant Anabas",
+        "name": {
+          "en": "Mutant Anabas",
+          "id": "Betok Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -60892,7 +63955,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -61043,7 +64109,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -61798,7 +64867,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62100,7 +65172,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62251,7 +65326,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62402,7 +65480,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62553,7 +65634,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62704,7 +65788,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -62855,7 +65942,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -63006,7 +66096,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -63157,7 +66250,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -63463,11 +66559,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2012,
         "itemId": 2012,
-        "name": "Apocryphal Anabas",
+        "name": {
+          "en": "Apocryphal Anabas",
+          "id": "Betok Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -63618,7 +66720,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -63769,7 +66874,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -64524,7 +67632,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -64826,7 +67937,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -64977,7 +68091,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65128,7 +68245,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65279,7 +68399,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65430,7 +68553,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65581,7 +68707,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65732,7 +68861,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -65883,7 +69015,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -66189,11 +69324,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2013,
         "itemId": 2013,
-        "name": "Trout",
+        "name": {
+          "en": "Trout",
+          "id": "Trout"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -66344,7 +69485,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -66495,7 +69639,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -67250,7 +70397,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -67552,7 +70702,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -67703,7 +70856,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -67854,7 +71010,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68005,7 +71164,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68156,7 +71318,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68307,7 +71472,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68458,7 +71626,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68609,7 +71780,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -68915,11 +72089,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2014,
         "itemId": 2014,
-        "name": "Giant Trout",
+        "name": {
+          "en": "Giant Trout",
+          "id": "Trout Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -69070,7 +72250,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -69221,7 +72404,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -69976,7 +73162,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -70278,7 +73467,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -70429,7 +73621,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -70580,7 +73775,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -70731,7 +73929,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -70882,7 +74083,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71033,7 +74237,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71184,7 +74391,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71335,7 +74545,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71641,11 +74854,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2015,
         "itemId": 2015,
-        "name": "Mutant Trout",
+        "name": {
+          "en": "Mutant Trout",
+          "id": "Trout Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71796,7 +75015,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -71947,7 +75169,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -72702,7 +75927,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73004,7 +76232,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73155,7 +76386,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73306,7 +76540,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73457,7 +76694,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73608,7 +76848,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73759,7 +77002,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -73910,7 +77156,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -74061,7 +77310,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -74367,11 +77619,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2016,
         "itemId": 2016,
-        "name": "Apocryphal Trout",
+        "name": {
+          "en": "Apocryphal Trout",
+          "id": "Trout Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -74522,7 +77780,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -74673,7 +77934,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -75428,7 +78692,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -75730,7 +78997,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -75881,7 +79151,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76032,7 +79305,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76183,7 +79459,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76334,7 +79613,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76485,7 +79767,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76636,7 +79921,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -76787,7 +80075,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -77093,11 +80384,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2017,
         "itemId": 2017,
-        "name": "Arowana",
+        "name": {
+          "en": "Arowana",
+          "id": "Arwana"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -77248,7 +80545,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -77399,7 +80699,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -78154,7 +81457,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -78456,7 +81762,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -78607,7 +81916,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -78758,7 +82070,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -78909,7 +82224,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79060,7 +82378,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79211,7 +82532,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79362,7 +82686,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79513,7 +82840,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79819,11 +83149,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2018,
         "itemId": 2018,
-        "name": "Giant Arowana",
+        "name": {
+          "en": "Giant Arowana",
+          "id": "Arwana Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -79974,7 +83310,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -80125,7 +83464,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -80880,7 +84222,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81182,7 +84527,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81333,7 +84681,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81484,7 +84835,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81635,7 +84989,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81786,7 +85143,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -81937,7 +85297,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -82088,7 +85451,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -82239,7 +85605,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -82545,11 +85914,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2019,
         "itemId": 2019,
-        "name": "Mutant Arowana",
+        "name": {
+          "en": "Mutant Arowana",
+          "id": "Arwana Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -82700,7 +86075,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -82851,7 +86229,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -83606,7 +86987,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -83908,7 +87292,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84059,7 +87446,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84210,7 +87600,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84361,7 +87754,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84512,7 +87908,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84663,7 +88062,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84814,7 +88216,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -84965,7 +88370,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -85271,11 +88679,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2020,
         "itemId": 2020,
-        "name": "Apocryphal Arowana",
+        "name": {
+          "en": "Apocryphal Arowana",
+          "id": "Arwana Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -85426,7 +88840,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -85577,7 +88994,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -86332,7 +89752,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -86634,7 +90057,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -86785,7 +90211,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -86936,7 +90365,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87087,7 +90519,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87238,7 +90673,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87389,7 +90827,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87540,7 +90981,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87691,7 +91135,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -87997,7 +91444,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2021,
         "itemId": 2021,
-        "name": "Bream",
+        "name": {
+          "en": "Bream",
+          "id": "Bream"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -88386,7 +91836,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2022,
         "itemId": 2022,
-        "name": "Giant Bream",
+        "name": {
+          "en": "Giant Bream",
+          "id": "Bream Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -88775,7 +92228,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2023,
         "itemId": 2023,
-        "name": "Mutant Bream",
+        "name": {
+          "en": "Mutant Bream",
+          "id": "Bream Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -89164,7 +92620,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2024,
         "itemId": 2024,
-        "name": "Apocryphal Bream",
+        "name": {
+          "en": "Apocryphal Bream",
+          "id": "Bream Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -89553,7 +93012,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2025,
         "itemId": 2025,
-        "name": "Tarpon",
+        "name": {
+          "en": "Tarpon",
+          "id": "Tarpon"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -90053,7 +93515,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -90204,7 +93669,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -90355,7 +93823,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -90510,7 +93981,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2026,
         "itemId": 2026,
-        "name": "Giant Tarpon",
+        "name": {
+          "en": "Giant Tarpon",
+          "id": "Tarpon Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -91010,7 +94484,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -91161,7 +94638,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -91312,7 +94792,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -91467,7 +94950,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2027,
         "itemId": 2027,
-        "name": "Mutant Tarpon",
+        "name": {
+          "en": "Mutant Tarpon",
+          "id": "Tarpon Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -91967,7 +95453,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -92118,7 +95607,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -92269,7 +95761,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -92424,7 +95919,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2028,
         "itemId": 2028,
-        "name": "Apocryphal Tarpon",
+        "name": {
+          "en": "Apocryphal Tarpon",
+          "id": "Tarpon Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -92924,7 +96422,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -93075,7 +96576,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -93226,7 +96730,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -93381,7 +96888,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2029,
         "itemId": 2029,
-        "name": "Bonito",
+        "name": {
+          "en": "Bonito",
+          "id": "Bonito"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -94230,7 +97740,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2030,
         "itemId": 2030,
-        "name": "Giant Bonito",
+        "name": {
+          "en": "Giant Bonito",
+          "id": "Bonito Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -95079,7 +98592,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2031,
         "itemId": 2031,
-        "name": "Mutant Bonito",
+        "name": {
+          "en": "Mutant Bonito",
+          "id": "Bonito Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -95928,7 +99444,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2032,
         "itemId": 2032,
-        "name": "Apocryphal Bonito",
+        "name": {
+          "en": "Apocryphal Bonito",
+          "id": "Bonito Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -96777,11 +100296,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2033,
         "itemId": 2033,
-        "name": "Catfish",
+        "name": {
+          "en": "Catfish",
+          "id": "Lele"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -96932,7 +100457,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -97083,7 +100611,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -97234,7 +100765,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -97385,7 +100919,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -97536,7 +101073,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -98291,7 +101831,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -98593,7 +102136,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -98744,7 +102290,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -98895,7 +102444,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99046,7 +102598,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99197,7 +102752,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99348,7 +102906,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99499,7 +103060,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99650,7 +103214,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -99956,11 +103523,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2034,
         "itemId": 2034,
-        "name": "Giant Catfish",
+        "name": {
+          "en": "Giant Catfish",
+          "id": "Lele Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -100111,7 +103684,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -100262,7 +103838,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -100413,7 +103992,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -100564,7 +104146,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -100715,7 +104300,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -101470,7 +105058,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -101772,7 +105363,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -101923,7 +105517,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102074,7 +105671,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102225,7 +105825,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102376,7 +105979,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102527,7 +106133,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102678,7 +106287,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -102829,7 +106441,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103135,11 +106750,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2035,
         "itemId": 2035,
-        "name": "Mutant Catfish",
+        "name": {
+          "en": "Mutant Catfish",
+          "id": "Lele Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103290,7 +106911,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103441,7 +107065,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103592,7 +107219,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103743,7 +107373,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -103894,7 +107527,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -104649,7 +108285,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -104951,7 +108590,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105102,7 +108744,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105253,7 +108898,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105404,7 +109052,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105555,7 +109206,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105706,7 +109360,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -105857,7 +109514,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106008,7 +109668,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106314,11 +109977,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2036,
         "itemId": 2036,
-        "name": "Apocryphal Catfish",
+        "name": {
+          "en": "Apocryphal Catfish",
+          "id": "Lele Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106469,7 +110138,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106620,7 +110292,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106771,7 +110446,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -106922,7 +110600,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -107073,7 +110754,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -107828,7 +111512,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108130,7 +111817,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108281,7 +111971,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108432,7 +112125,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108583,7 +112279,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108734,7 +112433,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -108885,7 +112587,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -109036,7 +112741,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -109187,7 +112895,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -109493,11 +113204,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2037,
         "itemId": 2037,
-        "name": "Sworfish",
+        "name": {
+          "en": "Sworfish",
+          "id": "Sworfish"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -109648,7 +113365,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -109799,7 +113519,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -110554,7 +114277,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -110856,7 +114582,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111007,7 +114736,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111158,7 +114890,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111309,7 +115044,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111460,7 +115198,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111611,7 +115352,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111762,7 +115506,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -111913,7 +115660,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -112219,11 +115969,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2038,
         "itemId": 2038,
-        "name": "Giant Sworfish",
+        "name": {
+          "en": "Giant Sworfish",
+          "id": "Sworfish Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -112374,7 +116130,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -112525,7 +116284,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -113280,7 +117042,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -113582,7 +117347,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -113733,7 +117501,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -113884,7 +117655,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114035,7 +117809,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114186,7 +117963,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114337,7 +118117,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114488,7 +118271,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114639,7 +118425,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -114945,11 +118734,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2039,
         "itemId": 2039,
-        "name": "Mutant Sworfish",
+        "name": {
+          "en": "Mutant Sworfish",
+          "id": "Sworfish Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -115100,7 +118895,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -115251,7 +119049,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116006,7 +119807,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116308,7 +120112,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116459,7 +120266,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116610,7 +120420,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116761,7 +120574,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -116912,7 +120728,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117063,7 +120882,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117214,7 +121036,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117365,7 +121190,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117671,11 +121499,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2040,
         "itemId": 2040,
-        "name": "Apocryphal Sworfish",
+        "name": {
+          "en": "Apocryphal Sworfish",
+          "id": "Sworfish Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117826,7 +121660,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -117977,7 +121814,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -118732,7 +122572,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119034,7 +122877,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119185,7 +123031,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119336,7 +123185,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119487,7 +123339,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119638,7 +123493,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119789,7 +123647,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -119940,7 +123801,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -120091,7 +123955,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -120397,35 +124264,50 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2041,
         "itemId": 2041,
-        "name": "Crylobster",
+        "name": {
+          "en": "Crylobster",
+          "id": "Crylobster"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2042,
         "itemId": 2042,
-        "name": "Giant Crylobster",
+        "name": {
+          "en": "Giant Crylobster",
+          "id": "Crylobster Raksasa"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2043,
         "itemId": 2043,
-        "name": "Mutant Crylobster",
+        "name": {
+          "en": "Mutant Crylobster",
+          "id": "Crylobster Mutant"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2044,
         "itemId": 2044,
-        "name": "Apocryphal Crylobster",
+        "name": {
+          "en": "Apocryphal Crylobster",
+          "id": "Crylobster Purba"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2045,
         "itemId": 2045,
-        "name": "Mola-Mola",
+        "name": {
+          "en": "Mola-Mola",
+          "id": "Mola-Mola"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -120722,7 +124604,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2046,
         "itemId": 2046,
-        "name": "Giant Mola-Mola",
+        "name": {
+          "en": "Giant Mola-Mola",
+          "id": "Mola-Mola Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -121019,7 +124904,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2047,
         "itemId": 2047,
-        "name": "Mutant Mola-Mola",
+        "name": {
+          "en": "Mutant Mola-Mola",
+          "id": "Mola-Mola Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -121316,7 +125204,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2048,
         "itemId": 2048,
-        "name": "Apocryphal Mola-Mola",
+        "name": {
+          "en": "Apocryphal Mola-Mola",
+          "id": "Mola-Mola Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -121613,7 +125504,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2049,
         "itemId": 2049,
-        "name": "Eel",
+        "name": {
+          "en": "Eel",
+          "id": "Belut"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -121906,7 +125800,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -122057,7 +125954,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -122208,7 +126108,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -122963,7 +126866,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -123265,7 +127171,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -123416,7 +127325,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -123567,7 +127479,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -123718,7 +127633,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -123869,7 +127787,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -124020,7 +127941,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -124171,7 +128095,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -124322,7 +128249,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -124628,7 +128558,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2050,
         "itemId": 2050,
-        "name": "Giant Eel",
+        "name": {
+          "en": "Giant Eel",
+          "id": "Belut Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -124921,7 +128854,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -125072,7 +129008,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -125223,7 +129162,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -125978,7 +129920,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -126280,7 +130225,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -126431,7 +130379,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -126582,7 +130533,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -126733,7 +130687,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -126884,7 +130841,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -127035,7 +130995,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -127186,7 +131149,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -127337,7 +131303,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -127643,7 +131612,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2051,
         "itemId": 2051,
-        "name": "Mutant Eel",
+        "name": {
+          "en": "Mutant Eel",
+          "id": "Belut Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -127936,7 +131908,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -128087,7 +132062,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -128238,7 +132216,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -128993,7 +132974,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -129295,7 +133279,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -129446,7 +133433,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -129597,7 +133587,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -129748,7 +133741,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -129899,7 +133895,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -130050,7 +134049,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -130201,7 +134203,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -130352,7 +134357,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -130658,7 +134666,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2052,
         "itemId": 2052,
-        "name": "Apocryphal Eel",
+        "name": {
+          "en": "Apocryphal Eel",
+          "id": "Belut Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -130951,7 +134962,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -131102,7 +135116,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -131253,7 +135270,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132008,7 +136028,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132310,7 +136333,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132461,7 +136487,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132612,7 +136641,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132763,7 +136795,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -132914,7 +136949,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -133065,7 +137103,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -133216,7 +137257,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -133367,7 +137411,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -133673,7 +137720,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2053,
         "itemId": 2053,
-        "name": "Damsel",
+        "name": {
+          "en": "Damsel",
+          "id": "Damsel"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -133966,7 +138016,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -134117,7 +138170,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -134268,7 +138324,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -134423,7 +138482,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2054,
         "itemId": 2054,
-        "name": "Giant Damsel",
+        "name": {
+          "en": "Giant Damsel",
+          "id": "Damsel Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -134716,7 +138778,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -134867,7 +138932,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -135018,7 +139086,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -135173,7 +139244,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2055,
         "itemId": 2055,
-        "name": "Mutant Damsel",
+        "name": {
+          "en": "Mutant Damsel",
+          "id": "Damsel Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -135466,7 +139540,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -135617,7 +139694,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -135768,7 +139848,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -135923,7 +140006,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2056,
         "itemId": 2056,
-        "name": "Apocryphal Damsel",
+        "name": {
+          "en": "Apocryphal Damsel",
+          "id": "Damsel Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -136216,7 +140302,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -136367,7 +140456,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -136518,7 +140610,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -136673,11 +140768,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2057,
         "itemId": 2057,
-        "name": "Sunscale",
+        "name": {
+          "en": "Sunscale",
+          "id": "Sunscale"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -136828,7 +140929,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -136979,7 +141083,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -137734,7 +141841,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138036,7 +142146,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138187,7 +142300,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138338,7 +142454,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138489,7 +142608,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138640,7 +142762,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138791,7 +142916,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -138942,7 +143070,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -139093,7 +143224,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -139399,11 +143533,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2058,
         "itemId": 2058,
-        "name": "Giant Sunscale",
+        "name": {
+          "en": "Giant Sunscale",
+          "id": "Sunscale Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -139554,7 +143694,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -139705,7 +143848,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -140460,7 +144606,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -140762,7 +144911,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -140913,7 +145065,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141064,7 +145219,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141215,7 +145373,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141366,7 +145527,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141517,7 +145681,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141668,7 +145835,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -141819,7 +145989,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -142125,11 +146298,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2059,
         "itemId": 2059,
-        "name": "Mutant Sunscale",
+        "name": {
+          "en": "Mutant Sunscale",
+          "id": "Sunscale Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -142280,7 +146459,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -142431,7 +146613,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -143186,7 +147371,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -143488,7 +147676,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -143639,7 +147830,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -143790,7 +147984,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -143941,7 +148138,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -144092,7 +148292,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -144243,7 +148446,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -144394,7 +148600,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -144545,7 +148754,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -144851,11 +149063,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2060,
         "itemId": 2060,
-        "name": "Apocryphal Sunscale",
+        "name": {
+          "en": "Apocryphal Sunscale",
+          "id": "Sunscale Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -145006,7 +149224,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -145157,7 +149378,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -145912,7 +150136,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146214,7 +150441,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146365,7 +150595,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146516,7 +150749,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146667,7 +150903,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146818,7 +151057,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -146969,7 +151211,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -147120,7 +151365,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -147271,7 +151519,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -147577,7 +151828,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2061,
         "itemId": 2061,
-        "name": "Salmon",
+        "name": {
+          "en": "Salmon",
+          "id": "Salmon"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -147874,7 +152128,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2062,
         "itemId": 2062,
-        "name": "Giant Salmon",
+        "name": {
+          "en": "Giant Salmon",
+          "id": "Salmon Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -148171,7 +152428,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2063,
         "itemId": 2063,
-        "name": "Mutant Salmon",
+        "name": {
+          "en": "Mutant Salmon",
+          "id": "Salmon Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -148468,7 +152728,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2064,
         "itemId": 2064,
-        "name": "Apocryphal Salmon",
+        "name": {
+          "en": "Apocryphal Salmon",
+          "id": "Salmon Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -148765,11 +153028,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2065,
         "itemId": 2065,
-        "name": "Tilapia",
+        "name": {
+          "en": "Tilapia",
+          "id": "Tilapia"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -148920,7 +153189,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -149071,7 +153343,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -149222,7 +153497,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -149373,7 +153651,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -149524,7 +153805,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -150279,7 +154563,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -150581,7 +154868,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -150732,7 +155022,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -150883,7 +155176,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151034,7 +155330,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151185,7 +155484,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151336,7 +155638,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151487,7 +155792,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151638,7 +155946,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -151944,11 +156255,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2066,
         "itemId": 2066,
-        "name": "Giant Tilapia",
+        "name": {
+          "en": "Giant Tilapia",
+          "id": "Tilapia Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -152099,7 +156416,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -152250,7 +156570,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -152401,7 +156724,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -152552,7 +156878,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -152703,7 +157032,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -153458,7 +157790,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -153760,7 +158095,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -153911,7 +158249,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154062,7 +158403,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154213,7 +158557,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154364,7 +158711,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154515,7 +158865,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154666,7 +159019,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -154817,7 +159173,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155123,11 +159482,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2067,
         "itemId": 2067,
-        "name": "Mutant Tilapia",
+        "name": {
+          "en": "Mutant Tilapia",
+          "id": "Tilapia Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155278,7 +159643,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155429,7 +159797,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155580,7 +159951,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155731,7 +160105,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -155882,7 +160259,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -156637,7 +161017,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -156939,7 +161322,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157090,7 +161476,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157241,7 +161630,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157392,7 +161784,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157543,7 +161938,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157694,7 +162092,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157845,7 +162246,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -157996,7 +162400,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -158302,11 +162709,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2068,
         "itemId": 2068,
-        "name": "Apocryphal Tilapia",
+        "name": {
+          "en": "Apocryphal Tilapia",
+          "id": "Tilapia Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -158457,7 +162870,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines6",
-            "placeName": "Mines floor 6",
+            "placeName": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -158608,7 +163024,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines7",
-            "placeName": "Mines floor 7",
+            "placeName": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -158759,7 +163178,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap_Mines10",
-            "placeName": "Mines floor 10",
+            "placeName": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -158910,7 +163332,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -159061,7 +163486,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -159816,7 +164244,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160118,7 +164549,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160269,7 +164703,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160420,7 +164857,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160571,7 +165011,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160722,7 +165165,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -160873,7 +165319,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -161024,7 +165473,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -161175,7 +165627,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -161481,11 +165936,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2069,
         "itemId": 2069,
-        "name": "Pyroflake",
+        "name": {
+          "en": "Pyroflake",
+          "id": "Pyroflake"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -161636,7 +166097,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -161787,7 +166251,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -162542,7 +167009,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -162844,7 +167314,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -162995,7 +167468,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163146,7 +167622,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163297,7 +167776,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163448,7 +167930,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163599,7 +168084,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163750,7 +168238,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -163901,7 +168392,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -164207,11 +168701,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2070,
         "itemId": 2070,
-        "name": "Giant Pyroflake",
+        "name": {
+          "en": "Giant Pyroflake",
+          "id": "Pyroflake Raksasa"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -164362,7 +168862,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -164513,7 +169016,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -165268,7 +169774,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -165570,7 +170079,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -165721,7 +170233,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -165872,7 +170387,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166023,7 +170541,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166174,7 +170695,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166325,7 +170849,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166476,7 +171003,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166627,7 +171157,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -166933,11 +171466,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2071,
         "itemId": 2071,
-        "name": "Mutant Pyroflake",
+        "name": {
+          "en": "Mutant Pyroflake",
+          "id": "Pyroflake Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -167088,7 +171627,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -167239,7 +171781,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -167994,7 +172539,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -168296,7 +172844,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -168447,7 +172998,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -168598,7 +173152,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -168749,7 +173306,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -168900,7 +173460,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169051,7 +173614,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169202,7 +173768,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169353,7 +173922,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169659,11 +174231,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2072,
         "itemId": 2072,
-        "name": "Apocryphal Pyroflake",
+        "name": {
+          "en": "Apocryphal Pyroflake",
+          "id": "Pyroflake Purba"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169814,7 +174392,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -169965,7 +174546,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -170720,7 +175304,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171022,7 +175609,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171173,7 +175763,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171324,7 +175917,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171475,7 +176071,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171626,7 +176225,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171777,7 +176379,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -171928,7 +176533,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -172079,7 +176687,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -172385,11 +176996,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2073,
         "itemId": 2073,
-        "name": "Prismatic Fish",
+        "name": {
+          "en": "Prismatic Fish",
+          "id": "Ikan Prisma"
+        },
         "places": [
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -172544,11 +177161,17 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2074,
         "itemId": 2074,
-        "name": "Siamese Fighting Fish",
+        "name": {
+          "en": "Siamese Fighting Fish",
+          "id": "Ikan Cupang"
+        },
         "places": [
           {
             "placeId": "rmMap_Gate",
-            "placeName": "Moonspring Vale's Gate",
+            "placeName": {
+              "en": "Moonspring Vale's Gate",
+              "id": "Gerbang Moonspring Vale"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -172699,7 +177322,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap1",
-            "placeName": "North West Town",
+            "placeName": {
+              "en": "North West Town",
+              "id": "Barat Laut Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -172850,7 +177476,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap2",
-            "placeName": "Town Square",
+            "placeName": {
+              "en": "Town Square",
+              "id": "Alun-Alun"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -173605,7 +178234,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap3",
-            "placeName": "Town Hall",
+            "placeName": {
+              "en": "Town Hall",
+              "id": "Balai Kota"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -173907,7 +178539,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap4",
-            "placeName": "Silver Lake",
+            "placeName": {
+              "en": "Silver Lake",
+              "id": "Danau Perak"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174058,7 +178693,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap7",
-            "placeName": "Carpenter",
+            "placeName": {
+              "en": "Carpenter",
+              "id": "Tukang Kayu"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174209,7 +178847,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174360,7 +179001,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174511,7 +179155,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap10",
-            "placeName": "Eyra Myrr",
+            "placeName": {
+              "en": "Eyra Myrr",
+              "id": "Eyra Myrr"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174662,7 +179309,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap13",
-            "placeName": "Mountain Slope",
+            "placeName": {
+              "en": "Mountain Slope",
+              "id": "Jalan Menuju Gunung"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174813,7 +179463,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap16",
-            "placeName": "East Town",
+            "placeName": {
+              "en": "East Town",
+              "id": "Bagian Timur Desa"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -174964,7 +179617,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "seasons": [
               {
                 "season": "moonspring",
@@ -175270,7 +179926,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2075,
         "itemId": 2075,
-        "name": "Octopus",
+        "name": {
+          "en": "Octopus",
+          "id": "Gurita"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -175567,7 +180226,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2076,
         "itemId": 2076,
-        "name": "Lobster",
+        "name": {
+          "en": "Lobster",
+          "id": "Lobster"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -175864,7 +180526,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2077,
         "itemId": 2077,
-        "name": "Silver Lobster",
+        "name": {
+          "en": "Silver Lobster",
+          "id": "Lobster Perak"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -176161,7 +180826,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2078,
         "itemId": 2078,
-        "name": "Sea Horse",
+        "name": {
+          "en": "Sea Horse",
+          "id": "Kuda Laut"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -176458,7 +181126,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2079,
         "itemId": 2079,
-        "name": "Silver Sea Horse",
+        "name": {
+          "en": "Silver Sea Horse",
+          "id": "Kuda Laut Perak"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -176755,35 +181426,50 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2080,
         "itemId": 2080,
-        "name": "Shrimp",
+        "name": {
+          "en": "Shrimp",
+          "id": "Udang"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2081,
         "itemId": 2081,
-        "name": "Golden Shrimp",
+        "name": {
+          "en": "Golden Shrimp",
+          "id": "Udang Emas"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2082,
         "itemId": 2082,
-        "name": "Crab",
+        "name": {
+          "en": "Crab",
+          "id": "Kepiting"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2083,
         "itemId": 2083,
-        "name": "Golden Crab",
+        "name": {
+          "en": "Golden Crab",
+          "id": "Kepiting Emas"
+        },
         "places": [],
         "source": "gml_Object_obj_fish_Create_0; gml_Object_obj_fishParameter_Create_0"
       },
       {
         "id": 2084,
         "itemId": 2084,
-        "name": "Starfish",
+        "name": {
+          "en": "Starfish",
+          "id": "Bintang Laut"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -177632,7 +182318,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": 2085,
         "itemId": 2085,
-        "name": "Mutant Starfish",
+        "name": {
+          "en": "Mutant Starfish",
+          "id": "Bintang Laut Mutant"
+        },
         "places": [
           {
             "placeId": "rmMap_Beach",
@@ -178502,9 +183191,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-25-bait-246",
         "rodItemId": 25,
-        "rodName": "Fishing Rod",
+        "rodName": {
+          "en": "Fishing Rod",
+          "id": "Joran Biasa"
+        },
         "baitItemId": 246,
-        "baitName": "Earthworm",
+        "baitName": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 4,
@@ -178521,9 +183216,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-25-bait-247",
         "rodItemId": 25,
-        "rodName": "Fishing Rod",
+        "rodName": {
+          "en": "Fishing Rod",
+          "id": "Joran Biasa"
+        },
         "baitItemId": 247,
-        "baitName": "Maggot",
+        "baitName": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 4.8,
@@ -178540,9 +183241,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-25-bait-248",
         "rodItemId": 25,
-        "rodName": "Fishing Rod",
+        "rodName": {
+          "en": "Fishing Rod",
+          "id": "Joran Biasa"
+        },
         "baitItemId": 248,
-        "baitName": "Bipalium",
+        "baitName": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 5.5,
@@ -178559,9 +183266,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-26-bait-246",
         "rodItemId": 26,
-        "rodName": "Quality Fishing Rod",
+        "rodName": {
+          "en": "Quality Fishing Rod",
+          "id": "Joran Berkualitas"
+        },
         "baitItemId": 246,
-        "baitName": "Earthworm",
+        "baitName": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 6,
@@ -178578,9 +183291,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-26-bait-247",
         "rodItemId": 26,
-        "rodName": "Quality Fishing Rod",
+        "rodName": {
+          "en": "Quality Fishing Rod",
+          "id": "Joran Berkualitas"
+        },
         "baitItemId": 247,
-        "baitName": "Maggot",
+        "baitName": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 6.8,
@@ -178597,9 +183316,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-26-bait-248",
         "rodItemId": 26,
-        "rodName": "Quality Fishing Rod",
+        "rodName": {
+          "en": "Quality Fishing Rod",
+          "id": "Joran Berkualitas"
+        },
         "baitItemId": 248,
-        "baitName": "Bipalium",
+        "baitName": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 7.5,
@@ -178616,9 +183341,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-27-bait-246",
         "rodItemId": 27,
-        "rodName": "Super Fishing Rod",
+        "rodName": {
+          "en": "Super Fishing Rod",
+          "id": "Joran Super"
+        },
         "baitItemId": 246,
-        "baitName": "Earthworm",
+        "baitName": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 11,
@@ -178635,9 +183366,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-27-bait-247",
         "rodItemId": 27,
-        "rodName": "Super Fishing Rod",
+        "rodName": {
+          "en": "Super Fishing Rod",
+          "id": "Joran Super"
+        },
         "baitItemId": 247,
-        "baitName": "Maggot",
+        "baitName": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 11.8,
@@ -178654,9 +183391,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-27-bait-248",
         "rodItemId": 27,
-        "rodName": "Super Fishing Rod",
+        "rodName": {
+          "en": "Super Fishing Rod",
+          "id": "Joran Super"
+        },
         "baitItemId": 248,
-        "baitName": "Bipalium",
+        "baitName": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 12.5,
@@ -178673,9 +183416,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-28-bait-246",
         "rodItemId": 28,
-        "rodName": "Diamond Fishing Rod",
+        "rodName": {
+          "en": "Diamond Fishing Rod",
+          "id": "Joran Berlian"
+        },
         "baitItemId": 246,
-        "baitName": "Earthworm",
+        "baitName": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 26,
@@ -178692,9 +183441,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-28-bait-247",
         "rodItemId": 28,
-        "rodName": "Diamond Fishing Rod",
+        "rodName": {
+          "en": "Diamond Fishing Rod",
+          "id": "Joran Berlian"
+        },
         "baitItemId": 247,
-        "baitName": "Maggot",
+        "baitName": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 26.8,
@@ -178711,9 +183466,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-28-bait-248",
         "rodItemId": 28,
-        "rodName": "Diamond Fishing Rod",
+        "rodName": {
+          "en": "Diamond Fishing Rod",
+          "id": "Joran Berlian"
+        },
         "baitItemId": 248,
-        "baitName": "Bipalium",
+        "baitName": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 27.5,
@@ -178730,9 +183491,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-29-bait-246",
         "rodItemId": 29,
-        "rodName": "Magic Fishing Rod",
+        "rodName": {
+          "en": "Magic Fishing Rod",
+          "id": "Joran Magis"
+        },
         "baitItemId": 246,
-        "baitName": "Earthworm",
+        "baitName": {
+          "en": "Earthworm",
+          "id": "Cacing Tanah"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 41,
@@ -178749,9 +183516,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-29-bait-247",
         "rodItemId": 29,
-        "rodName": "Magic Fishing Rod",
+        "rodName": {
+          "en": "Magic Fishing Rod",
+          "id": "Joran Magis"
+        },
         "baitItemId": 247,
-        "baitName": "Maggot",
+        "baitName": {
+          "en": "Maggot",
+          "id": "Belatung"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 41.8,
@@ -178768,9 +183541,15 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rod-29-bait-248",
         "rodItemId": 29,
-        "rodName": "Magic Fishing Rod",
+        "rodName": {
+          "en": "Magic Fishing Rod",
+          "id": "Joran Magis"
+        },
         "baitItemId": 248,
-        "baitName": "Bipalium",
+        "baitName": {
+          "en": "Bipalium",
+          "id": "Bipalium"
+        },
         "note": "Variant rolls are independent and sequential; later Mutant/Apocryphal successes overwrite earlier results.",
         "thresholdsPercent": {
           "giant": 42.5,
@@ -178788,7 +183567,7 @@ window.GUIDE_BUNDLE = {
   },
   "quests": {
     "schema": "quests/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 35,
     "status": "partial",
@@ -178799,14 +183578,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:0",
         "rawId": 0,
-        "title": "Need Herbs",
+        "title": {
+          "en": "Need Herbs",
+          "id": "Butuh Tanaman Herbal"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Shylvia[/color] need some herbs called [c_blue]Mint[/color].\nAccording to quest note, it seems you can find it near [c_blue]Carpentery[/color].",
+            "text": {
+              "en": "[c_blue]Shylvia[/color] need some herbs called [c_blue]Mint[/color].\nAccording to quest note, it seems you can find it near [c_blue]Carpentery[/color].",
+              "id": "[c_blue]Shylvia[/color] sedang membutuhkan tanaman herbal yang bernama [c_blue]Mint[/color].\nDari catatannya, tertulis bahwa tanaman ini berada disekitar [c_blue]Tukang Kayu[/color]."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "mint",
@@ -178814,7 +183599,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "5 Mint obtained! Next, give this herbs to [c_blue]Shylvia[/color].",
+            "text": {
+              "en": "5 Mint obtained! Next, give this herbs to [c_blue]Shylvia[/color].",
+              "id": "5 Mint telah diperoleh! Selanjutnya, berikan herbal tersebut kepada [c_blue]Shylvia[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_0_1",
@@ -178822,7 +183610,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Shylvia's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Shylvia's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan herbal tersebut kepada [c_blue]Shylvia[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_0_2",
@@ -178850,14 +183641,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:1",
         "rawId": 1,
-        "title": "Jack need fish",
+        "title": {
+          "en": "Jack need fish",
+          "id": "Jack membutuhkan Ikan"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Jack[/color] need a fish that not available in general store. He said he want a [c_blue]Perch Fish[/color].\nJump into the water and catch the fish by hands.",
+            "text": {
+              "en": "[c_blue]Jack[/color] need a fish that not available in general store. He said he want a [c_blue]Perch Fish[/color].\nJump into the water and catch the fish by hands.",
+              "id": "[c_blue]Jack[/color] lagi ingin makan ikan, tapi dia ingin ikan khusus yang tak dijual di general store, yaitu ikan [c_blue]Perch[/color].\nTerjunlah ke sungai dan tangkap ikan-ikan dengan tanganmu."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "perch",
@@ -178865,7 +183662,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "1 Perch has been caught! Talk to [c_blue]Jack[/color] and give him this perch fish.",
+            "text": {
+              "en": "1 Perch has been caught! Talk to [c_blue]Jack[/color] and give him this perch fish.",
+              "id": "1 Perch telah diperoleh! Segera temui [c_blue]Jack[/color] dan berikan ikan ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_1_1",
@@ -178873,7 +183673,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Jack's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Jack's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan ikan tersebut kepada [c_blue]Jack[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_1_2",
@@ -178906,14 +183709,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:2",
         "rawId": 2,
-        "title": "Under Crisis!",
+        "title": {
+          "en": "Under Crisis!",
+          "id": "Krisis Ceri!"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Mary[/color] runout of [c_blue]cherry[/color] stock for her restaurant menu and she need it in hurry.",
+            "text": {
+              "en": "[c_blue]Mary[/color] runout of [c_blue]cherry[/color] stock for her restaurant menu and she need it in hurry.",
+              "id": "[c_blue]Mary[/color] kehabisan stok [c_blue]Ceri[/color] untuk membuat kue di kafenya dan [c_blue]Mary[/color] membutuhkan ceri secepatnya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "cherry",
@@ -178921,7 +183730,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "3 Cherry gathered! Go and find [c_blue]Mary[/color] and give her this cherry.",
+            "text": {
+              "en": "3 Cherry gathered! Go and find [c_blue]Mary[/color] and give her this cherry.",
+              "id": "3 Cherry telah diperoleh! Segera temui [c_blue]Mary[/color] dan berikan ceri ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_2_1",
@@ -178929,7 +183741,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Mary's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Mary's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan buah tersebut kepada [c_blue]Mary[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_2_2",
@@ -178962,14 +183777,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:3",
         "rawId": 3,
-        "title": "Need logs!",
+        "title": {
+          "en": "Need logs!",
+          "id": "Membutuhkan Kayu Bakar!"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Emilie[/color] is trying to make dinner but she's runout of firewood! Lend her a hand by collecting some [c_blue]branches[/color].",
+            "text": {
+              "en": "[c_blue]Emilie[/color] is trying to make dinner but she's runout of firewood! Lend her a hand by collecting some [c_blue]branches[/color].",
+              "id": "[c_blue]Emilie[/color] hampir kehabisan kayu bakar. Pergilah ke hutan dan kumpulkan [c_blue]ranting-ranting[/color] yang berserakan."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "branches",
@@ -178977,7 +183798,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the branches! Time to find [c_blue]Emilie[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the branches! Time to find [c_blue]Emilie[/color] and hand them over.",
+              "id": "Waktunya menemui [c_blue]Emilie[/color] dan menyerahkan [c_blue]ranting-ranting[/color] ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_3_1",
@@ -178985,7 +183809,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Emilie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Emilie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Emilie[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_3_2",
@@ -179013,14 +183840,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:4",
         "rawId": 4,
-        "title": "Traditional Dishes",
+        "title": {
+          "en": "Traditional Dishes",
+          "id": "Masakan Tradisional"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Rose[/color] wants to cook a traditional dish using [c_blue]Crocus Flower[/color] as the main spice.",
+            "text": {
+              "en": "[c_blue]Rose[/color] wants to cook a traditional dish using [c_blue]Crocus Flower[/color] as the main spice.",
+              "id": "[c_blue]Rose[/color] ingin memasak masakan tradisional dengan [c_blue]Bunga Krokus[/color] sebagai rempah-rempah utamanya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "crocus",
@@ -179028,7 +183861,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the crocus flower! Meet [c_blue]Rose[/color] and give crocus flowers you have collected to her.",
+            "text": {
+              "en": "You've got all the crocus flower! Meet [c_blue]Rose[/color] and give crocus flowers you have collected to her.",
+              "id": "Kamu telah mengumpulkan bunga krokus! Waktunya menemui [c_blue]Rose[/color] dan menyerahkan bunga-bunga ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_4_1",
@@ -179036,7 +183872,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Rose's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Rose's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Rose[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_4_2",
@@ -179069,14 +183908,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:5",
         "rawId": 5,
-        "title": "Shylvia's Hair Clip",
+        "title": {
+          "en": "Shylvia's Hair Clip",
+          "id": "Jepitan Rambut Shylvia"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Shylvia[/color] lost her [c_blue]hair clip[/color] somewhere around [c_blue]Grimwood Forest[/color] or [c_blue]Eyraa Myrr[/color] when she gathered some medicine flower in the. That's hair clip is very important to her.",
+            "text": {
+              "en": "[c_blue]Shylvia[/color] lost her [c_blue]hair clip[/color] somewhere around [c_blue]Grimwood Forest[/color] or [c_blue]Eyraa Myrr[/color] when she gathered some medicine flower in the. That's hair clip is very important to her.",
+              "id": "[c_blue]Shylvia[/color] kehilangan [c_blue]Jepitan Rambut[/color] nya ketika mencari tanaman obat di sekitaran [c_blue]Hutan Grimwood[/color] atau [c_blue]Eyraa Myrr[/color]. Jepit Rambut itu sangat berharga baginya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_5_0",
@@ -179084,7 +183929,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Great job! You've found shylvia's hair clip. Meet [c_blue]Shylvia[/color] and give it to her.",
+            "text": {
+              "en": "Great job! You've found shylvia's hair clip. Meet [c_blue]Shylvia[/color] and give it to her.",
+              "id": "Kerja bagus! Kamu telah menemukan jepitan rambut shylvia! Waktunya menemui [c_blue]Shylvia[/color] dan menyerahkan jepitan rambut ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_5_1",
@@ -179092,7 +183940,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]shylvia's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]shylvia's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Shylvia[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_5_2",
@@ -179120,14 +183971,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:6",
         "rawId": 6,
-        "title": "Little Lily",
+        "title": {
+          "en": "Little Lily",
+          "id": "Si Kecil Lily"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Lucy[/color] wants some [c_blue]Lily Flower[/color], but she can't find any.",
+            "text": {
+              "en": "[c_blue]Lucy[/color] wants some [c_blue]Lily Flower[/color], but she can't find any.",
+              "id": "[c_blue]Lucy[/color] Lucy ingin melihat bunga Lily yang tumbuh di musim semi, namun dia tidak bisa pergi mencari [c_blue]Lily[/color] sendirian."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "lily",
@@ -179135,7 +183992,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the Lily Flower! Meet [c_blue]Lucy[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the Lily Flower! Meet [c_blue]Lucy[/color] and hand them over.",
+              "id": "Kamu telah mengumpulkan beberapa bunga Lily! Waktunya menemui [c_blue]Lucy[/color] dan menyerahkan bunga-bunga ini kepadanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_6_1",
@@ -179143,7 +184003,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Lucy's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Lucy's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Lucy[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_6_2",
@@ -179176,14 +184039,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:7",
         "rawId": 7,
-        "title": "Grilled Fish",
+        "title": {
+          "en": "Grilled Fish",
+          "id": "Ikan Bakar"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Zerick[/color] is busy at Harly's Carpenter and doesn't have time to go fishing. Even so, he wants to cook [c_blue]Grilled Fish[/color] as dinner menu. Catch [c_blue]3 the same type of fish[/color] on the river or lake.",
+            "text": {
+              "en": "[c_blue]Zerick[/color] is busy at Harly's Carpenter and doesn't have time to go fishing. Even so, he wants to cook [c_blue]Grilled Fish[/color] as dinner menu. Catch [c_blue]3 the same type of fish[/color] on the river or lake.",
+              "id": "[c_blue]Zerick[/color] sedang sibuk bekerja dan tidak mempunyai waktu luang untuk pergi memancing. Akan tetapi, dia sangat ingin menyajikan [c_blue]Ikan Bakar[/color] yang lezat sebagai menu makan malam. Jadi, tangkaplah [c_blue]3 ekor ikan[/color] dari [c_blue]satu jenis[/color] yang sama."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "fish",
@@ -179191,7 +184060,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the fish that [c_blue]Zerick[/color] needs! Meet [c_blue]Zerick[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the fish that [c_blue]Zerick[/color] needs! Meet [c_blue]Zerick[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan ikan segar yang [c_blue]Zerick[/color] butuhkan! Waktunya menemui [c_blue]Zerick[/color] dan menyerahkan ikan-ikan ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_7_1",
@@ -179199,7 +184071,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Zerick's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Zerick's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Zerick[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_7_2",
@@ -179232,14 +184107,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:8",
         "rawId": 8,
-        "title": "Roof Repair",
+        "title": {
+          "en": "Roof Repair",
+          "id": "Perbaikan Atap"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Ren[/color] needs some [c_blue]Woods[/color] to repair Inn's roof after got hit by storm few days ago.",
+            "text": {
+              "en": "[c_blue]Ren[/color] needs some [c_blue]Woods[/color] to repair Inn's roof after got hit by storm few days ago.",
+              "id": "[c_blue]Ren[/color] membutuhkan beberapa [c_blue]Kayu[/color] untuk memperbaiki atap penginapan yang bocor akibat badai yang melanda Moonspring Vale beberapa hari lalu."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "wood",
@@ -179247,7 +184128,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the wood that [c_blue]Ren[/color] needs! Meet [c_blue]Ren[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the wood that [c_blue]Ren[/color] needs! Meet [c_blue]Ren[/color] and hand them over.",
+              "id": "Kamu telah memperoleh beberapa kayu yang [c_blue]Ren[/color] butuhkan! Waktunya menemui [c_blue]Ren[/color] dan menyerahkan kayu-kayu ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_8_1",
@@ -179255,7 +184139,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Ren's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Ren's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Ren[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_8_2",
@@ -179283,14 +184170,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:9",
         "rawId": 9,
-        "title": "Strawberry Cake",
+        "title": {
+          "en": "Strawberry Cake",
+          "id": "Kue Stroberi"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Mary[/color] currently runout of [c_blue]Strawberries[/color] for spring strawberry cake menu. She need fresh [c_blue]Strawberry[/color] as fast as possible.",
+            "text": {
+              "en": "[c_blue]Mary[/color] currently runout of [c_blue]Strawberries[/color] for spring strawberry cake menu. She need fresh [c_blue]Strawberry[/color] as fast as possible.",
+              "id": "[c_blue]Mary[/color] sedang kehabisan bahan untuk membuat kue stroberi musim semi. Ia membutuhkan buah [c_blue]Stroberi[/color] segar secepatnya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "strawberry",
@@ -179298,7 +184191,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the strawberries that [c_blue]Mary[/color] needs! Meet [c_blue]Mary[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the strawberries that [c_blue]Mary[/color] needs! Meet [c_blue]Mary[/color] and hand them over.",
+              "id": "Kamu telah memperoleh beberapa stroberi yang [c_blue]Mary[/color] butuhkan! Waktunya menemui [c_blue]Mary[/color] dan menyerahkan stroberi ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_9_1",
@@ -179306,7 +184202,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Mary's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Mary's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Mary[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_9_2",
@@ -179339,14 +184238,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:10",
         "rawId": 10,
-        "title": "Dandelion for Decoration",
+        "title": {
+          "en": "Dandelion for Decoration",
+          "id": "Dekorasi Dandelion"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Rose[/color] need some quality [c_blue]Wild Dandelions[/color] to decorate town square garden.",
+            "text": {
+              "en": "[c_blue]Rose[/color] need some quality [c_blue]Wild Dandelions[/color] to decorate town square garden.",
+              "id": "[c_blue]Rose[/color] memerlukan banyak [c_blue]Dandelion Liar[/color] berkualitas untuk menghiasi taman pusat desa."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "wild dandelion",
@@ -179354,7 +184259,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the dandelions that [c_blue]Rose[/color] needs! Meet [c_blue]Rose[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the dandelions that [c_blue]Rose[/color] needs! Meet [c_blue]Rose[/color] and hand them over.",
+              "id": "Kamu telah memperoleh beberapa dandelion yang [c_blue]Rose[/color] butuhkan! Waktunya menemui [c_blue]Rose[/color] dan menyerahkan dandelion ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_10_1",
@@ -179362,7 +184270,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Rose's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Rose's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Rose[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_10_2",
@@ -179390,14 +184301,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:11",
         "rawId": 11,
-        "title": "Celery Juice Experiment",
+        "title": {
+          "en": "Celery Juice Experiment",
+          "id": "Eksperimen Jus Seledri"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Garion[/color] is trying to make new drink recipe using fresh [c_blue]Celery[/color] as main ingredient.",
+            "text": {
+              "en": "[c_blue]Garion[/color] is trying to make new drink recipe using fresh [c_blue]Celery[/color] as main ingredient.",
+              "id": "[c_blue]Garion[/color] sedang bereksperimen dengan resep minuman baru berbahan [c_blue]Seledri[/color] segar."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "celery",
@@ -179405,7 +184322,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the celery that [c_blue]Garion[/color] needs! Find [c_blue]Garion[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the celery that [c_blue]Garion[/color] needs! Find [c_blue]Garion[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan beberapa seledri yang [c_blue]Garion[/color] butuhkan! Waktunya menemui [c_blue]Garion[/color] dan menyerahkan seledri ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_11_1",
@@ -179413,7 +184333,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Garion's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Garion's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Garion[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_11_2",
@@ -179441,14 +184364,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:12",
         "rawId": 12,
-        "title": "Some Wheat Needed!",
+        "title": {
+          "en": "Some Wheat Needed!",
+          "id": "Gandum Untuk Kedai Roti!"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Munaly[/color] need some [c_blue]Wheat[/color] for her bakery ingredients.",
+            "text": {
+              "en": "[c_blue]Munaly[/color] need some [c_blue]Wheat[/color] for her bakery ingredients.",
+              "id": "[c_blue]Munaly[/color] memerlukan banyak [c_blue]Gandum[/color] untuk membuat roti."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "wheat",
@@ -179456,7 +184385,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the wheat that [c_blue]Munaly[/color] needs! Find [c_blue]Munaly[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the wheat that [c_blue]Munaly[/color] needs! Find [c_blue]Munaly[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan beberapa gandum yang [c_blue]Munaly[/color] butuhkan! Waktunya menemui [c_blue]Munaly[/color] dan menyerahkan gandum ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_12_1",
@@ -179464,7 +184396,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Munaly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Munaly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Munaly[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_12_2",
@@ -179497,14 +184432,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:13",
         "rawId": 13,
-        "title": "Giant Catfish!",
+        "title": {
+          "en": "Giant Catfish!",
+          "id": "Ikan Lele Raksasa"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Rumie[/color] need a [c_blue]Giant Catfish[/color] for her dinner.",
+            "text": {
+              "en": "[c_blue]Rumie[/color] need a [c_blue]Giant Catfish[/color] for her dinner.",
+              "id": "[c_blue]Rumie[/color] memerlukan seekor [c_blue]Lele Raksasa[/color] untuk menu makan malam."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "giant catfish",
@@ -179512,7 +184453,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got the giant catfish that [c_blue]Rumie[/color] needs! Find [c_blue]Rumie[/color] and hand them over.",
+            "text": {
+              "en": "You've got the giant catfish that [c_blue]Rumie[/color] needs! Find [c_blue]Rumie[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan seekor ikan lele raksasa! Waktunya menemui [c_blue]Rumie[/color] dan menyerahkan ikan ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_13_1",
@@ -179520,7 +184464,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Rumie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Rumie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Rumie[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_13_2",
@@ -179553,14 +184500,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:14",
         "rawId": 14,
-        "title": "Fresh Melon",
+        "title": {
+          "en": "Fresh Melon",
+          "id": "Melon Segar"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Rana[/color] need some fresh [c_blue]Melon[/color] as main ingredient for Lindara Inn's drink menu.",
+            "text": {
+              "en": "[c_blue]Rana[/color] need some fresh [c_blue]Melon[/color] as main ingredient for Lindara Inn's drink menu.",
+              "id": "[c_blue]Rana[/color] memerlukan [c_blue]Melon[/color] segar untuk uji coba menu baru di penginapan."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "melon",
@@ -179568,7 +184521,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the Melon that [c_blue]Rana[/color] needs! Meet [c_blue]Rana[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the Melon that [c_blue]Rana[/color] needs! Meet [c_blue]Rana[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan beberapa melon yang [c_blue]Rana[/color] butuhkan! Waktunya menemui [c_blue]Rana[/color] dan menyerahkan melon ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_14_1",
@@ -179576,7 +184532,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Rana's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Rana's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Rana[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_14_2",
@@ -179609,14 +184568,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:15",
         "rawId": 15,
-        "title": "Mushroom Needed",
+        "title": {
+          "en": "Mushroom Needed",
+          "id": "Butuh Jamur"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Dr. Rei[/color] need some [c_blue]Mushroom[/color] to make medicine.",
+            "text": {
+              "en": "[c_blue]Dr. Rei[/color] need some [c_blue]Mushroom[/color] to make medicine.",
+              "id": "[c_blue]Dr. Rei[/color] memerlukan beberapa [c_blue]Jamur[/color] untuk pembuatan obat."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "mushroom",
@@ -179624,7 +184589,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got all the mushroom that [c_blue]Dr. Rei[/color] needs! Meet [c_blue]Dr. Rei[/color] and hand them over.",
+            "text": {
+              "en": "You've got all the mushroom that [c_blue]Dr. Rei[/color] needs! Meet [c_blue]Dr. Rei[/color] and hand them over.",
+              "id": "Kamu telah mendapatkan beberapa jamur yang [c_blue]Dr. Rei[/color] butuhkan! Waktunya menemui [c_blue]Dr. Rei[/color] dan menyerahkan jamur ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_15_1",
@@ -179632,7 +184600,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Dr. Rei's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Dr. Rei's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Dr. Rei[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_15_2",
@@ -179660,14 +184631,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:16",
         "rawId": 16,
-        "title": "Lunchbox for Lucy",
+        "title": {
+          "en": "Lunchbox for Lucy",
+          "id": "Bekal Untuk Lucy"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Harly[/color] is so busy at his job. He wants an [c_blue]Omelet[/color] for [c_blue]Lucy's[/color] lunch. He said \"if you already had one, just give it immediately to [c_blue]Lucy[/color]\".",
+            "text": {
+              "en": "[c_blue]Harly[/color] is so busy at his job. He wants an [c_blue]Omelet[/color] for [c_blue]Lucy's[/color] lunch. He said \"if you already had one, just give it immediately to [c_blue]Lucy[/color]\".",
+              "id": "[c_blue]Harly[/color] sangat sibuk dengan pekerjaannya. Dia menginginkan masakan [c_blue]Omelet[/color] untuk makan siang anaknya. Jika kamu sudah memilikinya, langsung serahkan kepada [c_blue]Lucy[/color] saja - kata Harly."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "omelet",
@@ -179675,7 +184652,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got the Omelet that [c_blue]Harly[/color] request! Meet [c_blue]Lucy[/color] and give it to her.",
+            "text": {
+              "en": "You've got the Omelet that [c_blue]Harly[/color] request! Meet [c_blue]Lucy[/color] and give it to her.",
+              "id": "Kamu telah mendapatkan masakan Omelet yang [c_blue]Harly[/color] butuhkan! Waktunya menemui [c_blue]Lucy[/color] dan menyerahkan Omelet ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_16_1",
@@ -179683,7 +184663,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Harly[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_16_2",
@@ -179711,14 +184694,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:17",
         "rawId": 17,
-        "title": "Spicy Dish",
+        "title": {
+          "en": "Spicy Dish",
+          "id": "Masakan Pedas"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Freed[/color] wants some spicy dish. Cook [c_blue]1x Spicy Spring Bowl[/color] and give it to him.",
+            "text": {
+              "en": "[c_blue]Freed[/color] wants some spicy dish. Cook [c_blue]1x Spicy Spring Bowl[/color] and give it to him.",
+              "id": "[c_blue]Freed[/color] ingin merasakan masakan yang pedas. Masaklah [c_blue]1x Spicy Spring Bowl[/color] dan berikan padanya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "spb",
@@ -179726,7 +184715,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You've got the dish that [c_blue]Freed[/color] request! Meet [c_blue]Freed[/color] and give it to him.",
+            "text": {
+              "en": "You've got the dish that [c_blue]Freed[/color] request! Meet [c_blue]Freed[/color] and give it to him.",
+              "id": "Kamu telah mendapatkan masakan yang [c_blue]Freed[/color] inginkan! Waktunya menemui [c_blue]Freed[/color] dan menyerahkan makanan ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_17_1",
@@ -179734,7 +184726,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah menyelesaikan tugas yang diberikan [c_blue]Harly[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_17_2",
@@ -179762,14 +184757,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:18",
         "rawId": 18,
-        "title": "Strawberry Jam",
+        "title": {
+          "en": "Strawberry Jam",
+          "id": "Selai Stroberi"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Rumie[/color] need some [c_blue]Strawberry[/color] to make [c_blue]Jam[/color] for her store.",
+            "text": {
+              "en": "[c_blue]Rumie[/color] need some [c_blue]Strawberry[/color] to make [c_blue]Jam[/color] for her store.",
+              "id": "[c_blue]Rumie[/color] membutuhkan beberapa buah [c_blue]Stroberi[/color] untuk diolah menjadi selai dan dijual di tokonya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "strawberry",
@@ -179777,7 +184778,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "3 Strawberry gathered! Go and find [c_blue]Rumie[/color] and give her this Strawberries.",
+            "text": {
+              "en": "3 Strawberry gathered! Go and find [c_blue]Rumie[/color] and give her this Strawberries.",
+              "id": "3 Buah Stroberi telah diperoleh! Segera temui [c_blue]Rumie[/color] dan berikan padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_18_1",
@@ -179785,7 +184789,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Rumie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Rumie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan buah tersebut kepada [c_blue]Rumie[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_18_2",
@@ -179818,14 +184825,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:19",
         "rawId": 19,
-        "title": "Bucket Crocus",
+        "title": {
+          "en": "Bucket Crocus",
+          "id": "Bucket Crocus"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Ajax[/color] need some [c_blue]Crocus[/color] flowers. He did not left particular reason for his quest. \"Just do the quest\" he said.",
+            "text": {
+              "en": "[c_blue]Ajax[/color] need some [c_blue]Crocus[/color] flowers. He did not left particular reason for his quest. \"Just do the quest\" he said.",
+              "id": "[c_blue]Ajax[/color] membutuhkan beberapa bunga [c_blue]Krokus[/color]. Dia tidak menuliskan alasan khusus mengapa dia butuh. \"Lakukan Saja\" kata Ajax."
+            },
             "objective": {
               "type": "multi",
               "target": [
@@ -179839,7 +184852,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Crocus flowers gathered! Meet [c_blue]Ajax[/color] and hand them over.",
+            "text": {
+              "en": "Crocus flowers gathered! Meet [c_blue]Ajax[/color] and hand them over.",
+              "id": "Bunga-bunga krokus telah diperoleh! Segera temui [c_blue]Ajax[/color] dan berikan bunga-bunga ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_19_1",
@@ -179847,7 +184863,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Ajax's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Ajax's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan bunga tersebut kepada [c_blue]Ajax[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_19_2",
@@ -179875,14 +184894,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:20",
         "rawId": 20,
-        "title": "Lotus Soup",
+        "title": {
+          "en": "Lotus Soup",
+          "id": "Sup Teratai"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Emilie[/color] need some [c_blue]Lotus[/color] flowers to make special soup made by herself.",
+            "text": {
+              "en": "[c_blue]Emilie[/color] need some [c_blue]Lotus[/color] flowers to make special soup made by herself.",
+              "id": "[c_blue]Emilie[/color] membutuhkan beberapa bunga [c_blue]Teratai[/color] untuk membuat sup spesial khas buatannya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "lotus",
@@ -179890,7 +184915,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "2 Lotus gathered! Go and find [c_blue]Emilie[/color] and give her these lotus flowers.",
+            "text": {
+              "en": "2 Lotus gathered! Go and find [c_blue]Emilie[/color] and give her these lotus flowers.",
+              "id": "2 Teratai telah diperoleh! Segera temui [c_blue]Emilie[/color] dan berikan bunga teratai ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_20_1",
@@ -179898,7 +184926,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Emilie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Emilie's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memberikan bunga tersebut kepada [c_blue]Emilie[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_20_2",
@@ -179926,14 +184957,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:21",
         "rawId": 21,
-        "title": "Herb Tea",
+        "title": {
+          "en": "Herb Tea",
+          "id": "Teh Herbal"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Dr. Rei[/color] just found a recipe for [c_blue]Herb Tea[/color]. He need some [c_blue]Lotus[/color] and [c_blue]Mint[/color] flowers as ingredients.",
+            "text": {
+              "en": "[c_blue]Dr. Rei[/color] just found a recipe for [c_blue]Herb Tea[/color]. He need some [c_blue]Lotus[/color] and [c_blue]Mint[/color] flowers as ingredients.",
+              "id": "[c_blue]Dr. Rei[/color] membutuhkan beberapa bunga [c_blue]Teratai[/color] dan bunga [c_blue]Mint[/color] untuk membuat teh herbal dari resep yang baru saja dia dapatkan."
+            },
             "objective": {
               "type": "multi",
               "target": [
@@ -179947,7 +184984,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Resources gathered! Go and find [c_blue]Dr. rei[/color] and give him these resources.",
+            "text": {
+              "en": "Resources gathered! Go and find [c_blue]Dr. rei[/color] and give him these resources.",
+              "id": "Bahan-bahan telah diperoleh! Segera temui [c_blue]Dr. Rei[/color] dan berikan bahan-bahan yang diminta."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_21_1",
@@ -179955,7 +184995,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Dr. Rei's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Dr. Rei's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memenuhi permintaan [c_blue]Dr. Rei[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_21_2",
@@ -179983,14 +185026,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:22",
         "rawId": 22,
-        "title": "Honey Needed",
+        "title": {
+          "en": "Honey Needed",
+          "id": "Membutuhkan Madu"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Janne[/color] need a [c_blue]Honey[/color].",
+            "text": {
+              "en": "[c_blue]Janne[/color] need a [c_blue]Honey[/color].",
+              "id": "[c_blue]Janne[/color] membutuhkan sebuah [c_blue]Madu[/color]."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "honey",
@@ -179998,7 +185047,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Honey gathered! Go and find [c_blue]Janne[/color] and hand it to her.",
+            "text": {
+              "en": "Honey gathered! Go and find [c_blue]Janne[/color] and hand it to her.",
+              "id": "Madu telah diperoleh! Segera temui [c_blue]Janne[/color] dan berikan madu yang diminta."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_22_1",
@@ -180006,7 +185058,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Janne's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Janne's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memenuhi permintaan [c_blue]Janne[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_22_2",
@@ -180034,14 +185089,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:23",
         "rawId": 23,
-        "title": "The Worst Dish",
+        "title": {
+          "en": "The Worst Dish",
+          "id": "Masakan Terbusuk"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Mirella[/color] needs some [c_blue]Failed Dish[/color] for her magic experiment.",
+            "text": {
+              "en": "[c_blue]Mirella[/color] needs some [c_blue]Failed Dish[/color] for her magic experiment.",
+              "id": "[c_blue]Mirella[/color] membutuhkan beberapa [c_blue]Masakan Gagal[/color] sebagai bahan eksperimen sihirnya."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "failed dish",
@@ -180049,7 +185110,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Failed dish obtained! Talk to [c_blue]Mirella[/color] and hand them over.",
+            "text": {
+              "en": "Failed dish obtained! Talk to [c_blue]Mirella[/color] and hand them over.",
+              "id": "Masakan gagal telah diperoleh! Segera temui [c_blue]Mirella[/color] dan berikan masakan yang diminta."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_23_1",
@@ -180057,7 +185121,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Mirella's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Mirella's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memenuhi permintaan [c_blue]Mirella[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_23_2",
@@ -180085,14 +185152,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:24",
         "rawId": 24,
-        "title": "Kitchen Repair",
+        "title": {
+          "en": "Kitchen Repair",
+          "id": "Perbaikan Dapur"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Harly[/color] needs some [c_blue]Stones[/color] to repair his kitchen after being hit with boar.",
+            "text": {
+              "en": "[c_blue]Harly[/color] needs some [c_blue]Stones[/color] to repair his kitchen after being hit with boar.",
+              "id": "[c_blue]Harly[/color] membutuhkan beberapa [c_blue]Batu[/color] untuk memperbaiki dapurnya yang bolong dihantam babi hutan."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "stone",
@@ -180100,7 +185173,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Stones gathered! Talk to [c_blue]Harly[/color] and hand them over.",
+            "text": {
+              "en": "Stones gathered! Talk to [c_blue]Harly[/color] and hand them over.",
+              "id": "Kamu telah mengumpulkan Batu-batu! Segera temui [c_blue]Harly[/color] dan berikan bahan-bahan yang diminta."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_24_1",
@@ -180108,7 +185184,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Harly's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memenuhi permintaan [c_blue]Harly[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_24_2",
@@ -180136,14 +185215,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "adventure:25",
         "rawId": 25,
-        "title": "Campfire Party",
+        "title": {
+          "en": "Campfire Party",
+          "id": "Pesta Api Unggun"
+        },
         "giver": null,
         "desc": null,
         "type": "adventure",
         "requires": [],
         "steps": [
           {
-            "text": "[c_blue]Garion[/color] needs some [c_blue]Woods[/color] for campfire party with Freed and Harly.",
+            "text": {
+              "en": "[c_blue]Garion[/color] needs some [c_blue]Woods[/color] for campfire party with Freed and Harly.",
+              "id": "[c_blue]Garion[/color] membutuhkan beberapa [c_blue]Kayu[/color] untuk pesta api unggunya bersama Freed dan Harly."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "wood",
@@ -180151,7 +185236,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Resources gathered! Talk to [c_blue]Garion[/color] and hand them over.",
+            "text": {
+              "en": "Resources gathered! Talk to [c_blue]Garion[/color] and hand them over.",
+              "id": "Kamu telah mengumpulkan semuanya! Segera temui [c_blue]Garion[/color] dan berikan bahan-bahan yang diminta."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_25_1",
@@ -180159,7 +185247,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have fulfilled [c_blue]Garion's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+            "text": {
+              "en": "You have fulfilled [c_blue]Garion's[/color] task. Return to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color] to complete the quest.",
+              "id": "Kamu telah memenuhi permintaan [c_blue]Garion[/color]. Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color] untuk melapor hasil quest."
+            },
             "objective": {
               "type": "flag",
               "target": "qa_25_2",
@@ -180187,14 +185278,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "character:0",
         "rawId": 0,
-        "title": "Munaly's Rolling Pin",
+        "title": {
+          "en": "Munaly's Rolling Pin",
+          "id": "Rolling Pin Munaly"
+        },
         "giver": null,
         "desc": null,
         "type": "character",
         "requires": [],
         "steps": [
           {
-            "text": "Collect 3 Woods and give it to Harly.",
+            "text": {
+              "en": "Collect 3 Woods and give it to Harly.",
+              "id": "Kumpulkan 3 Balok Kayu kemudian berikan kepada Harly."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "wood",
@@ -180202,7 +185299,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Meet harly and tell him about Munaly's rolling pin.",
+            "text": {
+              "en": "Meet harly and tell him about Munaly's rolling pin.",
+              "id": "Pergilah ke rumah Harly dan bicarakan mengenai Rolling Pin Munaly."
+            },
             "objective": {
               "type": "flag",
               "target": "qc_0_1",
@@ -180210,7 +185310,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have received a new Rolling Pin from Harly. Now back to Munaly and give it to her.",
+            "text": {
+              "en": "You have received a new Rolling Pin from Harly. Now back to Munaly and give it to her.",
+              "id": "Kamu telah memperoleh Rolling Pin yang baru dari Harly. Kembali ke Munaly kemudian berikan item ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qc_0_2",
@@ -180238,14 +185341,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "character:1",
         "rawId": 1,
-        "title": "Munaly's Problem",
+        "title": {
+          "en": "Munaly's Problem",
+          "id": "Kekhawatiran Munaly"
+        },
         "giver": null,
         "desc": null,
         "type": "character",
         "requires": [],
         "steps": [
           {
-            "text": "Enter bakery shop and meet Mulany and Ellie to disccuss about Munaly.\n\n[c_red]Warning!\nWhen you enter [c_blue]Bakery Shop[/color], timeskip cutscene will occour, the time will jump up to 17:00 PM.[/color]",
+            "text": {
+              "en": "Enter bakery shop and meet Mulany and Ellie to disccuss about Munaly.\n\n[c_red]Warning!\nWhen you enter [c_blue]Bakery Shop[/color], timeskip cutscene will occour, the time will jump up to 17:00 PM.[/color]",
+              "id": "Munaly sedang bertengkar dengan Mulany. Masuklah ke [c_blue]Toko Roti[/color] dan diskusikan masalah ini dengan Mulany dan Ellie.\n\n[c_red]Peringatan!\nSaat memasuki [c_blue]Toko Roti[/color], akan memicu cutscene time skip ke jam 17:00 PM.[/color]"
+            },
             "objective": {
               "type": "flag",
               "target": "qc_1_0",
@@ -180275,14 +185384,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "character:2",
         "rawId": 2,
-        "title": "Dandelion Flower",
+        "title": {
+          "en": "Dandelion Flower",
+          "id": "Bunga Dandelion"
+        },
         "giver": null,
         "desc": null,
         "type": "character",
         "requires": [],
         "steps": [
           {
-            "text": "Plant the dandelion seeds that you got from Rose.",
+            "text": {
+              "en": "Plant the dandelion seeds that you got from Rose.",
+              "id": "Tanamlah benih dandelion di kebunmu, kemudian petik ketika panen tiba."
+            },
             "objective": {
               "type": "item_or_tag",
               "target": "dandelion",
@@ -180290,7 +185405,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Meet and talk to Mary with dandelion on your bag.",
+            "text": {
+              "en": "Meet and talk to Mary with dandelion on your bag.",
+              "id": "Temuilah Mary sembari membawa Dandelion di dalam tas."
+            },
             "objective": {
               "type": "flag",
               "target": "qc_2_1",
@@ -180298,7 +185416,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Bring the dandelion and meet [c_blue]Rose[/color] at her garden between [c_blue]07:00 AM and 08:00 AM[/color].",
+            "text": {
+              "en": "Bring the dandelion and meet [c_blue]Rose[/color] at her garden between [c_blue]07:00 AM and 08:00 AM[/color].",
+              "id": "Bawalah bunga dandelion tersebut kemudian temui [c_blue]Rose[/color] di kebunnya pada pukul [c_blue]07:00 Pagi - 08:00 Pagi[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "qc_2_2",
@@ -180326,14 +185447,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "character:3",
         "rawId": 3,
-        "title": "Meal for Ren",
+        "title": {
+          "en": "Meal for Ren",
+          "id": "Makanan untuk Ren"
+        },
         "giver": null,
         "desc": null,
         "type": "character",
         "requires": [],
         "steps": [
           {
-            "text": "Find Ren in the forest and hand him his meal.",
+            "text": {
+              "en": "Find Ren in the forest and hand him his meal.",
+              "id": "Temuilah Ren di hutan dan berikan makanan ini padanya."
+            },
             "objective": {
               "type": "flag",
               "target": "qc_3_1",
@@ -180363,14 +185490,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "main:0",
         "rawId": 0,
-        "title": "Starting a New Life",
+        "title": {
+          "en": "Starting a New Life",
+          "id": "Menjalani Kehidupan Baru"
+        },
         "giver": null,
         "desc": null,
         "type": "main",
         "requires": [],
         "steps": [
           {
-            "text": "Follow [c_blue]Mirella[/color] to [c_blue]Adventure Guild[/color] and meet the [c_blue]Guild Master[/color].",
+            "text": {
+              "en": "Follow [c_blue]Mirella[/color] to [c_blue]Adventure Guild[/color] and meet the [c_blue]Guild Master[/color].",
+              "id": "Ikuti [c_blue]Mirella[/color] sampai ke [c_blue]Adventure Guild[/color] untuk bertemu dengan [c_blue]Guild Master[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "prolog_1",
@@ -180378,7 +185511,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Walk around [c_blue]MoonSpring Vale[/color] and greet some villagers.",
+            "text": {
+              "en": "Walk around [c_blue]MoonSpring Vale[/color] and greet some villagers.",
+              "id": "Telusurilah desa [c_blue]MoonSpring Vale[/color] dan sapa para warga yang kamu temui!"
+            },
             "objective": {
               "type": "flag",
               "target": "prolog_2",
@@ -180386,7 +185522,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You have met with the villagers. Now back to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color].",
+            "text": {
+              "en": "You have met with the villagers. Now back to [c_blue]Adventure Guild[/color] and talk to [c_blue]Lilia[/color].",
+              "id": "Kamu telah menyapa beberapa warga! Kembalilah ke [c_blue]Adventure Guild[/color] dan temui [c_blue]Lilia[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "prolog_3",
@@ -180394,7 +185533,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Go to [c_blue]Lindara Inn[/color] and [c_blue]talk to Rana[/color] about Joseph's offer.",
+            "text": {
+              "en": "Go to [c_blue]Lindara Inn[/color] and [c_blue]talk to Rana[/color] about Joseph's offer.",
+              "id": "Pergilah ke [c_blue]Penginapan Lindara[/color] dan berbicara pada [c_blue]Rana[/color] mengenai penawaran Guild Master, Joseph."
+            },
             "objective": {
               "type": "flag",
               "target": "prolog_4",
@@ -180417,14 +185559,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "main:1",
         "rawId": 1,
-        "title": "Magic Book",
+        "title": {
+          "en": "Magic Book",
+          "id": "Buku Sihir"
+        },
         "giver": null,
         "desc": null,
         "type": "main",
         "requires": [],
         "steps": [
           {
-            "text": "You just found a mysterious book! [c_blue]Mirella[/color] may know something about it. Find [c_blue]Mirella[/color] and ask her about this book.",
+            "text": {
+              "en": "You just found a mysterious book! [c_blue]Mirella[/color] may know something about it. Find [c_blue]Mirella[/color] and ask her about this book.",
+              "id": "Kamu baru saja menemukan buku misterius! [c_blue]Mirella[/color] mungkin tau sesuatu mengenai buku ini. Pergi dan temui [c_blue]Mirella[/color] kemudian diskusikan tentang buku ini."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_0",
@@ -180432,7 +185580,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You earned enough of gold to buy a House. Meet [c_blue]Joseph[/color] between [c_blue]08:00 AM - 14:00 PM[/color] at [c_blue]Adventure Guild[/color].",
+            "text": {
+              "en": "You earned enough of gold to buy a House. Meet [c_blue]Joseph[/color] between [c_blue]08:00 AM - 14:00 PM[/color] at [c_blue]Adventure Guild[/color].",
+              "id": "Kamu telah mendapatkan cukup uang untuk membeli sebuah Rumah. Temuilah [c_blue]Joseph[/color] di [c_blue]Adventure Guild[/color] sekitar pukul [c_blue]08:00 - 14:00[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_1",
@@ -180440,7 +185591,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Go to the farm located at east of the Village.",
+            "text": {
+              "en": "Go to the farm located at east of the Village.",
+              "id": "Pergilah ke peternakan yang ada di sebelah timur desa."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_2",
@@ -180468,14 +185622,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "main:2",
         "rawId": 2,
-        "title": "Magic Book",
+        "title": {
+          "en": "Magic Book",
+          "id": "Buku Sihir"
+        },
         "giver": null,
         "desc": null,
         "type": "main",
         "requires": [],
         "steps": [
           {
-            "text": "You just found a mysterious book! [c_blue]Mirella[/color] may know something about it. Find [c_blue]Mirella[/color] and ask her about this book.",
+            "text": {
+              "en": "You just found a mysterious book! [c_blue]Mirella[/color] may know something about it. Find [c_blue]Mirella[/color] and ask her about this book.",
+              "id": "Kamu baru saja menemukan buku misterius! [c_blue]Mirella[/color] mungkin tau sesuatu mengenai buku ini. Pergi dan temui [c_blue]Mirella[/color] kemudian diskusikan tentang buku ini."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_0",
@@ -180483,7 +185643,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "You earned enough of gold to buy a House. Meet [c_blue]Joseph[/color] between [c_blue]08:00 AM - 14:00 PM[/color] at [c_blue]Adventure Guild[/color].",
+            "text": {
+              "en": "You earned enough of gold to buy a House. Meet [c_blue]Joseph[/color] between [c_blue]08:00 AM - 14:00 PM[/color] at [c_blue]Adventure Guild[/color].",
+              "id": "Kamu telah mendapatkan cukup uang untuk membeli sebuah Rumah. Temuilah [c_blue]Joseph[/color] di [c_blue]Adventure Guild[/color] sekitar pukul [c_blue]08:00 - 14:00[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_1",
@@ -180491,7 +185654,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Go to the farm located at east of the Village.",
+            "text": {
+              "en": "Go to the farm located at east of the Village.",
+              "id": "Pergilah ke peternakan yang ada di sebelah timur desa."
+            },
             "objective": {
               "type": "flag",
               "target": "act1_2",
@@ -180519,14 +185685,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "main:4",
         "rawId": 4,
-        "title": "Wierd Phenomenom",
+        "title": {
+          "en": "Wierd Phenomenom",
+          "id": "Fenomena Aneh"
+        },
         "giver": null,
         "desc": null,
         "type": "main",
         "requires": [],
         "steps": [
           {
-            "text": "Investigate the wierd phenomenom occours on Moonspring Vale.",
+            "text": {
+              "en": "Investigate the wierd phenomenom occours on Moonspring Vale.",
+              "id": "Moonspring Vale tengah mengalami fenomena aneh. Mungkin kamu bisa menemukan petunjuk di hutan atau gunung."
+            },
             "objective": {
               "type": "flag",
               "target": "act3_0",
@@ -180534,7 +185706,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Meet Joseph at Adventure Guild and tell him about Roland King lines.",
+            "text": {
+              "en": "Meet Joseph at Adventure Guild and tell him about Roland King lines.",
+              "id": "Temui Joseph di Adventure Guild dan beritahu dia mengenai ramalan dari Raja Roland."
+            },
             "objective": {
               "type": "flag",
               "target": "act3_1",
@@ -180542,7 +185717,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "The letter you got from the tree is so suspicious. Let's get back to Eyraa Myrr to see what happen.",
+            "text": {
+              "en": "The letter you got from the tree is so suspicious. Let's get back to Eyraa Myrr to see what happen.",
+              "id": "Surat yang kamu dapatkan dari Eyraa Myrr sangat mencurigakan. Pergilah dan pastikan apa yang sebenarnya terjadi."
+            },
             "objective": {
               "type": "flag",
               "target": "act3_2",
@@ -180570,14 +185748,20 @@ window.GUIDE_BUNDLE = {
       {
         "id": "world:0",
         "rawId": 0,
-        "title": "Sakura Tree Mystery",
+        "title": {
+          "en": "Sakura Tree Mystery",
+          "id": "Misteri Pohon Sakura"
+        },
         "giver": null,
         "desc": null,
         "type": "world",
         "requires": [],
         "steps": [
           {
-            "text": "Joseph wants to talk more about Sakura after the festival. Meet him at [c_blue]Sakura Garden[/color] on the [c_blue]13th of Spring[/color], between [c_blue]08:00 and 15:00[/color]",
+            "text": {
+              "en": "Joseph wants to talk more about Sakura after the festival. Meet him at [c_blue]Sakura Garden[/color] on the [c_blue]13th of Spring[/color], between [c_blue]08:00 and 15:00[/color]",
+              "id": "Joseph ingin membahas lebih lanjut mengenai Pohon Sakura sehari setelah Festival. Temui Joseph di [c_pink]Taman Sakura[/color] pada tanggal [c_blue]13 Spring[/color]."
+            },
             "objective": {
               "type": "flag",
               "target": "qw_0_0",
@@ -180585,7 +185769,10 @@ window.GUIDE_BUNDLE = {
             }
           },
           {
-            "text": "Joseph is currently looking for clue about Sakura Tree. Waits for few days until Joseph find out something about Sakura Tree. Don't forget to check your mail everyday.",
+            "text": {
+              "en": "Joseph is currently looking for clue about Sakura Tree. Waits for few days until Joseph find out something about Sakura Tree. Don't forget to check your mail everyday.",
+              "id": "Joseph sedang mencari petunjuk mengenai misteri dibalik Pohon Sakura. Tunggulah selama beberapa hari hingga Joseph menghubungimu melalui kotak surat."
+            },
             "objective": {
               "type": "flag",
               "target": "qw_0_1",
@@ -180614,7 +185801,7 @@ window.GUIDE_BUNDLE = {
   },
   "recipes": {
     "schema": "recipes/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 50,
     "status": "partial",
@@ -180625,7 +185812,10 @@ window.GUIDE_BUNDLE = {
     "records": [
       {
         "id": 0,
-        "name": "Spicy Spring Bowl",
+        "name": {
+          "en": "Spicy Spring Bowl",
+          "id": "Spicy Spring Bowl"
+        },
         "resultItemId": 3002,
         "resultCount": 1,
         "station": "cooking",
@@ -180660,7 +185850,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 1,
-        "name": "Apple Pie",
+        "name": {
+          "en": "Apple Pie",
+          "id": "Pie Apel"
+        },
         "resultItemId": 3003,
         "resultCount": 1,
         "station": "cooking",
@@ -180713,7 +185906,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 2,
-        "name": "Bacon",
+        "name": {
+          "en": "Bacon",
+          "id": "Bacon"
+        },
         "resultItemId": 3004,
         "resultCount": 1,
         "station": "cooking",
@@ -180741,7 +185937,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 3,
-        "name": "Burger",
+        "name": {
+          "en": "Burger",
+          "id": "Burger"
+        },
         "resultItemId": 3005,
         "resultCount": 1,
         "station": "cooking",
@@ -180773,7 +185972,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 4,
-        "name": "Burrito",
+        "name": {
+          "en": "Burrito",
+          "id": "Burrito"
+        },
         "resultItemId": 3006,
         "resultCount": 1,
         "station": "cooking",
@@ -180808,7 +186010,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 5,
-        "name": "Bagel",
+        "name": {
+          "en": "Bagel",
+          "id": "Bagel"
+        },
         "resultItemId": 3007,
         "resultCount": 1,
         "station": "cooking",
@@ -180845,7 +186050,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 6,
-        "name": "Cheese Cake",
+        "name": {
+          "en": "Cheese Cake",
+          "id": "Kue Keju"
+        },
         "resultItemId": 3008,
         "resultCount": 1,
         "station": "cooking",
@@ -180894,7 +186102,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 7,
-        "name": "Cheese Puffs",
+        "name": {
+          "en": "Cheese Puffs",
+          "id": "Snack Keju"
+        },
         "resultItemId": 3009,
         "resultCount": 1,
         "station": "cooking",
@@ -180922,7 +186133,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 8,
-        "name": "Cookies",
+        "name": {
+          "en": "Cookies",
+          "id": "Kukis"
+        },
         "resultItemId": 3010,
         "resultCount": 1,
         "station": "cooking",
@@ -180962,7 +186176,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 9,
-        "name": "Chocolate Cake",
+        "name": {
+          "en": "Chocolate Cake",
+          "id": "Kue Cokelat"
+        },
         "resultItemId": 3011,
         "resultCount": 1,
         "station": "cooking",
@@ -181011,7 +186228,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 10,
-        "name": "Curry",
+        "name": {
+          "en": "Curry",
+          "id": "Kari"
+        },
         "resultItemId": 3012,
         "resultCount": 1,
         "station": "cooking",
@@ -181046,7 +186266,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 11,
-        "name": "Mini Donuts",
+        "name": {
+          "en": "Mini Donuts",
+          "id": "Donat Mini"
+        },
         "resultItemId": 3013,
         "resultCount": 1,
         "station": "cooking",
@@ -181095,7 +186318,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 12,
-        "name": "Dumplings",
+        "name": {
+          "en": "Dumplings",
+          "id": "Bakpao"
+        },
         "resultItemId": 3014,
         "resultCount": 1,
         "station": "cooking",
@@ -181126,7 +186352,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 13,
-        "name": "Fried Egg",
+        "name": {
+          "en": "Fried Egg",
+          "id": "Telur Goreng"
+        },
         "resultItemId": 3015,
         "resultCount": 1,
         "station": "cooking",
@@ -181154,7 +186383,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 14,
-        "name": "Egg Salad",
+        "name": {
+          "en": "Egg Salad",
+          "id": "Salad Telur"
+        },
         "resultItemId": 3016,
         "resultCount": 1,
         "station": "cooking",
@@ -181190,7 +186422,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 15,
-        "name": "Egg Tart",
+        "name": {
+          "en": "Egg Tart",
+          "id": "Tart Telur"
+        },
         "resultItemId": 3017,
         "resultCount": 1,
         "station": "cooking",
@@ -181226,7 +186461,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 16,
-        "name": "French Fries",
+        "name": {
+          "en": "French Fries",
+          "id": "Kentang Goreng"
+        },
         "resultItemId": 3018,
         "resultCount": 1,
         "station": "cooking",
@@ -181254,7 +186492,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 17,
-        "name": "Fruit Cake",
+        "name": {
+          "en": "Fruit Cake",
+          "id": "Kue Buah"
+        },
         "resultItemId": 3019,
         "resultCount": 1,
         "station": "cooking",
@@ -181300,7 +186541,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 18,
-        "name": "Garlic Bread",
+        "name": {
+          "en": "Garlic Bread",
+          "id": "Roti Bawang"
+        },
         "resultItemId": 3020,
         "resultCount": 1,
         "station": "cooking",
@@ -181328,7 +186572,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 19,
-        "name": "Gingerbread Man",
+        "name": {
+          "en": "Gingerbread Man",
+          "id": "Kue Jahe"
+        },
         "resultItemId": 3021,
         "resultCount": 1,
         "station": "cooking",
@@ -181368,7 +186615,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 20,
-        "name": "Pizza",
+        "name": {
+          "en": "Pizza",
+          "id": "Pizza"
+        },
         "resultItemId": 3022,
         "resultCount": 1,
         "station": "cooking",
@@ -181396,7 +186646,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 21,
-        "name": "Hot Dog",
+        "name": {
+          "en": "Hot Dog",
+          "id": "Hot Dog"
+        },
         "resultItemId": 3023,
         "resultCount": 1,
         "station": "cooking",
@@ -181428,7 +186681,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 22,
-        "name": "Ice Cream",
+        "name": {
+          "en": "Ice Cream",
+          "id": "Es Krim"
+        },
         "resultItemId": 3024,
         "resultCount": 1,
         "station": "cooking",
@@ -181475,7 +186731,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 23,
-        "name": "Jelly",
+        "name": {
+          "en": "Jelly",
+          "id": "Jeli"
+        },
         "resultItemId": 3025,
         "resultCount": 1,
         "station": "cooking",
@@ -181509,7 +186768,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 24,
-        "name": "Bread Jam",
+        "name": {
+          "en": "Bread Jam",
+          "id": "Roti Selai"
+        },
         "resultItemId": 3026,
         "resultCount": 1,
         "station": "cooking",
@@ -181533,7 +186795,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 25,
-        "name": "Orange Pie",
+        "name": {
+          "en": "Orange Pie",
+          "id": "Pie Jeruk"
+        },
         "resultItemId": 3027,
         "resultCount": 1,
         "station": "cooking",
@@ -181573,7 +186838,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 26,
-        "name": "Loaf Bread",
+        "name": {
+          "en": "Loaf Bread",
+          "id": "Roti Tawar"
+        },
         "resultItemId": 3028,
         "resultCount": 1,
         "station": "cooking",
@@ -181610,7 +186878,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 27,
-        "name": "Mac Cheese",
+        "name": {
+          "en": "Mac Cheese",
+          "id": "Mac Cheese"
+        },
         "resultItemId": 3029,
         "resultCount": 1,
         "station": "cooking",
@@ -181647,7 +186918,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 28,
-        "name": "Meat Balls",
+        "name": {
+          "en": "Meat Balls",
+          "id": "Bakso"
+        },
         "resultItemId": 3030,
         "resultCount": 1,
         "station": "cooking",
@@ -181686,7 +186960,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 29,
-        "name": "Nacho",
+        "name": {
+          "en": "Nacho",
+          "id": "Nacho"
+        },
         "resultItemId": 3031,
         "resultCount": 1,
         "station": "cooking",
@@ -181718,7 +186995,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 30,
-        "name": "Omelet",
+        "name": {
+          "en": "Omelet",
+          "id": "Omelet"
+        },
         "resultItemId": 3032,
         "resultCount": 1,
         "station": "cooking",
@@ -181750,7 +187030,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 31,
-        "name": "Pudding",
+        "name": {
+          "en": "Pudding",
+          "id": "Puding"
+        },
         "resultItemId": 3033,
         "resultCount": 1,
         "station": "cooking",
@@ -181795,7 +187078,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 32,
-        "name": "Potato Chips",
+        "name": {
+          "en": "Potato Chips",
+          "id": "Keripik Kentang"
+        },
         "resultItemId": 3034,
         "resultCount": 1,
         "station": "cooking",
@@ -181823,7 +187109,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 33,
-        "name": "Pancake",
+        "name": {
+          "en": "Pancake",
+          "id": "Panekuk"
+        },
         "resultItemId": 3035,
         "resultCount": 1,
         "station": "cooking",
@@ -181872,7 +187161,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 34,
-        "name": "Popcorn",
+        "name": {
+          "en": "Popcorn",
+          "id": "Popcorn"
+        },
         "resultItemId": 3036,
         "resultCount": 1,
         "station": "cooking",
@@ -181900,7 +187192,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 35,
-        "name": "Roast Chicken",
+        "name": {
+          "en": "Roast Chicken",
+          "id": "Ayam Panggang"
+        },
         "resultItemId": 3037,
         "resultCount": 1,
         "station": "cooking",
@@ -181928,7 +187223,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 36,
-        "name": "Ramen",
+        "name": {
+          "en": "Ramen",
+          "id": "Ramen"
+        },
         "resultItemId": 3038,
         "resultCount": 1,
         "station": "cooking",
@@ -181968,7 +187266,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 37,
-        "name": "Fish Steak",
+        "name": {
+          "en": "Fish Steak",
+          "id": "Steak Ikan"
+        },
         "resultItemId": 3039,
         "resultCount": 1,
         "station": "cooking",
@@ -181996,7 +187297,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 38,
-        "name": "Sandwich",
+        "name": {
+          "en": "Sandwich",
+          "id": "Sandwich"
+        },
         "resultItemId": 3040,
         "resultCount": 1,
         "station": "cooking",
@@ -182028,7 +187332,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 39,
-        "name": "Strawberry Cake",
+        "name": {
+          "en": "Strawberry Cake",
+          "id": "Kue Stroberi"
+        },
         "resultItemId": 3041,
         "resultCount": 1,
         "station": "cooking",
@@ -182077,7 +187384,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 40,
-        "name": "Spaghetti",
+        "name": {
+          "en": "Spaghetti",
+          "id": "Spaghetti"
+        },
         "resultItemId": 3042,
         "resultCount": 1,
         "station": "cooking",
@@ -182109,7 +187419,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 41,
-        "name": "Steak",
+        "name": {
+          "en": "Steak",
+          "id": "Steak"
+        },
         "resultItemId": 3043,
         "resultCount": 1,
         "station": "cooking",
@@ -182137,7 +187450,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 42,
-        "name": "Sushi",
+        "name": {
+          "en": "Sushi",
+          "id": "Sushi"
+        },
         "resultItemId": 3044,
         "resultCount": 1,
         "station": "cooking",
@@ -182174,7 +187490,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 43,
-        "name": "Taco",
+        "name": {
+          "en": "Taco",
+          "id": "Taco"
+        },
         "resultItemId": 3045,
         "resultCount": 1,
         "station": "cooking",
@@ -182213,7 +187532,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 44,
-        "name": "Waffle Stack",
+        "name": {
+          "en": "Waffle Stack",
+          "id": "Wafel Lapis"
+        },
         "resultItemId": 3046,
         "resultCount": 1,
         "station": "cooking",
@@ -182266,7 +187588,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 45,
-        "name": "Macaron",
+        "name": {
+          "en": "Macaron",
+          "id": "Makaron"
+        },
         "resultItemId": 3047,
         "resultCount": 1,
         "station": "cooking",
@@ -182306,7 +187631,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 46,
-        "name": "Bundt Cake",
+        "name": {
+          "en": "Bundt Cake",
+          "id": "Kue Bundt"
+        },
         "resultItemId": 3048,
         "resultCount": 1,
         "station": "cooking",
@@ -182355,7 +187683,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 47,
-        "name": "Chocolate Donut",
+        "name": {
+          "en": "Chocolate Donut",
+          "id": "Donat Cokelat"
+        },
         "resultItemId": 3049,
         "resultCount": 1,
         "station": "cooking",
@@ -182404,7 +187735,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 48,
-        "name": "Strawberry Donut",
+        "name": {
+          "en": "Strawberry Donut",
+          "id": "Donat Strawberry"
+        },
         "resultItemId": 3050,
         "resultCount": 1,
         "station": "cooking",
@@ -182453,7 +187787,10 @@ window.GUIDE_BUNDLE = {
       },
       {
         "id": 49,
-        "name": "Lacy Pancake",
+        "name": {
+          "en": "Lacy Pancake",
+          "id": "Roti Jala Mak Limah Biadab"
+        },
         "resultItemId": 3089,
         "resultCount": 1,
         "station": "cooking",
@@ -182494,7 +187831,7 @@ window.GUIDE_BUNDLE = {
   },
   "events": {
     "schema": "events/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 0,
     "status": "ok",
@@ -182505,7 +187842,7 @@ window.GUIDE_BUNDLE = {
   },
   "monsters": {
     "schema": "monsters/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 8,
     "status": "partial",
@@ -182563,7 +187900,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 607,
             "rawItemId": 607,
-            "itemName": "Raw Meat",
+            "itemName": {
+              "en": "Raw Meat",
+              "id": "Daging Mentah"
+            },
             "chancePct": 100,
             "chanceRaw": null,
             "min": 1,
@@ -182576,7 +187916,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 239,
             "rawItemId": 239,
-            "itemName": "Boar Tusk",
+            "itemName": {
+              "en": "Boar Tusk",
+              "id": "Gading Babi Hutan"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -182590,7 +187933,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_1",
-            "placeName": "Grimwood Forest - 1",
+            "placeName": {
+              "en": "Grimwood Forest - 1",
+              "id": "Hutan Grimwood - 1"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182604,7 +187950,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_4",
-            "placeName": "Grimwood Forest - 4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182632,7 +187981,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182711,7 +188063,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 253,
             "rawItemId": 253,
-            "itemName": "Cobra Head",
+            "itemName": {
+              "en": "Cobra Head",
+              "id": "Kepala Kobra"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -182724,7 +188079,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -182738,7 +188096,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_2",
-            "placeName": "Grimwood Forest - 2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182752,7 +188113,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_3",
-            "placeName": "Grimwood Forest - 3",
+            "placeName": {
+              "en": "Grimwood Forest - 3",
+              "id": "Hutan Grimwood - 3"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182766,7 +188130,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_5",
-            "placeName": "Grimwood Forest - 5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182859,7 +188226,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 238,
             "rawItemId": 238,
-            "itemName": "Electric Wings",
+            "itemName": {
+              "en": "Electric Wings",
+              "id": "Sayap Listrik"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -182872,7 +188242,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -182886,7 +188259,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_2",
-            "placeName": "Grimwood Forest - 2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182900,7 +188276,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_5",
-            "placeName": "Grimwood Forest - 5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -182928,7 +188307,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap17",
-            "placeName": "Silent Fairy",
+            "placeName": {
+              "en": "Silent Fairy",
+              "id": "Silent Fairy"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183020,7 +188402,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 252,
             "rawItemId": 252,
-            "itemName": "Fire Wings",
+            "itemName": {
+              "en": "Fire Wings",
+              "id": "Sayap Api"
+            },
             "chancePct": 60,
             "chanceRaw": null,
             "min": 1,
@@ -183033,7 +188418,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -183047,7 +188435,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_2",
-            "placeName": "Grimwood Forest - 2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183061,7 +188452,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_4",
-            "placeName": "Grimwood Forest - 4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183075,7 +188469,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_5",
-            "placeName": "Grimwood Forest - 5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183168,7 +188565,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 251,
             "rawItemId": 251,
-            "itemName": "Goblin Fingers",
+            "itemName": {
+              "en": "Goblin Fingers",
+              "id": "Jari Goblin"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -183181,7 +188581,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -183195,7 +188598,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_4",
-            "placeName": "Grimwood Forest - 4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183289,7 +188695,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 607,
             "rawItemId": 607,
-            "itemName": "Raw Meat",
+            "itemName": {
+              "en": "Raw Meat",
+              "id": "Daging Mentah"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -183302,7 +188711,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -183316,7 +188728,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_4",
-            "placeName": "Grimwood Forest - 4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183330,7 +188745,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_5",
-            "placeName": "Grimwood Forest - 5",
+            "placeName": {
+              "en": "Grimwood Forest - 5",
+              "id": "Hutan Grimwood - 5"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183417,7 +188835,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 100,
             "chanceRaw": null,
             "min": 2,
@@ -183431,7 +188852,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_2",
-            "placeName": "Grimwood Forest - 2",
+            "placeName": {
+              "en": "Grimwood Forest - 2",
+              "id": "Hutan Grimwood - 2"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183497,7 +188921,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 244,
             "rawItemId": 244,
-            "itemName": "Slime's Mucus",
+            "itemName": {
+              "en": "Slime's Mucus",
+              "id": "Lendir Slime"
+            },
             "chancePct": 70,
             "chanceRaw": null,
             "min": 1,
@@ -183510,7 +188937,10 @@ window.GUIDE_BUNDLE = {
           {
             "itemId": 250,
             "rawItemId": 250,
-            "itemName": "Monster Core",
+            "itemName": {
+              "en": "Monster Core",
+              "id": "Inti Monster"
+            },
             "chancePct": 5,
             "chanceRaw": null,
             "min": 1,
@@ -183524,7 +188954,10 @@ window.GUIDE_BUNDLE = {
         "locations": [
           {
             "placeId": "rmForest1_1",
-            "placeName": "Grimwood Forest - 1",
+            "placeName": {
+              "en": "Grimwood Forest - 1",
+              "id": "Hutan Grimwood - 1"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183538,7 +188971,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_3",
-            "placeName": "Grimwood Forest - 3",
+            "placeName": {
+              "en": "Grimwood Forest - 3",
+              "id": "Hutan Grimwood - 3"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183552,7 +188988,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmForest1_4",
-            "placeName": "Grimwood Forest - 4",
+            "placeName": {
+              "en": "Grimwood Forest - 4",
+              "id": "Hutan Grimwood - 4"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183580,7 +189019,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap8",
-            "placeName": "Grimwood Forest",
+            "placeName": {
+              "en": "Grimwood Forest",
+              "id": "Hutan Grimwood"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183594,7 +189036,10 @@ window.GUIDE_BUNDLE = {
           },
           {
             "placeId": "rmMap9",
-            "placeName": "Grimwood Forest - North",
+            "placeName": {
+              "en": "Grimwood Forest - North",
+              "id": "Hutan Grimwood - Bagian Utara"
+            },
             "floors": null,
             "how": "placed",
             "layer": "Instances",
@@ -183629,7 +189074,7 @@ window.GUIDE_BUNDLE = {
   },
   "sprites": {
     "schema": "sprites/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 47,
     "status": "ok",
@@ -183876,7 +189321,7 @@ window.GUIDE_BUNDLE = {
   },
   "maps": {
     "schema": "maps/1",
-    "generatedAt": "2026-11-11T09:58:44.184Z",
+    "generatedAt": "2026-11-11T10:30:04.396Z",
     "gameVersion": "unknown",
     "count": 21,
     "status": "partial",
@@ -183887,7 +189332,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmFarm_Barn1",
         "room": "rmFarm_Barn1",
-        "name": "Livestock",
+        "name": {
+          "en": "Livestock",
+          "id": "Kandang Hewan"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmFarm_Barn1",
@@ -183901,7 +189349,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmFarm_Coop1",
         "room": "rmFarm_Coop1",
-        "name": "Livestock",
+        "name": {
+          "en": "Livestock",
+          "id": "Kandang Ayam"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmFarm_Coop1",
@@ -183929,7 +189380,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap_Gate",
         "room": "rmMap_Gate",
-        "name": "Moonspring Vale's Gate",
+        "name": {
+          "en": "Moonspring Vale's Gate",
+          "id": "Gerbang Moonspring Vale"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap_Gate",
@@ -183950,7 +189404,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap_Sakura",
         "room": "rmMap_Sakura",
-        "name": "Sakura Garden",
+        "name": {
+          "en": "Sakura Garden",
+          "id": "Taman Sakura"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap_Sakura",
@@ -183971,7 +189428,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap1",
         "room": "rmMap1",
-        "name": "North West Town",
+        "name": {
+          "en": "North West Town",
+          "id": "Barat Laut Desa"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap1",
@@ -183996,7 +189456,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap1_1",
             "room": "rmMap1_1",
-            "label": "Zerick's House",
+            "label": {
+              "en": "Zerick's House",
+              "id": "Kediaman Zerick"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184013,7 +189476,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap1_2",
             "room": "rmMap1_2",
-            "label": "Franz's House",
+            "label": {
+              "en": "Franz's House",
+              "id": "Kediaman Franz"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184041,7 +189507,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap2",
         "room": "rmMap2",
-        "name": "Town Square",
+        "name": {
+          "en": "Town Square",
+          "id": "Alun-Alun"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap2",
@@ -184066,7 +189535,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_1",
             "room": "rmMap2_1",
-            "label": "Mirella's House",
+            "label": {
+              "en": "Mirella's House",
+              "id": "Kediaman Mirella"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184083,7 +189555,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_2",
             "room": "rmMap2_2",
-            "label": "Emilie's House",
+            "label": {
+              "en": "Emilie's House",
+              "id": "Kediaman Emilie"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184100,7 +189575,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_2_2Floor",
             "room": "rmMap2_2_2Floor",
-            "label": "Emilie's House",
+            "label": {
+              "en": "Emilie's House",
+              "id": "Kediaman Emilie"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184117,7 +189595,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_3",
             "room": "rmMap2_3",
-            "label": "Clinic",
+            "label": {
+              "en": "Clinic",
+              "id": "Klinik"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184134,7 +189615,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_4",
             "room": "rmMap2_4",
-            "label": "Bakery Shop",
+            "label": {
+              "en": "Bakery Shop",
+              "id": "Toko Roti"
+            },
             "isParent": false,
             "size": {
               "width": 1400,
@@ -184151,7 +189635,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_backup",
             "room": "rmMap2_backup",
-            "label": "rmMap2_backup",
+            "label": {
+              "en": "rmMap2_backup",
+              "id": "rmMap2_backup"
+            },
             "isParent": false,
             "size": null,
             "image": null,
@@ -184161,7 +189648,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_backup2",
             "room": "rmMap2_backup2",
-            "label": "rmMap2_backup2",
+            "label": {
+              "en": "rmMap2_backup2",
+              "id": "rmMap2_backup2"
+            },
             "isParent": false,
             "size": null,
             "image": null,
@@ -184171,7 +189661,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_wedding",
             "room": "rmMap2_wedding",
-            "label": "rmMap2_wedding",
+            "label": {
+              "en": "rmMap2_wedding",
+              "id": "rmMap2_wedding"
+            },
             "isParent": false,
             "size": null,
             "image": null,
@@ -184181,7 +189674,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap2_wedding_backup",
             "room": "rmMap2_wedding_backup",
-            "label": "rmMap2_wedding_backup",
+            "label": {
+              "en": "rmMap2_wedding_backup",
+              "id": "rmMap2_wedding_backup"
+            },
             "isParent": false,
             "size": null,
             "image": null,
@@ -184202,7 +189698,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap3",
         "room": "rmMap3",
-        "name": "Town Hall",
+        "name": {
+          "en": "Town Hall",
+          "id": "Balai Kota"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap3",
@@ -184227,7 +189726,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_1",
             "room": "rmMap3_1",
-            "label": "Flower Shop",
+            "label": {
+              "en": "Flower Shop",
+              "id": "Toko Bunga"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184244,7 +189746,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_1_2Floor",
             "room": "rmMap3_1_2Floor",
-            "label": "Flower Shop - 2nd Floor",
+            "label": {
+              "en": "Flower Shop - 2nd Floor",
+              "id": "Toko Bunga - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184261,7 +189766,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_2",
             "room": "rmMap3_2",
-            "label": "Genreal Store",
+            "label": {
+              "en": "Genreal Store",
+              "id": "Toko Kelontong"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184278,7 +189786,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_3",
             "room": "rmMap3_3",
-            "label": "Adventure Guild",
+            "label": {
+              "en": "Adventure Guild",
+              "id": "Serikat Petualang"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184295,7 +189806,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_4",
             "room": "rmMap3_4",
-            "label": "Ellie's House",
+            "label": {
+              "en": "Ellie's House",
+              "id": "Kediaman Ellie"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184312,7 +189826,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_5",
             "room": "rmMap3_5",
-            "label": "Sweet Cafe",
+            "label": {
+              "en": "Sweet Cafe",
+              "id": "Sweet Cafe"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184329,7 +189846,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_6",
             "room": "rmMap3_6",
-            "label": "Library",
+            "label": {
+              "en": "Library",
+              "id": "Perpustakaan"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184346,7 +189866,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_8",
             "room": "rmMap3_8",
-            "label": "Lilia's House",
+            "label": {
+              "en": "Lilia's House",
+              "id": "Kediaman Lilia"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184363,7 +189886,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_9",
             "room": "rmMap3_9",
-            "label": "Vivian's House",
+            "label": {
+              "en": "Vivian's House",
+              "id": "Kediaman Vivian"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184380,7 +189906,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10",
             "room": "rmMap3_10",
-            "label": "Lindara Inn",
+            "label": {
+              "en": "Lindara Inn",
+              "id": "Penginapan"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184397,7 +189926,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_floor2",
             "room": "rmMap3_10_floor2",
-            "label": "Inn - 2nd Floor",
+            "label": {
+              "en": "Inn - 2nd Floor",
+              "id": "Penginapan - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184414,7 +189946,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_floor2_1",
             "room": "rmMap3_10_floor2_1",
-            "label": "Inn - 2nd Floor",
+            "label": {
+              "en": "Inn - 2nd Floor",
+              "id": "Penginapan - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184431,7 +189966,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_floor2_2",
             "room": "rmMap3_10_floor2_2",
-            "label": "Inn - 2nd Floor",
+            "label": {
+              "en": "Inn - 2nd Floor",
+              "id": "Penginapan - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184448,7 +189986,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_floor2_3",
             "room": "rmMap3_10_floor2_3",
-            "label": "Inn - 2nd Floor",
+            "label": {
+              "en": "Inn - 2nd Floor",
+              "id": "Penginapan - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184465,7 +190006,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_floor2_4",
             "room": "rmMap3_10_floor2_4",
-            "label": "Inn - 2nd Floor",
+            "label": {
+              "en": "Inn - 2nd Floor",
+              "id": "Penginapan - Lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184482,7 +190026,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_10_kitchen",
             "room": "rmMap3_10_kitchen",
-            "label": "Inn - Kitchen",
+            "label": {
+              "en": "Inn - Kitchen",
+              "id": "Penginapan - Dapur"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184499,7 +190046,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap3_backup",
             "room": "rmMap3_backup",
-            "label": "rmMap3_backup",
+            "label": {
+              "en": "rmMap3_backup",
+              "id": "rmMap3_backup"
+            },
             "isParent": false,
             "size": null,
             "image": null,
@@ -184520,7 +190070,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap4",
         "room": "rmMap4",
-        "name": "Silver Lake",
+        "name": {
+          "en": "Silver Lake",
+          "id": "Danau Perak"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap4",
@@ -184541,7 +190094,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap6",
         "room": "rmMap6",
-        "name": "Jack's Farm",
+        "name": {
+          "en": "Jack's Farm",
+          "id": "Peternakan Jack"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap6",
@@ -184566,7 +190122,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap6_1",
             "room": "rmMap6_1",
-            "label": "Jack's House",
+            "label": {
+              "en": "Jack's House",
+              "id": "Kediaman Jack"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184594,7 +190153,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap7",
         "room": "rmMap7",
-        "name": "Carpenter",
+        "name": {
+          "en": "Carpenter",
+          "id": "Tukang Kayu"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap7",
@@ -184619,7 +190181,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap7_1",
             "room": "rmMap7_1",
-            "label": "Harly's House",
+            "label": {
+              "en": "Harly's House",
+              "id": "Kediaman Harly"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184647,7 +190212,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap8",
         "room": "rmMap8",
-        "name": "Grimwood Forest",
+        "name": {
+          "en": "Grimwood Forest",
+          "id": "Hutan Grimwood"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmForest1_1",
@@ -184672,7 +190240,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmForest1_1",
             "room": "rmForest1_1",
-            "label": "1",
+            "label": {
+              "en": "1",
+              "id": "1"
+            },
             "isParent": false,
             "size": {
               "width": 1776,
@@ -184689,7 +190260,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmForest1_2",
             "room": "rmForest1_2",
-            "label": "2",
+            "label": {
+              "en": "2",
+              "id": "2"
+            },
             "isParent": false,
             "size": {
               "width": 1310,
@@ -184706,7 +190280,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmForest1_3",
             "room": "rmForest1_3",
-            "label": "3",
+            "label": {
+              "en": "3",
+              "id": "3"
+            },
             "isParent": false,
             "size": {
               "width": 1776,
@@ -184723,7 +190300,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmForest1_4",
             "room": "rmForest1_4",
-            "label": "4",
+            "label": {
+              "en": "4",
+              "id": "4"
+            },
             "isParent": false,
             "size": {
               "width": 1776,
@@ -184740,7 +190320,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmForest1_5",
             "room": "rmForest1_5",
-            "label": "5",
+            "label": {
+              "en": "5",
+              "id": "5"
+            },
             "isParent": false,
             "size": {
               "width": 1776,
@@ -184768,7 +190351,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap9",
         "room": "rmMap9",
-        "name": "Grimwood Forest - North",
+        "name": {
+          "en": "Grimwood Forest - North",
+          "id": "Hutan Grimwood - Bagian Utara"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap9",
@@ -184789,7 +190375,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap10",
         "room": "rmMap10",
-        "name": "Eyra Myrr",
+        "name": {
+          "en": "Eyra Myrr",
+          "id": "Eyra Myrr"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap10",
@@ -184810,7 +190399,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap11",
         "room": "rmMap11",
-        "name": "Sakura Garden",
+        "name": {
+          "en": "Sakura Garden",
+          "id": "Taman Sakura"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap11",
@@ -184831,7 +190423,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap12",
         "room": "rmMap12",
-        "name": "Hot Spring",
+        "name": {
+          "en": "Hot Spring",
+          "id": "Permandian Air Panas"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap12",
@@ -184852,7 +190447,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap13",
         "room": "rmMap13",
-        "name": "Mountain Slope",
+        "name": {
+          "en": "Mountain Slope",
+          "id": "Jalan Menuju Gunung"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap13",
@@ -184873,7 +190471,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap14",
         "room": "rmMap14",
-        "name": "Mountain Peak",
+        "name": {
+          "en": "Mountain Peak",
+          "id": "Puncak Gunung"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap14",
@@ -184894,7 +190495,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap15",
         "room": "rmMap15",
-        "name": "North East Town",
+        "name": {
+          "en": "North East Town",
+          "id": "Timur Laut Desa"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap15",
@@ -184919,7 +190523,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap15_1",
             "room": "rmMap15_1",
-            "label": "Freed's House",
+            "label": {
+              "en": "Freed's House",
+              "id": "Kediaman Freed"
+            },
             "isParent": false,
             "size": {
               "width": 1280,
@@ -184947,7 +190554,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap16",
         "room": "rmMap16",
-        "name": "East Town",
+        "name": {
+          "en": "East Town",
+          "id": "Bagian Timur Desa"
+        },
         "nameSource": "places",
         "group": false,
         "sortId": "rmMap16",
@@ -184968,7 +190578,10 @@ window.GUIDE_BUNDLE = {
       {
         "id": "rmMap17",
         "room": "rmMap17",
-        "name": "Silent Fairy",
+        "name": {
+          "en": "Silent Fairy",
+          "id": "Silent Fairy"
+        },
         "nameSource": "places",
         "group": true,
         "sortId": "rmMap17",
@@ -184993,7 +190606,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines1",
             "room": "rmMap_Mines1",
-            "label": "Mines floor 1",
+            "label": {
+              "en": "Mines floor 1",
+              "id": "Tambang lantai 1"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185010,7 +190626,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines2",
             "room": "rmMap_Mines2",
-            "label": "Mines floor 2",
+            "label": {
+              "en": "Mines floor 2",
+              "id": "Tambang lantai 2"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185027,7 +190646,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines3",
             "room": "rmMap_Mines3",
-            "label": "Mines floor 3",
+            "label": {
+              "en": "Mines floor 3",
+              "id": "Tambang lantai 3"
+            },
             "isParent": false,
             "size": {
               "width": 2100,
@@ -185044,7 +190666,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines4",
             "room": "rmMap_Mines4",
-            "label": "Mines floor 4",
+            "label": {
+              "en": "Mines floor 4",
+              "id": "Tambang lantai 4"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185061,7 +190686,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines5",
             "room": "rmMap_Mines5",
-            "label": "Mines floor 5",
+            "label": {
+              "en": "Mines floor 5",
+              "id": "Tambang lantai 5"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185078,7 +190706,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines6",
             "room": "rmMap_Mines6",
-            "label": "Mines floor 6",
+            "label": {
+              "en": "Mines floor 6",
+              "id": "Tambang lantai 6"
+            },
             "isParent": false,
             "size": {
               "width": 2100,
@@ -185095,7 +190726,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines7",
             "room": "rmMap_Mines7",
-            "label": "Mines floor 7",
+            "label": {
+              "en": "Mines floor 7",
+              "id": "Tambang lantai 7"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185112,7 +190746,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines8",
             "room": "rmMap_Mines8",
-            "label": "Mines floor 8",
+            "label": {
+              "en": "Mines floor 8",
+              "id": "Tambang lantai 8"
+            },
             "isParent": false,
             "size": {
               "width": 1700,
@@ -185129,7 +190766,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines9",
             "room": "rmMap_Mines9",
-            "label": "Mines floor 9",
+            "label": {
+              "en": "Mines floor 9",
+              "id": "Tambang lantai 9"
+            },
             "isParent": false,
             "size": {
               "width": 2100,
@@ -185146,7 +190786,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines10",
             "room": "rmMap_Mines10",
-            "label": "Mines floor 10",
+            "label": {
+              "en": "Mines floor 10",
+              "id": "Tambang lantai 10"
+            },
             "isParent": false,
             "size": {
               "width": 2100,
@@ -185163,7 +190806,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap_Mines11",
             "room": "rmMap_Mines11",
-            "label": "Mines floor 11",
+            "label": {
+              "en": "Mines floor 11",
+              "id": "Tambang lantai 11"
+            },
             "isParent": false,
             "size": {
               "width": 2100,
@@ -185180,7 +190826,10 @@ window.GUIDE_BUNDLE = {
           {
             "id": "rmMap17_backup",
             "room": "rmMap17_backup",
-            "label": "rmMap17_backup",
+            "label": {
+              "en": "rmMap17_backup",
+              "id": "rmMap17_backup"
+            },
             "isParent": false,
             "size": null,
             "image": null,

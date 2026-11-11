@@ -72,7 +72,7 @@
     return { path: 'assets/maps/' + encoded + '.png', fallbackPath: 'assets/maps/' + encoded + '_x1.png', width: null, height: null };
   }
 
-  function openViewer(map, info, trigger) {
+  function openViewer(map, info, trigger, onViewDetail) {
     var ui = GUIDE.ui;
     var priorFocus = trigger || document.activeElement;
     var priorOverflow = document.body.style.overflow;
@@ -149,6 +149,7 @@
       ui.button(t('maps.viewer.zoomIn'), function () { zoomTo(scale * 1.25); }, { 'aria-label': t('maps.viewer.zoomIn'), title: t('maps.viewer.zoomIn') }),
       ui.button(t('maps.viewer.fit'), fit),
       ui.button(t('maps.viewer.actual'), actual),
+      onViewDetail ? ui.button(t('maps.area.viewDetail'), function () { close(); onViewDetail(); }) : null,
       closeButton
     ]);
     panel.appendChild(ui.el('header', { className: 'map-viewer-header' }, [ui.heading(2, t('maps.viewer.title', { name: mapName(map) })), controls]));
@@ -289,7 +290,9 @@
       var button = ui.el('button', {
         type: 'button', className: 'map-area-gallery-item',
         'aria-label': t('maps.viewer.title', { name: imageName }), title: t('maps.image.viewFull'), disabled: !info,
-        onClick: function () { if (info) openViewer(Object.assign({}, area, { name: imageName }), info, button); }
+        onClick: function () {
+          if (info) openViewer(Object.assign({}, area, { name: imageName }), info, button, area.isParent ? null : function () { selectArea(map, area); });
+        }
       }, [media, ui.el('span', { className: 'map-area-gallery-label' }, label)]);
       if (info) media.addEventListener('error', function () {
         if (info.fallbackPath && media.getAttribute('src') !== info.fallbackPath) {
@@ -464,7 +467,7 @@
     }
     var node = ui.el('article', { className: 'page map-detail-page' }, [
       ui.link('#/maps', t('maps.back'), 'back-link'),
-      ui.el('header', { className: 'map-detail-header' }, [ui.heading(1, mapName(map)), ui.el('p', { className: 'map-room-id' }, String(map.id))]),
+      ui.el('header', { className: 'map-detail-header' }, ui.heading(1, mapName(map))),
       map.group ? areaSelector(map, selectedArea) : null,
       map.group ? groupImageSection(map, selectedArea) : imageSection(map),
       monstersSection(map, store, selectedArea && selectedArea.id),
@@ -477,7 +480,7 @@
 
   function list(context) {
     var ui = GUIDE.ui; var store = context.store;
-    var maps = GUIDE.mapsLogic.sortMapsById(store.mapIndexes.maps);
+    var maps = store.mapIndexes.maps.slice();
     var node = ui.el('div', { className: 'page maps-page' });
     node.appendChild(ui.el('header', { className: 'maps-list-header' }, [
       ui.heading(1, t('maps.title')),
@@ -487,10 +490,38 @@
       node.appendChild(ui.emptyState('notFound', t('maps.empty.noData')));
       return { node: node, title: t('maps.title') };
     }
-    node.appendChild(ui.el('ul', { className: 'maps-name-grid' }, maps.map(function (map) {
-      var id = String(map.id);
-      return ui.el('li', {}, ui.link('#/maps/' + encodeURIComponent(id), mapName(map)));
-    })));
+    var results = ui.el('div', { className: 'maps-list-results' });
+    var search = ui.el('input', {
+      id: 'maps-search', type: 'search', placeholder: t('maps.search.placeholder'), 'aria-label': t('maps.search'),
+      onInput: draw
+    });
+    var sort = ui.el('select', { id: 'maps-sort', 'aria-label': t('maps.sort'), onChange: draw }, [
+      ui.el('option', { value: 'id' }, t('maps.sort.id')),
+      ui.el('option', { value: 'name' }, t('maps.sort.name'))
+    ]);
+    node.appendChild(ui.el('form', {
+      className: 'maps-controls', role: 'search',
+      onSubmit: function (event) { event.preventDefault(); }
+    }, [
+      ui.el('label', {}, [ui.el('span', {}, t('maps.search')), search]),
+      ui.el('label', {}, [ui.el('span', {}, t('maps.sort')), sort])
+    ]));
+    node.appendChild(results);
+
+    function draw() {
+      var visible = GUIDE.mapsLogic.sortMaps(GUIDE.mapsLogic.filterMaps(maps, search.value), sort.value);
+      if (!visible.length) {
+        var empty = ui.emptyState('noResults', t('maps.empty.noMatch'));
+        empty.appendChild(ui.button(t('maps.clear'), function () { search.value = ''; draw(); search.focus(); }));
+        results.replaceChildren(empty);
+        return;
+      }
+      results.replaceChildren(ui.el('ul', { className: 'maps-name-grid' }, visible.map(function (map) {
+        var id = String(map.id);
+        return ui.el('li', {}, ui.link('#/maps/' + encodeURIComponent(id), mapName(map)));
+      })));
+    }
+    draw();
     return { node: node, title: t('maps.title') };
   }
 
