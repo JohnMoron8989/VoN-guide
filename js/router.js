@@ -11,7 +11,7 @@
     var page = parts[0]; var rawId = parts.length > 1 ? parts.slice(1).join('/') : null;
     if (page === 'characters' && parts.length <= 2) return { page: page, id: rawId === null ? null : Number(rawId), unknown: rawId !== null && !Number.isFinite(Number(rawId)) };
     if (page === 'fishing' && parts.length === 1) return { page: page, id: null, unknown: false };
-    if (page === 'maps' && parts.length <= 2) return { page: page, id: rawId, unknown: false };
+    if (page === 'maps' && parts.length <= 3) return { page: page, id: parts.length > 1 ? parts[1] : null, areaId: parts.length > 2 ? parts[2] : null, unknown: false };
     if (page === 'events' && parts.length === 1) return { page: page, id: null, unknown: false };
     if (page === 'quests' && parts.length <= 2) return { page: page, id: rawId, unknown: false };
     if (page === 'recipes' && parts.length <= 2) return { page: page, id: rawId === null ? null : Number(rawId), unknown: rawId !== null && !Number.isFinite(Number(rawId)) };

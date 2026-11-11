@@ -13,7 +13,7 @@
     store.lists.items.forEach(function (value) { if (!fishIds.has(Number(value.id))) entries.push({ id: value.id, name: value.name && value.name.raw ? value.name.raw : value.name, type: 'item', icon: value.icon, value: value }); });
     store.lists.fish.forEach(function (value) { entries.push({ id: value.id, name: value.name, type: 'fish', icon: value.icon, value: value }); });
     store.lists.recipes.forEach(function (value) { var item = store.getItem(value.resultItemId); entries.push({ id: value.id, name: value.name, type: 'recipe', icon: item && item.icon, value: value }); });
-    (store.lists.maps || store.lists.places || []).forEach(function (value) { entries.push({ id: value.id, name: value.name, type: 'map', icon: null, value: value }); });
+    (store.mapIndexes && store.mapIndexes.maps || store.lists.maps || store.lists.places || []).forEach(function (value) { entries.push({ id: value.id, name: value.name, type: 'map', icon: null, value: value }); });
     entries.forEach(function (entry) { entry.normalized = util.normalizeSearch(entry.name) + ' ' + util.normalizeSearch(entry.id); });
     return entries;
   }

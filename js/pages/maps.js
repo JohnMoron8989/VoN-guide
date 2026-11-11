@@ -2,7 +2,6 @@
   'use strict';
   var GUIDE = root.GUIDE = root.GUIDE || {};
   GUIDE.pages = GUIDE.pages || {};
-  var state = { query: '' };
   var viewerId = 0;
   var fishListId = 0;
 
@@ -10,6 +9,44 @@
 
   function mapName(map) {
     return String(map && map.name || map && map.id || '');
+  }
+
+  function areaName(area) {
+    return area && area.isParent ? t('maps.area.main') : String(area && (area.label || area.id) || '');
+  }
+
+  function findArea(map, areaId) {
+    if (!map || !map.group || areaId === null || areaId === undefined) return null;
+    var folded = String(areaId).toLocaleLowerCase();
+    return (map.areas || []).find(function (area) { return String(area.id).toLocaleLowerCase() === folded; }) || null;
+  }
+
+  function visibleAreas(map) {
+    return (map && map.areas || []).filter(function (area) {
+      return area && (area.isParent || String(area.label || area.id) !== String(area.id));
+    });
+  }
+
+  function areaHash(map, area) {
+    var hash = '#/maps/' + encodeURIComponent(map.id);
+    return area ? hash + '/' + encodeURIComponent(area.id) : hash;
+  }
+
+  function selectArea(map, area) {
+    root.location.replace(areaHash(map, area));
+  }
+
+  function areaChips(map, areaIds) {
+    if (!map || !map.group || !Array.isArray(areaIds) || !areaIds.length) return null;
+    var areas = areaIds.map(function (id) { return findArea(map, id); }).filter(function (area) {
+      return area && (area.isParent || String(area.label || area.id) !== String(area.id));
+    });
+    if (!areas.length) return null;
+    var names = areas.map(areaName);
+    return GUIDE.ui.el('small', {
+      className: 'map-area-chips',
+      'aria-label': t('maps.area.foundIn', { areas: names.join(t('common.listSeparator')) })
+    }, areas.map(function (area) { return GUIDE.ui.el('span', { className: 'map-area-chip' }, areaName(area)); }));
   }
 
   function sectionHeading(label, count) {
@@ -233,26 +270,91 @@
     return section;
   }
 
+  function groupImageSection(map, selectedArea) {
+    if (selectedArea) {
+      return imageSection(Object.assign({}, selectedArea, {
+        name: t('maps.area.imageName', { name: mapName(map), area: areaName(selectedArea) })
+      }));
+    }
+    var ui = GUIDE.ui;
+    var gallery = ui.el('div', { className: 'map-area-gallery' });
+    visibleAreas(map).forEach(function (area) {
+      var label = areaName(area);
+      var info = imageInfo(area);
+      var imageName = t('maps.area.imageName', { name: mapName(map), area: label });
+      var media = info ? ui.el('img', {
+        className: 'map-area-gallery-image', src: info.path,
+        alt: t('maps.area.imageAlt', { name: mapName(map), area: label }), loading: 'lazy'
+      }) : missingImage();
+      var button = ui.el('button', {
+        type: 'button', className: 'map-area-gallery-item',
+        'aria-label': t('maps.viewer.title', { name: imageName }), title: t('maps.image.viewFull'), disabled: !info,
+        onClick: function () { if (info) openViewer(Object.assign({}, area, { name: imageName }), info, button); }
+      }, [media, ui.el('span', { className: 'map-area-gallery-label' }, label)]);
+      if (info) media.addEventListener('error', function () {
+        if (info.fallbackPath && media.getAttribute('src') !== info.fallbackPath) {
+          info.path = info.fallbackPath;
+          media.src = info.fallbackPath;
+          return;
+        }
+        info = null;
+        button.disabled = true;
+        media.replaceWith(missingImage());
+      });
+      gallery.appendChild(button);
+    });
+    return ui.el('section', { className: 'panel map-image-section' }, [sectionHeading(t('maps.image.title'), 0), gallery]);
+  }
+
+  function areaSelector(map, selectedArea) {
+    var ui = GUIDE.ui;
+    var choices = [{ area: null, label: t('maps.area.all') }].concat(visibleAreas(map).map(function (area) {
+      return { area: area, label: areaName(area) };
+    }));
+    var tabs = [];
+    var tablist = ui.el('div', { className: 'map-area-tabs', role: 'tablist', 'aria-label': t('maps.area.label') });
+    choices.forEach(function (choice, index) {
+      var selected = choice.area ? selectedArea && String(choice.area.id) === String(selectedArea.id) : !selectedArea;
+      var tab = ui.button(choice.label, function () { selectArea(map, choice.area); }, {
+        className: 'map-area-tab', role: 'tab', 'aria-selected': String(!!selected), tabindex: selected ? '0' : '-1'
+      });
+      tab.addEventListener('keydown', function (event) {
+        var next = null;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        if (next === null) return;
+        event.preventDefault();
+        tabs[next].focus();
+        tabs[next].click();
+      });
+      tabs.push(tab); tablist.appendChild(tab);
+    });
+    return tablist;
+  }
+
   function monsterRouteExists(monsterId) {
     if (!GUIDE.pages.monsters || !GUIDE.router || !GUIDE.router.parse) return false;
     var route = GUIDE.router.parse('#/monsters/' + encodeURIComponent(monsterId));
     return route.page === 'monsters' && !route.unknown;
   }
 
-  function monstersSection(map, store) {
+  function monstersSection(map, store, areaId) {
     var ui = GUIDE.ui;
-    var entries = (store.mapIndexes.monstersByMap.get(String(map.id)) || []).slice();
+    var entries = GUIDE.mapsLogic.filterByArea(store.mapIndexes.monstersByMap.get(String(map.id)) || [], areaId);
     var available = store.data.monsters && !store.data.monsters.malformed && store.data.monsters.status !== 'not_found' && store.lists.monsters.length > 0;
     var content;
     if (!available) content = ui.emptyState('notFound', t('maps.monsters.unavailable'));
-    else if (!entries.length) content = ui.emptyState('notFound', t('maps.monsters.empty'));
+    else if (!entries.length) content = ui.emptyState('notFound', areaId ? t('maps.area.empty') : t('maps.monsters.empty'));
     else content = ui.el('ul', { className: 'map-monster-list' }, entries.map(function (entry) {
       var monster = store.monsters.get(entry.monsterId) || { id: entry.monsterId, name: entry.monsterId };
       var name = String(monster.name || monster.id);
       var label = monsterRouteExists(monster.id) ? ui.link('#/monsters/' + encodeURIComponent(monster.id), name) : ui.el('span', {}, name);
       return ui.el('li', { className: 'map-monster' }, [
         monster.icon ? directImage(monster.icon, '', 40, 'map-monster-icon') : ui.spriteImage(monster.sprite, '', 40, 'map-monster-icon'),
-        label
+        label,
+        areaId ? null : areaChips(map, entry.areas)
       ]);
     }));
     return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.monsters'), entries.length), content]);
@@ -266,50 +368,51 @@
     return null;
   }
 
-  function gatherSection(map, store) {
+  function gatherSection(map, store, areaId) {
     var ui = GUIDE.ui;
-    var entries = store.mapIndexes.gatherablesByMap.get(String(map.id)) || [];
+    var entries = GUIDE.mapsLogic.filterByArea(store.mapIndexes.gatherablesByMap.get(String(map.id)) || [], areaId);
     var embedded = store.lists.maps.some(function (entry) { return Array.isArray(entry.gatherables) && entry.gatherables.length > 0; });
     var available = embedded || (store.data.gatherables && !store.data.gatherables.malformed && store.data.gatherables.status !== 'not_found' && store.lists.gatherables.length > 0);
     var content;
     if (!available) content = ui.emptyState('notFound', t('maps.gather.unavailable'));
-    else if (!entries.length) content = ui.emptyState('notFound', t('maps.gather.empty'));
+    else if (!entries.length) content = ui.emptyState('notFound', areaId ? t('maps.area.empty') : t('maps.gather.empty'));
     else content = ui.el('div', { className: 'map-gather-list' }, entries.map(function (entry) {
       var chip = ui.itemChip(entry.itemId);
       var names = entry.nodeNames || [];
       var chipNode = names.length ? ui.tooltip(chip, t('maps.gather.node', { name: names.join(t('common.listSeparator')) })) : chip;
       var how = (entry.how || []).map(gatherHowLabel).filter(Boolean);
-      return ui.el('div', { className: 'map-gather-entry' }, [chipNode, how.length ? ui.el('small', {}, how.join(t('common.listSeparator'))) : null]);
+      return ui.el('div', { className: 'map-gather-entry' }, [chipNode, how.length ? ui.el('small', {}, how.join(t('common.listSeparator'))) : null, areaId ? null : areaChips(map, entry.areas)]);
     }));
     return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.gather'), entries.length), content]);
   }
 
-  function fishSection(map, store) {
+  function fishSection(map, store, areaId) {
     var ui = GUIDE.ui;
-    var ids = store.mapIndexes.fishByMap.get(String(map.id)) || [];
+    var entries = GUIDE.mapsLogic.filterByArea(store.mapIndexes.fishByMap.get(String(map.id)) || [], areaId);
     var available = store.data.fishingRate && !store.data.fishingRate.malformed && store.data.fishingRate.status !== 'not_found' && store.lists.fishingRate.length > 0;
     var content;
     if (!available) content = ui.emptyState('notFound', t('maps.fish.unavailable'));
-    else if (!ids.length) content = ui.emptyState('notFound', t('maps.fish.empty'));
+    else if (!entries.length) content = ui.emptyState('notFound', areaId ? t('maps.area.empty') : t('maps.fish.empty'));
     else {
       var limit = 12;
       var expanded = false;
       var gridId = 'map-fish-grid-' + (++fishListId);
       var grid = ui.el('div', { id: gridId, className: 'map-fish-grid' });
-      var toggle = ids.length > limit ? ui.button('', function () { expanded = !expanded; draw(); }, {
+      var toggle = entries.length > limit ? ui.button('', function () { expanded = !expanded; draw(); }, {
         className: 'map-fish-tile map-fish-toggle', 'aria-controls': gridId
       }) : null;
-      function tileFor(itemId) {
+      function tileFor(entry) {
+        var itemId = entry.itemId;
         var resolved = GUIDE.mapsLogic.resolveItem(itemId, store.lists.items, store.lists.fish, store.lists.sprites);
         var tile = ui.el('button', {
           type: 'button', className: 'map-fish-tile', 'aria-label': resolved.name,
           onClick: function () { ui.showItem(itemId, tile); }
-        }, [directImage(resolved.icon, '', 40, 'map-fish-icon'), ui.el('span', {}, resolved.name)]);
+        }, [directImage(resolved.icon, '', 40, 'map-fish-icon'), ui.el('span', {}, resolved.name), areaId ? null : areaChips(map, entry.areas)]);
         return tile;
       }
       function draw() {
         grid.replaceChildren();
-        (expanded ? ids : ids.slice(0, limit)).forEach(function (itemId) { grid.appendChild(tileFor(itemId)); });
+        (expanded ? entries : entries.slice(0, limit)).forEach(function (entry) { grid.appendChild(tileFor(entry)); });
         if (toggle) {
           toggle.textContent = expanded ? t('maps.fish.showLess') : t('maps.fish.showMore');
           toggle.setAttribute('aria-expanded', String(expanded));
@@ -319,13 +422,23 @@
       draw();
       content = grid;
     }
-    return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.fish'), ids.length), content]);
+    return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.fish'), entries.length), content]);
   }
 
   function dataNotes(map, store) {
     var ui = GUIDE.ui;
     var notes = [];
     (Array.isArray(map.warnings) ? map.warnings : []).forEach(function (warning) { if (warning) notes.push(String(warning)); });
+    if (map.group) {
+      var indexed = [];
+      ['monstersByMap', 'fishByMap', 'gatherablesByMap'].forEach(function (key) {
+        indexed.push.apply(indexed, store.mapIndexes[key].get(String(map.id)) || []);
+      });
+      var missingAreas = visibleAreas(map).filter(function (area) {
+        return !area.isParent && !indexed.some(function (entry) { return (entry.areas || []).indexOf(area.id) !== -1; });
+      }).map(areaName);
+      if (missingAreas.length) notes.push(t('maps.notes.areaMissingData', { areas: missingAreas.join(t('common.listSeparator')) }));
+    }
     if (store.mapIndexes.unmatchedPlaces.length) notes.push(t('maps.notes.unmatched', { places: store.mapIndexes.unmatchedPlaces.join(t('common.listSeparator')) }));
     if (store.data.places && store.data.places.status === 'partial') notes.push(t('maps.notes.mapsPartial'));
     if (store.data.monsters && store.data.monsters.status === 'partial') notes.push(t('maps.notes.monstersPartial'));
@@ -339,8 +452,10 @@
     ]);
   }
 
-  function detail(map, context) {
+  function detail(map, context, areaId) {
     var ui = GUIDE.ui; var store = context.store;
+    var selectedArea = map && map.group && areaId !== null && areaId !== undefined ? findArea(map, areaId) : null;
+    if (map && ((!map.group && areaId !== null && areaId !== undefined) || (map.group && areaId !== null && areaId !== undefined && !selectedArea))) map = null;
     if (!map) {
       return {
         node: ui.el('div', { className: 'page' }, [ui.heading(1, t('maps.notFound')), ui.emptyState('notFound', t('maps.notFound')), ui.link('#/maps', t('maps.back'), 'back-link')]),
@@ -350,10 +465,11 @@
     var node = ui.el('article', { className: 'page map-detail-page' }, [
       ui.link('#/maps', t('maps.back'), 'back-link'),
       ui.el('header', { className: 'map-detail-header' }, [ui.heading(1, mapName(map)), ui.el('p', { className: 'map-room-id' }, String(map.id))]),
-      imageSection(map),
-      monstersSection(map, store),
-      gatherSection(map, store),
-      fishSection(map, store),
+      map.group ? areaSelector(map, selectedArea) : null,
+      map.group ? groupImageSection(map, selectedArea) : imageSection(map),
+      monstersSection(map, store, selectedArea && selectedArea.id),
+      gatherSection(map, store, selectedArea && selectedArea.id),
+      fishSection(map, store, selectedArea && selectedArea.id),
       dataNotes(map, store)
     ]);
     return { node: node, title: mapName(map) };
@@ -361,7 +477,7 @@
 
   function list(context) {
     var ui = GUIDE.ui; var store = context.store;
-    var maps = store.mapIndexes.maps;
+    var maps = GUIDE.mapsLogic.sortMapsById(store.mapIndexes.maps);
     var node = ui.el('div', { className: 'page maps-page' });
     node.appendChild(ui.el('header', { className: 'maps-list-header' }, [
       ui.heading(1, t('maps.title')),
@@ -371,33 +487,29 @@
       node.appendChild(ui.emptyState('notFound', t('maps.empty.noData')));
       return { node: node, title: t('maps.title') };
     }
-    var results = ui.el('div', { className: 'maps-list-results' });
-    var search = ui.el('input', {
-      id: 'maps-search', type: 'search', value: state.query, placeholder: t('maps.search.placeholder'), 'aria-label': t('maps.search'),
-      onInput: function () { state.query = search.value; draw(); }
-    });
-    node.appendChild(ui.el('label', { className: 'maps-search' }, [ui.el('span', {}, t('maps.search')), search]));
-    node.appendChild(results);
-
-    function draw() {
-      var filtered = GUIDE.mapsLogic.filterMaps(maps, state.query);
-      if (!filtered.length) {
-        var empty = ui.emptyState('noResults', t('maps.empty.noMatch'));
-        empty.appendChild(ui.button(t('maps.clear'), function () { state.query = ''; search.value = ''; draw(); search.focus(); }));
-        results.replaceChildren(empty);
-        return;
-      }
-      results.replaceChildren(ui.el('ul', { className: 'maps-name-grid' }, filtered.map(function (map) {
-        return ui.el('li', {}, ui.link('#/maps/' + encodeURIComponent(map.id), mapName(map)));
-      })));
-    }
-    draw();
+    node.appendChild(ui.el('ul', { className: 'maps-name-grid' }, maps.map(function (map) {
+      var id = String(map.id);
+      return ui.el('li', {}, ui.link('#/maps/' + encodeURIComponent(id), mapName(map)));
+    })));
     return { node: node, title: t('maps.title') };
   }
 
   GUIDE.pages.maps = {
     render: function (route, context) {
-      return route.id === null || route.id === undefined ? list(context) : detail(context.store.maps.get(String(route.id)), context);
+      if (route.id === null || route.id === undefined) return list(context);
+      var map = context.store.maps.get(String(route.id));
+      if (map) return detail(map, context, route.areaId);
+      if (route.areaId === null || route.areaId === undefined) {
+        var target = context.store.mapIndexes.roomToMap.get(route.id);
+        if (target && target.mapId !== String(route.id)) {
+          var group = context.store.maps.get(String(target.mapId));
+          if (group) {
+            root.location.replace(GUIDE.mapsLogic.mapRouteForRoom(context.store.mapIndexes.roomToMap, route.id));
+            return detail(group, context, target.areaId);
+          }
+        }
+      }
+      return detail(null, context);
     }
   };
 })(window);
