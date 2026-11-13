@@ -398,6 +398,11 @@ p { max-width: 75ch; }
 .map-chest-marker { position: absolute; width: 24px; height: 24px; min-width: 22px; min-height: 22px; display: grid; place-items: center; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px #10151b, 0 0 0 4px #fff; color: #10151b; padding: 0; font-size: .76rem; font-weight: 900; font-variant-numeric: tabular-nums; line-height: 1; pointer-events: auto; cursor: pointer; }
 .map-chest-marker-unmarked::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 .map-chest-marker:hover, .map-chest-marker:focus-visible, .map-chest-marker.is-highlighted { background: #ffd166; box-shadow: 0 0 0 2px #10151b, 0 0 0 5px #fff; }
+.map-chest-marker-pulse { animation: map-chest-marker-pulse .65s ease-out; }
+@keyframes map-chest-marker-pulse {
+  0% { box-shadow: 0 0 0 2px #10151b, 0 0 0 4px #fff, 0 0 0 4px color-mix(in srgb, var(--focus) 85%, transparent); }
+  100% { box-shadow: 0 0 0 2px #10151b, 0 0 0 4px #fff, 0 0 0 14px transparent; }
+}
 .map-chest-overlay-controls { display: grid; justify-content: center; gap: .25rem; margin-top: .75rem; }
 .map-chest-overlay-controls small, .map-chest-overlay-unavailable { color: var(--muted); }
 .map-chest-overlay-unavailable { margin: .75rem auto 0; text-align: center; }
@@ -439,6 +444,7 @@ p { max-width: 75ch; }
 .chest-filter-icon, .chest-type-icon { flex: 0 0 auto; image-rendering: pixelated; }
 .chest-card-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; margin: 1rem 0 0; padding: 0; list-style: none; }
 .chest-card { display: grid; min-width: 0; grid-template-columns: 48px minmax(0, 1fr); align-items: start; gap: .75rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); padding: .85rem; scroll-margin-top: calc(var(--header-height) + 1rem); transition: border-color .15s ease, box-shadow .15s ease; }
+.chest-card.has-map-marker { cursor: pointer; }
 .chest-card:hover, .chest-card:focus-within, .chest-card.is-highlighted { border-color: var(--accent-strong); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 34%, transparent); }
 .chest-mark-badge { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 2px solid var(--text); border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: 1.25rem; font-weight: 900; font-variant-numeric: tabular-nums; line-height: 1; }
 .chest-card-body { min-width: 0; }

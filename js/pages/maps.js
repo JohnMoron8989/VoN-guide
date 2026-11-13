@@ -262,10 +262,32 @@
     if (marker) marker.classList.toggle('is-highlighted', highlighted);
   }
 
+  function revealChestTarget(target, pulseClass) {
+    if (!target) return;
+    var reduced = root.matchMedia && root.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+    try { target.focus({ preventScroll: true }); } catch (_) { target.focus(); }
+    if (reduced) return;
+    target.classList.remove(pulseClass);
+    root.requestAnimationFrame(function () {
+      target.classList.add(pulseClass);
+      target.addEventListener('animationend', function () { target.classList.remove(pulseClass); }, { once: true });
+    });
+  }
+
+  function markerIsVisible(interaction, key) {
+    if (!interaction || !interaction.markersEnabled) return false;
+    var marker = interaction.markers.get(key);
+    if (!marker || marker.hidden) return false;
+    var layer = marker.closest('.map-chest-markers');
+    return !layer || !layer.hidden;
+  }
+
   function registerChestCard(interaction, chest, card) {
     if (!interaction) return;
     var key = chestEntryKey(chest);
     interaction.cards.set(key, card);
+    interaction.updateCard(key);
     if (interaction.active.has(key)) card.classList.add('is-highlighted');
     card.addEventListener('pointerenter', function () { setChestActive(interaction, chest, 'card-pointer', true); });
     card.addEventListener('pointerleave', function () { setChestActive(interaction, chest, 'card-pointer', false); });
@@ -273,14 +295,34 @@
     card.addEventListener('focusout', function (event) {
       if (!event.relatedTarget || !card.contains(event.relatedTarget)) setChestActive(interaction, chest, 'card-focus', false);
     });
+    card.addEventListener('click', function (event) {
+      var interactive = event.target && event.target.closest ? event.target.closest('button, a, input, select, textarea, summary, [role="button"], [role="link"]') : null;
+      if (interactive && card.contains(interactive)) return;
+      if (!markerIsVisible(interaction, key)) return;
+      revealChestTarget(interaction.markers.get(key), 'map-chest-marker-pulse');
+    });
   }
 
   function createChestInteraction() {
     return {
-      cards: new Map(), markers: new Map(), active: new Map(),
+      cards: new Map(), markers: new Map(), active: new Map(), markersEnabled: false,
+      updateCard: function (key) {
+        var card = this.cards.get(key);
+        var marker = this.markers.get(key);
+        if (card) card.classList.toggle('has-map-marker', !!(this.markersEnabled && marker && !marker.hidden));
+      },
+      setMarkersEnabled: function (enabled) {
+        this.markersEnabled = !!enabled;
+        var self = this;
+        this.cards.forEach(function (_, key) { self.updateCard(key); });
+      },
       setVisible: function (keys) {
         var visible = new Set(keys || []);
-        this.markers.forEach(function (marker, key) { marker.hidden = !visible.has(key); });
+        var self = this;
+        this.markers.forEach(function (marker, key) {
+          marker.hidden = !visible.has(key);
+          self.updateCard(key);
+        });
       }
     };
   }
@@ -326,16 +368,7 @@
       marker.addEventListener('click', function () {
         var card = interaction && interaction.cards.get(chestEntryKey(chest));
         if (!card) return;
-        var reduced = root.matchMedia && root.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        card.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
-        try { card.focus({ preventScroll: true }); } catch (_) { card.focus(); }
-        if (!reduced) {
-          card.classList.remove('chest-card-pulse');
-          root.requestAnimationFrame(function () {
-            card.classList.add('chest-card-pulse');
-            card.addEventListener('animationend', function () { card.classList.remove('chest-card-pulse'); }, { once: true });
-          });
-        }
+        revealChestTarget(card, 'chest-card-pulse');
       });
       interaction.markers.set(chestEntryKey(chest), marker);
       fragment.appendChild(marker);
@@ -368,7 +401,10 @@
     var figure = ui.el('figure', { className: 'map-image-figure' }, [imageWrap, caption]);
     var viewButton = ui.button(t('maps.image.viewFull'), function () { openViewer(map, info, viewButton); });
     body.appendChild(figure); body.appendChild(ui.el('div', { className: 'map-image-actions' }, viewButton));
-    if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
+    if (overlayOptions && overlayOptions.interaction) {
+      overlayOptions.interaction.markers.clear();
+      overlayOptions.interaction.setMarkersEnabled(false);
+    }
     var overlayChests = overlayOptions && overlayOptions.chests || [];
     var roomSize = overlayRoomSize(map, overlayChests);
     if (overlayChests.length && GUIDE.chestsLogic.canOverlay(info, roomSize)) {
@@ -377,9 +413,11 @@
       markerLayer.hidden = !enabled;
       addMapMarkers(markerLayer, overlayChests, roomSize, overlayOptions.interaction);
       imageWrap.appendChild(markerLayer);
+      overlayOptions.interaction.setMarkersEnabled(enabled);
       var checkbox = ui.el('input', { type: 'checkbox', checked: enabled });
       checkbox.addEventListener('change', function () {
         markerLayer.hidden = !checkbox.checked;
+        overlayOptions.interaction.setMarkersEnabled(checkbox.checked);
         saveStorageValue(CHEST_OVERLAY_KEY, String(checkbox.checked));
       });
       body.appendChild(ui.el('div', { className: 'map-chest-overlay-controls' }, [
@@ -402,7 +440,10 @@
         image.src = info.fallbackPath;
         return;
       }
-      if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
+      if (overlayOptions && overlayOptions.interaction) {
+        overlayOptions.interaction.markers.clear();
+        overlayOptions.interaction.setMarkersEnabled(false);
+      }
       body.replaceChildren(missingImage());
     });
     return section;
@@ -414,7 +455,10 @@
         name: t('maps.area.imageName', { name: mapName(map), area: areaName(selectedArea) })
       }), overlayOptions);
     }
-    if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
+    if (overlayOptions && overlayOptions.interaction) {
+      overlayOptions.interaction.markers.clear();
+      overlayOptions.interaction.setMarkersEnabled(false);
+    }
     var ui = GUIDE.ui;
     var areas = visibleAreas(map);
     var expanded = false;
