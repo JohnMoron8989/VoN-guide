@@ -27,6 +27,10 @@
     return area && area.isParent ? t('maps.area.main') : String(area && (area.label || area.id) || '');
   }
 
+  function detailMapName(map, selectedArea) {
+    return selectedArea && !selectedArea.isParent ? areaName(selectedArea) : mapName(map);
+  }
+
   function findArea(map, areaId) {
     if (!map || !map.group || areaId === null || areaId === undefined) return null;
     var folded = String(areaId).toLocaleLowerCase();
@@ -895,6 +899,7 @@
         title: t('maps.notFound')
       };
     }
+    var title = detailMapName(map, selectedArea);
     var selectedAreaId = selectedArea ? selectedArea.id : null;
     var interaction = createChestInteraction();
     var visibleChests = mapChestsForArea(store.chestIndexes.chestsByMap.get(String(map.id)) || [], selectedAreaId);
@@ -909,12 +914,12 @@
     };
     var node = ui.el('article', { className: 'page map-detail-page' }, [
       ui.link('#/maps', t('maps.back'), 'back-link'),
-      ui.el('header', { className: 'map-detail-header' }, ui.heading(1, mapName(map))),
+      ui.el('header', { className: 'map-detail-header' }, ui.heading(1, title)),
       map.group ? areaSelector(map, selectedArea) : null
     ]);
     DETAIL_SECTION_ORDER.forEach(function (name) { node.appendChild(sections[name]); });
     revealPendingChestAfterRender(interaction);
-    return { node: node, title: mapName(map) };
+    return { node: node, title: title };
   }
 
   function list(context) {
