@@ -5,6 +5,7 @@
   var viewerId = 0;
   var mapGalleryId = 0;
   var fishListId = 0;
+  var pendingChestKey = null;
   var DETAIL_SECTION_ORDER = ['image', 'chests', 'monsters', 'gatherables', 'fish', 'notes'];
   var CHEST_OVERLAY_KEY = 'guide.chests.overlay';
   var MAP_CHEST_TYPES = ['obj_chest', 'obj_chest_lock_enemy'];
@@ -283,7 +284,20 @@
     return !layer || !layer.hidden;
   }
 
-  function registerChestCard(interaction, chest, card) {
+  function revealPendingChestAfterRender(interaction) {
+    var key = pendingChestKey;
+    pendingChestKey = null;
+    if (!key || !markerIsVisible(interaction, key)) return;
+    root.requestAnimationFrame(function () {
+      root.requestAnimationFrame(function () {
+        root.requestAnimationFrame(function () {
+          if (markerIsVisible(interaction, key)) revealChestTarget(interaction.markers.get(key), 'map-chest-marker-pulse');
+        });
+      });
+    });
+  }
+
+  function registerChestCard(interaction, chest, card, navigateToArea) {
     if (!interaction) return;
     var key = chestEntryKey(chest);
     interaction.cards.set(key, card);
@@ -298,8 +312,11 @@
     card.addEventListener('click', function (event) {
       var interactive = event.target && event.target.closest ? event.target.closest('button, a, input, select, textarea, summary, [role="button"], [role="link"]') : null;
       if (interactive && card.contains(interactive)) return;
-      if (!markerIsVisible(interaction, key)) return;
-      revealChestTarget(interaction.markers.get(key), 'map-chest-marker-pulse');
+      if (markerIsVisible(interaction, key)) {
+        revealChestTarget(interaction.markers.get(key), 'map-chest-marker-pulse');
+      } else if (navigateToArea) {
+        navigateToArea();
+      }
     });
   }
 
@@ -659,7 +676,13 @@
         loot
       ])
     ]);
-    registerChestCard(interaction, chest, card);
+    var targetArea = showArea ? findArea(map, chest.areaId) : null;
+    var navigateToArea = targetArea ? function () {
+      pendingChestKey = chestEntryKey(chest);
+      selectArea(map, targetArea);
+    } : null;
+    if (navigateToArea) card.classList.add('has-area-link');
+    registerChestCard(interaction, chest, card, navigateToArea);
     return card;
   }
 
@@ -890,6 +913,7 @@
       map.group ? areaSelector(map, selectedArea) : null
     ]);
     DETAIL_SECTION_ORDER.forEach(function (name) { node.appendChild(sections[name]); });
+    revealPendingChestAfterRender(interaction);
     return { node: node, title: mapName(map) };
   }
 
