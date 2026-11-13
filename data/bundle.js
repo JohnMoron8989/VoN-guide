@@ -2,7 +2,7 @@
 window.GUIDE_BUNDLE = {
   "meta": {
     "schema": "meta/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameName": "unknown",
     "gameVersion": "unknown",
     "languages": [
@@ -19,7 +19,7 @@ window.GUIDE_BUNDLE = {
   },
   "items": {
     "schema": "items/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 378,
     "status": "ok",
@@ -8081,7 +8081,7 @@ window.GUIDE_BUNDLE = {
   },
   "characters": {
     "schema": "characters/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "partial",
@@ -9241,7 +9241,7 @@ window.GUIDE_BUNDLE = {
   },
   "gifts": {
     "schema": "gifts/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 27,
     "status": "ok",
@@ -37400,7 +37400,7 @@ window.GUIDE_BUNDLE = {
   },
   "fish": {
     "schema": "fish/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "partial",
@@ -38688,7 +38688,7 @@ window.GUIDE_BUNDLE = {
   },
   "places": {
     "schema": "places/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 69,
     "status": "partial",
@@ -39496,7 +39496,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishing": {
     "schema": "fishing/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 127,
     "status": "partial",
@@ -43638,7 +43638,7 @@ window.GUIDE_BUNDLE = {
   },
   "fishingRate": {
     "schema": "fishingRate/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 85,
     "status": "ok",
@@ -183567,7 +183567,7 @@ window.GUIDE_BUNDLE = {
   },
   "quests": {
     "schema": "quests/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 35,
     "status": "partial",
@@ -185801,7 +185801,7 @@ window.GUIDE_BUNDLE = {
   },
   "recipes": {
     "schema": "recipes/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 50,
     "status": "partial",
@@ -187831,7 +187831,7 @@ window.GUIDE_BUNDLE = {
   },
   "events": {
     "schema": "events/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 0,
     "status": "ok",
@@ -187842,7 +187842,7 @@ window.GUIDE_BUNDLE = {
   },
   "monsters": {
     "schema": "monsters/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 8,
     "status": "partial",
@@ -189074,9 +189074,9 @@ window.GUIDE_BUNDLE = {
   },
   "sprites": {
     "schema": "sprites/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
-    "count": 47,
+    "count": 49,
     "status": "ok",
     "notes": [
       "Only referenced frame_0 sprite files are copied; sprite-sheet frame indices remain on data records."
@@ -189095,6 +189095,11 @@ window.GUIDE_BUNDLE = {
       {
         "name": "spr_boar_idleD",
         "path": "assets/icons/spr_boar_idleD.png",
+        "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_chest2",
+        "path": "assets/icons/spr_chest2.png",
         "source": "metadata/sprites.json"
       },
       {
@@ -189316,12 +189321,17 @@ window.GUIDE_BUNDLE = {
         "name": "spr_slime_idle",
         "path": "assets/icons/spr_slime_idle.png",
         "source": "metadata/sprites.json"
+      },
+      {
+        "name": "spr_soil_chest",
+        "path": "assets/icons/spr_soil_chest.png",
+        "source": "metadata/sprites.json"
       }
     ]
   },
   "maps": {
     "schema": "maps/1",
-    "generatedAt": "2026-11-11T10:50:46.065Z",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
     "gameVersion": "unknown",
     "count": 21,
     "status": "partial",
@@ -190846,6 +190856,2894 @@ window.GUIDE_BUNDLE = {
         "size": null,
         "source": "places.json",
         "warnings": []
+      }
+    ]
+  },
+  "chests": {
+    "schema": "chests/1",
+    "generatedAt": "2026-11-13T11:58:42.970Z",
+    "gameVersion": "unknown",
+    "count": 34,
+    "status": "partial",
+    "notes": [
+      "Placed one-time loot chests are included; reusable player storage crates are excluded.",
+      "Instance creation/pre-creation code takes precedence over inherited object defaults.",
+      "Enemy locks check only the object types listed in that chest instance's enemies array.",
+      "Informational unmapped chest room: rmMap3_3_floor2"
+    ],
+    "placeholders": {
+      "item": "{item:<itemId>} is replaced by the item name at display time"
+    },
+    "types": [
+      {
+        "id": "obj_chest",
+        "name": "Chest",
+        "nameSource": "derived",
+        "sprite": "spr_chest2",
+        "icon": "assets/icons/spr_chest2.png",
+        "parent": "obj_interaction_parent",
+        "kind": "normal",
+        "unlock": {
+          "type": "none",
+          "details": {}
+        },
+        "howToOpen": {
+          "en": "",
+          "id": ""
+        },
+        "defaultContents": {
+          "mode": "none",
+          "items": [],
+          "extras": [],
+          "origin": "type",
+          "evidence": [
+            "gml_Object_obj_chest_Create_0"
+          ]
+        },
+        "instancesTotal": 14,
+        "spawnedByScripts": [],
+        "source": "gml_Object_obj_chest_Create_0",
+        "warnings": [],
+        "overridden": [
+          "howToOpen"
+        ]
+      },
+      {
+        "id": "obj_chest_lock_enemy",
+        "name": "Chest Lock Enemy",
+        "nameSource": "derived",
+        "sprite": "spr_chest2",
+        "icon": "assets/icons/spr_chest2.png",
+        "parent": "obj_interaction_parent",
+        "kind": "enemyLock",
+        "unlock": {
+          "type": "enemies",
+          "details": {
+            "scope": "listedObjects",
+            "enemyObjects": [],
+            "raw": null,
+            "relocks": false
+          }
+        },
+        "howToOpen": {
+          "en": "This chest is locked, Defeat all enemy in this room to unlock it",
+          "id": "Peti ini terkunci, Kalahkan semua musuh di ruangan ini untuk membukanya"
+        },
+        "defaultContents": {
+          "mode": "none",
+          "items": [],
+          "extras": [],
+          "origin": "type",
+          "evidence": [
+            "gml_Object_obj_chest_lock_enemy_Create_0"
+          ]
+        },
+        "instancesTotal": 2,
+        "spawnedByScripts": [],
+        "source": "gml_Object_obj_chest_lock_enemy_Create_0",
+        "warnings": [],
+        "overridden": [
+          "howToOpen"
+        ]
+      },
+      {
+        "id": "obj_item_field",
+        "name": "Item Field",
+        "nameSource": "derived",
+        "sprite": "spr_soil_chest",
+        "icon": "assets/icons/spr_soil_chest.png",
+        "parent": "obj_farm_field",
+        "kind": "key",
+        "unlock": {
+          "type": "key",
+          "details": {
+            "itemIds": [
+              1,
+              6,
+              11,
+              16,
+              21
+            ],
+            "usage": "hoe",
+            "consumed": false
+          }
+        },
+        "howToOpen": {
+          "en": "Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+          "id": "Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+        },
+        "defaultContents": {
+          "mode": "none",
+          "items": [],
+          "extras": [],
+          "origin": "type",
+          "evidence": [
+            "gml_Object_obj_item_field_Create_0"
+          ]
+        },
+        "instancesTotal": 18,
+        "spawnedByScripts": [],
+        "source": "gml_Object_obj_item_field_Create_0",
+        "warnings": []
+      }
+    ],
+    "records": [
+      {
+        "room": "rmForest1_2",
+        "mapId": "rmMap8",
+        "mapName": "Hutan Grimwood",
+        "area": {
+          "id": "rmForest1_2",
+          "label": "2"
+        },
+        "size": {
+          "width": 1310,
+          "height": 1024
+        },
+        "count": 2,
+        "chests": [
+          {
+            "key": "rmForest1_2#100597",
+            "instanceId": 100597,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 182,
+              "y": 770,
+              "region": "lower-left"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "none",
+              "items": [],
+              "extras": [],
+              "origin": "type",
+              "evidence": [
+                "gml_Object_obj_chest_Create_0"
+              ]
+            },
+            "contentsText": {
+              "en": "This chest is empty.",
+              "id": "Peti ini kosong."
+            },
+            "howToGet": {
+              "en": "On the left side of the map in Grimwood Forest, Area 2",
+              "id": "Di sisi kiri peta Area 2 Hutan Grimwood"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_Object_obj_chest_Create_0",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          },
+          {
+            "key": "rmForest1_2#100600",
+            "instanceId": 100600,
+            "type": "obj_chest_lock_enemy",
+            "mark": 1,
+            "position": {
+              "x": 656,
+              "y": 480,
+              "region": "center"
+            },
+            "unlock": {
+              "type": "enemies",
+              "details": {
+                "scope": "listedObjects",
+                "enemyObjects": [
+                  "obj_electric_bee",
+                  "obj_fire_bee",
+                  "obj_pitcher",
+                  "obj_cobra"
+                ],
+                "raw": null,
+                "relocks": false
+              }
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 242,
+                  "min": 10,
+                  "max": 10,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 240,
+                  "min": 5,
+                  "max": 5,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 608,
+                  "min": 8,
+                  "max": 8,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 10,
+                  "max": 10,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 500,
+                  "max": 500,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmForest1_2_1_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 10 × {item:242}, 5 × {item:240}, 8 × {item:608}, 10 experience points, and 500 gold.",
+              "id": "Berisi 10 × {item:242}, 5 × {item:240}, 8 × {item:608}, 10 poin pengalaman, dan 500 gold."
+            },
+            "howToGet": {
+              "en": "In the middle of the map in Grimwood Forest, Area 2. Defeat all enemies in this area to open it",
+              "id": "Di tengah peta Area 2 Hutan Grimwood. Kalahkan semua musuh di area ini untuk membukanya"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmForest1_2_1_Create",
+              "gml_Object_obj_chest_lock_enemy_Other_10",
+              "gml_Object_obj_chest_lock_enemy_Create_0"
+            ],
+            "source": "gml_RoomCC_rmForest1_2_1_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmForest1_4",
+        "mapId": "rmMap8",
+        "mapName": "Hutan Grimwood",
+        "area": {
+          "id": "rmForest1_4",
+          "label": "4"
+        },
+        "size": {
+          "width": 1776,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmForest1_4#101059",
+            "instanceId": 101059,
+            "type": "obj_chest_lock_enemy",
+            "mark": 1,
+            "position": {
+              "x": 368,
+              "y": 184,
+              "region": "upper-left"
+            },
+            "unlock": {
+              "type": "enemies",
+              "details": {
+                "scope": "listedObjects",
+                "enemyObjects": [
+                  "obj_slime",
+                  "obj_goblin1",
+                  "obj_goblin2"
+                ],
+                "raw": null,
+                "relocks": false
+              }
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 10,
+                  "max": 10,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 500,
+                  "max": 500,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmForest1_4_1_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 10 experience points and 500 gold.",
+              "id": "Berisi 10 poin pengalaman dan 500 gold."
+            },
+            "howToGet": {
+              "en": "In the top-left corner of the map in Grimwood Forest, Area 4. Defeat all enemies in this area to open it",
+              "id": "Di pojok kiri atas peta Area 4 Hutan Grimwood. Kalahkan semua musuh di area ini untuk membukanya"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmForest1_4_1_Create",
+              "gml_Object_obj_chest_lock_enemy_Other_10",
+              "gml_Object_obj_chest_lock_enemy_Create_0"
+            ],
+            "source": "gml_RoomCC_rmForest1_4_1_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap_Mines3",
+        "mapId": "rmMap17",
+        "mapName": "Silent Fairy",
+        "area": {
+          "id": "rmMap_Mines3",
+          "label": "Tambang lantai 3"
+        },
+        "size": {
+          "width": 2100,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap_Mines3#102915",
+            "instanceId": 102915,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 578,
+              "y": 179,
+              "region": "upper-left"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 203,
+                  "min": 5,
+                  "max": 5,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 207,
+                  "min": 2,
+                  "max": 2,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 208,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 30,
+                  "max": 30,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap_Mines3_4_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 5 × {item:203}, 2 × {item:207}, {item:208}, 5 experience points, and 30 gold.",
+              "id": "Berisi 5 × {item:203}, 2 × {item:207}, {item:208}, 5 poin pengalaman, dan 30 gold."
+            },
+            "howToGet": {
+              "en": "Found in the upper-left part of Silent Fairy, area Mines floor 3. Just walk up and open it.",
+              "id": "Ada di bagian kiri atas peta Silent Fairy, area Tambang lantai 3. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap_Mines3_4_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap_Mines3_4_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap_Mines5",
+        "mapId": "rmMap17",
+        "mapName": "Silent Fairy",
+        "area": {
+          "id": "rmMap_Mines5",
+          "label": "Tambang lantai 5"
+        },
+        "size": {
+          "width": 1700,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap_Mines5#103303",
+            "instanceId": 103303,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 974,
+              "y": 243,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 216,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 217,
+                  "min": 5,
+                  "max": 5,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 208,
+                  "min": 3,
+                  "max": 3,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 50,
+                  "max": 50,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap_Mines5_0_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:216}, 5 × {item:217}, 3 × {item:208}, 5 experience points, and 50 gold.",
+              "id": "Berisi {item:216}, 5 × {item:217}, 3 × {item:208}, 5 poin pengalaman, dan 50 gold."
+            },
+            "howToGet": {
+              "en": "Found in the top part of Silent Fairy, area Mines floor 5. Just walk up and open it.",
+              "id": "Ada di bagian atas peta Silent Fairy, area Tambang lantai 5. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap_Mines5_0_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap_Mines5_0_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap_Mines7",
+        "mapId": "rmMap17",
+        "mapName": "Silent Fairy",
+        "area": {
+          "id": "rmMap_Mines7",
+          "label": "Tambang lantai 7"
+        },
+        "size": {
+          "width": 1700,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap_Mines7#103712",
+            "instanceId": 103712,
+            "type": "obj_chest",
+            "mark": null,
+            "position": {
+              "x": 973,
+              "y": 268,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 210,
+                  "min": 5,
+                  "max": 5,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 8,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 50,
+                  "max": 50,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap_Mines7_1_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 5 × {item:210}, {item:8}, 5 experience points, and 50 gold.",
+              "id": "Berisi 5 × {item:210}, {item:8}, 5 poin pengalaman, dan 50 gold."
+            },
+            "howToGet": {
+              "en": "Found in the top part of Silent Fairy, area Mines floor 7. Just walk up and open it.",
+              "id": "Ada di bagian atas peta Silent Fairy, area Tambang lantai 7. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap_Mines7_1_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap_Mines7_1_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap_Mines8",
+        "mapId": "rmMap17",
+        "mapName": "Silent Fairy",
+        "area": {
+          "id": "rmMap_Mines8",
+          "label": "Tambang lantai 8"
+        },
+        "size": {
+          "width": 1700,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap_Mines8#103916",
+            "instanceId": 103916,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 278,
+              "y": 980,
+              "region": "lower-left"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 14,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 100,
+                  "max": 100,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap_Mines8_0_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:14}, 5 experience points, and 100 gold.",
+              "id": "Berisi {item:14}, 5 poin pengalaman, dan 100 gold."
+            },
+            "howToGet": {
+              "en": "Found in the lower-left part of Silent Fairy, area Mines floor 8. Just walk up and open it.",
+              "id": "Ada di bagian kiri bawah peta Silent Fairy, area Tambang lantai 8. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap_Mines8_0_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap_Mines8_0_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap_Mines9",
+        "mapId": "rmMap17",
+        "mapName": "Silent Fairy",
+        "area": {
+          "id": "rmMap_Mines9",
+          "label": "Tambang lantai 9"
+        },
+        "size": {
+          "width": 2100,
+          "height": 1200
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap_Mines9#104091",
+            "instanceId": 104091,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 880,
+              "y": 820,
+              "region": "bottom"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 101,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 250,
+                  "min": 8,
+                  "max": 8,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 10,
+                  "max": 10,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap_Mines9_0_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:101}, 8 × {item:250}, and 10 experience points.",
+              "id": "Berisi {item:101}, 8 × {item:250}, dan 10 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "Found in the bottom part of Silent Fairy, area Mines floor 9. Just walk up and open it.",
+              "id": "Ada di bagian bawah peta Silent Fairy, area Tambang lantai 9. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap_Mines9_0_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap_Mines9_0_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap1",
+        "mapId": "rmMap1",
+        "mapName": "Barat Laut Desa",
+        "area": null,
+        "size": {
+          "width": 1386,
+          "height": 1290
+        },
+        "count": 8,
+        "chests": [
+          {
+            "key": "rmMap1#105370",
+            "instanceId": 105370,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 896,
+              "y": 280,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 30,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_9_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:30} and 5 experience points.",
+              "id": "Berisi {item:30} dan 5 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "Right next to Zerick's house, on the left side.",
+              "id": "Tepat di samping kiri rumah Zerick."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_9_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap1_9_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          },
+          {
+            "key": "rmMap1#105462",
+            "instanceId": 105462,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 1295,
+              "y": 412,
+              "region": "upper-right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_73_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the upper-right part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan atas peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_73_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_73_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105463",
+            "instanceId": 105463,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 1221,
+              "y": 228,
+              "region": "upper-right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_74_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the upper-right part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan atas peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_74_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_74_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105464",
+            "instanceId": 105464,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 732,
+              "y": 172,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_75_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the top part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian atas peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_75_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_75_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105465",
+            "instanceId": 105465,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 1237,
+              "y": 1173,
+              "region": "lower-right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_76_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the lower-right part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan bawah peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_76_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_76_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105466",
+            "instanceId": 105466,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 985,
+              "y": 975,
+              "region": "lower-right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_77_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the lower-right part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan bawah peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_77_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_77_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105467",
+            "instanceId": 105467,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 192,
+              "y": 496,
+              "region": "left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_78_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the left part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_78_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_78_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap1#105468",
+            "instanceId": 105468,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 70,
+              "y": 717,
+              "region": "left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap1_79_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the left part of North West Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri peta Barat Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap1_79_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap1_79_Create",
+            "warnings": []
+          }
+        ]
+      },
+      {
+        "room": "rmMap2_backup",
+        "mapId": "rmMap2",
+        "mapName": "Alun-Alun",
+        "area": {
+          "id": "rmMap2_backup",
+          "label": null
+        },
+        "size": {
+          "width": 2000,
+          "height": 1450
+        },
+        "count": 4,
+        "chests": [
+          {
+            "key": "rmMap2_backup#110449",
+            "instanceId": 110449,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 944,
+              "y": 1200,
+              "region": "bottom"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup_13_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the bottom part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian bawah peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup_13_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup_13_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup#110450",
+            "instanceId": 110450,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 440,
+              "y": 968,
+              "region": "lower-left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup_14_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the lower-left part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri bawah peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup_14_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup_14_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup#110451",
+            "instanceId": 110451,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 1710,
+              "y": 572,
+              "region": "right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup_15_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the right part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup_15_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup_15_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup#110452",
+            "instanceId": 110452,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 93,
+              "y": 905,
+              "region": "left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup_16_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the left part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup_16_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup_16_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap2_backup2",
+        "mapId": "rmMap2",
+        "mapName": "Alun-Alun",
+        "area": {
+          "id": "rmMap2_backup2",
+          "label": null
+        },
+        "size": {
+          "width": 2000,
+          "height": 1450
+        },
+        "count": 4,
+        "chests": [
+          {
+            "key": "rmMap2_backup2#111121",
+            "instanceId": 111121,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 944,
+              "y": 1200,
+              "region": "bottom"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup2_24_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the bottom part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian bawah peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup2_24_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup2_24_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup2#111122",
+            "instanceId": 111122,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 440,
+              "y": 968,
+              "region": "lower-left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup2_25_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the lower-left part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri bawah peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup2_25_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup2_25_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup2#111123",
+            "instanceId": 111123,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 1710,
+              "y": 572,
+              "region": "right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup2_26_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the right part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup2_26_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup2_26_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          },
+          {
+            "key": "rmMap2_backup2#111124",
+            "instanceId": 111124,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 93,
+              "y": 905,
+              "region": "left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap2_backup2_27_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the left part of Town Square. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri peta Alun-Alun. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap2_backup2_27_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap2_backup2_27_Create",
+            "warnings": [
+              "Technical room-id area label was omitted from human text."
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap3",
+        "mapId": "rmMap3",
+        "mapName": "Balai Kota",
+        "area": null,
+        "size": {
+          "width": 3488,
+          "height": 2048
+        },
+        "count": 3,
+        "chests": [
+          {
+            "key": "rmMap3#114876",
+            "instanceId": 114876,
+            "type": "obj_chest",
+            "mark": 2,
+            "position": {
+              "x": 1601,
+              "y": 1018,
+              "region": "center"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 2001,
+                  "min": 2,
+                  "max": 2,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 2009,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_26_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 2 × {item:2001}, {item:2009}, and 5 experience points.",
+              "id": "Berisi 2 × {item:2001}, {item:2009}, dan 5 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "In the middle of the map, near the town hall pond",
+              "id": "Ada di tengah peta, dekat kolam di balai kota"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_26_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_26_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          },
+          {
+            "key": "rmMap3#114877",
+            "instanceId": 114877,
+            "type": "obj_chest",
+            "mark": 3,
+            "position": {
+              "x": 2319,
+              "y": 1693,
+              "region": "bottom"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 1543,
+                  "min": 10,
+                  "max": 10,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 1512,
+                  "min": 4,
+                  "max": 4,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_27_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 10 × {item:1543}, 4 × {item:1512}, and 5 experience points.",
+              "id": "Berisi 10 × {item:1543}, 4 × {item:1512}, dan 5 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "In the bottom-right of the map, near the library",
+              "id": "Ada di pojok kanan bawah peta, dekat perpustakaan"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_27_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_27_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          },
+          {
+            "key": "rmMap3#114878",
+            "instanceId": 114878,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 119,
+              "y": 726,
+              "region": "left"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 609,
+                  "min": 3,
+                  "max": 3,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 614,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 616,
+                  "min": 2,
+                  "max": 2,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_28_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 3 × {item:609}, {item:614}, 2 × {item:616}, and 5 experience points.",
+              "id": "Berisi 3 × {item:609}, {item:614}, 2 × {item:616}, dan 5 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "On the left side of the map, near the general store",
+              "id": "Ada di sisi kiri peta, dekat toko kelontong"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_28_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_28_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap3_3_floor2",
+        "mapId": "rmMap3_3_floor2",
+        "mapName": "Peta tidak diketahui",
+        "area": null,
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap3_3_floor2#113364",
+            "instanceId": 113364,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 789,
+              "y": 237,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 32,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 120,
+                  "max": 120,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_3_floor2_4_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:32}, 5 experience points, and 120 gold.",
+              "id": "Berisi {item:32}, 5 poin pengalaman, dan 120 gold."
+            },
+            "howToGet": {
+              "en": "Found in the top part of an unknown map. Just walk up and open it.",
+              "id": "Ada di bagian atas peta yang belum diketahui. Langsung buka saja."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_3_floor2_4_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_3_floor2_4_Create",
+            "warnings": [
+              "Room is not mapped to a guide map; location is informational."
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap3_5",
+        "mapId": "rmMap3",
+        "mapName": "Balai Kota",
+        "area": {
+          "id": "rmMap3_5",
+          "label": "Sweet Cafe"
+        },
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap3_5#113598",
+            "instanceId": 113598,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 726,
+              "y": 271,
+              "region": "center"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 629,
+                  "min": 3,
+                  "max": 3,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                },
+                {
+                  "itemId": 626,
+                  "min": 5,
+                  "max": 5,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_5_20_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 3 × {item:629}, 5 × {item:626}, and 5 experience points.",
+              "id": "Berisi 3 × {item:629}, 5 × {item:626}, dan 5 poin pengalaman."
+            },
+            "howToGet": {
+              "en": "Found inside the Sweet Cafe",
+              "id": "Ada di dalam Sweet Cafe"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_5_20_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_5_20_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap3_8",
+        "mapId": "rmMap3",
+        "mapName": "Balai Kota",
+        "area": {
+          "id": "rmMap3_8",
+          "label": "Kediaman Lilia"
+        },
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap3_8#113697",
+            "instanceId": 113697,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 492,
+              "y": 276,
+              "region": "center"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 100,
+                  "max": 100,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap3_8_2_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains 5 experience points and 100 gold.",
+              "id": "Berisi 5 poin pengalaman dan 100 gold."
+            },
+            "howToGet": {
+              "en": "Found inside Lilia's house",
+              "id": "Ada di dalam rumah Lilia"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap3_8_2_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap3_8_2_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap7",
+        "mapId": "rmMap7",
+        "mapName": "Tukang Kayu",
+        "area": null,
+        "size": {
+          "width": 1408,
+          "height": 821
+        },
+        "count": 1,
+        "chests": [
+          {
+            "key": "rmMap7#116407",
+            "instanceId": 116407,
+            "type": "obj_chest",
+            "mark": 1,
+            "position": {
+              "x": 483,
+              "y": 733,
+              "region": "bottom"
+            },
+            "unlock": {
+              "type": "none",
+              "details": {}
+            },
+            "contents": {
+              "mode": "fixed",
+              "items": [
+                {
+                  "itemId": 3,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": null,
+                  "weight": null,
+                  "condition": null,
+                  "raw": null
+                }
+              ],
+              "extras": [
+                {
+                  "type": "exp",
+                  "min": 5,
+                  "max": 5,
+                  "raw": null
+                },
+                {
+                  "type": "money",
+                  "min": 100,
+                  "max": 100,
+                  "raw": null
+                }
+              ],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap7_8_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Contains {item:3}, 5 experience points, and 100 gold.",
+              "id": "Berisi {item:3}, 5 poin pengalaman, dan 100 gold."
+            },
+            "howToGet": {
+              "en": "In the bottom-left of the map, hidden behind a tree",
+              "id": "Di kiri bawah peta, tersembunyi di balik pohon"
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap7_8_Create",
+              "gml_Object_obj_chest_Other_10",
+              "gml_Object_obj_chest_Create_0"
+            ],
+            "source": "gml_RoomCC_rmMap7_8_Create",
+            "warnings": [],
+            "overridden": [
+              "howToGet"
+            ]
+          }
+        ]
+      },
+      {
+        "room": "rmMap15",
+        "mapId": "rmMap15",
+        "mapName": "Timur Laut Desa",
+        "area": null,
+        "size": {
+          "width": 1127,
+          "height": 1109
+        },
+        "count": 3,
+        "chests": [
+          {
+            "key": "rmMap15#108108",
+            "instanceId": 108108,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 432,
+              "y": 181,
+              "region": "top"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap15_14_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the top part of North East Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian atas peta Timur Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap15_14_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap15_14_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap15#108109",
+            "instanceId": 108109,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 849,
+              "y": 704,
+              "region": "right"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap15_15_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the right part of North East Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kanan peta Timur Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap15_15_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap15_15_Create",
+            "warnings": []
+          },
+          {
+            "key": "rmMap15#108110",
+            "instanceId": 108110,
+            "type": "obj_item_field",
+            "mark": null,
+            "position": {
+              "x": 209,
+              "y": 960,
+              "region": "lower-left"
+            },
+            "unlock": {
+              "type": "key",
+              "details": {
+                "itemIds": [
+                  1,
+                  6,
+                  11,
+                  16,
+                  21
+                ],
+                "usage": "hoe",
+                "consumed": false
+              }
+            },
+            "contents": {
+              "mode": "randomPool",
+              "items": [
+                {
+                  "itemId": 246,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 50,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 247,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 25,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                },
+                {
+                  "itemId": 248,
+                  "min": 1,
+                  "max": 1,
+                  "chancePct": 5,
+                  "weight": null,
+                  "condition": "independent roll",
+                  "raw": null
+                }
+              ],
+              "extras": [],
+              "origin": "instance",
+              "evidence": [
+                "gml_RoomCC_rmMap15_16_Create"
+              ]
+            },
+            "contentsText": {
+              "en": "Random loot, for example: {item:246} (50% chance), {item:247} (25% chance), and {item:248} (5% chance).",
+              "id": "Isi acak, misalnya: {item:246} (peluang 50%), {item:247} (peluang 25%), dan {item:248} (peluang 5%)."
+            },
+            "howToGet": {
+              "en": "Found in the lower-left part of North East Town. Use any hoe ({item:1}, {item:6}, {item:11}, {item:16}, and {item:21}) to dig it up.",
+              "id": "Ada di bagian kiri bawah peta Timur Laut Desa. Gunakan cangkul apa pun ({item:1}, {item:6}, {item:11}, {item:16}, dan {item:21}) untuk menggalinya."
+            },
+            "confidence": "high",
+            "evidence": [
+              "gml_RoomCC_rmMap15_16_Create",
+              "gml_Object_obj_item_field_Create_0",
+              "gml_GlobalScript_scr_farm_field_action"
+            ],
+            "source": "gml_RoomCC_rmMap15_16_Create",
+            "warnings": []
+          }
+        ]
       }
     ]
   }

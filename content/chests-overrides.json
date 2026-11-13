@@ -1,0 +1,78 @@
+{
+  "types": {
+    "obj_chest": {
+      "howToOpen": {
+        "en": "",
+        "id": ""
+      }
+    },
+    "obj_chest_lock_enemy": {
+      "howToOpen": {
+        "en": "This chest is locked, Defeat all enemy in this room to unlock it",
+        "id": "Peti ini terkunci, Kalahkan semua musuh di ruangan ini untuk membukanya"
+      }
+    }
+  },
+  "locations": {
+    "rmMap3#114878": {
+      "howToGet": {
+        "en": "On the left side of the map, near the general store",
+        "id": "Ada di sisi kiri peta, dekat toko kelontong"
+      }
+    },
+    "rmMap3#114876": {
+      "howToGet": {
+        "en": "In the middle of the map, near the town hall pond",
+        "id": "Ada di tengah peta, dekat kolam di balai kota"
+      }
+    },
+    "rmMap3#114877": {
+      "howToGet": {
+        "en": "In the bottom-right of the map, near the library",
+        "id": "Ada di pojok kanan bawah peta, dekat perpustakaan"
+      }
+    },
+    "rmMap3_5#113598": {
+      "howToGet": {
+        "en": "Found inside the Sweet Cafe",
+        "id": "Ada di dalam Sweet Cafe"
+      }
+    },
+    "rmMap3_8#113697": {
+      "howToGet": {
+        "en": "Found inside Lilia's house",
+        "id": "Ada di dalam rumah Lilia"
+      }
+    },
+    "rmForest1_2#100597": {
+      "howToGet": {
+        "en": "On the left side of the map in Grimwood Forest, Area 2",
+        "id": "Di sisi kiri peta Area 2 Hutan Grimwood"
+      }
+    },
+    "rmForest1_2#100600": {
+      "howToGet": {
+        "en": "In the middle of the map in Grimwood Forest, Area 2. Defeat all enemies in this area to open it",
+        "id": "Di tengah peta Area 2 Hutan Grimwood. Kalahkan semua musuh di area ini untuk membukanya"
+      }
+    },
+    "rmForest1_4#101059": {
+      "howToGet": {
+        "en": "In the top-left corner of the map in Grimwood Forest, Area 4. Defeat all enemies in this area to open it",
+        "id": "Di pojok kiri atas peta Area 4 Hutan Grimwood. Kalahkan semua musuh di area ini untuk membukanya"
+      }
+    },
+    "rmMap7#116407": {
+      "howToGet": {
+        "en": "In the bottom-left of the map, hidden behind a tree",
+        "id": "Di kiri bawah peta, tersembunyi di balik pohon"
+      }
+    },
+    "rmMap1#105370": {
+      "howToGet": {
+        "en": "Right next to Zerick's house, on the left side.",
+        "id": "Tepat di samping kiri rumah Zerick."
+      }
+    }
+  }
+}

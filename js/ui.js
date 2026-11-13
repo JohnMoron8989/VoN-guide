@@ -339,6 +339,7 @@
     var using = store.recipesUsingItem.get(item.id) || [];
     var making = store.recipesMakingItem.get(item.id) || [];
     var quests = store.questsByItem.get(item.id) || [];
+    var chestEntries = store.chestsByItem.get(item.id) || [];
     var fish = store.getFish(item.id);
     var tags = util.unique((Array.isArray(item.tags) ? item.tags : []).filter(function (tag) { return tag !== null && tag !== undefined && String(tag).trim(); }).map(String));
     var category = item.category === null || item.category === undefined || item.category === '' ? null : item.category;
@@ -356,6 +357,15 @@
       heading(3, t('item.usedInRecipes')), relationList(using, function (recipe) { return link('#/recipes/' + recipe.id, recipe.name); }),
       heading(3, t('item.madeByRecipes')), relationList(making, function (recipe) { return link('#/recipes/' + recipe.id, recipe.name); }),
       heading(3, t('item.relatedQuests')), relationList(quests, function (quest) { return link('#/quests/' + encodeURIComponent(quest.id), quest.title); }),
+      chestEntries.length ? [heading(3, t('item.foundInChests')), relationList(chestEntries, function (entry) {
+        var map = store.maps.get(String(entry.mapId));
+        var area = map && (map.areas || []).find(function (candidate) { return String(candidate.id) === String(entry.areaId); });
+        var mapLabel = String(map && (map.name || map.id) || entry.mapId);
+        var areaLabel = area && area.isParent ? t('maps.area.main') : (area && area.label && String(area.label) !== String(area.id) ? String(area.label) : null);
+        var label = areaLabel ? t('item.foundInChests.entryArea', { map: mapLabel, area: areaLabel, count: i18n.n(entry.count) }) : t('item.foundInChests.entry', { map: mapLabel, count: i18n.n(entry.count) });
+        var href = '#/maps/' + encodeURIComponent(entry.mapId) + (entry.areaId === null ? '' : '/' + encodeURIComponent(entry.areaId));
+        return link(href, label);
+      })] : null,
       fish ? [heading(3, t('item.fishQuestion')), link('#/fishing', t('item.openFishingInfo'))] : null
     ]);
     showDialog(String(item.name), content, trigger);

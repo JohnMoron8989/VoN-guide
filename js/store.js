@@ -1,15 +1,17 @@
 (function (root, factory) {
   var util = root && root.GUIDE ? root.GUIDE.util : null;
   var mapsLogic = root && root.GUIDE ? root.GUIDE.mapsLogic : null;
+  var chestsLogic = root && root.GUIDE ? root.GUIDE.chestsLogic : null;
   if (!util && typeof require === 'function') util = require('./util.js');
   if (!mapsLogic && typeof require === 'function') mapsLogic = require('./maps-logic.js');
-  var api = factory(util, mapsLogic);
+  if (!chestsLogic && typeof require === 'function') chestsLogic = require('./chests-logic.js');
+  var api = factory(util, mapsLogic, chestsLogic);
   if (root) {
     root.GUIDE = root.GUIDE || {};
     root.GUIDE.storeLogic = api;
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
-})(typeof window !== 'undefined' ? window : null, function (util, mapsLogic) {
+})(typeof window !== 'undefined' ? window : null, function (util, mapsLogic, chestsLogic) {
   'use strict';
 
   var REACTIONS = ['loved', 'liked', 'neutral', 'disliked', 'hated'];
@@ -198,14 +200,18 @@
   }
 
   function create(data, language) {
+    var chestSource = data && data.chests;
     data = localizeData(data || {}, language || 'en');
+    if (chestSource) data.chests = chestSource;
+    var generatedMaps = records(data, 'maps');
     var lists = {
       items: records(data, 'items'),
       characters: records(data, 'characters'),
       gifts: records(data, 'gifts'),
       fish: records(data, 'fish'),
       places: records(data, 'places'),
-      maps: records(data, 'places'),
+      maps: generatedMaps.length ? generatedMaps : records(data, 'places'),
+      chests: records(data, 'chests'),
       fishing: records(data, 'fishing'),
       fishingRate: records(data, 'fishingRate'),
       monsters: records(data, 'monsters'),
@@ -227,16 +233,38 @@
       items: lists.items,
       fish: lists.fish
     });
+    var itemIndex = byId(lists.items);
+    var chestIndexes = chestsLogic.buildChestIndexes(data.chests, mapIndexes);
+    chestIndexes.chestsByMap.forEach(function (chests) {
+      chests.forEach(function (chest) {
+        var ids = new Set();
+        (chest.contents && chest.contents.items || []).forEach(function (entry) {
+          if (entry && typeof entry.itemId === 'number') ids.add(entry.itemId);
+        });
+        ['en', 'id'].forEach(function (lang) {
+          [chestsLogic.pickText(chest.howToGet, lang), chestsLogic.pickText(chest.contentsText, lang)].forEach(function (value) {
+            chestsLogic.splitPlaceholders(value).forEach(function (part) { if (part.type === 'item') ids.add(part.itemId); });
+          });
+        });
+        chest.itemNames = Array.from(ids).map(function (id) {
+          var item = itemIndex.get(id);
+          return item ? String(item.name && item.name.raw ? item.name.raw : item.name || '') : '';
+        }).filter(Boolean);
+      });
+    });
+    var chestItems = chestsLogic.chestsByItem(data.chests, mapIndexes);
     return {
       data: data,
       lists: lists,
-      items: byId(lists.items),
+      items: itemIndex,
       characters: byId(lists.characters),
       fish: byId(lists.fish),
       places: byId(lists.places),
       maps: mapIndexes.mapById,
       monsters: byId(lists.monsters),
       mapIndexes: mapIndexes,
+      chestIndexes: chestIndexes,
+      chestsByItem: chestItems,
       quests: byId(lists.quests),
       recipes: byId(lists.recipes),
       sprites: byId(lists.sprites, 'name'),

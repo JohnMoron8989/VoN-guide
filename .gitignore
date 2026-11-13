@@ -5,3 +5,4 @@ README.md
 BUILD_REPORT.md
 SCHEMA.md
 data/*.json
+content/*.json

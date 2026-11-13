@@ -388,10 +388,19 @@ p { max-width: 75ch; }
 .map-area-tab[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 750; }
 .map-image-section { overflow: hidden; }
 .map-image-body, .map-image-figure { min-width: 0; margin: 0; }
+.map-image-overlay-wrap { position: relative; width: max-content; max-width: 100%; margin: 0 auto; overflow: hidden; border-radius: 8px; }
+.map-image-overlay-wrap .map-image-trigger { margin: 0; }
 .map-image-trigger { display: block; width: max-content; max-width: 100%; margin: 0 auto; overflow: hidden; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); padding: 0; cursor: zoom-in; }
 .map-image { display: block; width: auto; max-width: 100%; height: auto; image-rendering: pixelated; }
 .map-image-caption { margin-top: .5rem; font-size: .84rem; text-align: center; }
 .map-image-actions { display: flex; justify-content: center; margin-top: .75rem; }
+.map-chest-markers { position: absolute; z-index: 3; inset: 0; overflow: hidden; pointer-events: none; }
+.map-chest-marker { position: absolute; width: 24px; height: 24px; min-width: 22px; min-height: 22px; display: grid; place-items: center; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px #10151b, 0 0 0 4px #fff; color: #10151b; padding: 0; font-size: .76rem; font-weight: 900; font-variant-numeric: tabular-nums; line-height: 1; pointer-events: auto; cursor: pointer; }
+.map-chest-marker-unmarked::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.map-chest-marker:hover, .map-chest-marker:focus-visible, .map-chest-marker.is-highlighted { background: #ffd166; box-shadow: 0 0 0 2px #10151b, 0 0 0 5px #fff; }
+.map-chest-overlay-controls { display: grid; justify-content: center; gap: .25rem; margin-top: .75rem; }
+.map-chest-overlay-controls small, .map-chest-overlay-unavailable { color: var(--muted); }
+.map-chest-overlay-unavailable { margin: .75rem auto 0; text-align: center; }
 .map-image-missing { display: grid; min-height: 180px; place-items: center; border: 1px dashed var(--border); border-radius: 9px; background: var(--surface-2); color: var(--muted); padding: 1.5rem; text-align: center; }
 .map-area-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: .8rem; }
 .map-area-gallery-item { display: grid; min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2); color: var(--text); padding: 0; cursor: pointer; text-align: left; }
@@ -415,6 +424,44 @@ p { max-width: 75ch; }
 .map-fish-toggle { justify-content: center; color: var(--accent-strong); font-weight: 700; text-align: center; }
 .map-area-chips { display: inline-flex; max-width: 100%; flex-wrap: wrap; align-items: center; gap: .25rem; margin-left: auto; color: var(--muted); }
 .map-area-chip { display: inline-flex; min-width: 1.5rem; justify-content: center; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); padding: .05rem .38rem; font-size: .72rem; line-height: 1.4; }
+.chests-section-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem 1rem; }
+.chests-section-header h2 { margin-block: .35rem; }
+.chests-section-note { color: var(--muted); font-size: .9rem; }
+.chest-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(150px, auto) minmax(180px, 1fr); align-items: end; gap: .75rem; margin: 1rem 0; border-block: 1px solid var(--border); padding-block: .85rem; }
+.chest-toolbar > label { display: grid; min-width: 0; gap: .3rem; color: var(--muted); font-size: .84rem; }
+.chest-toolbar input, .chest-toolbar select { width: 100%; }
+.chest-type-filters { display: flex; min-width: 0; flex-wrap: wrap; gap: .4rem; margin: 0; border: 0; padding: 0; }
+.chest-type-filters legend { width: 100%; margin-bottom: .25rem; color: var(--muted); font-size: .84rem; }
+.chest-filter-chip { display: inline-flex; min-height: 38px; align-items: center; gap: .35rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2); color: var(--text); padding: .3rem .55rem; cursor: pointer; }
+.chest-filter-chip:hover { border-color: var(--accent); }
+.chest-filter-chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.chest-filter-chip[aria-pressed="true"] .badge { color: inherit; }
+.chest-filter-icon, .chest-type-icon { flex: 0 0 auto; image-rendering: pixelated; }
+.chest-card-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.chest-card { display: grid; min-width: 0; grid-template-columns: 48px minmax(0, 1fr); align-items: start; gap: .75rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); padding: .85rem; scroll-margin-top: calc(var(--header-height) + 1rem); transition: border-color .15s ease, box-shadow .15s ease; }
+.chest-card:hover, .chest-card:focus-within, .chest-card.is-highlighted { border-color: var(--accent-strong); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 34%, transparent); }
+.chest-mark-badge { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 2px solid var(--text); border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: 1.25rem; font-weight: 900; font-variant-numeric: tabular-nums; line-height: 1; }
+.chest-card-body { min-width: 0; }
+.chest-title-row { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; gap: .45rem .6rem; }
+.chest-title-row h3 { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+.chest-title-row .tooltip { margin-left: auto; }
+.chest-area-chip { margin-left: 0; white-space: normal; }
+.chest-copy-block { margin-top: .75rem; }
+.chest-text { max-width: none; margin: .25rem 0 0; overflow-wrap: anywhere; }
+.chest-inline-item { display: inline; min-height: 0; vertical-align: baseline; }
+.chest-loot-list { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: .5rem; }
+.chest-loot-item { display: inline-flex; min-width: 0; max-width: 100%; flex-wrap: wrap; align-items: center; gap: .3rem; }
+.chest-extra-chip { white-space: normal; }
+.chest-confidence { opacity: .82; }
+.map-data-notes > summary { cursor: pointer; font-weight: 750; }
+.map-data-note-list { overflow-wrap: anywhere; }
+.map-data-notes > summary { font-size: 1.05rem; }
+.map-data-note-list { margin-bottom: 0; }
+.chest-card-pulse { animation: chest-card-pulse .65s ease-out; }
+@keyframes chest-card-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--focus) 85%, transparent); }
+  100% { box-shadow: 0 0 0 10px transparent; }
+}
 .map-viewer-overlay { position: fixed; z-index: 200; inset: 0; display: grid; place-items: center; background: rgb(0 0 0 / 82%); padding: 1rem; overscroll-behavior: contain; }
 .map-viewer-panel { display: grid; width: min(1500px, 80vw); height: min(920px, 80vh); min-width: 0; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
 .map-viewer-header { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .65rem 1rem; border-bottom: 1px solid var(--border); padding: .7rem; }
@@ -429,6 +476,10 @@ p { max-width: 75ch; }
 
 @media (min-width: 851px) {
   .fishing-equipment-filters:not([open]) > .fishing-equipment-groups { display: grid; }
+}
+
+@media (min-width: 1050px) {
+  .chest-card-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 850px) {
@@ -472,6 +523,7 @@ p { max-width: 75ch; }
 
 /* Schedule table card breakpoint: change this single value to adjust the layout switch. */
 @media (max-width: 720px) {
+  .chest-toolbar { grid-template-columns: 1fr; }
   .fishing-schedule { min-width: 0; }
   .fishing-schedule .filters { width: 100%; min-width: 0; flex-wrap: wrap; }
   .fishing-schedule .filters > label { width: 100%; min-width: 0; }
@@ -518,6 +570,10 @@ p { max-width: 75ch; }
   .fishing-rate-control-fields > label { width: 100%; }
   .fishing-rate-control-fields input, .fishing-rate-control-fields select { width: 100%; }
   .maps-controls label { width: 100%; }
+  .chests-section-header { align-items: flex-start; }
+  .chest-card { grid-template-columns: 36px minmax(0, 1fr); gap: .55rem; padding: .65rem; }
+  .chest-mark-badge { width: 34px; height: 34px; font-size: 1rem; }
+  .chest-title-row .tooltip { margin-left: 0; }
   .fishing-equipment-groups { grid-template-columns: 1fr; }
   .fishing-fish-places-section > summary { grid-template-columns: minmax(0, 1fr) auto; }
   .fishing-place-details > summary { grid-template-columns: minmax(0, 1fr) auto; }

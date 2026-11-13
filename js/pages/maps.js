@@ -3,9 +3,20 @@
   var GUIDE = root.GUIDE = root.GUIDE || {};
   GUIDE.pages = GUIDE.pages || {};
   var viewerId = 0;
+  var mapGalleryId = 0;
   var fishListId = 0;
+  var DETAIL_SECTION_ORDER = ['image', 'chests', 'monsters', 'gatherables', 'fish', 'notes'];
+  var CHEST_OVERLAY_KEY = 'guide.chests.overlay';
+  var MAP_CHEST_TYPES = ['obj_chest', 'obj_chest_lock_enemy'];
+  var MAP_IMAGE_PREVIEW_LIMIT = 6;
 
   function t(key, params) { return GUIDE.i18n.t(key, params); }
+
+  function mapChestsForArea(chests, areaId) {
+    return GUIDE.chestsLogic.filterChests(chests, { areaId: areaId }).filter(function (chest) {
+      return MAP_CHEST_TYPES.indexOf(String(chest && chest.type)) !== -1;
+    });
+  }
 
   function mapName(map) {
     return String(map && map.name || map && map.id || '');
@@ -229,7 +240,110 @@
     return GUIDE.ui.el('div', { className: 'map-image-missing', role: 'status' }, t('maps.image.missing'));
   }
 
-  function imageSection(map) {
+  function chestEntryKey(chest) {
+    return String(chest && (chest.key || chest.instanceId) || 'unknown');
+  }
+
+  function chestCardId(chest) {
+    return 'chest-card-' + chestEntryKey(chest).replace(/[^A-Za-z0-9_-]/g, '-');
+  }
+
+  function setChestActive(interaction, chest, token, active) {
+    if (!interaction) return;
+    var key = chestEntryKey(chest);
+    if (!interaction.active.has(key)) interaction.active.set(key, new Set());
+    var tokens = interaction.active.get(key);
+    if (active) tokens.add(token); else tokens.delete(token);
+    if (!tokens.size) interaction.active.delete(key);
+    var highlighted = tokens.size > 0;
+    var card = interaction.cards.get(key);
+    var marker = interaction.markers.get(key);
+    if (card) card.classList.toggle('is-highlighted', highlighted);
+    if (marker) marker.classList.toggle('is-highlighted', highlighted);
+  }
+
+  function registerChestCard(interaction, chest, card) {
+    if (!interaction) return;
+    var key = chestEntryKey(chest);
+    interaction.cards.set(key, card);
+    if (interaction.active.has(key)) card.classList.add('is-highlighted');
+    card.addEventListener('pointerenter', function () { setChestActive(interaction, chest, 'card-pointer', true); });
+    card.addEventListener('pointerleave', function () { setChestActive(interaction, chest, 'card-pointer', false); });
+    card.addEventListener('focusin', function () { setChestActive(interaction, chest, 'card-focus', true); });
+    card.addEventListener('focusout', function (event) {
+      if (!event.relatedTarget || !card.contains(event.relatedTarget)) setChestActive(interaction, chest, 'card-focus', false);
+    });
+  }
+
+  function createChestInteraction() {
+    return {
+      cards: new Map(), markers: new Map(), active: new Map(),
+      setVisible: function (keys) {
+        var visible = new Set(keys || []);
+        this.markers.forEach(function (marker, key) { marker.hidden = !visible.has(key); });
+      }
+    };
+  }
+
+  function storageValue(key, fallback) {
+    try { return GUIDE.util.safeGet(root.localStorage, key, fallback); }
+    catch (_) { return fallback; }
+  }
+
+  function saveStorageValue(key, value) {
+    try { GUIDE.util.safeSet(root.localStorage, key, value); }
+    catch (_) { /* Storage is optional. */ }
+  }
+
+  function overlayEnabled() {
+    var saved = storageValue(CHEST_OVERLAY_KEY, 'false');
+    return saved === 'true';
+  }
+
+  function overlayRoomSize(map, chests) {
+    var chest = (chests || []).find(function (entry) { return entry && entry.roomSize && Number(entry.roomSize.width) > 0 && Number(entry.roomSize.height) > 0; });
+    return chest ? chest.roomSize : map && map.size;
+  }
+
+  function addMapMarkers(layer, chests, size, interaction) {
+    var fragment = document.createDocumentFragment();
+    (chests || []).forEach(function (chest) {
+      var position = GUIDE.chestsLogic.markerPosition(chest, size);
+      if (!position) return;
+      var marked = typeof chest.mark === 'number' && Number.isFinite(chest.mark);
+      var mark = marked ? ('#' + GUIDE.i18n.n(chest.mark)) : t('maps.chests.noMarkerValue');
+      var marker = GUIDE.ui.el('button', {
+        type: 'button', className: 'map-chest-marker' + (marked ? '' : ' map-chest-marker-unmarked'),
+        'aria-label': t('maps.chests.overlay.markerLabel', { mark: mark, type: chest.typeName || chest.type || t('common.unknown') }),
+        'aria-controls': chestCardId(chest)
+      }, marked ? mark : null);
+      marker.style.left = position.leftPct + '%';
+      marker.style.top = position.topPct + '%';
+      marker.addEventListener('pointerenter', function () { setChestActive(interaction, chest, 'marker-pointer', true); });
+      marker.addEventListener('pointerleave', function () { setChestActive(interaction, chest, 'marker-pointer', false); });
+      marker.addEventListener('focus', function () { setChestActive(interaction, chest, 'marker-focus', true); });
+      marker.addEventListener('blur', function () { setChestActive(interaction, chest, 'marker-focus', false); });
+      marker.addEventListener('click', function () {
+        var card = interaction && interaction.cards.get(chestEntryKey(chest));
+        if (!card) return;
+        var reduced = root.matchMedia && root.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        card.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+        try { card.focus({ preventScroll: true }); } catch (_) { card.focus(); }
+        if (!reduced) {
+          card.classList.remove('chest-card-pulse');
+          root.requestAnimationFrame(function () {
+            card.classList.add('chest-card-pulse');
+            card.addEventListener('animationend', function () { card.classList.remove('chest-card-pulse'); }, { once: true });
+          });
+        }
+      });
+      interaction.markers.set(chestEntryKey(chest), marker);
+      fragment.appendChild(marker);
+    });
+    layer.appendChild(fragment);
+  }
+
+  function imageSection(map, overlayOptions) {
     var ui = GUIDE.ui;
     var info = imageInfo(map);
     var body = ui.el('div', { className: 'map-image-body' });
@@ -250,9 +364,31 @@
       type: 'button', className: 'map-image-trigger', 'aria-label': t('maps.image.viewFull'), title: t('maps.image.viewFull'),
       onClick: function () { openViewer(map, info, trigger); }
     }, image);
-    var figure = ui.el('figure', { className: 'map-image-figure' }, [trigger, caption]);
+    var imageWrap = ui.el('div', { className: 'map-image-overlay-wrap' }, trigger);
+    var figure = ui.el('figure', { className: 'map-image-figure' }, [imageWrap, caption]);
     var viewButton = ui.button(t('maps.image.viewFull'), function () { openViewer(map, info, viewButton); });
     body.appendChild(figure); body.appendChild(ui.el('div', { className: 'map-image-actions' }, viewButton));
+    if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
+    var overlayChests = overlayOptions && overlayOptions.chests || [];
+    var roomSize = overlayRoomSize(map, overlayChests);
+    if (overlayChests.length && GUIDE.chestsLogic.canOverlay(info, roomSize)) {
+      var markerLayer = ui.el('div', { className: 'map-chest-markers', 'aria-hidden': 'false' });
+      var enabled = overlayEnabled();
+      markerLayer.hidden = !enabled;
+      addMapMarkers(markerLayer, overlayChests, roomSize, overlayOptions.interaction);
+      imageWrap.appendChild(markerLayer);
+      var checkbox = ui.el('input', { type: 'checkbox', checked: enabled });
+      checkbox.addEventListener('change', function () {
+        markerLayer.hidden = !checkbox.checked;
+        saveStorageValue(CHEST_OVERLAY_KEY, String(checkbox.checked));
+      });
+      body.appendChild(ui.el('div', { className: 'map-chest-overlay-controls' }, [
+        ui.el('label', { className: 'check-label' }, [checkbox, ui.el('span', {}, t('maps.chests.overlay.show'))]),
+        ui.el('small', {}, t('maps.chests.overlay.note'))
+      ]));
+    } else if (overlayChests.length && info.width && info.height && roomSize && roomSize.width && roomSize.height) {
+      body.appendChild(ui.el('p', { className: 'map-chest-overlay-unavailable' }, t('maps.chests.overlay.unavailable')));
+    }
     image.addEventListener('load', function () {
       info.width = info.width || image.naturalWidth;
       info.height = info.height || image.naturalHeight;
@@ -266,20 +402,30 @@
         image.src = info.fallbackPath;
         return;
       }
+      if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
       body.replaceChildren(missingImage());
     });
     return section;
   }
 
-  function groupImageSection(map, selectedArea) {
+  function groupImageSection(map, selectedArea, overlayOptions) {
     if (selectedArea) {
       return imageSection(Object.assign({}, selectedArea, {
         name: t('maps.area.imageName', { name: mapName(map), area: areaName(selectedArea) })
-      }));
+      }), overlayOptions);
     }
+    if (overlayOptions && overlayOptions.interaction) overlayOptions.interaction.markers.clear();
     var ui = GUIDE.ui;
-    var gallery = ui.el('div', { className: 'map-area-gallery' });
-    visibleAreas(map).forEach(function (area) {
+    var areas = visibleAreas(map);
+    var expanded = false;
+    var galleryId = 'map-area-gallery-' + (++mapGalleryId);
+    var gallery = ui.el('div', { id: galleryId, className: 'map-area-gallery' });
+    var toggle = areas.length > MAP_IMAGE_PREVIEW_LIMIT ? ui.button('', function () {
+      expanded = !expanded;
+      draw();
+    }, { 'aria-controls': galleryId }) : null;
+
+    function galleryItem(area) {
       var label = areaName(area);
       var info = imageInfo(area);
       var imageName = t('maps.area.imageName', { name: mapName(map), area: label });
@@ -304,9 +450,26 @@
         button.disabled = true;
         media.replaceWith(missingImage());
       });
-      gallery.appendChild(button);
-    });
-    return ui.el('section', { className: 'panel map-image-section' }, [sectionHeading(t('maps.image.title'), 0), gallery]);
+      return button;
+    }
+
+    function draw() {
+      gallery.replaceChildren();
+      (expanded ? areas : areas.slice(0, MAP_IMAGE_PREVIEW_LIMIT)).forEach(function (area) {
+        gallery.appendChild(galleryItem(area));
+      });
+      if (toggle) {
+        toggle.textContent = expanded ? t('maps.image.showLess') : t('maps.image.showMore');
+        toggle.setAttribute('aria-expanded', String(expanded));
+      }
+    }
+
+    draw();
+    return ui.el('section', { className: 'panel map-image-section' }, [
+      sectionHeading(t('maps.image.title'), 0),
+      gallery,
+      toggle ? ui.el('div', { className: 'map-image-actions' }, toggle) : null
+    ]);
   }
 
   function areaSelector(map, selectedArea) {
@@ -335,6 +498,210 @@
       tabs.push(tab); tablist.appendChild(tab);
     });
     return tablist;
+  }
+
+  function chestType(store, chest) {
+    return store.chestIndexes.typesById.get(String(chest && chest.type)) || { id: chest && chest.type, name: chest && chest.typeName || t('common.unknown') };
+  }
+
+  function itemDisplayName(store, itemId) {
+    var item = store.getItem(itemId);
+    return item ? String(item.name && item.name.raw ? item.name.raw : item.name) : t('maps.chests.itemFallback', { id: GUIDE.i18n.n(itemId) });
+  }
+
+  function appendChestText(node, value, store, itemLinks) {
+    var parts = GUIDE.chestsLogic.splitPlaceholders(value);
+    if (!parts.length) {
+      node.appendChild(document.createTextNode(t('common.unknown')));
+      return;
+    }
+    parts.forEach(function (part) {
+      if (part.type === 'text') node.appendChild(document.createTextNode(part.value));
+      else {
+        var name = itemDisplayName(store, part.itemId);
+        if (!itemLinks) node.appendChild(document.createTextNode(name));
+        else {
+          var button = GUIDE.ui.button(name, function () { GUIDE.ui.showItem(part.itemId, button); }, {
+            className: 'text-button chest-inline-item', 'aria-label': t('item.open', { name: name })
+          });
+          node.appendChild(button);
+        }
+      }
+    });
+  }
+
+  function chestAreaChip(map, chest) {
+    if (!map.group || chest.areaId === null || chest.areaId === undefined) return null;
+    var area = findArea(map, chest.areaId);
+    var technicalLabel = area && !area.isParent && String(area.label || area.id) === String(area.id);
+    var label = area && !technicalLabel ? areaName(area) : chest.areaLabel;
+    if (!label) label = t('maps.chests.areaUnknown');
+    return GUIDE.ui.el('small', {
+      className: 'map-area-chip chest-area-chip',
+      'aria-label': t('maps.chests.areaChipLabel', { area: label })
+    }, area && area.isParent ? label : (label === t('maps.chests.areaUnknown') ? label : t('maps.chests.areaChip', { area: label })));
+  }
+
+  function confidenceBadge(chest) {
+    var label;
+    if (chest.confidence === 'low') label = t('maps.chests.unverified');
+    else if (chest.confidence === 'medium') label = t('maps.chests.partlyVerified');
+    else return null;
+    return GUIDE.ui.tooltip(GUIDE.ui.badge(label, 'warning chest-confidence'), t('maps.chests.unverifiedHint'));
+  }
+
+  function rawChestValue(raw) {
+    var value = raw && typeof raw === 'object' && raw.raw !== undefined ? raw.raw : raw;
+    return GUIDE.ui.tooltip(GUIDE.ui.el('span', { className: 'raw-value' }, t('value.cannotCompute')), t('value.rawTitle', { raw: String(value || t('common.unknown')) }));
+  }
+
+  function chestItemNode(entry) {
+    var ui = GUIDE.ui;
+    if (!entry || typeof entry.itemId !== 'number' || !Number.isFinite(entry.itemId)) return rawChestValue(entry && (entry.itemId || entry.raw));
+    var min = entry.min; var max = entry.max;
+    var fixed = typeof min === 'number' && Number.isFinite(min) && min === max;
+    var chip = ui.itemChip(entry.itemId, { count: fixed && min !== 1 ? min : null });
+    var children = [chip];
+    if (typeof min === 'number' && Number.isFinite(min) && typeof max === 'number' && Number.isFinite(max) && min !== max) {
+      children.push(ui.badge(t('maps.chests.quantityRange', { min: GUIDE.i18n.n(min), max: GUIDE.i18n.n(max) }), 'count'));
+    } else if (GUIDE.util.isRaw(min) || GUIDE.util.isRaw(max) || entry.raw) {
+      children.push(rawChestValue(GUIDE.util.isRaw(min) ? min : (GUIDE.util.isRaw(max) ? max : entry.raw)));
+    }
+    if (typeof entry.chancePct === 'number' && Number.isFinite(entry.chancePct)) {
+      children.push(ui.badge(t('maps.chests.chance', { chance: GUIDE.fishingRate.formatPercent(entry.chancePct) }), 'neutral'));
+    } else if (GUIDE.util.isRaw(entry.chancePct)) children.push(rawChestValue(entry.chancePct));
+    return ui.el('span', { className: 'chest-loot-item' }, children);
+  }
+
+  function extraTypeLabel(type) {
+    if (type === 'money') return t('maps.chests.extra.money');
+    if (type === 'exp') return t('maps.chests.extra.exp');
+    return t('maps.chests.extra.other');
+  }
+
+  function chestExtraNode(extra) {
+    var type = extraTypeLabel(extra && extra.type);
+    var min = extra && extra.min; var max = extra && extra.max;
+    if (typeof min === 'number' && Number.isFinite(min) && typeof max === 'number' && Number.isFinite(max)) {
+      var label = min === max ? t('maps.chests.extra.fixed', { type: type, count: GUIDE.i18n.n(min) }) : t('maps.chests.extra.range', { type: type, min: GUIDE.i18n.n(min), max: GUIDE.i18n.n(max) });
+      return GUIDE.ui.badge(label, 'neutral chest-extra-chip');
+    }
+    if (extra && (extra.raw || GUIDE.util.isRaw(min) || GUIDE.util.isRaw(max))) {
+      var raw = extra.raw || (GUIDE.util.isRaw(min) ? min : max);
+      var value = raw && raw.raw !== undefined ? raw.raw : raw;
+      return GUIDE.ui.tooltip(GUIDE.ui.badge(t('maps.chests.extra.cannotCompute', { type: type }), 'neutral chest-extra-chip'), t('value.rawTitle', { raw: String(value) }));
+    }
+    return GUIDE.ui.badge(t('maps.chests.extra.unknown', { type: type }), 'neutral chest-extra-chip');
+  }
+
+  function chestCard(map, store, chest, language, showArea, interaction) {
+    var ui = GUIDE.ui;
+    var type = chestType(store, chest);
+    var marked = typeof chest.mark === 'number' && Number.isFinite(chest.mark);
+    var markText = marked ? ('#' + GUIDE.i18n.n(chest.mark)) : t('maps.chests.noMarkerValue');
+    var markLabel = marked ? t('maps.chests.marker', { mark: markText }) : t('maps.chests.noMarker');
+    var icon = type.icon ? directImage(type.icon, '', 32, 'chest-type-icon') : ui.spriteImage(type.sprite, '', 32, 'chest-type-icon');
+    var how = ui.el('p', { className: 'chest-text' });
+    appendChestText(how, GUIDE.chestsLogic.pickText(chest.howToGet, language), store, true);
+    var summary = GUIDE.chestsLogic.contentsSummary(chest.contents);
+    var loot = ui.el('div', { className: 'chest-loot-list' });
+    (chest.contents && chest.contents.items || []).forEach(function (entry) { loot.appendChild(chestItemNode(entry)); });
+    summary.extras.forEach(function (extra) { loot.appendChild(chestExtraNode(extra)); });
+    var card = ui.el('li', { id: chestCardId(chest), className: 'chest-card', tabindex: '-1' }, [
+      ui.el('span', { className: 'chest-mark-badge', 'aria-label': markLabel }, markText),
+      ui.el('div', { className: 'chest-card-body' }, [
+        ui.el('div', { className: 'chest-title-row' }, [icon, ui.heading(3, String(type.name || chest.typeName || t('common.unknown'))), showArea ? chestAreaChip(map, chest) : null, confidenceBadge(chest)]),
+        ui.el('div', { className: 'chest-copy-block' }, [ui.el('strong', {}, t('maps.chests.howToGet')), how]),
+        loot
+      ])
+    ]);
+    registerChestCard(interaction, chest, card);
+    return card;
+  }
+
+  function chestsSection(map, store, areaId, interaction) {
+    var ui = GUIDE.ui;
+    var all = store.chestIndexes.chestsByMap.get(String(map.id)) || [];
+    var base = mapChestsForArea(all, areaId);
+    var dataset = store.data.chests;
+    var available = dataset && !dataset.malformed && dataset.status !== 'not_found';
+    var heading = ui.heading(2, GUIDE.i18n.plural('maps.chests.count', base.length, { count: GUIDE.i18n.n(base.length) }));
+    var section = ui.el('section', { className: 'panel chests-section', 'aria-label': t('maps.chests') });
+    var language = GUIDE.i18n.getLocale();
+    section.appendChild(ui.el('header', { className: 'chests-section-header' }, [
+      heading,
+      ui.el('small', { className: 'chests-section-note' }, t('maps.chests.mapMarkerNote'))
+    ]));
+    if (!available) {
+      interaction.setVisible([]);
+      section.appendChild(ui.emptyState('notFound', t('maps.chests.unavailable')));
+      return section;
+    }
+    if (!base.length) {
+      interaction.setVisible([]);
+      section.appendChild(ui.emptyState('notFound', areaId ? t('maps.chests.emptyArea') : t('maps.chests.empty')));
+      return section;
+    }
+
+    var selectedType = null;
+    var typeButtons = [];
+    var unlock = null;
+    var host = ui.el('div', { className: 'chest-list-host' });
+    var search = null;
+    if (base.length > 5) {
+      var typeCounts = new Map();
+      base.forEach(function (chest) { typeCounts.set(String(chest.type), (typeCounts.get(String(chest.type)) || 0) + 1); });
+      var typeGroup = ui.el('fieldset', { className: 'chest-type-filters' }, ui.el('legend', {}, t('maps.chests.filter.type')));
+      function addTypeButton(typeId, type, count, label) {
+        var button = ui.button('', function () { selectedType = typeId; draw(); }, { className: 'chest-filter-chip', 'aria-pressed': String(selectedType === typeId) });
+        if (type && type.icon) button.appendChild(directImage(type.icon, '', 24, 'chest-filter-icon'));
+        button.appendChild(ui.el('span', {}, label));
+        button.appendChild(ui.badge(GUIDE.i18n.n(count), 'count'));
+        typeButtons.push({ id: typeId, button: button });
+        typeGroup.appendChild(button);
+      }
+      addTypeButton(null, null, base.length, t('common.all'));
+      typeCounts.forEach(function (count, typeId) {
+        var type = store.chestIndexes.typesById.get(typeId) || { name: typeId };
+        addTypeButton(typeId, type, count, String(type.name || typeId));
+      });
+      var unlockSelect = ui.el('select', { 'aria-label': t('maps.chests.filter.unlock.label'), onChange: function () { unlock = unlockSelect.value || null; draw(); } }, [
+        ui.el('option', { value: '' }, t('maps.chests.filter.unlock.any')),
+        ui.el('option', { value: 'none' }, t('maps.chests.filter.unlock.free')),
+        ui.el('option', { value: 'enemies' }, t('maps.chests.filter.unlock.enemies')),
+        ui.el('option', { value: 'key' }, t('maps.chests.filter.unlock.key')),
+        ui.el('option', { value: 'other' }, t('maps.chests.filter.unlock.other'))
+      ]);
+      search = ui.el('input', { type: 'search', placeholder: t('maps.chests.filter.search'), 'aria-label': t('maps.chests.filter.search'), onInput: draw });
+      section.appendChild(ui.el('form', { className: 'chest-toolbar', role: 'search', onSubmit: function (event) { event.preventDefault(); } }, [
+        typeGroup,
+        ui.el('label', {}, [ui.el('span', {}, t('maps.chests.filter.unlock.label')), unlockSelect]),
+        ui.el('label', {}, [ui.el('span', {}, t('maps.chests.filter.search')), search])
+      ]));
+    }
+    section.appendChild(host);
+
+    function draw() {
+      typeButtons.forEach(function (entry) { entry.button.setAttribute('aria-pressed', String(entry.id === selectedType)); });
+      var filtered = GUIDE.chestsLogic.filterChests(base, {
+        typeId: selectedType, onlyUnlockType: unlock, search: search ? search.value : ''
+      });
+      interaction.cards.clear();
+      interaction.active.clear();
+      interaction.markers.forEach(function (marker) { marker.classList.remove('is-highlighted'); });
+      interaction.setVisible(filtered.map(chestEntryKey));
+      if (!filtered.length) {
+        host.replaceChildren(ui.emptyState('noResults', t('empty.noResults')));
+        return;
+      }
+      var listNode = ui.el('ul', { className: 'chest-card-list', role: 'list' });
+      var fragment = document.createDocumentFragment();
+      filtered.forEach(function (chest) { fragment.appendChild(chestCard(map, store, chest, language, map.group && !areaId, interaction)); });
+      listNode.appendChild(fragment);
+      host.replaceChildren(listNode);
+    }
+    draw();
+    return section;
   }
 
   function monsterRouteExists(monsterId) {
@@ -428,6 +795,29 @@
     return ui.el('section', { className: 'panel' }, [sectionHeading(t('maps.fish'), entries.length), content]);
   }
 
+  function dataNotesSection(map, store, areaId) {
+    var ui = GUIDE.ui;
+    var notes = [];
+    (map.warnings || []).forEach(function (warning) {
+      notes.push(t('maps.dataNotes.mapWarning', { warning: String(warning) }));
+    });
+    (store.mapIndexes.unmatchedPlaces || []).forEach(function (room) {
+      notes.push(t('maps.dataNotes.unmatchedPlace', { room: room }));
+    });
+    (store.chestIndexes.unmatchedRooms || []).forEach(function (room) {
+      notes.push(t('maps.dataNotes.unmatchedChestRoom', { room: room }));
+    });
+    var mapChests = mapChestsForArea(store.chestIndexes.chestsByMap.get(String(map.id)) || [], areaId);
+    mapChests.forEach(function (chest) {
+      if (!chest.position || typeof chest.position.x !== 'number' || typeof chest.position.y !== 'number') {
+        notes.push(t('maps.dataNotes.chestWithoutPosition', { key: chestEntryKey(chest) }));
+      }
+    });
+    if (store.data.chests && store.data.chests.status === 'partial') notes.push(t('maps.dataNotes.chestsPartial'));
+    var content = notes.length ? ui.el('ul', { className: 'map-data-note-list' }, notes.map(function (note) { return ui.el('li', {}, note); })) : ui.el('p', {}, t('maps.dataNotes.none'));
+    return ui.el('details', { className: 'panel map-data-notes' }, [ui.el('summary', {}, t('maps.dataNotes')), content]);
+  }
+
   function detail(map, context, areaId) {
     var ui = GUIDE.ui; var store = context.store;
     var selectedArea = map && map.group && areaId !== null && areaId !== undefined ? findArea(map, areaId) : null;
@@ -438,15 +828,24 @@
         title: t('maps.notFound')
       };
     }
+    var selectedAreaId = selectedArea ? selectedArea.id : null;
+    var interaction = createChestInteraction();
+    var visibleChests = mapChestsForArea(store.chestIndexes.chestsByMap.get(String(map.id)) || [], selectedAreaId);
+    var overlayOptions = { chests: visibleChests, interaction: interaction };
+    var sections = {
+      image: map.group ? groupImageSection(map, selectedArea, overlayOptions) : imageSection(map, overlayOptions),
+      chests: chestsSection(map, store, selectedAreaId, interaction),
+      monsters: monstersSection(map, store, selectedAreaId),
+      gatherables: gatherSection(map, store, selectedAreaId),
+      fish: fishSection(map, store, selectedAreaId),
+      notes: dataNotesSection(map, store, selectedAreaId)
+    };
     var node = ui.el('article', { className: 'page map-detail-page' }, [
       ui.link('#/maps', t('maps.back'), 'back-link'),
       ui.el('header', { className: 'map-detail-header' }, ui.heading(1, mapName(map))),
-      map.group ? areaSelector(map, selectedArea) : null,
-      map.group ? groupImageSection(map, selectedArea) : imageSection(map),
-      monstersSection(map, store, selectedArea && selectedArea.id),
-      gatherSection(map, store, selectedArea && selectedArea.id),
-      fishSection(map, store, selectedArea && selectedArea.id)
+      map.group ? areaSelector(map, selectedArea) : null
     ]);
+    DETAIL_SECTION_ORDER.forEach(function (name) { node.appendChild(sections[name]); });
     return { node: node, title: mapName(map) };
   }
 

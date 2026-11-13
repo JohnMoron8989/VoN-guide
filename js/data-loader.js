@@ -8,8 +8,8 @@
 })(typeof window !== 'undefined' ? window : null, function () {
   'use strict';
 
-  var DATASETS = ['meta', 'items', 'characters', 'gifts', 'fish', 'places', 'fishing', 'fishingRate', 'quests', 'recipes', 'events', 'sprites', 'monsters', 'gatherables'];
-  var OPTIONAL_DATASETS = ['gatherables'];
+  var DATASETS = ['meta', 'items', 'characters', 'gifts', 'fish', 'places', 'maps', 'chests', 'fishing', 'fishingRate', 'quests', 'recipes', 'events', 'sprites', 'monsters', 'gatherables'];
+  var OPTIONAL_DATASETS = ['maps', 'chests', 'gatherables'];
 
   function emptyEnvelope(name, input) {
     return {
@@ -34,8 +34,9 @@
     if (!input || typeof input !== 'object' || typeof input.schema !== 'string' || input.schema.indexOf(name + '/') !== 0 || !Array.isArray(input.records)) {
       return emptyEnvelope(name, input);
     }
+    var count = name === 'chests' && Number.isInteger(input.count) && input.count >= 0 ? input.count : input.records.length;
     return Object.assign({}, input, {
-      count: input.records.length,
+      count: count,
       status: ['ok', 'partial', 'not_found'].indexOf(input.status) !== -1 ? input.status : 'partial',
       notes: Array.isArray(input.notes) ? input.notes : [],
       malformed: false
@@ -81,9 +82,9 @@
           onProgress(name, completed, DATASETS.length);
           return [name, value];
         }));
-        clearTimeout(timeout);
         var fetched = {};
         entries.forEach(function (entry) { fetched[entry[0]] = entry[1]; });
+        clearTimeout(timeout);
         return { ok: true, source: 'http', datasets: normalizeAll(fetched) };
       } catch (_) {
         clearTimeout(timeout);
